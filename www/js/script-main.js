@@ -49,6 +49,10 @@
         $header.removeClass('m-menu_small');
       }
     });
+ 
+    $(window).scroll(function () {
+      $header.css("left", -$(this).scrollLeft() + "px");
+    });
 
     $('.b-menu__wrapp-login').on('click', function(){
       disableScroll();
