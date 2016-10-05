@@ -1,0 +1,284 @@
+@font-face {
+  font-family: 'myriadPro-regular';
+  src: url('../fonts/MyriadProRegular.eot');
+  src: url('../fonts/MyriadProRegular.eot') format('embedded-opentype'),
+    url('../fonts/MyriadProRegular.woff') format('woff'),
+    url('../fonts/MyriadProRegular.ttf') format('truetype'),
+}
+
+/* Header styles */
+h1 {
+  font-family : Open Sans, sans-serif;
+  font-size : 72px;
+  line-height : 79px;
+  color : #333333;
+}
+h2 {
+  font-family : Open Sans;
+  font-size : 36px;
+  line-height : 45px;
+  color : #333333;
+}
+h3 {
+  font-family : Open Sans;
+  font-size : 28px;
+  line-height : 41px;
+  color : #333333;
+}
+h4 {
+  font-family : Open Sans;
+  font-weight : bold;
+  font-size : 24px;
+  line-height : 29px;
+  color : #333333;
+  color : rgb(51, 51, 51);
+}
+h5 {
+  font-family : Open Sans;
+  font-weight : bold;
+  font-size : 16px;
+  line-height : 22px;
+  color : #333333;
+}
+h6 {
+  font-family : Open Sans;
+  font-size : 14px;
+  line-height : 16px;
+  text-transform : uppercase;
+  color : #333333;
+}
+
+/* Text styles */
+.text {
+  font-family : Open Sans;
+  font-size : 14px;
+  line-height : 20px;
+  color : #333333;
+}
+  .text.bold {
+    font-weight : bold;
+  }
+  .text.subtext {
+    font-size : 12px;
+    line-height : 16px;
+  }
+    .text.subtext.bold {
+      font-weight : bold;
+      line-height : 16px;
+      color : #1C5BC9;
+    }
+
+/* Buttons */
+.button {
+  display: block;
+  outline: none;
+  border: none;
+  font-family : Open Sans;
+  font-weight : bold;
+  color : #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  background : #29ABE2;
+  -webkit-transition: background-color 0.15s linear,
+                      color 0.15s linear;
+  transition: background-color 0.15s linear,
+                         color 0.15s linear;
+}
+  .button:hover {
+    background-color: #297DE2;
+    cursor: pointer;
+  }
+  .button.small {
+    width : 88px;
+    height : 33px;
+    font-size : 12px;
+    line-height : 33px;
+    -moz-border-radius : 16px;
+    -webkit-border-radius : 16px;
+    border-radius : 16px;
+  }
+  .button.middle {
+    width : 111px;
+    height : 40px;
+    font-size : 14px;
+    line-height : 40px;
+    -moz-border-radius : 20px;
+    -webkit-border-radius : 20px;
+    border-radius : 20px;
+  }
+  .button.big {
+    width : 152px;
+    height : 52px;
+    font-size : 20px;
+    line-height : 52px;
+    -moz-border-radius : 26px;
+    -webkit-border-radius : 26px;
+    border-radius : 26px;
+  }
+
+/* Styles <inputs> */
+input {
+  height : 40px;
+  padding: 7px 18px;
+  font-family : Open Sans;
+  font-weight : bold;
+  font-size : 14px;
+  line-height : 20px;
+  color : #333333;
+  background : #F0F0F0;
+  outline: none;
+  border:  none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -moz-border-radius : 4px;
+  -webkit-border-radius : 4px;
+  border-radius : 4px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+  input:focus {
+    background : #F8F8F8;
+  }
+  /* Style placeholder */
+  input[placeholder]          {text-overflow:ellipsis;}
+  input::-moz-placeholder     {text-overflow:ellipsis;}
+  input:-ms-input-placeholder {text-overflow:ellipsis;}
+  input::-webkit-input-placeholder {
+    color:#c0392b;
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+  }
+  input::-moz-placeholder {
+    color:#c0392b;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  input:-ms-input-placeholder  {
+    color:#c0392b;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  input:focus::-webkit-input-placeholder {
+    color:#c0392b;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  input:focus::-moz-placeholder {
+    color:#c0392b;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  input:focus:-ms-input-placeholder {
+    color:#c0392b;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+    /* Reset autocomplit */
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus
+    input:-webkit-autofill, 
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      border: 0;
+      -webkit-text-fill-color: #FFFFFF;
+      -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+      -webkit-transition: background-color 5000s ease-in-out 0s;
+      background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);
+    }
+
+a {
+  text-decoration: none;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+}
+
+/* menu */
+.l-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 86px;
+  background-color: #FFFFFF;
+  -webkit-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+  z-index: 10000;
+}
+  .l-menu.m-menu_small,
+  .m-menu_small .b-menu__wrapp-logo {
+      height: 43px;
+  }
+  .b-menu__wrapp {
+  }
+  .b-menu__wrapp-logo {
+    display: inline-block;
+    width: 185px;
+    height: 86px;
+    background-image: url('../img/logo.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: height 0.3s ease;
+    transition: height 0.3s ease;
+  }
+  .b-menu__wrapp-list {
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+    .b-menu__wrapp-list li {
+      display: inline-block;
+      flex:  1;
+      text-align: center;
+    }
+    .b-menu__wrapp-list li:last-child {
+      margin-right: 0;
+    }
+    .b-menu__wrapp-list li a {
+      color: #66615B;
+    }
+      .b-menu__wrapp-list li a:hover {
+        color: #403D39;
+      }
+  .b-menu__wrapp-login.text.bold {
+    padding-left: 20px !important;
+    color: #187900;
+    font-size: 14px;
+    background-image: url('../img/icon-login.svg');
+    background-color: #ABE766;
+    background-position: 10px center;
+    background-size: 14px 16px;
+    background-repeat: no-repeat;
+  }
+    .b-menu__wrapp-login.text.bold:hover {
+      background-color: #8fdf33;
+      color: #1c8d00;
+    }
+
+main {
+  padding: 35px 0;
+  margin-top: 86px;
+  background-color: #F7F7F7;
+}
+  .wrapper {
+    width: 1180px;
+    margin: 0 auto;
+  }
+  section {
+  }
+  section .block {
+    padding: 30px 20px;
+    background : #FFFFFF;
+    -moz-border-radius : 4px;
+    -webkit-border-radius : 4px;
+    border-radius : 4px;
+  }
+
+
+

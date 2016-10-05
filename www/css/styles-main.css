@@ -1,0 +1,58 @@
+.l-appeal {
+  margin-left: 8.333333%;
+  padding: 20px 0 45px;
+  width:  83.333333%;
+  text-align: center;
+}
+  .l-appeal h3 {
+    color: #1C5BC9;
+  }
+  .l-appeal p.text {
+    margin: 15px 0 45px;
+    font-size: 20px;
+  }
+  .l-appeal .button {
+    margin:  0 auto;
+    width: 280px;
+    background-color: #1C5BC9;
+    background-image: url('../img/icon-appeal.svg');
+    background-position: 15px center;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+  }
+    .l-appeal .button:hover {
+      background-color: #1C86C9;
+      cursor: pointer;
+    }
+
+.b-content {
+  height : 890px;
+}
+  .b-content__lider {
+    position: relative;
+  }
+    .b-content__lider-date {
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+      .b-content__lider-date-currnet {
+        font-size: 16px;
+        font-weight: bold;
+      }
+        .b-content__lider-date-currnet:after {
+          content: '';
+        }
+      .b-content__lider-date-list {
+        
+      }
+    .b-content__lider h3 {
+      color : #1C5BC9;
+    }
+.b-news {
+  height : 890px;
+}
+
+.b-model {
+  height : 890px;
+}
