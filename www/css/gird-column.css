@@ -47,7 +47,7 @@ select
 	width                  : 100%;
 }
 
-.full-col
+.col-full
 {
 	height : 100%;
 }
@@ -55,8 +55,8 @@ select
 .row .col
 {
 	display          : block;
-	flex             : 1;
 	-webkit-box-flex : 1;
+	flex             : 1;
 	margin-left      : 0;
 	max-width        : 100%;
 

@@ -44,7 +44,12 @@
           <li><a href="#" title="" class="text bold">Компании</a></li>
           <li><a href="#" title="" class="text bold">Барахолка</a></li>
         </ul>
-        <a href="/register" title="Main" class="b-menu__wrapp-login button small text bold col xs-offset-1 xs-1">Войти</a>
+        <button class="b-menu__wrapp-login button small text bold col xs-offset-1 xs-1">Войти</button>
+        <div class="b-menu__wrapp-login-popup">
+          <div class="b-menu__wrapp-login-popup-window">
+            <button class="b-menu__wrapp-login-popup-window-close"></button>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -61,36 +66,333 @@
           <section class="l-content col xs-8">
             <div class="block b-content">
 
-              <div class="b-content__lider">
-                <div class="b-content__lider-date">
-                  <p class="b-content__lider-date-currnet text">Сегодня</p>
-                  <ul class="b-content__lider-date-list">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <div class="b-content__lider-date dropdown-block">
+                  <p class="b-content__lider-date-currnet text dropdown-block-current">Сегодня</p>
+                  <ul class="b-content__lider-date-list dropdown-block-list">
+                    <li><a href="#">Сегодня</a></li>
+                    <li><a href="#">Вчера</a></li>
+                    <li><a href="#">На прошлой недели</a></li>
+                    <li><a href="#">В прошлом году</a></li>
                   </ul>
                 </div>
+
+              <div class="b-content__lider">
                 <h3>Лидер голосования</h3>
+                
+                <article class="b-content__lider-article">
+                  <img src="/img/temp/c1c36aes-960.jpg" alt="" class="b-content__lider-article-img">
+                  <div class="b-content__lider-article-vote"><span>225 голосов</span></div>
+                  <h4>My old-school bulltet proof E-Klasse </h4>
+                  <div class="b-content__lider-article-author">
+                    <img src="/img/temp/author/author-1.png" alt="" class="b-content__lider-article-author-photo">
+                    <span class="b-content__lider-article-author-name text">Leonidis Castonedis</span><span class="b-content__lider-article-author-city text">Athens</span>
+                  </div>
+                  <p class="b-content__lider-article-text text">Реальность всё расставляет на свои места. Машины, которые в статьях и обзорах ругали — сплошь и рядом встречаются на дорогах. А те, которые хвалили — редкость. Просто любой автомобиль может стать очень хорошим. Потому что он стал вашим. Ведь как бывает, придёшь в магазин, а там в линию выстроились штук пятнадцать телевизоров.</p>
+                  <button type="button" class="b-content__lider-article-read button small">Читать дальше</button>
+                  <button type="button" class="b-content__lider-article-discuss">Обсудить <span class="b-content__lider-article-discuss-sum">23</span></button>
+                </article>
+
+                <div class="b-content__lider-previous">
+                  <p><a href="#" class="text bold">Предидущие победители</a></p>
+                  <div>
+                    <a href="#" title="" class="b-content__lider-previous-item">
+                      <img src="/img/temp/img-previous-1.jpg" alt="">
+                    </a>
+                    <a href="#" title="" class="b-content__lider-previous-item">
+                      <img src="/img/temp/img-previous-2.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="b-content__lider-gaining">
+                  <p><a href="#" class="text bold">Набирают популярность</a></p>
+                   <div class="b-content__container">
+                    <a href="#" title="" class="b-content__lider-gaining-item">
+                      <img src="/img/temp/img-previous-1.jpg" alt="">
+                    </a>
+                    <a href="#" title="" class="b-content__lider-gaining-item">
+                      <img src="/img/temp/img-previous-2.jpg" alt="">
+                    </a><a href="#" title="" class="b-content__lider-gaining-item">
+                      <img src="/img/temp/e5ac4aes-480.jpg" alt="">
+                    </a>
+                    <a href="#" title="" class="b-content__lider-gaining-item">
+                      <img src="/img/temp/img-previous-2.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="b-content__lider-promote">
+                  <p><a href="#" class="text bold">Продвигаемые проекты</a></p>
+                  <div class="b-content__container">
+                    <a href="#" title="" class="b-content__lider-promote-item">
+                      <img src="/img/temp/img-previous-1.jpg" alt="">
+                    </a>
+                    <a href="#" title="" class="b-content__lider-promote-item">
+                      <img src="/img/temp/img-previous-2.jpg" alt="">
+                    </a><a href="#" title="" class="b-content__lider-promote-item">
+                      <img src="/img/temp/img-previous-1.jpg" alt="">
+                    </a>
+                    <a href="#" title="" class="b-content__lider-promote-item">
+                      <img src="/img/temp/img-previous-2.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
               </div>
 
             </div>
           </section>
-          <section class="block l-news col xs-3">
+
+          <section class="l-news col xs-3">
             <div class="block b-news">
-              
-            </div>
+              <div class="b-news__date dropdown-block">
+                <p class="b-news__date-currnet text dropdown-block-current">Сегодня</p>
+                <ul class="b-news__date-list dropdown-block-list">
+                  <li><a href="#">Сегодня</a></li>
+                  <li><a href="#">Вчера</a></li>
+                  <li><a href="#">На прошлой недели</a></li>
+                  <li><a href="#">В прошлом году</a></li>
+                </ul>
+              </div>
+              <div class="b-news__inner">
+                <h3>Новое</h3>
+                <div class="b-news__container">
+                  <div class="b-news__inner-item m-news__inner-item_blog" data-name="Блоги">
+                    <img src="/img/temp/img-previous-2.jpg" alt="" class="b-news__inner-item-img">
+                    <a href="#" class="text">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
+                  </div>
+
+                  <div class="b-news__inner-item m-news__inner-item_news-market" data-name="Новости рынка">
+                    <img src="/img/temp/img-previous-1.jpg" alt="" class="b-news__inner-item-img">
+                    <a href="#" class="text">В париже представлен новый Mitsubishi L200</a>
+                  </div>
+
+                  <div class="b-news__inner-item m-news__inner-item_company" data-name="Новости рынка">
+                    <img src="/img/temp/e5ac4aes-480.jpg" alt="" class="b-news__inner-item-img">
+                    <a href="#" class="text"><span>XASTOMTUNING:</span> Наш опыт восстановления  по оригинальным чертежам</a>
+                  </div>
+
+                  <div class="b-news__inner-item m-news__inner-item_news-market" data-name="Новости рынка">
+                    <img src="/img/temp/img-previous-1.jpg" alt="" class="b-news__inner-item-img">
+                    <a href="#" class="text">В париже представлен новый Mitsubishi L200</a>
+                  </div>
+
+                  <div class="b-news__inner-item m-news__inner-item_blog" data-name="Блоги">
+                    <img src="/img/temp/img-previous-2.jpg" alt="" class="b-news__inner-item-img">
+                    <a href="#" class="text">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
+                  </div>
+                </div>
+
+                <p class="b-news__inner-show"><a href="#" title="" class="text subtext">Показать еще</a></p>
+
+              </div>
           </section>
+
           <section class="l-model col xs-1">
             <div class="block b-model">
-              
+              <ul class="b-model__list">
+                <li><a href="#" class="b-model__list-item m-model__list-item_audi"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_toyota"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_shkoda"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_honda"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_lexus"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_chevrolet"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_vw"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_nissan"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_ford"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_audi"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_toyota"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_shkoda"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_honda"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_lexus"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_chevrolet"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_vw"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_nissan"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_ford"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_ford"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_audi"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_toyota"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_shkoda"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_honda"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_lexus"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_chevrolet"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_vw"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_nissan"></a></li>
+                <li><a href="#" class="b-model__list-item m-model__list-item_ford"></a></li>
+              </ul>
             </div>
           </section>
+        </div>
+
+        <div class="row">
+
+          <section class="l-new-auto col xs-12">
+            <div class="block b-new-auto">
+
+              <div class="b-new-auto__date dropdown-block">
+                <p class="b-new-auto__date-currnet text dropdown-block-current">Сегодня</p>
+                <ul class="b-new-auto__date-list dropdown-block-list">
+                  <li><a href="#">Сегодня</a></li>
+                  <li><a href="#">Вчера</a></li>
+                  <li><a href="#">На прошлой недели</a></li>
+                  <li><a href="#">В прошлом году</a></li>
+                </ul>
+              </div>
+
+              <div class="b-new-auto__inner">
+                <h3>Новые машины</h3>
+                <div class="b-new-auto__container">
+
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/1.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/2.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/3.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/4.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/5.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/6.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/7.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/8.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/9.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/1.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/2.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/3.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/4.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/5.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/6.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/7.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/8.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/9.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/1.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/2.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/3.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+                  <a href="#" title="" class="b-new-auto__item">
+                    <img src="/img/temp/auto/4.png" alt="">
+                    <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                    <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                  </a>
+
+                </div>
+
+                <!-- 
+                  Скрыть кнопку переключения класс .m-new-auto__pagination_hide;
+                  Текущая страница пагинации класс .m-new-auto__pagination-item_current;
+                -->
+                <p class="b-new-auto__pagination">
+                  <a href="#" class="b-new-auto__pagination-item text m-new-auto__pagination_prev m-new-auto__pagination_hide"><<</a>
+                  <a href="#" class="b-new-auto__pagination-item text m-new-auto__pagination-item_current">1</a>
+                  <a href="#" class="b-new-auto__pagination-item text">2</a>
+                  <a href="#" class="b-new-auto__pagination-item text">3</a>
+                  <a href="#" class="b-new-auto__pagination-item text">4</a>
+                  <a href="#" class="b-new-auto__pagination-item text m-new-auto__pagination-item_next">>></a>
+                </p>
+
+              </div>
+            </div>
+          </section>
+
         </div>
 
 <!-- Footer -->
       </div>
     </main>
+    <footer class="l-footer">
+      <div class="wrapper">
 
+        <nav>
+          <ul>
+            <li><a href="#" class="b-footer-link text">Помощь</a></li>
+            <li><a href="#" class="b-footer-link text">Новости сайта</a></li>
+            <li><a href="#" class="b-footer-link text">Мобильный DRIVE</a></li>
+            <li><a href="#" class="b-footer-link text">О проекте</a></li>
+            <li><a href="#" class="b-footer-link text">Реклама и сотрудничество</a></li>
+            <li><a href="#" class="b-footer-link text">Правила сайта</a></li>
+            <li><a href="#" class="b-footer-link text">&#169; 2016 DRIVE.Gr</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </footer>
   </body>
 </html>

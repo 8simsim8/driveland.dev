@@ -26,33 +26,367 @@
     }
 
 .b-content {
-  height : 890px;
 }
   .b-content__lider {
-    position: relative;
   }
-    .b-content__lider-date {
-      position: absolute;
-      top: 10px;
-      right: 0;
-    }
-      .b-content__lider-date-currnet {
-        font-size: 16px;
-        font-weight: bold;
-      }
-        .b-content__lider-date-currnet:after {
-          content: '';
-        }
-      .b-content__lider-date-list {
-        
-      }
-    .b-content__lider h3 {
+    .b-content__lider h3,
+    .b-news__inner h3,
+    .b-new-auto h3 {
       color : #1C5BC9;
+      margin-bottom: 32px;
     }
+    .b-content__lider-article {
+      position: relative;
+      padding: 0 0 40px;
+      z-index: 1;
+    }
+      .b-content__lider-article-img {
+        height:  auto;
+        width: 100%;
+        border-radius: 4px;
+        object-fit: cover;
+      }
+      .b-content__lider-article-vote {
+        position: absolute;
+        top:  10px;
+        left: 10px;
+        background : rgba(255, 96, 82, 0.8);
+        width : 153px;
+        height : 40px;
+        font-family: Open Sans, sans-serif;
+        text-align: center;
+        font-size: 16px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #FFFFFF;
+        -moz-border-radius : 20px;
+        -webkit-border-radius : 20px;
+        border-radius : 20px;
+      }
+      .b-content__lider-article h4 {
+        margin: 25px 0 0;
+        color : #1C5BC9;
+      }
+      .b-content__lider-article-author {
+        margin: 10px 0 20px;
+      }
+        .b-content__lider-article-author-photo {
+          position: relative;
+          margin-right: 10px;
+          top:  7px;
+          width: 27px;
+          height: 27px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .b-content__lider-article-author-name,
+        .b-content__lider-article-author-city {
+              color: #737373;
+        }
+          .b-content__lider-article-author-city:before {
+            content: ' (';
+          }
+          .b-content__lider-article-author-city:after {
+            content: ')';
+          }
+      .b-content__lider-article-read {
+        display: inline-block;
+        margin: 30px 15px 0 0;
+        padding-left: 25px;
+        width: 170px;
+        background-color: #1C5BC9;
+        background-image: url("../img/icon-read-more-button.svg");
+        background-position: 15px center;
+        background-size: 11px 11px;
+        background-repeat: no-repeat;
+      }
+        .b-content__lider-article-read.button {
+          font-size: 14px;
+        }
+      .b-content__lider-article-discuss {
+        display: inline-block;
+        padding-left: 25px;
+        height: 33px;
+        width: 150px;
+        background-color: transparent;
+        background-image: url("../img/icon-discuss-button.svg");
+        background-position: 15px center;
+        background-size: 12px 10px;
+        background-repeat: no-repeat;
+        outline: none;
+        border-style : Solid;
+        border-color : #A3A3A3;
+        border-width : 1px;
+        -moz-border-radius : 16px;
+        -webkit-border-radius : 16px;
+        border-radius : 16px;
+        font-family : Open Sans;
+        font-weight : bold;
+        font-size : 14px;
+        line-height : 23px;
+        color : #333333;
+        cursor: pointer;
+      }
+        .b-content__lider-article-discuss:hover {
+          border-color: #7D7D7D;
+        }
+        .b-content__lider-article-discuss-sum:before {
+          content: ' (';
+        }
+        .b-content__lider-article-discuss-sum:after {
+          content: ')';
+        }
+    .b-content__container {
+      font-size: 0;
+    }
+    .b-content__lider-previous {
+      margin-bottom: 35px;
+    }
+      .b-content__lider-previous p{
+        margin-bottom: 20px;
+      }
+        .b-content__lider-previous p a,
+        .b-content__lider-gaining p a,
+        .b-content__lider-promote p a {
+          color: #1C5BC9;
+        }
+          .b-content__lider-previous p a:hover,
+          .b-content__lider-gaining p a:hover,
+          .b-content__lider-promote p a:hover {
+            color : #1C86C9;
+          }
+      .b-content__lider-previous-item {
+        display: inline-block;
+        height: 252px;
+        width: 350px;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+        .b-content__lider-previous-item:last-child {
+          margin-left: 20px;
+        }
+        .b-content__lider-previous-item img {
+          height: 252px;
+          width: 350px;
+          object-fit: cover;
+        }
+    .b-content__lider-gaining {
+      margin-bottom: 35px;
+    }
+      .b-content__lider-gaining p,
+      .b-content__lider-promote p {
+        margin-bottom: 10px;
+      }
+      .b-content__lider-gaining-item,
+      .b-content__lider-promote-item {
+        display: inline-block;
+        height: 136px;
+        padding: 8px;
+        width: 25%;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        -webkit-transition: border 0.2s ease;
+        transition: border 0.2s ease;
+      }
+        .b-content__lider-gaining-item:hover,
+        .b-content__lider-promote-item:hover {
+          border: 1px solid #CECECE;
+        }
+        .b-content__lider-gaining-item:first-child,
+        .b-content__lider-promote-item:first-child {
+          margin-left: 0px;
+        }
+         .b-content__lider-gaining-item img,
+         .b-content__lider-promote-item img {
+            height: 120px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+          }
+
 .b-news {
-  height : 890px;
 }
+  .b-news__inner {
+  }
+    .b-news__inner-item {
+      position: relative;
+      margin-bottom: 30px;
+      z-index: 1;
+    }
+    .b-news__inner-item:after {
+        position: absolute;
+        top: 125px;
+        left:  10px;
+        display: block;
+        height: 22px;
+        padding: 0 10px;
+        content: attr(data-name);
+        text-align: center;
+        font-family : Open Sans;
+        font-weight : bold;
+        font-size : 11px;
+        line-height : 22px;
+        color : #FFFFFF;
+        border-radius: 11px;
+        z-index: 2;
+      }
+      .b-news__inner-item img {
+        margin-bottom: 10px;
+        height: 160px;
+        width:  100%;
+        border-radius: 4px;
+        object-fit: cover;
+      }
+      .b-news__inner-item .text {
+        font-weight: bold;
+        color : #1C5BC9;
+      }
+        .b-news__inner-item .text:hover {
+          color : #1C86C9;
+        }
+        .b-news__inner-item span {
+          color:  #CC3F3D;
+        }
+      .b-news__inner-item.m-news__inner-item_blog:after {
+        background-color: #29ABE2;
+      }
+      .b-news__inner-item.m-news__inner-item_news-market:after {
+        background-color: #CCB33D;
+      }
+      .b-news__inner-item.m-news__inner-item_company:after {
+        background-color: #CC3F3D;
+      }
+      .b-news__inner-show {
+        text-align: center;
+      }
+        .b-news__inner-show a {
+          color : #1C5BC9;
+        }
+        .b-news__inner-show a:hover {
+          color : #1C86C9;
+        }
 
 .b-model {
-  height : 890px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
+  .b-model__list {
+    width: 57px;
+    margin: 0 auto;
+  }
+    .b-model__list li {
+      height: 35px;
+      width: 100%;
+    }
+    .b-model__list-item {
+      display: block;
+      height: 100%;
+      width: 100%;
+      margin: 5px auto;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .m-model__list-item_audi.b-model__list-item {
+      background-image: url("../img/temp/logo-auto/audi.png");
+    }
+    .m-model__list-item_toyota.b-model__list-item {
+      background-image: url("../img/temp/logo-auto/toyota.png");
+    }
+    .m-model__list-item_shkoda.b-model__list-item {
+      background-image: url("../img/temp/logo-auto/shkoda.png");
+    }
+    .m-model__list-item_honda.b-model__list-item {
+      background-image: url("../img/temp/logo-auto/honda.png");
+    }
+    .m-model__list-item_lexus.b-model__list-item {
+      background-image: url("../img/temp/logo-auto/lexus.png");
+    }
+    .m-model__list-item_chevrolet.b-model__list-item {
+      background-image: url("../img/temp/logo-auto/chevrolet.png");
+    }
+    .m-model__list-item_vw.b-model__list-item {
+      background-image: url("../img/temp/logo-auto/vw.png");
+    }
+    .m-model__list-item_nissan.b-model__list-item {
+      background-image: url("../img/temp/logo-auto/nissan.png");
+    }
+    .m-model__list-item_ford.b-model__list-item {
+      background-image: url("../img/temp/logo-auto/ford.png");
+    }
+
+.l-new-auto {
+  
+}
+  .b-new-auto {
+    
+  }
+    .b-new-auto__container {
+      font-size: 0;
+    }
+      .b-new-auto__item {
+        display: inline-block;
+        vertical-align: top;
+        width: 186px;
+        padding: 8px 8px 35px;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        -webkit-transition: border 0.2s ease;
+        transition: border 0.2s ease;
+      }
+        .b-new-auto__item:hover {
+          border: 1px solid #CECECE;
+        }
+        .b-new-auto__item img {
+          height: 120px;
+          width: 170px;
+          margin-bottom: 15px;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+        .b-new-auto__item-name,
+        .b-new-auto__item-auto {
+          max-width: 170px;
+          font-family : Open Sans;
+          font-size : 14px;
+          line-height : 23px;
+          color : #333333;
+        }
+        .b-new-auto__item-name {
+          font-weight: bold;
+          color : #1C5BC9;
+        }
+    .b-new-auto__pagination {
+      margin-top: 20px;
+      font-size: 0;
+    }
+      .b-new-auto__pagination-item {
+        display: inline-block;
+        text-align: center;
+        height: 36px;
+        width:  36px;
+        margin-right: 10px;
+        font-weight: bold;
+        line-height: 36px;
+        color: #1C5BC9;
+        border-radius: 50%;
+        border: 1px solid #97A9C9;
+        -webkit-transition: color 0.2s ease,
+                    background-color 0.2s ease;
+        transition: color 0.2s ease,
+                    background-color 0.2s ease;
+      }
+      .b-new-auto__pagination-item:last-child {
+        margin-right: 0;
+      }
+      .m-new-auto__pagination_hide.b-new-auto__pagination-item {
+        display: none;
+      }
+      .b-new-auto__pagination-item:hover {
+        color: #FFFFFF;
+        background-color: #1C5BC9;
+      }
+      .m-new-auto__pagination-item_current.b-new-auto__pagination-item {
+        color: #FFFFFF;
+        background-color: #1C5BC9;
+      }
