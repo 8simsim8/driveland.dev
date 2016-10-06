@@ -18,6 +18,7 @@
     <meta name="msapplication-config" content="favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/gird-column.css">
     <link rel="stylesheet" type="text/css" href="css/reset-min.css">
     <link rel="stylesheet" type="text/css" href="css/styles-general.css">
@@ -28,6 +29,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/1.7.4/jquery.dotdotdot.min.js"></script>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <script type="text/javascript" src="js/script-main.js"></script>
@@ -45,14 +47,34 @@
           <li><a href="#" title="" class="text bold">Барахолка</a></li>
         </ul>
         <button class="b-menu__wrapp-login button small text bold col xs-offset-1 xs-1">Войти</button>
+        <!-- Попап входа -->
         <div class="b-menu__wrapp-login-popup">
-          <div class="b-menu__wrapp-login-popup-window">
-            <button class="b-menu__wrapp-login-popup-window-close"></button>
-          </div>
+          <div class="b-menu__wrapp-login-popup-close"></div>
+          <form action="/" method="POST" class="b-menu__wrapp-login-popup-enter">
+            <input type="email" name="username" placeholder="Email">
+            <input type="password" name="password" placeholder="Пароль">
+            <input type="submit" value="Войти" class="button middle">
+            <button type="button" class="button middle" id="button-registration">Регистрация</button>
+          </form>
         </div>
       </nav>
     </header>
-
+    <!-- Попап регистрации -->
+      <div class="b-menu__wrapp-register-popup">
+        <div class="b-menu__wrapp-register-popup-window">
+          <div class="b-menu__wrapp-login-popup-close"></div>
+          <form action="/register" method="POST" class="b-menu__wrapp-register-popup-window-register">
+            <input type="text" name="nickname" placeholder="Никнейм">
+            <p><label class="text"><input type="radio" name="gender" value="male">Male</label></p>
+            <p><label class="text"><input type="radio" name="gender" value="female">Female</label></p>
+            <input type="email" name="email" placeholder="Email">
+            <input type="email" name="confirmEmail" placeholder="Повторить Email">
+            <input type="password" name="password" placeholder="Пароль">
+            <input type="password" name="confirmPassword" placeholder="Повторить пароль">
+            <input type="submit" value="Зарегестрироваться" class="button middle">
+          </form>
+        </div>
+      </div>
     <main>
       <div class="wrapper">
       <!-- /Header -->
@@ -129,8 +151,21 @@
                     </a>
                     <a href="#" title="" class="b-content__lider-promote-item">
                       <img src="/img/temp/img-previous-2.jpg" alt="">
-                    </a><a href="#" title="" class="b-content__lider-promote-item">
+                    </a>
+                    <a href="#" title="" class="b-content__lider-promote-item">
                       <img src="/img/temp/img-previous-1.jpg" alt="">
+                    </a>
+                    <a href="#" title="" class="b-content__lider-promote-item">
+                      <img src="/img/temp/img-previous-2.jpg" alt="">
+                    </a>
+                    <a href="#" title="" class="b-content__lider-promote-item">
+                      <img src="/img/temp/img-previous-2.jpg" alt="">
+                    </a>
+                    <a href="#" title="" class="b-content__lider-promote-item">
+                      <img src="/img/temp/img-previous-1.jpg" alt="">
+                    </a>
+                    <a href="#" title="" class="b-content__lider-promote-item">
+                      <img src="/img/temp/img-previous-2.jpg" alt="">
                     </a>
                     <a href="#" title="" class="b-content__lider-promote-item">
                       <img src="/img/temp/img-previous-2.jpg" alt="">
@@ -156,6 +191,7 @@
               <div class="b-news__inner">
                 <h3>Новое</h3>
                 <div class="b-news__container">
+
                   <div class="b-news__inner-item m-news__inner-item_blog" data-name="Блоги">
                     <img src="/img/temp/img-previous-2.jpg" alt="" class="b-news__inner-item-img">
                     <a href="#" class="text">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
@@ -180,6 +216,12 @@
                     <img src="/img/temp/img-previous-2.jpg" alt="" class="b-news__inner-item-img">
                     <a href="#" class="text">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
                   </div>
+
+                  <div class="b-news__inner-item m-news__inner-item_blog" data-name="Блоги">
+                    <img src="/img/temp/img-previous-2.jpg" alt="" class="b-news__inner-item-img">
+                    <a href="#" class="text">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
+                  </div>
+
                 </div>
 
                 <p class="b-news__inner-show"><a href="#" title="" class="text subtext">Показать еще</a></p>

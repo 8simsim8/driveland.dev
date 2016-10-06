@@ -8,25 +8,25 @@
 
 /* Header styles */
 h1 {
-  font-family : Open Sans, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size : 72px;
   line-height : 79px;
   color : #333333;
 }
 h2 {
-  font-family : Open Sans;
+  font-family: 'Open Sans', sans-serif;;
   font-size : 36px;
   line-height : 45px;
   color : #333333;
 }
 h3 {
-  font-family : Open Sans;
+  font-family: 'Open Sans', sans-serif;;
   font-size : 28px;
   line-height : 41px;
   color : #333333;
 }
 h4 {
-  font-family : Open Sans;
+  font-family: 'Open Sans', sans-serif;;
   font-weight : bold;
   font-size : 24px;
   line-height : 29px;
@@ -34,14 +34,14 @@ h4 {
   color : rgb(51, 51, 51);
 }
 h5 {
-  font-family : Open Sans;
+  font-family: 'Open Sans', sans-serif;;
   font-weight : bold;
   font-size : 16px;
   line-height : 22px;
   color : #333333;
 }
 h6 {
-  font-family : Open Sans;
+  font-family: 'Open Sans', sans-serif;;
   font-size : 14px;
   line-height : 16px;
   text-transform : uppercase;
@@ -50,7 +50,7 @@ h6 {
 
 /* Text styles */
 .text {
-  font-family : Open Sans;
+  font-family: 'Open Sans', sans-serif;;
   font-size : 14px;
   line-height : 20px;
   color : #333333;
@@ -69,22 +69,24 @@ h6 {
     }
 
 /* Buttons */
-.button {
+.button,
+input[type='submit'].button {
   display: block;
   outline: none;
   border: none;
-  font-family : Open Sans;
+  font-family: 'Open Sans', sans-serif;;
   font-weight : bold;
   color : #FFFFFF;
   text-align: center;
   text-decoration: none;
-  background : #29ABE2;
+  background-color: #0038A8;
   -webkit-transition: background-color 0.15s linear,
                       color 0.15s linear;
   transition: background-color 0.15s linear,
                          color 0.15s linear;
 }
-  .button:hover {
+  .button:hover,
+  input[type='submit'].button:hover {
     background-color: #297DE2;
     cursor: pointer;
   }
@@ -113,10 +115,11 @@ h6 {
   }
 
 /* Styles <inputs> */
-input {
+input:not([type="radio"]),
+input:not([type="submit"]) {
   height : 40px;
   padding: 7px 18px;
-  font-family : Open Sans;
+  font-family: 'Open Sans', sans-serif;;
   font-weight : bold;
   font-size : 14px;
   line-height : 20px;
@@ -210,6 +213,7 @@ a {
       height: 43px;
   }
   .b-menu__wrapp {
+    position: relative;
     padding: 0 10px;
   }
   .b-menu__wrapp-logo {
@@ -259,47 +263,119 @@ a {
       background-color: #8fdf33;
       color: #1c8d00;
     }
+    /* Попап входа */
     .b-menu__wrapp-login-popup {
       position: absolute;
-      display: flex;
-      top: 0;
-      right: 0;
-      left: 0;
+      top: 95px;
+      right: 20px;
+      height: 220px;
+      width: 300px;
+      padding: 30px 20px;
+      -webkit-transform: translate3d(50px, 0, 0);
+      transform: translate3d(50px, 0, 0);
       opacity: 0;
       pointer-events: none;
-      background-color: rgba(0,0,0,0.5);
-      width: 100%;
-      height: 100vh;
-      -webkit-transition: opacity 0.2s ease;
-      transition: opacity 0.2s ease;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+      -webkit-transition: opacity 0.2s ease,
+                          -webkit-transform 0.25s ease;
+      transition: opacity 0.2s ease,
+                  transform 0.25s ease;
     }
       .m-open-popap.b-menu__wrapp-login-popup {
         opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
         pointer-events: auto;
       }
-      .b-menu__wrapp-login-popup-window {
+      .b-menu__wrapp-login-popup-close {
+        position: absolute;
+        top:  -10px;
+        right:  -10px;
+        height: 20px;
+        width:  20px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+        .b-menu__wrapp-login-popup-close:after {
+          position: absolute;
+          display: block;
+          content: '';
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          background-color: red;
+          background-image: url('../img/icon-button-close.svg');
+          background-size: 12px 12px;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+        }
+      .b-menu__wrapp-login-popup-enter {
+      }
+        .b-menu__wrapp-login-popup-enter input {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .b-menu__wrapp-login-popup-enter .button.middle {
+          width: 48%;
+          display: inline-block;
+        }
+        .b-menu__wrapp-login-popup-enter .button:last-child {
+          float: right;
+        }
+    /* Попап регистрации */
+    .b-menu__wrapp-register-popup {
+      position: fixed;
+      display: -webkit-flex;
+      display: flex;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      pointer-events: none;
+      background-color: rgba(0,0,0,0.5);
+      -webkit-transition: opacity 0.2s ease;
+      transition: opacity 0.2s ease;
+      z-index: 10000;
+    }
+      .m-open-popap.b-menu__wrapp-register-popup {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .b-menu__wrapp-register-popup-window {
         position: relative;
         margin: auto;
-        height: 600px;
-        width: 600px;
+        width: 500px;
+        height: 500px;
+        padding: 30px;
         background-color: #FFFFFF;
         border-radius: 4px;
       }
-        .b-menu__wrapp-login-popup-window-close {
-          position: absolute;
-          top: 20px;
-          right: 20px;
-          width: 30px;
-          height: 30px;
-          outline: none;
-          border: none;
-          background-color: #336BCE;
-          background-image: url('../img/icon-button-close.svg');
-          background-size: contain;
-          background-position: center;
-          background-repeat: no-repeat;
-          cursor: pointer;
+        .b-menu__wrapp-register-popup-window-register {
+          
         }
+          .b-menu__wrapp-register-popup-window-register input:not([type="radio"]) {
+            width: 100%;
+            margin-bottom: 15px;
+          }
+          .b-menu__wrapp-register-popup-window-register p {
+            margin-bottom: 15px;
+          }
+          .b-menu__wrapp-register-popup-window-register label {
+            padding: 0 30px;
+          }
+          
+          .b-menu__wrapp-register-popup-window-register input[type="radio"] {
+            position: relative;
+            height: 25px;
+            top: 7px;
+            margin-right: 15px;
+          }
 
 main {
   min-width: 960px;

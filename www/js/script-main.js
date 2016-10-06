@@ -41,6 +41,7 @@
 
     var $header = $('header');
 
+  // Уменшение меню по скролу
     $(window).on('load scroll', function (){
       var scrolled = window.pageYOffset || document.documentElement.scrollTop;
       if(scrolled > DISTANCE_SMALL_HEADER) {
@@ -49,24 +50,33 @@
         $header.removeClass('m-menu_small');
       }
     });
- 
+
+  // Проскроливание фиксорованного меню
     $(window).scroll(function () {
       $header.css("left", -$(this).scrollLeft() + "px");
     });
 
+  // Отрытие формы входа
     $('.b-menu__wrapp-login').on('click', function(){
-      disableScroll();
       $('.b-menu__wrapp-login-popup').addClass('m-open-popap');
+      return false;
     });
-    $('.b-menu__wrapp-login-popup-window-close').on('click', function(){
-      enableScroll()
+
+    $('.b-menu__wrapp-login-popup-close').on('click', function(){
+      $('.m-open-popap').removeClass('m-open-popap');
+      enableScroll();
+      return false;
+    });
+
+  // Открытие попапа регистрации
+    $('#button-registration').on('click', function(){
+      disableScroll();
       $('.b-menu__wrapp-login-popup').removeClass('m-open-popap');
+      $('.b-menu__wrapp-register-popup').addClass('m-open-popap');
+      
     });
 
-    $(document).on('click', function(){
-      $('.m-open-dropdown').removeClass('m-open-dropdown');
-    });
-
+  // Открытие выпадающего списка с датой в блоке
     $('.dropdown-block-current').on('click', function(){
       if($(this).hasClass('m-open-dropdown')) {
         $('.m-open-dropdown').removeClass('m-open-dropdown');
@@ -77,7 +87,15 @@
       return false;
     });
 
-    
+  // По клику в любой зоне окна закрыть выпадающий список
+    $(document).on('click', function(){
+      $('.m-open-dropdown').removeClass('m-open-dropdown');
+    });
+
+  // Сокращение текста с блоке с новостями
+    $(".b-news__inner-item").dotdotdot({
+      ellipsis  : '... '
+    });
 
 
 };
