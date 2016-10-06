@@ -213,6 +213,7 @@ a {
       height: 43px;
   }
   .b-menu__wrapp {
+    min-width: 960px;
     position: relative;
     padding: 0 10px;
   }
@@ -259,11 +260,20 @@ a {
     background-size: 14px 16px;
     background-repeat: no-repeat;
   }
+  .hide.b-menu__wrapp-login {
+    display: none;
+  }
     .b-menu__wrapp-login.text.bold:hover {
       background-color: #8fdf33;
       color: #1c8d00;
     }
     /* Попап входа */
+    .hide.no-enter {
+      display: none;
+    }
+    .hide.enter {
+      display: none;
+    }
     .b-menu__wrapp-login-popup {
       position: absolute;
       top: 95px;
@@ -388,8 +398,6 @@ main {
     margin: 0 auto;
   }
   section {
-    display: flex !important;
-    display: -webkit-flex !important;
     margin-bottom: 20px;
   }
   section .block {
