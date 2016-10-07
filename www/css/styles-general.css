@@ -260,19 +260,45 @@ a {
     background-size: 14px 16px;
     background-repeat: no-repeat;
   }
-  .hide.b-menu__wrapp-login {
-    display: none;
-  }
     .b-menu__wrapp-login.text.bold:hover {
       background-color: #8fdf33;
       color: #1c8d00;
     }
-    /* Попап входа */
-    .hide.no-enter {
-      display: none;
+  .b-menu__wrapp-login-nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+    .b-menu__wrapp-login-nav:after {
+      position: absolute;
+      top: 50%;
+      right: -15px;
+      margin-top: -6px;
+      display: block;
+      content: '';
+      width: 9px;
+      height: 16px;
+      background-image: url('../img/icon-date-arrow.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      -webkit-transition: background-image 0.25s ease;
+      transition: background-image 0.25s ease;
+      }
+        .m-open-dropdown.b-menu__wrapp-login-nav:after {
+          transform: rotate(180deg);
+          background-image: url('../img/icon-date-arrow.svg');
+        }
+    .b-menu__wrapp-login-nav-photo {
+      width: 42px;
+      height: 42px;
+      margin-right: 10px;
+      border-radius: 50%;
+      object-fit: cover;
     }
-    .hide.enter {
-      display: none;
+    .b-menu__wrapp-login-nav-name {
+      color: rgba(51,51,51,0.5);
     }
     .b-menu__wrapp-login-popup {
       position: absolute;
