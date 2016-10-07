@@ -16,5 +16,5 @@
 
   // Сокращение текста с блоке с новостями
     $(".b-news__inner-item").dotdotdot({
-      ellipsis  : '... '
+      ellipsis  : '...'
     });

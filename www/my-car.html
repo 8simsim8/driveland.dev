@@ -48,17 +48,19 @@
         </ul>
 
         <!-- Попап входа -->
-<!--         <button class="b-menu__wrapp-login button small text bold col xs-offset-1 xs-1">Войти</button>
+        <button class="b-menu__wrapp-login button small text bold col xs-offset-1 xs-1">Войти</button>
         <div class="b-menu__wrapp-login-popup">
           <div class="b-menu__wrapp-login-popup-close"></div>
           <form action="/" method="POST" class="b-menu__wrapp-login-popup-enter">
-            <input type="email" name="username" placeholder="Email">
-            <input type="password" name="password" placeholder="Пароль">
-            <input type="submit" value="Войти" class="button middle">
-            <button type="button" class="button middle button-registration">Регистрация</button>
+            <h3>Вход на сайт</h3>
+            <input type="email" name="username" placeholder="Email" tabindex="1">
+            <input type="password" name="password" placeholder="Пароль" tabindex="2">
+            <input type="submit" value="Войти" class="button middle enter" tabindex="3">
+            <div class="button-registration text">Регистрация</div>
+            <a href="#" title="" class="text">Забыли пароль?</a>
           </form>
-        </div> -->
-        <div class="b-menu__wrapp-login-nav">
+        </div>
+        <div class="b-menu__wrapp-login-nav" style="display: none;">
           <img src="/img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
           <p class="b-menu__wrapp-login-nav-name text">Leonidis Castonedis</p>
         </div>
@@ -68,16 +70,16 @@
       <div class="b-menu__wrapp-register-popup">
         <div class="b-menu__wrapp-register-popup-window">
           <div class="b-menu__wrapp-login-popup-close"></div>
+          <h3>Рeгистрация</h3>
           <form action="/register" method="POST" class="b-menu__wrapp-register-popup-window-register">
-            <input type="text" name="nickname" placeholder="Никнейм">
-            <p><label class="text"><input type="radio" name="gender" value="male">Male</label></p>
-            <p><label class="text"><input type="radio" name="gender" value="female">Female</label></p>
+            <input type="text" name="nickname" placeholder="Имя">
+            <p><label class="text"><input type="radio" name="gender" value="male"><span>Male</span></label></p>
+            <p><label class="text"><input type="radio" name="gender" value="female"><span>Female</span></label></p>
             <input type="email" name="email" placeholder="Email">
-            <input type="email" name="confirmEmail" placeholder="Повторить Email">
             <input type="password" name="password" placeholder="Пароль">
-            <input type="password" name="confirmPassword" placeholder="Повторить пароль">
             <input type="submit" value="Зарегестрироваться" class="button middle">
           </form>
+          <div class="b-menu__wrapp-login text">Вход</div>
         </div>
       </div>
     <main>

@@ -1,6 +1,15 @@
 ;window.onload = function() {
     var DISTANCE_SMALL_HEADER = 200;
 
+  //!!!!!! Временно
+    $('.enter').on('click', function(){
+      $('.b-menu__wrapp-login-popup-close').trigger('click');
+      $('.b-menu__wrapp-login-nav').show();
+      $('.b-menu__wrapp-login').hide();
+      $('.b-menu__wrapp-login-popup').hide();
+      return false;
+    });
+
 // Disable scroll
     // left: 37, up: 38, right: 39, down: 40,
     // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
@@ -58,6 +67,7 @@
 
   // Отрытие формы входа
     $('.b-menu__wrapp-login').on('click', function(){
+      $('.b-menu__wrapp-login-popup-close').trigger('click');
       $('.b-menu__wrapp-login-popup').addClass('m-open-popap');
       return false;
     });

@@ -42,7 +42,7 @@
       position: relative;
     }
       .b-title__content-photo img {
-        margin-bottom: 35px;
+        margin-bottom: 20px;
         height: 569px;
         width: 100%;
         object-fit: cover;
@@ -50,13 +50,13 @@
       }
       .b-title__content-photo-vote {
         position: absolute;
-        top: 45px;
+        top: 10px;
         left: 10px;
         padding: 0 40px;
         height: 40px;
         font-family : Open Sans;
         font-weight : bold;
-        font-size : 16px;
+        font-size : 0.8rem;
         line-height : 40px;
         color : #FFFFFF;
         background-color: rgba(255, 157, 0, 0.8);
@@ -73,14 +73,14 @@
         vertical-align: top;
         text-align: center;
         font-family : Open Sans;
-        font-size : 28px;
+        font-size : 1.4rem;
         line-height : 41px;
         color : #1C5BC9;
       }
       .b-title__content-list li:nth-of-type(2),
       .b-title__content-list li:nth-of-type(3),
       .b-title__content-list li:nth-of-type(4) {
-        border-right: 1px solid #A3A3A3;
+        border-right: 1px solid rgba(64,64,64,0.1);
       }
         .b-title__content-list a {
           display: block;
@@ -97,14 +97,14 @@
           content: attr(data-text);
           text-align: center;
           font-family : Open Sans;
-          font-size : 14px;
+          font-size : 0.7rem;
           line-height : 20px;
           color : #333333;
         }
     .b-title__content button.button {
       display: inline-block;
       margin-top: 10px;
-      width: 190px;
+      width: 185px;
       background-image: url('../img/icon-appeal.svg');
       background-position: 15px center;
       background-size: 15px 15px;
@@ -175,18 +175,18 @@
       position: relative;
       -webkit-flex: 1;
       flex: 1;
-      border-top: 1px solid #A3A3A3;
-      border-bottom: 1px solid #A3A3A3;
+      border-top: 1px solid rgba(64,64,64,0.1);
+      border-bottom: 1px solid rgba(64,64,64,0.1);
       height: 75px;
       vertical-align: top;
       text-align: center;
       font-family : Open Sans;
-      font-size : 28px;
+      font-size : 1.4rem;
       line-height : 50px;
       color : #1C5BC9;
     }
     .b-author__wrapp-info li:nth-of-type(2) {
-      border: 1px solid #A3A3A3;
+      border: 1px solid rgba(64,64,64,0.1);
     }
       .b-author__wrapp-info li:after {
         position: absolute;
@@ -196,7 +196,7 @@
         content: attr(data-text);
         text-align: center;
         font-family : Open Sans;
-        font-size : 12px;
+        font-size : 0.6rem;
         line-height : 20px;
         color : #333333;
       }
@@ -207,7 +207,7 @@
       margin-bottom: 5px;
       color : #97A9C9;
     }
-    .b-author__wrapp-about p {
+    .b-author__wrapp-about p:not(:last-child) {
       margin-bottom: 20px;
     }
   .b-author__car {
@@ -228,7 +228,7 @@
       width : 100px;
       font-family : Open Sans;
       font-weight : bold;
-      font-size : 14px;
+      font-size : 0.7rem;
       line-height : 23px;
       color : #187900;
     }

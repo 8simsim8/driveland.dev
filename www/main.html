@@ -52,32 +52,34 @@
         <div class="b-menu__wrapp-login-popup">
           <div class="b-menu__wrapp-login-popup-close"></div>
           <form action="/" method="POST" class="b-menu__wrapp-login-popup-enter">
-            <input type="email" name="username" placeholder="Email">
-            <input type="password" name="password" placeholder="Пароль">
-            <input type="submit" value="Войти" class="button middle">
-            <button type="button" class="button middle button-registration">Регистрация</button>
+            <h3>Вход на сайт</h3>
+            <input type="email" name="username" placeholder="Email" tabindex="1">
+            <input type="password" name="password" placeholder="Пароль" tabindex="2">
+            <input type="submit" value="Войти" class="button middle enter" tabindex="3">
+            <div class="button-registration text">Регистрация</div>
+            <a href="#" title="" class="text">Забыли пароль?</a>
           </form>
         </div>
-        <!-- <div class="b-menu__wrapp-login-nav">
+        <div class="b-menu__wrapp-login-nav" style="display: none;">
           <img src="/img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
           <p class="b-menu__wrapp-login-nav-name text">Leonidis Castonedis</p>
-        </div> -->
+        </div>
       </nav>
     </header>
     <!-- Попап регистрации -->
       <div class="b-menu__wrapp-register-popup">
         <div class="b-menu__wrapp-register-popup-window">
           <div class="b-menu__wrapp-login-popup-close"></div>
+          <h3>Рeгистрация</h3>
           <form action="/register" method="POST" class="b-menu__wrapp-register-popup-window-register">
-            <input type="text" name="nickname" placeholder="Никнейм">
-            <p><label class="text"><input type="radio" name="gender" value="male">Male</label></p>
-            <p><label class="text"><input type="radio" name="gender" value="female">Female</label></p>
+            <input type="text" name="nickname" placeholder="Имя">
+            <p><label class="text"><input type="radio" name="gender" value="male"><span>Male</span></label></p>
+            <p><label class="text"><input type="radio" name="gender" value="female"><span>Female</span></label></p>
             <input type="email" name="email" placeholder="Email">
-            <input type="email" name="confirmEmail" placeholder="Повторить Email">
             <input type="password" name="password" placeholder="Пароль">
-            <input type="password" name="confirmPassword" placeholder="Повторить пароль">
             <input type="submit" value="Зарегестрироваться" class="button middle">
           </form>
+          <div class="b-menu__wrapp-login text">Вход</div>
         </div>
       </div>
     <main>
@@ -89,8 +91,8 @@
           <p class="text">Голосуйте за интересные машины. Добавьте свое авто и участвуйте в рейтинге лучших!</p>
           <button class="button big button-registration">Присоединяйтесь!</button>
         </div>
-        <div class="row">
-          <section class="l-content col xs-8">
+        <div class="row row-wrap">
+          <section class="l-content col sm-8 order-xs-1 xs-12">
             <div class="block b-content">
 
                 <div class="b-content__lider-date dropdown-block">
@@ -182,7 +184,7 @@
             </div>
           </section>
 
-          <section class="l-news col xs-3">
+          <section class="l-news col sm-3 order-xs-2 xs-12">
             <div class="block b-news">
               <div class="b-news__date dropdown-block">
                 <p class="b-news__date-currnet text dropdown-block-current">Сегодня</p>
@@ -234,7 +236,7 @@
               </div>
           </section>
 
-          <section class="l-model col xs-1">
+          <section class="l-model col sm-1 order-xs-3 xs-12">
             <div class="block b-model">
               <ul class="b-model__list">
                 <li><a href="#" class="b-model__list-item m-model__list-item_audi"></a></li>
@@ -287,8 +289,9 @@
 
               <div class="b-new-auto__inner">
                 <h3>Новые машины</h3>
-                <div class="b-new-auto__container">
-
+                <div class="paginator">
+                  <div class="b-new-auto__container container">
+<!-- 
                   <a href="#" title="" class="b-new-auto__item">
                     <img src="/img/temp/auto/1.png" alt="">
                     <p class="b-new-auto__item-name">Alexis.Sanches</p>
@@ -398,22 +401,23 @@
                     <img src="/img/temp/auto/4.png" alt="">
                     <p class="b-new-auto__item-name">Alexis.Sanches</p>
                     <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
-                  </a>
+                  </a> -->
 
-                </div>
+                  </div>
 
                 <!-- 
                   Скрыть кнопку переключения класс .m-new-auto__pagination_hide;
                   Текущая страница пагинации класс .m-new-auto__pagination-item_current;
                 -->
-                <p class="b-new-auto__pagination">
-                  <a href="#" class="b-new-auto__pagination-item text m-new-auto__pagination_prev m-new-auto__pagination_hide"><<</a>
-                  <a href="#" class="b-new-auto__pagination-item text m-new-auto__pagination-item_current">1</a>
-                  <a href="#" class="b-new-auto__pagination-item text">2</a>
-                  <a href="#" class="b-new-auto__pagination-item text">3</a>
-                  <a href="#" class="b-new-auto__pagination-item text">4</a>
-                  <a href="#" class="b-new-auto__pagination-item text m-new-auto__pagination-item_next">>></a>
-                </p>
+                  <div class="b-new-auto__pagination controll">
+  <!--                   <span class="b-new-auto__pagination-item text m-new-auto__pagination_prev m-new-auto__pagination_hide"><<</span>
+                    <span class="b-new-auto__pagination-item text m-new-auto__pagination-item_current">1</span>
+                    <span class="b-new-auto__pagination-item text">2</span>
+                    <span class="b-new-auto__pagination-item text">3</span>
+                    <span class="b-new-auto__pagination-item text">4</span>
+                    <span class="b-new-auto__pagination-item text m-new-auto__pagination-item_next">>></span> -->
+                  </div>
+                </div>
 
               </div>
             </div>
@@ -421,6 +425,8 @@
 
         </div>
       <script type="text/javascript" src="js/script-main.js"></script>
+      <script type="text/javascript" src="js/data-pager.js"></script>
+      <script type="text/javascript" src="js/pager.js"></script>
 <!-- Footer -->
       </div>
     </main>
