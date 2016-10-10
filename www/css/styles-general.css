@@ -70,9 +70,20 @@ h6 {
     }
 
 /* Buttons */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+  -moz-appearance:textfield;
+}
 .button,
 input[type='submit'].button {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
   display: block;
   outline: none;
   border: none;
@@ -86,6 +97,11 @@ input[type='submit'].button {
                       color 0.15s linear;
   transition: background-color 0.15s linear,
                          color 0.15s linear;
+}
+label {
+  font-family: 'Open Sans', sans-serif;;
+  font-weight : bold;
+  text-decoration: none;
 }
   .button:hover,
   input[type='submit'].button:hover {

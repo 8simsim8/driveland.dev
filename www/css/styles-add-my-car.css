@@ -1,0 +1,178 @@
+.b-add-car__form {
+  width: 100%;
+}
+
+  #carMainPhotoSlim {
+      width: 100%;
+      height: 400px;
+  }
+
+    .slim-label {
+      font-family: Open-Sans, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      color: rgba(0,0,0,0.4);
+    }
+  
+  .b-add-car__form-item {
+    margin-top: 15px;
+  }
+  
+  #carname {
+    width: 554px;
+  }
+
+  .b-add-car__form-item:not(.m-add-car__form-item_check) label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+    line-height: 1.42em;
+    color: #333333;
+    margin-right: 10px;
+  }
+
+  .b-add-car__form-item.m-add-car__form-item_check label {
+    padding: 0 30px;
+    position: relative;
+    width: 400px;
+    cursor: pointer;
+    display: block;
+    padding-left: 0;
+  }
+
+        .b-add-car__form-item input[type='checkbox'] + span:before {
+          display: block;
+          position: absolute;
+          top: 12px;
+          left: 0;
+          content: '';
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          border: 2px solid rgba(0,0,0,1);
+          background-color: #FFFFFF;
+          opacity: 0.5;
+          }
+
+        .b-add-car__form-item input[type='checkbox'] {
+          visibility: hidden;
+          width: 0;
+          }
+
+        .b-add-car__form-item label span {
+          padding-left: 15px;
+          opacity: 0.5;
+          transition: opacity .1s ease;
+          -webkit-transition: opacity .1s ease;
+          }
+
+       .b-add-car__form-item label span:hover {
+          opacity: 1;
+          transition: opacity .1s ease;
+          -webkit-transition: opacity .1s ease;
+          }
+
+        .b-add-car__form-item input[type='checkbox']:checked + span,
+        .b-add-car__form-item input[type='checkbox']:checked + span:before{
+          opacity: 1;
+          transition: opacity .1s ease;
+          -webkit-transition: opacity .1s ease;
+          }
+
+        .b-add-car__form-item input[type='checkbox']:checked + span:before{
+          text-align: center;
+          border: 2px solid rgba(0,0,0,0.5);
+          border-radius: 50%;
+          background-color: #FFFFFF;
+          line-height: 9px;
+          transition: border-color .1s ease;
+          -webkit-transition: border-color .1s ease;
+          }
+
+         .b-add-car__form-item input[type='checkbox']:checked + span:after {
+          position: absolute;
+          content: '';
+          top: 16px;
+          left: 4px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: rgba(0,0,0,0.8);
+         }
+          .b-add-car__form-item input[type="checkbox"] {
+            position: relative;
+            height: 25px;
+            top: 7px;
+            margin-right: 15px;
+          }
+  .b-add-car__form-item.droplist {
+    display: inline-block;
+  }
+  .droplist {
+    margin-top: 40px;
+    position: relative;
+    height: 40px;
+    width: calc( 98.5% / 3);
+  }
+    .droplist-title {
+      position: absolute;
+      top: -1rem;
+      left: 20px;
+      font-size: 0.7rem;
+    }
+    .droplist-current {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      padding: 7px 18px;
+      line-height: 26px;
+      background: #F0F0F0;
+      border-radius: 4px;
+      z-index: 1;
+      cursor: pointer;
+    }
+    .droplist-block {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      width: 100%;
+      background: #F0F0F0;
+      border-radius: 4px;
+      box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+      z-index: 2;
+      transition: opacity 0.2s ease;
+      -webkit-transition: opacity 0.2s ease;
+    }
+      .droplist-item {
+        padding: 7px 18px;
+        border-bottom: 1px dotted #CECECE;
+        cursor: pointer;
+      }
+        .droplist-item:hover {
+          background: #CACACA;
+        }
+      .droplist-item:first-child {
+        border-radius: 4px 4px 0 0;
+      }
+      .droplist-item:last-child {
+        border-bottom: none;
+        border-radius: 0 0 4px 4px;
+      }
+      .m-open-droplist.droplist-block {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+  textarea.b-add-car__form-item {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    background-color: #F0F0F0;
+    border-radius: 4px;
+    border: none;
+    resize: none;
+    outline: none;
+  }

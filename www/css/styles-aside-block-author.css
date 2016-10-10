@@ -1,0 +1,143 @@
+
+.b-author {
+}
+  .b-author__wrapp {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .b-author__wrapp-photo {
+    display: block;
+    margin:  0 auto 20px;
+    height: 120px;
+    width: 118px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .b-author__wrapp-name {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color : #1C5BC9;
+    text-align: center;
+  }
+  .b-author__wrapp-city {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .b-author__wrapp-follow.button,
+  .b-author__wrapp-message.button {
+    font-size: 14px;
+    display: inline-block;
+    width: calc( ( 100% - 20px ) / 2 );
+  }
+  .b-author__wrapp-follow {
+  }
+  .b-author__wrapp-message {
+    float: right;
+    background-color: #FF9D00;
+    color : #734000;
+  }
+    .b-author__wrapp-message:after {
+      content: '';
+      clear: both;
+      }
+    .b-author__wrapp-message:hover {
+      background-color: #cc7e00;
+      color : #ffd29a;
+    }
+  .b-author__wrapp-note {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .b-author__wrapp-info {
+    display: -webkit-flex;
+    display: flex;
+    margin: 20px -20px 25px;
+  }
+    .b-author__wrapp-info li {
+      position: relative;
+      -webkit-flex: 1;
+      flex: 1;
+      border-top: 1px solid rgba(64,64,64,0.1);
+      border-bottom: 1px solid rgba(64,64,64,0.1);
+      height: 75px;
+      vertical-align: top;
+      text-align: center;
+      font-family : Open Sans;
+      font-size : 1.4rem;
+      line-height : 50px;
+      color : #1C5BC9;
+    }
+    .b-author__wrapp-info li:nth-of-type(2) {
+      border: 1px solid rgba(64,64,64,0.1);
+    }
+      .b-author__wrapp-info li:after {
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+        left: 0;
+        content: attr(data-text);
+        text-align: center;
+        font-family : Open Sans;
+        font-size : 0.6rem;
+        line-height : 20px;
+        color : #333333;
+      }
+  .b-author__wrapp-about {
+    text-align: center;
+  }
+    .b-author__wrapp-about h6 {
+      margin-bottom: 5px;
+      color : #97A9C9;
+    }
+    .b-author__wrapp-about p:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  .b-author__car {
+    position: absolute;
+    bottom: -550px;
+    right: 0;
+    left: 0;
+    height: 500px;
+  }
+    .b-author__car h3 {
+      float: left;
+      color : #1C5BC9;
+    }
+    .b-author__car .button {
+      margin-top: 5px;
+      float: right;
+      background : #ABE766;
+      width : 100px;
+      font-family : Open Sans;
+      font-weight : bold;
+      font-size : 0.7rem;
+      line-height : 23px;
+      color : #187900;
+    }
+    .b-author__car .button:after {
+      content: '';
+      clear: both;
+    }
+      .b-author__car .button:hover {
+        background-color: #cc7e00;
+        color : #ffd29a;
+      }
+    .b-author__car-item {
+      clear: both;
+      padding-top: 20px;
+      width: 100%;
+    }
+      .b-author__car-item img {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 10px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      .b-author__car-item p {
+        text-align: center;
+      }
+        .b-author__car-item a {
+          font-weight: bold;
+          color : #1C5BC9;
+        }

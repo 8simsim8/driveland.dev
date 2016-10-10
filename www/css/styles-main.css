@@ -386,7 +386,8 @@ section {
         margin-right: 0;
       }
       .m-new-auto__pagination_hide.b-new-auto__pagination-item {
-        display: none;
+        opacity: 0;
+        pointer-events: none;
       }
       .b-new-auto__pagination-item:not(.m-new-auto__pagination_dots):hover {
         color: #FFFFFF;
