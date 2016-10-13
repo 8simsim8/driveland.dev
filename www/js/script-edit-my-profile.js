@@ -1,32 +1,16 @@
 (function () {
-var pageMyCar = new MakePageMyCar();
+    
+    $("#birth").datepicker({
+        beforeShow: function(){    
+           $(".ui-datepicker").css({'font-size': '0.7rem'}) 
+    }
+    });
 
-function MakePageMyCar() {
-  $('.redact-block').on('mouseover', function(event) {
-    var $this = $(this);
-    $this.children().filter('.block-redactor').addClass('m-block-redactor_show');
-  });
-  
-  $('.redact-block').on('mouseout', function(event) {
-    $('.block-redactor').removeClass('m-block-redactor_show');
-  });
-}
+    $(document).ready(function(){
+        workForm('aboutme');
+    });
 
-// -----------------------------------------------------------------------------
-
-// ADD COMMENT ON THE USER MAIN PAGE
-
-$('#addCom').on('click', function (e) {
-    e.preventDefault();
-    var comment = $('#hidnCom').clone().removeAttr('id');
-    comment.find('p').text($('#comTa').val());
-    comment.find('span').text(Date.now());
-    comment.show().prependTo('#comments');
-});
-
-
-
-// ADD PHOTO TO THE USER ALBUM MODAL (USER PAGE)
+  // ADD PHOTO TO THE USER ALBUM MODAL (USER PAGE)
 
 $('#addUserPhoto').on('click', function (e) {
     e.preventDefault();
@@ -35,9 +19,8 @@ $('#addUserPhoto').on('click', function (e) {
     $('#addUserPhotosSlim').slim();    
     modal.find('.close').on('click', function (e) {
         modal.css('display', 'none');
-    });  
+    });
 });
-
 
 // VIEW USER ALBUM MODAL (USER PAGE)
 
@@ -138,7 +121,6 @@ if (carPhotos.length) {
     });
 }
 
-
 // REFRESH AND DELETE AVATAR (USER PAGE)
 
 $('#newAvatar').on('click', function (e) {
@@ -209,3 +191,7 @@ $('#avatarSlim').slim({
 });
 
 })();
+
+
+
+

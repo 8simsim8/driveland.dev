@@ -7,17 +7,29 @@
       height: 400px;
   }
 
-    .slim-label {
-      font-family: Open-Sans, sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      color: rgba(0,0,0,0.4);
-    }
-  
   .b-add-car__form-item {
-    margin-top: 15px;
+    margin-top: 40px;
+  }
+
+  .b-add-car__form input:not(input[type='number']),
+  .b-add-car__form .droplist
+   {
+    width: 300px;
   }
   
+  .b-add-car__form input[type='number'] {
+    min-width: 100px;
+  }
+
+  .b-add-car__form input,
+  .b-add-car__form .droplist
+   {
+    margin-right: 20px;
+  }
+  .b-add-car__form input:last-child {
+    margin-right: 0;
+  }
+
   #carname {
     width: 554px;
   }
@@ -33,28 +45,24 @@
   .b-add-car__form-item.m-add-car__form-item_check label {
     padding: 0 30px;
     position: relative;
-    width: 400px;
     cursor: pointer;
     display: block;
     padding-left: 0;
   }
 
         .b-add-car__form-item input[type='checkbox'] + span:before {
-          display: block;
-          position: absolute;
-          top: 12px;
-          left: 0;
-          content: '';
-          width: 16px;
-          height: 16px;
-          border-radius: 50%;
-          border: 2px solid rgba(0,0,0,1);
-          background-color: #FFFFFF;
-          opacity: 0.5;
+            position: absolute;
+            content: '\f096';
+            font-family: 'FontAwesome';
+            font-size: 20px;
+            top: 9px;
+            left: 0;
+            width: 16px;
+            height: 16px;
           }
 
         .b-add-car__form-item input[type='checkbox'] {
-          visibility: hidden;
+          opacity: 0;
           width: 0;
           }
 
@@ -64,8 +72,9 @@
           transition: opacity .1s ease;
           -webkit-transition: opacity .1s ease;
           }
-
-       .b-add-car__form-item label span:hover {
+          
+        .b-add-car__form-item input[type='checkbox']:focus + span,
+        .b-add-car__form-item label span:hover {
           opacity: 1;
           transition: opacity .1s ease;
           -webkit-transition: opacity .1s ease;
@@ -79,100 +88,77 @@
           }
 
         .b-add-car__form-item input[type='checkbox']:checked + span:before{
-          text-align: center;
-          border: 2px solid rgba(0,0,0,0.5);
-          border-radius: 50%;
-          background-color: #FFFFFF;
-          line-height: 9px;
-          transition: border-color .1s ease;
-          -webkit-transition: border-color .1s ease;
+            position: absolute;
+            content: '\f046';
+            font-family: 'FontAwesome';
+            font-size: 20px;
+            top: 9px;
+            left: 0;
+            width: 16px;
+            height: 16px;
           }
 
-         .b-add-car__form-item input[type='checkbox']:checked + span:after {
-          position: absolute;
-          content: '';
-          top: 16px;
-          left: 4px;
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-          background-color: rgba(0,0,0,0.8);
-         }
           .b-add-car__form-item input[type="checkbox"] {
             position: relative;
             height: 25px;
             top: 7px;
             margin-right: 15px;
           }
-  .b-add-car__form-item.droplist {
-    display: inline-block;
-  }
-  .droplist {
-    margin-top: 40px;
-    position: relative;
-    height: 40px;
-    width: calc( 98.5% / 3);
-  }
-    .droplist-title {
-      position: absolute;
-      top: -1rem;
-      left: 20px;
-      font-size: 0.7rem;
-    }
-    .droplist-current {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 40px;
-      padding: 7px 18px;
-      line-height: 26px;
-      background: #F0F0F0;
-      border-radius: 4px;
-      z-index: 1;
-      cursor: pointer;
-    }
-    .droplist-block {
-      position: absolute;
-      top: 50px;
-      left: 0;
-      opacity: 0;
-      pointer-events: none;
-      width: 100%;
-      background: #F0F0F0;
-      border-radius: 4px;
-      box-shadow: 0 2px 2px rgba(0,0,0,0.4);
-      z-index: 2;
-      transition: opacity 0.2s ease;
-      -webkit-transition: opacity 0.2s ease;
-    }
-      .droplist-item {
-        padding: 7px 18px;
-        border-bottom: 1px dotted #CECECE;
-        cursor: pointer;
-      }
-        .droplist-item:hover {
-          background: #CACACA;
-        }
-      .droplist-item:first-child {
-        border-radius: 4px 4px 0 0;
-      }
-      .droplist-item:last-child {
-        border-bottom: none;
-        border-radius: 0 0 4px 4px;
-      }
-      .m-open-droplist.droplist-block {
-        opacity: 1;
-        pointer-events: auto;
-      }
 
-  textarea.b-add-car__form-item {
-    width: 100%;
-    height: 200px;
-    padding: 10px;
-    background-color: #F0F0F0;
-    border-radius: 4px;
-    border: none;
-    resize: none;
-    outline: none;
+    .b-add-car__form-add {
+      display: -webkit-flex;
+      display: flex;
+      margin-top: 15px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #CECECE;
+    }
+      .b-add-car__form-add p {
+        -webkit-flex: 1;
+        flex: 1;
+        position: relative;
+        text-align: center;
+      }
+      .b-add-car__form-add p.m-add-car__form-add_active:after {
+        position: absolute;
+        display: block;
+        content: '';
+        bottom: -41px;
+        left: 50%;
+        margin-left: -20px;
+        height: 20px;
+        width: 20px;
+        background-color: #FFFFFF;
+        border-top: 1px solid #CECECE;
+        border-left: 1px solid #CECECE;
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+        .b-add-car__form-add span {
+          cursor: pointer;
+          color: #1C5BC9;
+          border-bottom: 1px dashed #1C5BC9;
+          -webkit-transition: color 0.2s ease,
+                              border-bottom 0.2s ease;
+          transition: color 0.2s ease,
+                      border-bottom 0.2s ease;
+        }
+          .b-add-car__form-add span:hover {
+            color: #297DE2;
+            border-bottom: 1px dashed #297DE2;
+          }
+        .b-add-car__form-add .m-add-car__form-add_active span {
+          color: #333333;
+          border-bottom: 1px dashed transparent;
+        }
+
+  .b-add-car__form-add-inner {
+    margin: 0 0 30px;
+    padding-top: 20px;
   }
+    .b-add-car__form-add-wrapp {
+    }
+      .b-add-car__form-add-wrapp input[type='text'] {
+        width: 300px;
+      }

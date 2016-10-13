@@ -1,0 +1,58 @@
+.b-testdrive__article p {
+  margin: 10px 0;
+}
+  .paginator .container .b-testdrive__article img {
+    margin: 0;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+ 
+.b-filter-wrapp {
+  width: 100%;
+}
+  .b-filter-wrapp h3 {
+    text-align: center;
+    color: #1C5BC9;
+    margin-bottom: 20px;
+  }
+  .b-filter__switch {
+    width: 100%;
+  }
+  .b-filter__switch-item {
+    float: left;
+    height: 40px;
+    width: 50%;
+    text-align: center;
+    font-size: 0.65rem;
+    line-height: 36px;
+    border: 2px solid #0038A8;
+    border-left: none;
+    background-color: #FFFFFF;
+    color: #0038A8;
+    -webkit-transition: color 0.2s ease,
+                background-color 0.2s ease;
+    transition: color 0.2s ease,
+                background-color 0.2s ease;
+  }
+    .b-filter__switch-item:first-child {
+      border-radius: 18px 0 0 18px;
+      border: 2px solid #0038A8;
+    }
+    .b-filter__switch-item:last-child {
+      border-radius: 0 18px 18px 0;
+      border: 2px solid #0038A8;
+      border-left: none;
+    }
+    .m-filter__switch-item_active.b-filter__switch-item {
+      background-color: #0038A8;
+      color: #FFFFFF;
+    }
+
+.b-filter__form {
+  clear: both;
+}
+  .b-mark {
+    margin-top: 20px;
+    max-width: 
+  }

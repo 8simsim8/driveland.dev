@@ -1,3 +1,5 @@
+(function (){
+
   // Открытие выпадающего списка с датой в блоке
     $('.dropdown-block-current').on('click', function(){
       if($(this).hasClass('m-open-dropdown')) {
@@ -18,3 +20,5 @@
     $(".b-news__inner-item").dotdotdot({
       ellipsis  : '...'
     });
+
+})();

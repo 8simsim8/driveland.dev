@@ -21,9 +21,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/gird-column.css">
     <link rel="stylesheet" type="text/css" href="css/reset-min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles-general.css">
     <link rel="stylesheet" type="text/css" href="css/styles-add-my-car.css">
     <link rel="stylesheet" type="text/css" href="css/slim.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-droplist.css">
     <link rel="stylesheet" type="text/css" href="css/styles-aside-block-author.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,11 +33,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/1.7.4/jquery.dotdotdot.min.js"></script>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/slim.jquery.min.js"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <script type="text/javascript" src="js/script-general.js"></script>
   </head>
@@ -45,10 +44,10 @@
       <nav class="b-menu__wrapp wrapper row row-center">
         <a href="index.html" title="Main" class="b-menu__wrapp-logo col xs-2"></a>
         <ul class="b-menu__wrapp-list col xs-8">
-          <li><a href="#" title="" class="text bold">Новости</a></li>
+          <li><a href="main.html" title="" class="text bold">Новости</a></li>
           <li><a href="#" title="" class="text bold">Машины</a></li>
-          <li><a href="#" title="" class="text bold">Сообщества</a></li>
-          <li><a href="#" title="" class="text bold">Компании</a></li>
+          <li><a href="community.html" title="" class="text bold">Сообщества</a></li>
+          <li><a href="company.html" title="" class="text bold">Компании</a></li>
           <li><a href="#" title="" class="text bold">Барахолка</a></li>
         </ul>
 
@@ -76,13 +75,13 @@
         <div class="b-menu__wrapp-register-popup-window">
           <div class="b-menu__wrapp-login-popup-close"></div>
           <h3>Рeгистрация</h3>
-          <form action="/register" method="POST" class="b-menu__wrapp-register-popup-window-register">
-            <input type="text" name="nickname" placeholder="Имя">
-            <p><label class="text"><input type="radio" name="gender" value="male"><span>Male</span></label></p>
-            <p><label class="text"><input type="radio" name="gender" value="female"><span>Female</span></label></p>
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Пароль">
-            <input type="submit" value="Зарегестрироваться" class="button middle">
+          <form action="/register" method="POST" class="b-menu__wrapp-register-popup-window-register" name="register">
+            <input type="text" name="nickname" placeholder="Имя" class="tab-input">
+            <p class="input-radio-block"><label class="text"><input type="radio" name="gender" value="male" class="click-element tab-input"><span>Male</span></label></p>
+            <p class="input-radio-block"><label class="text"><input type="radio" name="gender" value="female" class="click-element tab-input"><span>Female</span></label></p>
+            <input type="email" name="email" placeholder="Email" class="tab-input">
+            <input type="password" name="password" placeholder="Пароль" class="tab-input">
+            <input type="submit" value="Зарегестрироваться" class="button middle tab-input">
           </form>
           <div class="b-menu__wrapp-login text">Вход</div>
         </div>
@@ -95,208 +94,205 @@
           <section class="l-add-car col xs-9">
             <div class="block b-add-car">
 
-              <form role="form" action="addcar" method="POST" enctype="multipart/form-data" class="b-add-car__form">
+              <form role="form" action="addcar" method="POST" enctype="multipart/form-data" class="b-add-car__form" name="add-car">
 
-                <div id="carMainPhotoSlim" data-label="Drop car photo here"  data-ratio="1:0.5" class="slim" data-state="empty">
-                <input type="file" required="" accept="image/jpeg,image/png,image/gif,image/bmp" style="margin-bottom: 50%;">
-                <input type="hidden" name="slim[]">
-                  <div class="slim-file-hopper"></div>
-                  <div class="slim-area">
-                    <div class="slim-loader">
-                      <svg>
-                        <path class="slim-loader-background" fill="none" stroke-width="3" d="M 11.494659292840298 3.000001677832694 A 8.5 8.5 0 1 0 11.5 3"></path>
-                        <path class="slim-loader-foreground" fill="none" stroke-width="3" d="M 11.5 20 A 8.5 8.5 0 0 0 11.5 3"></path>
-                      </svg>
-                    </div>
-                    <div class="slim-upload-status"></div>
-                    <div class="slim-drip"><span><span></span></span></div>
-                    <div class="slim-status">
-                      <div class="slim-label">
-                        <p>Drop car photo here</p>
-                      </div>
-                    </div>
-                    <div class="slim-result">
-                      <img class="in" style="opacity:0">
-                      <img>
-                      <img style="opacity:0">
-                    </div>
-                  </div>
-                  <div class="slim-btn-group" style="display: none;">
-                    <button class="slim-btn slim-btn-remove" title="Remove" type="button" data-action="remove">Remove</button>
-                    <button class="slim-btn slim-btn-edit" title="Edit" type="button" data-action="edit">Edit</button>
-                  </div>
+                <div id="carMainPhotoSlim"
+                  data-label="Drop car photo here"
+                  data-size="800,400"
+                  data-ratio="2:1">
+                  <input type="file" name="slim[]" required />
                 </div>
+
               <div>
-                <div class="b-add-car__form-item text">
-                  <label for="carname" class="text">Имя машины</label>
-                  <input type="text" id="carname" name="carname" placeholder="Car">
+                <div class="b-add-car__form-item m-form-item-inline text">
+                  <p class="b-form-item-title"><label for="carname" class="text">Имя машины</label></p>
+                  <p><input type="text" id="carname" name="carname" placeholder="Car" class="tab-input"></p>
                 </div>
 
-                <div class="b-add-car__form-item m-add-car__form-item_check text bold">
-                  <label><input type="checkbox" name="primary" class="text"><span>Основная</span></label>
-                </div>
-                <div class="b-add-car__form-item m-add-car__form-item_check text">
-                  <label><input type="checkbox" name="forsale" class="text"><span>Продаётся</span></label>
-                </div>
-
-                <div class="b-add-car__form-item droplist">
-                  <span class="droplist-title text bold">Тип кузова</span>
-                  <input type="text" id="type" value="" hidden>
-                  <span class="droplist-current text bold">Выбрать тип кузова</span>
-                  <ul class="droplist-block">
-                    <li class="droplist-item text">Sedan</li>
-                    <li class="droplist-item text">Coupe</li>
-                    <li class="droplist-item text">Jeep</li>
-                  </ul>
+                <div class="b-add-car__form-item m-form-item-inline m-add-car__form-item_check text bold">
+                  <p class="b-form-item-title text bold">Статус</p>
+                  <p class="input-radio-block"><label><input type="checkbox" name="primary" class="text tab-input"><span>Основная</span></label></p>
+                  <p class="input-radio-block"><label><input type="checkbox" name="forsale" class="text tab-input"><span>Продаётся</span></label></p>
                 </div>
 
-                <div class="b-add-car__form-item droplist">
-                  <span class="droplist-title text bold">Марка</span>
-                  <input type="text" id="brand" value="" hidden>
-                  <span class="droplist-current text bold">Выбрать марку</span>
-                  <ul class="droplist-block">
-                    <li class="droplist-item text">Audi</li>
-                    <li class="droplist-item text">Mercedes</li>
-                    <li class="droplist-item text">BMW</li>
-                  </ul>
+
+                <div class="b-add-car__form-item m-form-item-inline">
+                  <div class="b-form-item-title text bold">Марка/Модель</div>
+                  <div class="droplist">
+                    <input type="text" id="brand" value="" style="opacity: 0; width: 0;" tabindex="4">
+                    <span class="droplist-current text bold tab-input">Выбрать марку</span>
+                    <ul class="droplist-block">
+                      <li class="droplist-item text">Audi</li>
+                      <li class="droplist-item text">Mercedes</li>
+                      <li class="droplist-item text">BMW</li>
+                    </ul>
+                  </div>
+                  <div class="droplist" hidden>
+                    <input type="text" id="model" value="" hidden tabindex="5">
+                    <span class="droplist-current text bold tab-input">Выбрать модель</span>
+                    <ul class="droplist-block">
+                      <li class="droplist-item text">A3</li>
+                      <li class="droplist-item text">A4</li>
+                      <li class="droplist-item text">A7</li>
+                    </ul>
+                  </div>
                 </div>
 
-                <div class="b-add-car__form-item droplist">
-                  <span class="droplist-title text bold">Модель</span>
-                  <input type="text" id="model" value="" hidden>
-                  <span class="droplist-current text bold">Выбрать модель</span>
-                  <ul class="droplist-block">
-                    <li class="droplist-item text">A3</li>
-                    <li class="droplist-item text">A4</li>
-                    <li class="droplist-item text">A7</li>
-                  </ul>
+                <div class="b-add-car__form-item m-form-item-inline">
+                  <span class="b-form-item-title text bold">Тип кузова</span>
+                  <div class="droplist">
+                    <input type="text" id="type" value="" hidden>
+                    <span class="droplist-current text bold tab-input">Выбрать</span>
+                    <ul class="droplist-block">
+                      <li class="droplist-item text">Sedan</li>
+                      <li class="droplist-item text">Coupe</li>
+                      <li class="droplist-item text">Jeep</li>
+                    </ul>
+                  </div>
                 </div>
 
-                <div class="b-add-car__form-item droplist">
-                  <span class="droplist-title text bold">Год выпуска</span>
-                  <input type="text" id="year" value="" hidden>
-                  <span class="droplist-current text bold">Указать год выпуска</span>
-                  <ul class="droplist-block">
-                    <li class="droplist-item text">2010</li>
-                    <li class="droplist-item text">2011</li>
-                    <li class="droplist-item text">2012</li>
-                  </ul>
+                <div class="b-add-car__form-item m-form-item-inline">
+                  <span class="b-form-item-title text bold">Двигатель</span>
+                  <div class="droplist">
+                    <input type="text" id="fueltype" value="" hidden>
+                    <span class="droplist-current text bold tab-input">Тип двигателя</span>
+                    <ul class="droplist-block">
+                      <li class="droplist-item text">Unleaded</li>
+                      <li class="droplist-item text">Diesel</li>
+                    </ul>
+                  </div>
+                  <input type="number" name="liters" min="1" max="20" step="0.1" id="liters" placeholder="Объем двигателя, л" class="tab-input">
+                  <input type="number" name="power" min="1" max="3000" step="1" id="power" placeholder="Мощность, л.с." class="tab-input">
+                  <input type="number" name="mileage" min="1" max="1000000" step="1" id="mileage" placeholder="Пробег, км" class="tab-input">
                 </div>
 
-                <div class="b-add-car__form-item droplist">
-                  <span class="droplist-title text bold">Цвет</span>
-                  <input type="text" id="color" value="" hidden>
-                  <span class="droplist-current text bold">Выбрать цвет</span>
-                  <ul class="droplist-block">
+                <div class="b-add-car__form-item m-form-item-inline">
+                  <span class="b-form-item-title text bold">Год выпуска</span>
+                  <div class="droplist">
+                    <input type="text" id="year" value="" hidden>
+                    <span class="droplist-current text bold tab-input">Выбрать</span>
+                    <ul class="droplist-block">
+                      <li class="droplist-item text">2010</li>
+                      <li class="droplist-item text">2011</li>
+                      <li class="droplist-item text">2012</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="b-add-car__form-item m-form-item-inline">
+                  <span class="b-form-item-title text bold">Цвет</span>
+                  <div class="droplist">
+                    <input type="text" id="color" value="" hidden>
+                    <span class="droplist-current text bold tab-input">Выбрать</span>
+                    <ul class="droplist-block">
                     <li class="droplist-item text">Black</li>
                     <li class="droplist-item text">Red</li>
                     <li class="droplist-item text">White</li>
-                  </ul>
+                    </ul>
+                  </div>
                 </div>
 
-                <div class="b-add-car__form-item droplist">
-                  <span class="droplist-title text bold">Тип двигателя</span>
-                  <input type="text" id="fueltype" value="" hidden>
-                  <span class="droplist-current text bold">Указать тип двигателя</span>
-                  <ul class="droplist-block">
-                    <li class="droplist-item text">Unleaded</li>
-                    <li class="droplist-item text">Diesel</li>
-                  </ul>
+                <div class="b-add-car__form-item m-form-item-inline">
+                  <span class="b-form-item-title text bold">Тип трансмиссии</span>
+                  <div class="droplist">
+                    <input type="text" id="gearbox" value="" hidden>
+                    <span class="droplist-current text bold tab-input">Выбрать</span>
+                    <ul class="droplist-block">
+                      <li class="droplist-item text">Manual</li>
+                      <li class="droplist-item text">Automatic</li>
+                    </ul>
+                  </div>
                 </div>
 
-                <div class="b-add-car__form-item">
-                  <label for="liters">Объем двигателя, л</label>          
-                  <input type="number" name="liters" min="1" max="20" step="0.1" id="liters">
-                </div>
-                <div class="b-add-car__form-item">
-                  <label for="power">Мощность, л.с.</label>          
-                  <input type="number" name="power" min="1" max="3000" step="1" id="power">
-                </div>
-                <div class="b-add-car__form-item">
-                  <label for="mileage">Пробег, км</label>          
-                  <input type="number" name="mileage" min="1" max="1000000" step="1" id="mileage">
-                </div>
-
-                <div class="b-add-car__form-item droplist">
-                  <span class="droplist-title text bold">Тип трансмиссии</span>
-                  <input type="text" id="gearbox" value="" hidden>
-                  <span class="droplist-current text bold">Указать тип трансмиссии</span>
-                  <ul class="droplist-block">
-                    <li class="droplist-item text">Manual</li>
-                    <li class="droplist-item text">Automatic</li>
-                  </ul>
+                <div class="b-add-car__form-item m-form-item-inline">
+                  <span class="b-form-item-title text bold">Тип привода</span>
+                  <div class="droplist">
+                    <input type="text" id="drivetype" value="" hidden>
+                    <span class="droplist-current text bold tab-input">Выбрать</span>
+                    <ul class="droplist-block">
+                      <li class="droplist-item text">Front</li>
+                      <li class="droplist-item text">Back</li>
+                      <li class="droplist-item text">Full</li>
+                    </ul>
+                  </div>
                 </div>
 
-                <div class="b-add-car__form-item droplist">
-                  <span class="droplist-title text bold">Тип привода</span>
-                  <input type="text" id="drivetype" value="" hidden>
-                  <span class="droplist-current text bold">Указать тип привода</span>
-                  <ul class="droplist-block">
-                    <li class="droplist-item text">Front</li>
-                    <li class="droplist-item text">Back</li>
-                    <li class="droplist-item text">Full</li>
-                  </ul>
+                <div class="b-add-car__form-item m-form-item_textarea m-form-item-inline">
+                  <p class="b-form-item-title text bold"><label>О машине</label></p>
+                  <p><textarea rows="4" cols="50" name="aboutme" class="text tab-input"></textarea></p>
+                </div>
+              </div> <!-- end carinfo -->
+
+              <div class="b-add-car__form-add">
+                <p><span class="measurements text tab-input click-element">Добавить замеры</span></p>
+                <p><span class="tuning text tab-input click-element">Добавить доработки</span></p>
+                <p><span class="future text tab-input click-element">Планируемые доработки</span></p>
+              </div>
+
+              <div class="b-add-car__form-add-inner">
+                <div class="b-add-car__form-add-wrapp m-add-car__form-add-item_measurements">
+                  <div class="b-add-car__form-item m-form-item-inline text">
+                    <p class="b-form-item-title"><label for="msraccel100">Динамика 0-100, c</label></p>
+                    <p><input type="number" name="msraccel100" min="1" max="3000" step="0.1" id="measureinput" class="tab-input"></p>
+                  </div>
+                  <div class="b-add-car__form-item m-form-item-inline text">
+                    <p class="b-form-item-title"><label for="msraccel400">Динамика 0-400, c</label></p>
+                    <p><input type="number" name="msraccel400" min="1" max="3000" step="0.1" id="measureinput" class="tab-input"></p>
+                  </div>
+                  <div class="b-add-car__form-item m-form-item-inline text">
+                    <p class="b-form-item-title"><label for="msrfuelcity">Расход по городу, л/км</label></p>
+                    <p><input type="number" name="msrfuelcity" min="1" max="3000" step="0.1" id="measureinput" class="tab-input"></p>
+                  </div>
+                  <div class="b-add-car__form-item m-form-item-inline text">
+                    <p class="b-form-item-title"><label for="msrfuelmixed">Смешанный расход, л/км</label></p>
+                    <p><input type="number" name="msrfuelmixed" min="1" max="3000" step="0.1" id="measureinput" class="tab-input"></p>
+                  </div>
+                  <div class="b-add-car__form-item m-form-item-inline text">
+                    <p class="b-form-item-title"><label for="msrfuelout">Расход по трассе, л/км</label></p>
+                    <p><input type="number" name="msrfuelout" min="1" max="3000" step="0.1" id="measureinput" class="tab-input"></p>
+                  </div>
                 </div>
 
-                <textarea rows="4" cols="50" name="aboutcar" placeholder="О машине" class="b-add-car__form-item text"></textarea>              
-              </div> <!-- end carinfo -->                   
-
-              <div id="measurements">            
-                <h3>Добавить замеры</h3>
-                <div class="input">                
-                  <select id="measureSelect">
-                    <option>Добавить замер</option>
-                    <option value="msraccel100">Динамика 0-100</option>
-                    <option value="msraccel400">Динамика 0-400</option>
-                    <option value="msrfuelcity">Расход по городу</option>
-                    <option value="msrfuelmixed">Смешанный расход</option>
-                    <option value="msrfuelout">Расход по трассе</option>                        
-                  </select>
+                <div class="b-add-car__form-add-wrapp m-add-car__form-add-item_tuning" style="display: none;">
+                  <div class="b-add-car__form-item m-form-item-inline text">
+                    <p class="b-form-item-title"><label for="tunchip">Чип</label></p>
+                    <p><input type="text" name="tunchip" id="tuninginput" class="tab-input"></p>
+                  </div>
+                  <div class="b-add-car__form-item m-form-item-inline text">
+                    <p class="b-form-item-title"><label for="tunexhaust">Выхлоп</label></p>
+                    <p><input type="text" name="tunexhaust" id="tuninginput" class="tab-input"></p>
+                  </div>
+                  <div class="b-add-car__form-item m-form-item-inline text">
+                    <p class="b-form-item-title"><label for="tunintake">Впуск</label></p>
+                    <p><input type="text" name="tunintake" id="tuninginput" class="tab-input"></p>
+                  </div>
+                  <div class="b-add-car__form-item m-form-item-inline text">
+                    <p class="b-form-item-title"><label for="tunmusic">Акустика</label></p>
+                    <p><input type="text" name="tunmusic" id="tuninginput" class="tab-input"></p>
+                  </div>
                 </div>
-                <div class="input" style="display: none;" id="hiddenMeasureItem">
-                  <label for="measureinput"></label>           
-                  <input type="number" name="" min="1" max="3000" step="0.1" id="measureinput">
-                  <a href="#">Удалить</a>
-                </div>        
-              </div> <!-- end measurements -->
-            
-              <div id="tuning">
-                <h3>Добавить доработки</h3>
-                <div class="input">
-                  <select id="tuningSelect">
-                    <option>Добавить доработку</option>
-                    <option value="tunchip">Чип</option>
-                    <option value="tunexhaust">Выхлоп</option>
-                    <option value="tunintake">Впуск</option>
-                    <option value="tunmusic">Акустика</option>                        
-                  </select>
-                </div>
-                <div class="input" style="display: none;" id="hiddenTuningItem">
-                  <label for="tuninginput"></label>
-                  <input type="text" name="" id="tuninginput">
-                  <a href="#">Удалить</a>
-                </div>              
-              </div> <!-- end tuning -->
 
-              <div id="future">
-                <h3>Планируемые доработки</h3>
-                <div class="input">                
-                  <select id="futureSelect">
-                    <option>Добавить планы</option>
-                    <option value="futchip">Чип</option>
-                    <option value="futexhaust">Выхлоп</option>
-                    <option value="futintake">Впуск</option>                
-                    <option value="futmusic">Акустика</option>                        
-                  </select>
+                <div class="b-add-car__form-add-wrapp m-add-car__form-add-item_future" style="display: none;">
+                  <div class="b-add-car__form-item m-form-item-inline text">
+                    <p class="b-form-item-title"><label for="futchip">Чип</label></p>
+                    <p><input type="text" name="futchip" id="futureinput" class="tab-input"></p>
+                  </div>
+                  <div class="b-add-car__form-item m-form-item-inline text">
+                    <p class="b-form-item-title"><label for="futexhaust">Выхлоп</label></p>
+                    <p><input type="text" name="futexhaust" id="futureinput" class="tab-input"></p>
+                  </div>
+                  <div class="b-add-car__form-item m-form-item-inline text">
+                    <p class="b-form-item-title"><label for="futintake">Впуск</label></p>
+                    <p><input type="text" name="futintake" id="futureinput" class="tab-input"></p>
+                  </div>
+                  <div class="b-add-car__form-item m-form-item-inline text">
+                    <p class="b-form-item-title"><label for="futmusic">Акустика</label></p>
+                    <p><input type="text" name="futmusic" id="futureinput" class="tab-input"></p>
+                  </div>
                 </div>
-                <div class="input" style="display: none;" id="hiddenFutureItem">
-                  <label for="futureinput"></label>
-                  <input type="text" name="" id="futureinput">
-                  <a href="#">Удалить</a>
-                </div>              
-              </div> <!-- end future -->
+              </div>
 
-              <input type="submit" value="Сохранить" <="" input="">
+              <input type="submit" value="Сохранить" <="" input="" class="button middle tab-input">
               
             </form>
 
@@ -337,7 +333,10 @@
             
           </section>
         </div>
+      <script type="text/javascript" src="js/slim.jquery.min.js"></script>
+      <script type="text/javascript" src="js/script-droplist.js"></script>
       <script type="text/javascript" src="js/script-add-my-car.js"></script>
+
 <!-- Footer -->
       </div>
     </main>

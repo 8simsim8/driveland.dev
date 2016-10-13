@@ -29,7 +29,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/1.7.4/jquery.dotdotdot.min.js"></script>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
@@ -41,10 +41,10 @@
       <nav class="b-menu__wrapp wrapper row row-center">
         <a href="index.html" title="Main" class="b-menu__wrapp-logo col xs-2"></a>
         <ul class="b-menu__wrapp-list col xs-8">
-          <li><a href="#" title="" class="text bold">Новости</a></li>
+          <li><a href="main.html" title="" class="text bold">Новости</a></li>
           <li><a href="#" title="" class="text bold">Машины</a></li>
-          <li><a href="#" title="" class="text bold">Сообщества</a></li>
-          <li><a href="#" title="" class="text bold">Компании</a></li>
+          <li><a href="community.html" title="" class="text bold">Сообщества</a></li>
+          <li><a href="company.html" title="" class="text bold">Компании</a></li>
           <li><a href="#" title="" class="text bold">Барахолка</a></li>
         </ul>
 
@@ -72,13 +72,13 @@
         <div class="b-menu__wrapp-register-popup-window">
           <div class="b-menu__wrapp-login-popup-close"></div>
           <h3>Рeгистрация</h3>
-          <form action="/register" method="POST" class="b-menu__wrapp-register-popup-window-register">
-            <input type="text" name="nickname" placeholder="Имя">
-            <p><label class="text"><input type="radio" name="gender" value="male"><span>Male</span></label></p>
-            <p><label class="text"><input type="radio" name="gender" value="female"><span>Female</span></label></p>
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Пароль">
-            <input type="submit" value="Зарегестрироваться" class="button middle">
+          <form action="/register" method="POST" class="b-menu__wrapp-register-popup-window-register" name="register">
+            <input type="text" name="nickname" placeholder="Имя" class="tab-input">
+            <p class="input-radio-block"><label class="text"><input type="radio" name="gender" value="male" class="click-element tab-input"><span>Male</span></label></p>
+            <p class="input-radio-block"><label class="text"><input type="radio" name="gender" value="female" class="click-element tab-input"><span>Female</span></label></p>
+            <input type="email" name="email" placeholder="Email" class="tab-input">
+            <input type="password" name="password" placeholder="Пароль" class="tab-input">
+            <input type="submit" value="Зарегестрироваться" class="button middle tab-input">
           </form>
           <div class="b-menu__wrapp-login text">Вход</div>
         </div>
@@ -95,7 +95,7 @@
                 <a href="#">Машины</a><a href="#">Lexus</a><a href="#">LS460</a>
 
               </div>
-              <div class="block-redactor text subtext">Редактировать</div>
+              <a href="add-my-car.html" class="block-redactor text subtext">Редактировать</a>
               <div class="b-title__content">
               
                 <h2>Lexus LX : новый двс+выхлоп на 800 борзых лошадей!</h2>
@@ -122,7 +122,7 @@
 
           <section class="l-author col xs-3">
             <div class="block b-author redact-block">
-              <div class="block-redactor text subtext">Редактировать</div>
+              <a href="edit-my-profile.html" class="block-redactor text subtext">Редактировать</a>
               <div class="b-author__wrapp">
 
                 <img src="/img/temp/author/author-1.jpg" alt="" class="b-author__wrapp-photo">
@@ -148,12 +148,14 @@
                   <h6>Увлечения</h6>
                   <p class="text">Спортзал, книги, рыбалка, яхты и путешествия</p>
                 </div>
+                
+                <a href="#" class="text button middle">Мой блог</a>
 
               </div>
 
               <div class="b-author__car">
                 <h3>Мои авто</h3>
-                <button type="button" class="button small">Добавить</button>
+                <a href="add-my-car.html" class="button small">Добавить</a>
                 <div class="b-author__car-item">
                   <img src="/img/temp/auto/2.png" alt="">
                   <p><a href="#" class="text">Nissan Terrano 2.6L 200hp</a></p>
@@ -218,7 +220,8 @@
             </div>
           </section>
         </div>
-
+        
+      <script type="text/javascript" src="js/slim.jquery.min.js"></script>
       <script type="text/javascript" src="js/script-my-page.js"></script>
 <!-- Footer -->
       </div>

@@ -271,56 +271,6 @@ section {
         .b-news__inner-show a:hover {
           color : #1C86C9;
         }
-@media (min-width: 769px) {
-  section .block.b-model {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-  .b-model__list {
-    width: 57px;
-    margin: 0 auto;
-  }
-    .b-model__list li {
-      height: 35px;
-      width: 100%;
-    }
-    .b-model__list-item {
-      display: block;
-      height: 100%;
-      width: 100%;
-      margin: 5px auto;
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-    .m-model__list-item_audi.b-model__list-item {
-      background-image: url("../img/temp/logo-auto/audi.png");
-    }
-    .m-model__list-item_toyota.b-model__list-item {
-      background-image: url("../img/temp/logo-auto/toyota.png");
-    }
-    .m-model__list-item_shkoda.b-model__list-item {
-      background-image: url("../img/temp/logo-auto/shkoda.png");
-    }
-    .m-model__list-item_honda.b-model__list-item {
-      background-image: url("../img/temp/logo-auto/honda.png");
-    }
-    .m-model__list-item_lexus.b-model__list-item {
-      background-image: url("../img/temp/logo-auto/lexus.png");
-    }
-    .m-model__list-item_chevrolet.b-model__list-item {
-      background-image: url("../img/temp/logo-auto/chevrolet.png");
-    }
-    .m-model__list-item_vw.b-model__list-item {
-      background-image: url("../img/temp/logo-auto/vw.png");
-    }
-    .m-model__list-item_nissan.b-model__list-item {
-      background-image: url("../img/temp/logo-auto/nissan.png");
-    }
-    .m-model__list-item_ford.b-model__list-item {
-      background-image: url("../img/temp/logo-auto/ford.png");
-    }
 
 .l-new-auto {
   
@@ -328,74 +278,8 @@ section {
   .b-new-auto {
     
   }
-    .b-new-auto__container {
-      font-size: 0;
-      margin: 0 -4px;
-    }
-    
-      .b-new-auto__item {
-        display: inline-block;
-        vertical-align: top;
+      .paginator .container .item {
         width: calc(16.66667% - 8px);
-        margin: 0 4px;
-        padding-bottom: 35px;
-      }
-        .b-new-auto__item img {
-          height: 120px;
-          width: 100%;
-          margin-bottom: 15px;
-          object-fit: cover;
-          border-radius: 4px;
-        }
-        .b-new-auto__item-name,
-        .b-new-auto__item-auto {
-          font-family: 'Open Sans', sans-serif;;
-          font-size : 0.7rem;
-          line-height : 1.7em;
-          color : #333333;
-        }
-        .b-new-auto__item-name {
-          font-weight: bold;
-          color : #1C5BC9;
-        }
-    .b-new-auto__pagination {
-      margin-top: 20px;
-      font-size: 0;
-    }
-      .b-new-auto__pagination-item {
-        display: inline-block;
-        text-align: center;
-        height: 36px;
-        width:  36px;
-        margin-right: 10px;
-        font-weight: bold;
-        line-height: 36px;
-        color: #1C5BC9;
-        border-radius: 50%;
-        border: 1px solid #97A9C9;
-        cursor: pointer;
-        -webkit-transition: color 0.2s ease,
-                    background-color 0.2s ease;
-        transition: color 0.2s ease,
-                    background-color 0.2s ease;
-      }
-      .m-new-auto__pagination_dots.b-new-auto__pagination-item {
-        border: none;
-      }
-      .b-new-auto__pagination-item:last-child {
-        margin-right: 0;
-      }
-      .m-new-auto__pagination_hide.b-new-auto__pagination-item {
-        opacity: 0;
-        pointer-events: none;
-      }
-      .b-new-auto__pagination-item:not(.m-new-auto__pagination_dots):hover {
-        color: #FFFFFF;
-        background-color: #1C5BC9;
-      }
-      .m-new-auto__pagination-item_current.b-new-auto__pagination-item {
-        color: #FFFFFF;
-        background-color: #1C5BC9;
       }
 @media (max-width: 1100px) {
   .b-new-auto__item {

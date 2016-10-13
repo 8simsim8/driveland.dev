@@ -89,9 +89,13 @@
       margin-bottom: 5px;
       color : #97A9C9;
     }
-    .b-author__wrapp-about p:not(:last-child) {
+    .b-author__wrapp-about p {
       margin-bottom: 20px;
     }
+  .b-author__wrapp .button.middle {
+    line-height: 33px;
+    width: 100%;
+  }
   .b-author__car {
     position: absolute;
     bottom: -550px;
@@ -111,7 +115,7 @@
       font-family : Open Sans;
       font-weight : bold;
       font-size : 0.7rem;
-      line-height : 23px;
+      line-height : 33px;
       color : #187900;
     }
     .b-author__car .button:after {

@@ -1,0 +1,75 @@
+.b-edit {
+}
+  .b-edit form {
+    position: relative;
+    width: 100%;
+  }
+  #avatarContainer {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 240px;
+    height: 240px;
+  }
+  #birth {
+    padding-right: 30px;
+  }
+  #birth + span {
+    position: relative;
+    margin-left: -45px;
+  }
+    #birth + span:before {
+      position: absolute;
+      display: block;
+      content: '\f073';
+      font-family: 'FontAwesome';
+      font-size: 20px;
+      top: 3px;
+      left: 0;
+    }
+.slim:after {
+  font-size: 60px;
+}
+  .b-edit input,
+  .b-edit__form .droplist
+   {
+    width: 300px;
+    margin-right: 20px;
+  }
+  .b-edit__form-item:not(.m-form-item_textarea) {
+    height: 40px;
+  }
+  .b-edit__form-item {
+    margin: 0 0 15px;
+  }
+  .b-edit__form-item.m-edit__form-item_textarea p {
+    vertical-align: top;
+  }
+  .b-edit__form-item label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+    line-height: 1.42em;
+    color: #333333;
+    margin-right: 10px;
+  }
+  .b-edit__form .button.middle {
+    margin-top: 20px;
+  }
+  @media (max-width: 1100px) {
+  #avatarContainer {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 1070px) {
+  #avatarContainer {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 150px;
+    height: 200px;
+  }
+}
