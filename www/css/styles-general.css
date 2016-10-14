@@ -236,6 +236,19 @@ a {
   -webkit-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
+  .icon-search {
+    position: relative;
+    }
+    .icon-search:before {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      margin-top: -0.4rem;
+      font-family: 'FontAwesome';
+      font-size: 0.8rem;
+      color: #FFFFFF;
+      content: '\f002';
+     }
 
 /* menu */
 .l-menu {
@@ -330,7 +343,7 @@ a {
       -webkit-transition: background-image 0.25s ease;
       transition: background-image 0.25s ease;
       }
-        .m-open-dropdown.b-menu__wrapp-login-nav:after {
+        .m-open-user-menu.b-menu__wrapp-login-nav:after {
           transform: rotate(180deg);
           background-image: url('../img/icon-date-arrow.svg');
         }
@@ -347,21 +360,45 @@ a {
     }
       .b-menu__wrapp-login-nav-list {
         position: absolute;
-        top: 50px;
-        left: 0;
-        right: 0;
+        top: 43px;
+        left: -10px;
+        right: -10px;
         padding: 10px;
+        pointer-events: none;
         background-color: #FFFFFF;
         border-radius: 4px;
-        box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 5px rgba(130, 130, 130, 0.2);
         opacity: 0;
         height: 0;
       }
-        .m-open-user-menu.b-menu__wrapp-login-nav-list {
+        .m-open-user-menu .b-menu__wrapp-login-nav-list {
           opacity: 1;
           height: auto;
+          pointer-events: auto;
         }
-
+        .b-menu__user-item {
+          line-height: 1.42rem;
+        }
+          .b-menu__user-item:hover {
+            color: #CACACA;
+          }
+          .b-menu__user-item:before {
+            margin: 0 10px;
+            font-family: 'FontAwesome';
+            font-size: 0.7rem;
+          }
+            .b-menu__user-item.m-menu__user-item_my-page:before {
+              content: '\f015';
+            }
+            .b-menu__user-item.m-menu__user-item_my-blog:before {
+              content: '\f0f6';
+            }
+            .b-menu__user-item.m-menu__user-item_add-car:before {
+              content: '\f1b9';
+            }
+            .b-menu__user-item.m-menu__user-item_exit:before {
+              content: '\f08b';
+            }
     .b-menu__wrapp-login-popup {
       position: absolute;
       top: 95px;
@@ -375,7 +412,7 @@ a {
       pointer-events: none;
       background-color: #FFFFFF;
       border-radius: 4px;
-      box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+      box-shadow: 0px 0px 5px rgba(130, 130, 130, 0.2);
       -webkit-transition: opacity 0.2s ease,
                           -webkit-transform 0.25s ease;
       transition: opacity 0.2s ease,
@@ -558,9 +595,16 @@ main {
   section {
     margin-bottom: 20px;
   }
+  .b-main-title > h3 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #0038A8;
+  }
   section .block {
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
     position: relative;
     width: 100%;
     padding: 30px 20px 30px;
@@ -616,7 +660,7 @@ main {
         transform: translate3d(0, -20px, 0);
         visibility: hidden;
         pointer-events: none;
-        background-color: #F7F7F7;
+        background-color: #FFFFFF;
         border-radius: 4px;
         -webkit-transition: opacity 0.2s ease,
                             -webkit-transform 0.25s ease;
@@ -624,23 +668,13 @@ main {
                     transform 0.25s ease;
         z-index: 3;
       }
-        .dropdown-block-list:after {
-          position: absolute;
-          display: block;
-          top: -20px;
-          right: 20px;
-          content: '';
-          border: 10px solid transparent;
-          border-top: 10px solid transparent;
-          border-bottom: 10px solid #F7F7F7;
-        }
       .m-open-dropdown.dropdown-block-current + .dropdown-block-list {
         opacity: 1;
         visibility: visible;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
         pointer-events: auto;
-        box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 5px rgba(130, 130, 130, 0.2);
       }
         .dropdown-block-list li {
           line-height: 30px;
@@ -653,6 +687,73 @@ main {
             .dropdown-block-list li a:hover {
               color: #787878;
             }
+    /* Styles add/delete photo text */
+      #postPhoto {
+        width: 400px;
+      }
+        #postContent {
+        margin: 20px 0;
+      }
+      .b-form-item-button {
+        display: inline-block;
+        align-self: center;
+        margin-left: 20px;
+        outline: none;
+        border: none;
+        color: #FF0000;
+        background: none;
+        cursor: pointer;
+      }
+        .b-form-item-button:before {
+          margin-right: 10px;
+          font-family: 'FontAwesome';
+          font-size: 1rem;
+          color: #FF0000;
+          content: '\f014';
+        }
+      .b-form-item-add-photo {
+        width: 554px;
+      }
+      .b-add__form-button {
+        position: fixed;
+        bottom: 80px;
+        right: 50%;
+        margin-top: -40px;
+        margin-right: -540px;
+        z-index: 4;
+        -webkit-transition: opacity 0.2s ease;
+        transition: opacity 0.2s ease;
+      }
+        .m-button-in-fade.b-add__form-button {
+          opacity: 0.5;
+        }
+        .b-add__form-button button {
+          position: relative;
+          padding: 1px 20px 1px 60px;
+          line-height: 40px;
+          cursor: pointer;
+        }
+          #addPostPhoto:before,
+          #addPostText:before {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            font-family: 'FontAwesome';
+            font-size: 0.7rem;
+            max-width: 15px;
+          }
+          #addPostPhoto:before {
+            content: '\f030';
+          }
+          #addPostText:before {
+            content: '\f03b';
+          }
+      @media (max-width: 1160px) {
+        .b-add__form-button {
+          right: 10px;
+          margin-right: 0;
+        }
+      }
 
 .l-footer {
   height: 75px;

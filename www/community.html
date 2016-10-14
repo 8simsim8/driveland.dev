@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/gird-column.css">
     <link rel="stylesheet" type="text/css" href="css/reset-min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles-general.css">
     <link rel="stylesheet" type="text/css" href="css/styles-droplist.css">
     <link rel="stylesheet" type="text/css" href="css/styles-community.css">
@@ -44,14 +45,13 @@
         <a href="index.html" title="Main" class="b-menu__wrapp-logo col xs-2"></a>
         <ul class="b-menu__wrapp-list col xs-8">
           <li><a href="main.html" title="" class="text bold">Новости</a></li>
-          <li><a href="#" title="" class="text bold">Машины</a></li>
           <li><a href="community.html" title="" class="text bold">Сообщества</a></li>
           <li><a href="company.html" title="" class="text bold">Компании</a></li>
           <li><a href="#" title="" class="text bold">Барахолка</a></li>
         </ul>
 
         <!-- Попап входа -->
-        <button class="b-menu__wrapp-login button small text bold col xs-offset-1 xs-1">Войти</button>
+        <button class="b-menu__wrapp-login button small text bold col xs-offset-1 xs-1" style="display: none;">Войти</button>
         <div class="b-menu__wrapp-login-popup">
           <div class="b-menu__wrapp-login-popup-close"></div>
           <form action="/" method="POST" class="b-menu__wrapp-login-popup-enter">
@@ -63,10 +63,19 @@
             <a href="#" title="" class="text">Забыли пароль?</a>
           </form>
         </div>
-        <div class="b-menu__wrapp-login-nav" style="display: none;">
+
+      <!-- Меню пользователя -->
+        <div class="b-menu__wrapp-login-nav">
           <img src="/img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
           <p class="b-menu__wrapp-login-nav-name text">Leonidis Castonedis</p>
+          <ul class="b-menu__wrapp-login-nav-list text">
+            <li><a href="my-page.html" class="b-menu__user-item m-menu__user-item_my-page text">Моя страница</a></li>
+            <li><a href="my-blog.html" class="b-menu__user-item m-menu__user-item_my-blog text">Блог</a></li>
+            <li><a href="add-my-car.html" class="b-menu__user-item m-menu__user-item_add-car text">Добавить авто</a></li>
+            <li><a href="/logout" class="b-menu__user-item m-menu__user-item_exit text">Выход</a></li>
+          </ul>
         </div>
+
       </nav>
     </header>
     <!-- Попап регистрации -->
@@ -88,10 +97,14 @@
     <main>
       <div class="wrapper">
       <!-- /Header -->
+
         <div class="row">
 
           <section class="l-community col xs-9">
             <div class="block b-community">
+              <div class="b-main-title">
+                <h3>Сообщества</h3>
+              </div>
               <div class="paginator">
                 <div class="b-community__container container">
 
@@ -214,12 +227,12 @@
                   Текущая страница пагинации класс .m-pagination-item_current;
                 -->
                   <div class="b-new-auto__pagination controll">
-                   <span class="b-new-auto__pagination-item item text m-new-auto__pagination_prev m-new-auto__pagination_hide"><<</span>
-                    <span class="b-new-auto__pagination-item item text m-new-auto__pagination-item_current">1</span>
-                    <span class="b-new-auto__pagination-item item text">2</span>
-                    <span class="b-new-auto__pagination-item item text">3</span>
-                    <span class="b-new-auto__pagination-item item text">4</span>
-                    <span class="b-new-auto__pagination-item item text m-new-auto__pagination-item_next">>></span>
+                   <span class="b-pagination-item item text m-pagination_prev m-pagination_hide"><<</span>
+                    <span class="b-pagination-item item text m-pagination-item_current">1</span>
+                    <span class="b-pagination-item item text">2</span>
+                    <span class="b-pagination-item item text">3</span>
+                    <span class="b-pagination-item item text">4</span>
+                    <span class="b-pagination-item item text m-pagination-item_next">>></span>
                   </div>
                 </div>
             </div>
@@ -229,11 +242,12 @@
           <section class="l-filter col xs-3">
             <div class="block b-filter">
               <div class="b-filter-wrapp">
-                <h3>Показать</h3>
+                <p class="text bold">Всего сообществ: <span class="all-community">256</span></p>
+                <a href="#" class="text bold">Новых сообществ: <span class="new-company">12</span></a>
                 <div class="b-filter__switch">
-                  <a href="#" class="b-filter__switch-item text bold">Машины</a>
-                  <a href="#" class="b-filter__switch-item text bold">Мотоциклы</a>
-                  <a href="#" class="b-filter__switch-item text bold">Водителя</a>
+                  <a href="#" class="b-filter__switch-item text bold">Авто</a>
+                  <a href="#" class="b-filter__switch-item text bold">Мото</a>
+                  <a href="#" class="b-filter__switch-item text bold">Водители</a>
                 </div>
                 
                 <form class="b-filter__form" name="filter">
@@ -280,7 +294,8 @@
                     </ul>
                   </div>
 
-                  <input type="submit" value="Найти" class="button middle tab-input">
+                  <p class="icon-search"><input type="submit" value="Найти" class="button middle tab-input"></p>
+                 
                 </form>
               </div>
             </div>

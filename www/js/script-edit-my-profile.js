@@ -6,9 +6,7 @@
     }
     });
 
-    $(document).ready(function(){
-        workForm('aboutme');
-    });
+    workForm('aboutme');
 
   // ADD PHOTO TO THE USER ALBUM MODAL (USER PAGE)
 

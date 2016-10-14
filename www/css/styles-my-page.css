@@ -45,7 +45,7 @@
       background-repeat: no-repeat;
     }
   .b-title__content {
-    margin-top: 50px;
+    margin-top: 40px;
   }
     .b-title__content h2 {
       margin-bottom: 20px;
@@ -117,6 +117,7 @@
     .b-title__content button.button {
       display: inline-block;
       margin-top: 10px;
+      padding-left: 30px;
       width: 185px;
       background-image: url('../img/icon-appeal.svg');
       background-position: 15px center;

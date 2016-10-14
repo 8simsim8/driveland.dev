@@ -1,0 +1,97 @@
+.b-add-company,
+.b-add-company__form {
+  width: 100%;
+}
+
+  .b-add-company__form-item {
+    margin-top: 20px;
+  }
+
+  .b-add-company__form input:not([type='number']),
+  .b-add-company__form .droplist {
+    width: 300px;
+  }
+  
+  .b-add-company__form input[type='number'] {
+    min-width: 100px;
+  }
+  .b-add-company__form input,
+  .b-add-company__form .droplist {
+    margin-right: 20px;
+  }
+  .b-add-company__form input:last-child {
+    margin-right: 0;
+  }
+  #name,
+  .b-form-item-add-photo {
+    width: 554px;
+  }
+  .b-add-company__form .button.middle {
+      margin-top: 20px;
+      width: 200px;
+  }
+    .b-add-company__form-add {
+      display: -webkit-flex;
+      display: flex;
+      margin-top: 15px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #CECECE;
+    }
+      .b-add-company__form-add p {
+        -webkit-flex: 1;
+        flex: 1;
+        position: relative;
+        text-align: center;
+      }
+      .b-add-company__form-add p.m-add-company__form-add_active:after {
+        position: absolute;
+        display: block;
+        content: '';
+        bottom: -41px;
+        left: 50%;
+        margin-left: -20px;
+        height: 20px;
+        width: 20px;
+        background-color: #FFFFFF;
+        border-top: 1px solid #CECECE;
+        border-left: 1px solid #CECECE;
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+        .b-add-company__form-add span {
+          cursor: pointer;
+          color: #1C5BC9;
+          border-bottom: 1px dashed #1C5BC9;
+          -webkit-transition: color 0.2s ease,
+                              border-bottom 0.2s ease;
+          transition: color 0.2s ease,
+                      border-bottom 0.2s ease;
+        }
+          .b-add-company__form-add span:hover {
+            color: #297DE2;
+            border-bottom: 1px dashed #297DE2;
+          }
+        .b-add-company__form-add .m-add-company__form-add_active span {
+          color: #333333;
+          border-bottom: 1px dashed transparent;
+        }
+
+    .b-add-company__form .button.middle[type='submit'] {
+      background-color: #8FDF33;
+      color: #187900;
+    }
+      .b-add-company__form .button.middle[type='submit']:hover {
+        background-color: #8FDF33;
+        color: #f2ffef;
+      }
+    .b-add-company__form-add-inner {
+      margin: 0 0 30px;
+      padding-top: 20px;
+    }
+      .b-add-company__form-add-wrapp {
+      }
+        .b-add-company__form-add-wrapp input[type='text'] {
+          width: 300px;
+        }

@@ -22,10 +22,11 @@
 .b-filter-wrapp {
   width: 100%;
 }
-  .b-filter-wrapp h3 {
-    text-align: center;
-    color: #1C5BC9;
-    margin-bottom: 20px;
+  .b-filter-wrapp a {
+    color: #0038A8;
+  }
+  .b-filter__switch {
+    margin-top: 20px;
   }
   .b-filter__switch-item {
     float: left;

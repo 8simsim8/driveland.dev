@@ -19,8 +19,10 @@
       line-height: 1.1rem;
       margin-top: 15px;
     }
-    .b-company__item h4 {
+    .b-company__item h4 a {
       margin-bottom: 10px;
+      
+      color: #333333;
     }
       .b-company__item a {
         font-weight: bold;
@@ -33,22 +35,24 @@
         }
       .b-company__item-sector {
         padding: 2px 0x;
-        border-bottom: 1px dashed #1C5BC9;
       }
       .link:before {
         margin: 0 10px;
         font-family: 'FontAwesome';
+        font-weight: normal;
         font-size: 0.7rem;
-        content: '\f0c1';
+        content: '\f061';
       }
 
-.b-filter-wrapp {
+.b-filter-wrapp,
+.b-add-company-wrapp {
   width: 100%;
 }
-  .b-filter-wrapp h3 {
-    text-align: center;
-    color: #1C5BC9;
-    margin-bottom: 20px;
+  .b-filter-wrapp a {
+    color: #0038A8;
+  }
+  .block.b-add-company {
+    background-color: #1C5BC9;
   }
     .b-add-car__form-item.droplist {
       margin-top: 20px;
@@ -57,4 +61,32 @@
     .b-filter__form .button.middle {
       margin-top: 20px;
       width: 100%;
+    }
+  .b-add-company {
+    margin-top: 20px;
+  }
+    .block.b-add-company h5 {
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  .add-button.button.middle {
+    position: relative;
+    width: 100%;
+    line-height: 40px;
+    background-color: #ABE766;
+    color: #187900;
+  }
+    .add-button.button.middle:hover {
+      background-color: #8FDF33;
+      color: #1C8D00;
+    }
+    .add-button:before {
+      position: absolute;
+      top: 0;
+      left: 15px;
+      margin: 0 10px;
+      font-family: 'FontAwesome';
+      font-size: 0.7rem;
+      content: '\f067';
     }

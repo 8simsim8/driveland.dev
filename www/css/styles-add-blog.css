@@ -23,65 +23,6 @@
       background-color: #8FDF33;
       color: #f2ffef;
     }
-.b-form-item-button {
-  display: inline-block;
-  align-self: center;
-  margin-left: 20px;
-  outline: none;
-  border: none;
-  color: #FF0000;
-  background: none;
-  cursor: pointer;
-}
-  .b-form-item-button:before {
-    margin-right: 10px;
-    font-family: 'FontAwesome';
-    font-size: 1rem;
-    color: #FF0000;
-    content: '\f014';
-  }
-#postPhoto {
-  width: 400px;
-}
-  #postContent {
-  margin: 20px 0;
-}
-.b-form-item-add-photo {
-  width: 554px;
-}
-.b-add-blog__form-button {
-  position: fixed;
-  top: 50%;
-  right: 20px;
-  margin-top: -40px;
-  z-index: 4;
-  -webkit-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
-}
-  .m-button-in-fade.b-add-blog__form-button {
-    opacity: 0.5;
-  }
-  .b-add-blog__form-button button {
-    position: relative;
-    padding: 1px 20px 1px 60px;
-    line-height: 40px;
-    cursor: pointer;
-  }
-    #addPostPhoto:before,
-    #addPostText:before {
-      position: absolute;
-      top: 0;
-      left: 20px;
-      font-family: 'FontAwesome';
-      font-size: 0.7rem;
-      max-width: 15px;
-    }
-    #addPostPhoto:before {
-      content: '\f030';
-    }
-    #addPostText:before {
-      content: '\f03b';
-    }
 
 @media (max-width: 768px) {
   #title {
@@ -92,11 +33,6 @@
   }
     .b-add-blog__form .button.middle {
       width: 165px;
-    }
-    #addPostPhoto:before {
-      content: '';
-    }
-    #addPostText:before {
-      content: '';
+      padding: 1px 10px 1px 30px;
     }
 }

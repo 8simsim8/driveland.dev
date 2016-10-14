@@ -10,14 +10,14 @@
       e = e || window.event;
       if (e.preventDefault)
           e.preventDefault();
-      e.returnValue = false;  
+      e.returnValue = false;
     }
 
     function preventDefaultForScrollKeys(e) {
-        if (keys[e.keyCode]) {
-            preventDefault(e);
-            return false;
-        }
+      if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+      }
     }
 
     function disableScroll() {
@@ -30,12 +30,12 @@
     }
 
     function enableScroll() {
-        if (window.removeEventListener)
-            window.removeEventListener('DOMMouseScroll', preventDefault, false);
-        window.onmousewheel = document.onmousewheel = null; 
-        window.onwheel = null; 
-        window.ontouchmove = null;  
-        document.onkeydown = null;  
+      if (window.removeEventListener)
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+      window.onmousewheel = document.onmousewheel = null;
+      window.onwheel = null;
+      window.ontouchmove = null;
+      document.onkeydown = null;
     }
 /*--------------------------------------------------------------------------------*/
 
@@ -79,17 +79,46 @@
       return false;
     });
 
-  // Открыть меню пользователя
+  // Работа меню пользователя
   var userMenu = document.getElementsByClassName('b-menu__wrapp-login-nav')[0];
-  var userMenuList = userMenu.getElementsByClassName('b-menu__wrapp-login-nav-list')[0];
-   $(userMenu).on('click', function(){
-     $(userMenuList).addClass('m-open-user-menu');
-    return false;
-   });
 
-  $(document).on('click', function(){
-    $('.m-open-user-menu').removeClass('m-open-user-menu');
+  $(document).on('click', function(e){
+    var workPopap = false;
+    var target = e.target;
+    while(target !== null) {
+      if(target == userMenu) {
+        workPopap = true;
+        $(userMenu).toggleClass('m-open-user-menu');
+        break;
+      }
+      target = target.parentNode;
+    }
+    if(!workPopap) {
+      $(userMenu).removeClass('m-open-user-menu');
+    }
   });
-   
+  
+  // Add/delete photo
+  var blogNum = 1;
+
+  $('#addPostText').on('click', function (e) {
+    var name = 'txt' + blogNum;
+    $('#postText').clone().removeAttr('id').show().appendTo('#postContent')
+                  .find('textarea').attr('name', name);
+    blogNum++;
+  });
+
+  $('#addPostPhoto').on('click', function (e) {
+    var name = 'img' + blogNum;
+    var div = $('#postPhoto').clone().removeAttr('id');
+    var slim = div.find('.postPhotoSlim');
+    
+    div.show().appendTo('#postContent');    
+    slim.find('input').attr('name', name);
+    slim.slim();
+    blogNum++;
+  });
+  
+  
 
 };

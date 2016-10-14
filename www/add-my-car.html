@@ -45,14 +45,13 @@
         <a href="index.html" title="Main" class="b-menu__wrapp-logo col xs-2"></a>
         <ul class="b-menu__wrapp-list col xs-8">
           <li><a href="main.html" title="" class="text bold">Новости</a></li>
-          <li><a href="#" title="" class="text bold">Машины</a></li>
           <li><a href="community.html" title="" class="text bold">Сообщества</a></li>
           <li><a href="company.html" title="" class="text bold">Компании</a></li>
           <li><a href="#" title="" class="text bold">Барахолка</a></li>
         </ul>
 
         <!-- Попап входа -->
-        <button class="b-menu__wrapp-login button small text bold col xs-offset-1 xs-1">Войти</button>
+        <button class="b-menu__wrapp-login button small text bold col xs-offset-1 xs-1" style="display: none;">Войти</button>
         <div class="b-menu__wrapp-login-popup">
           <div class="b-menu__wrapp-login-popup-close"></div>
           <form action="/" method="POST" class="b-menu__wrapp-login-popup-enter">
@@ -64,10 +63,19 @@
             <a href="#" title="" class="text">Забыли пароль?</a>
           </form>
         </div>
-        <div class="b-menu__wrapp-login-nav" style="display: none;">
+
+      <!-- Меню пользователя -->
+        <div class="b-menu__wrapp-login-nav">
           <img src="/img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
           <p class="b-menu__wrapp-login-nav-name text">Leonidis Castonedis</p>
+          <ul class="b-menu__wrapp-login-nav-list text">
+            <li><a href="my-page.html" class="b-menu__user-item m-menu__user-item_my-page text">Моя страница</a></li>
+            <li><a href="my-blog.html" class="b-menu__user-item m-menu__user-item_my-blog text">Блог</a></li>
+            <li><a href="add-my-car.html" class="b-menu__user-item m-menu__user-item_add-car text">Добавить авто</a></li>
+            <li><a href="/logout" class="b-menu__user-item m-menu__user-item_exit text">Выход</a></li>
+          </ul>
         </div>
+
       </nav>
     </header>
     <!-- Попап регистрации -->
@@ -93,7 +101,9 @@
         <div class="row">
           <section class="l-add-car col xs-9">
             <div class="block b-add-car">
-
+              <div class="b-main-title">
+                <h3>Добавить авто</h3>
+              </div>
               <form role="form" action="addcar" method="POST" enctype="multipart/form-data" class="b-add-car__form" name="add-car">
 
                 <div id="carMainPhotoSlim"
@@ -106,7 +116,7 @@
               <div>
                 <div class="b-add-car__form-item m-form-item-inline text">
                   <p class="b-form-item-title"><label for="carname" class="text">Имя машины</label></p>
-                  <p><input type="text" id="carname" name="carname" placeholder="Car" class="tab-input"></p>
+                  <p><input type="text" id="carname" name="carname" class="tab-input"></p>
                 </div>
 
                 <div class="b-add-car__form-item m-form-item-inline m-add-car__form-item_check text bold">
@@ -114,7 +124,6 @@
                   <p class="input-radio-block"><label><input type="checkbox" name="primary" class="text tab-input"><span>Основная</span></label></p>
                   <p class="input-radio-block"><label><input type="checkbox" name="forsale" class="text tab-input"><span>Продаётся</span></label></p>
                 </div>
-
 
                 <div class="b-add-car__form-item m-form-item-inline">
                   <div class="b-form-item-title text bold">Марка/Модель</div>
@@ -161,8 +170,8 @@
                       <li class="droplist-item text">Diesel</li>
                     </ul>
                   </div>
-                  <input type="number" name="liters" min="1" max="20" step="0.1" id="liters" placeholder="Объем двигателя, л" class="tab-input">
-                  <input type="number" name="power" min="1" max="3000" step="1" id="power" placeholder="Мощность, л.с." class="tab-input">
+                  <input type="number" name="liters" min="1" max="20" step="0.1" id="liters" placeholder="л" class="tab-input">
+                  <input type="number" name="power" min="1" max="3000" step="1" id="power" placeholder="л.с." class="tab-input">
                   <input type="number" name="mileage" min="1" max="1000000" step="1" id="mileage" placeholder="Пробег, км" class="tab-input">
                 </div>
 

@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/gird-column.css">
     <link rel="stylesheet" type="text/css" href="css/reset-min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/list-marks.css">
     <link rel="stylesheet" type="text/css" href="css/styles-general.css">
     <link rel="stylesheet" type="text/css" href="css/styles-main.css">
@@ -43,7 +44,6 @@
         <a href="index.html" title="Main" class="b-menu__wrapp-logo col xs-2"></a>
         <ul class="b-menu__wrapp-list col xs-8">
           <li><a href="main.html" title="" class="text bold">Новости</a></li>
-          <li><a href="#" title="" class="text bold">Машины</a></li>
           <li><a href="community.html" title="" class="text bold">Сообщества</a></li>
           <li><a href="company.html" title="" class="text bold">Компании</a></li>
           <li><a href="#" title="" class="text bold">Барахолка</a></li>
@@ -62,10 +62,19 @@
             <a href="#" title="" class="text">Забыли пароль?</a>
           </form>
         </div>
+
+      <!-- Меню пользователя -->
         <div class="b-menu__wrapp-login-nav" style="display: none;">
           <img src="/img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
           <p class="b-menu__wrapp-login-nav-name text">Leonidis Castonedis</p>
+          <ul class="b-menu__wrapp-login-nav-list text">
+            <li><a href="my-page.html" class="b-menu__user-item m-menu__user-item_my-page text">Моя страница</a></li>
+            <li><a href="my-blog.html" class="b-menu__user-item m-menu__user-item_my-blog text">Блог</a></li>
+            <li><a href="add-my-car.html" class="b-menu__user-item m-menu__user-item_add-car text">Добавить авто</a></li>
+            <li><a href="/logout" class="b-menu__user-item m-menu__user-item_exit text">Выход</a></li>
+          </ul>
         </div>
+
       </nav>
     </header>
     <!-- Попап регистрации -->
@@ -93,6 +102,7 @@
           <p class="text">Голосуйте за интересные машины. Добавьте свое авто и участвуйте в рейтинге лучших!</p>
           <button class="button big button-registration">Присоединяйтесь!</button>
         </div>
+
         <div class="row row-wrap">
           <section class="l-content col sm-8 order-xs-1 xs-12">
             <div class="block b-content">

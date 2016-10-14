@@ -13,15 +13,17 @@ function workForm(nameForm) {
         keyEnter = 13,
         keyTab = 9;
 
+
+
     // При загрузке фокус на первом поле
-    if($(itemInputs).eq(currentInput).hasClass('click-element')) {
-      $(itemInputs).eq(currentInput).click();
-    } else {
-      $(itemInputs).eq(currentInput).focus();
-    }
+      if($(itemInputs).eq(currentInput).hasClass('click-element')) {
+        $(itemInputs).eq(currentInput).click();
+      } else {
+        $(itemInputs).eq(currentInput).focus();
+      }
 
     $(itemInputs).on('click', function(){
-      $(itemInputs).eq(currentInput).blur();
+      if(currentInput != 0) $(itemInputs).eq(currentInput).blur();
       var $this = $(this);
       currentInput = $(itemInputs).index($this);
     });
