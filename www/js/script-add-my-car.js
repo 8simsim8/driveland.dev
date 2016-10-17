@@ -32,14 +32,6 @@ for (var i = 0; i < selectors.length; i++) {
     selector.find("option[value='" + defaultValue + "']").attr('selected', 'selected');
 }
 
-// BAZAAR AND COMPANIES PHOTO GALLERY
-
-$('.galleryThumb').on('click', function (e) {
-    e.preventDefault();
-    var photoSrc = $(this).attr('src').replace('thumb', '');
-    $('#galleryPhoto').attr('src', photoSrc);
-});
-
 })();
 
 

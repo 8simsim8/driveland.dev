@@ -1,0 +1,17 @@
+.b-filter-wrapp {
+  width: 100%;
+}
+  .b-filter-wrapp p {
+    text-align: center;
+  }
+    .b-filter-wrapp a {
+      color: #0038A8;
+    }
+      .b-filter__form-item.droplist {
+        margin-top: 20px;
+        width: 100%;
+      }
+      .b-filter__form .button.middle {
+        margin-top: 20px;
+        width: 100%;
+      }

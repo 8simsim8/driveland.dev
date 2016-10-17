@@ -290,10 +290,10 @@ section {
   }
 }
 @media (max-width: 768px) {
-  .b-model__list {
+  .b-mark__list {
     width: 100%;
   }
-    .b-model__list li {
+    .b-mark__list li {
       height: 57px;
       display: inline-block;
       width: calc( ( 100% - 40px ) / 7);

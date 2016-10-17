@@ -118,7 +118,22 @@
     slim.slim();
     blogNum++;
   });
+
+  // BAZAAR AND COMPANIES PHOTO GALLERY
+    // Show first img
+    if($('.galleryThumb').length > 0) {
+      var photoSrc = $('.galleryThumb').eq(0).attr('src').replace('thumb', '');
+      $('#galleryPhoto').attr('src', photoSrc);
+    }
   
-  
+    $('.galleryThumb').on('click', function (e) {
+        e.preventDefault();
+        var photoSrc = $(this).attr('src').replace('thumb', '');
+        $('#galleryPhoto').fadeOut(200, function() {
+            $('#galleryPhoto').attr('src', photoSrc);
+          }
+        );
+        $('#galleryPhoto').fadeIn(200);
+    });
 
 };

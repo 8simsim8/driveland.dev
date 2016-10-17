@@ -56,12 +56,17 @@ h6 {
   line-height : 1.42em;
   color : #333333;
 }
+.lead {
+  font-family: 'Open Sans', sans-serif;
+  font-size : 0.75rem;
+  line-height : 1.42em;
+  color : #333333;
+}
   .text.bold {
     font-weight : bold;
   }
   .text.subtext {
     font-size : 0.6rem;
-    line-height : 0.75em;
   }
     .text.subtext.bold {
       font-weight : bold;
@@ -98,29 +103,6 @@ input[type='submit'].button {
   transition: background-color 0.15s linear,
                          color 0.15s linear;
 }
-  .b-form-item-title {
-    min-width: 180px;
-    line-height: 40px;
-  }
-    .m-form-item-inline {
-      display: -webkit-flex;
-      display: flex;
-      align-items: flex-start;
-    }
-    .m-form-item_textarea textarea {
-      width: 100%;
-      padding: 10px;
-      background-color: #F0F0F0;
-      border-radius: 4px;
-      border: none;
-      resize: none;
-      outline: none;
-    }
-label {
-  font-family: 'Open Sans', sans-serif;
-  font-weight : bold;
-  text-decoration: none;
-}
   .button:hover,
   input[type='submit'].button:hover,
   .button:focus,
@@ -152,6 +134,48 @@ label {
     -webkit-border-radius : 26px;
     border-radius : 26px;
   }
+  .icon-search {
+    position: relative;
+    }
+    .icon-search:before {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      margin-top: -0.4rem;
+      font-family: 'FontAwesome';
+      font-size: 0.8rem;
+      color: #FFFFFF;
+      content: '\f002';
+     }
+  .add-button.button.middle {
+    position: relative;
+    width: 100%;
+    line-height: 40px;
+    background-color: #ABE766;
+    color: #187900;
+  }
+    .add-button.button.middle:hover {
+      background-color: #8FDF33;
+      color: #1C8D00;
+    }
+    .add-button:before {
+      position: absolute;
+      top: 0;
+      left: 15px;
+      margin: 0 10px;
+      font-family: 'FontAwesome';
+      font-size: 0.7rem;
+      content: '\f067';
+    }
+    .submit-button.button.big {
+      background-color: #ABE766;
+      color: #187900;
+    }
+      .submit-button.button.big:hover {
+        background-color: #8FDF33;
+        color: #F2FFEF;
+      }
+
 
 /* Styles <inputs> */
 input:not([type="radio"]),
@@ -225,6 +249,29 @@ input:not([type="submit"]) {
       -webkit-transition: background-color 5000s ease-in-out 0s;
       background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);
     }
+  .b-form-item-title {
+    min-width: 180px;
+    line-height: 40px;
+  }
+    .m-form-item-inline {
+      display: -webkit-flex;
+      display: flex;
+      align-items: flex-start;
+    }
+    .m-form-item_textarea textarea {
+      width: 100%;
+      padding: 10px;
+      background-color: #F0F0F0;
+      border-radius: 4px;
+      border: none;
+      resize: none;
+      outline: none;
+    }
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight : bold;
+  text-decoration: none;
+}
     .slim-label {
       font-family: Open-Sans, sans-serif;
       font-size: 14px;
@@ -236,19 +283,6 @@ a {
   -webkit-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
-  .icon-search {
-    position: relative;
-    }
-    .icon-search:before {
-      position: absolute;
-      top: 50%;
-      left: 15px;
-      margin-top: -0.4rem;
-      font-family: 'FontAwesome';
-      font-size: 0.8rem;
-      color: #FFFFFF;
-      content: '\f002';
-     }
 
 /* menu */
 .l-menu {
@@ -290,9 +324,8 @@ a {
     justify-content: center;
   }
     .b-menu__wrapp-list li {
-      display: inline-block;
-      flex: 1;
       text-align: center;
+      margin-right: 30px;
     }
     .b-menu__wrapp-list li:last-child {
       margin-right: 0;
