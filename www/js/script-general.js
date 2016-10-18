@@ -66,7 +66,7 @@
   // Открытие попапа регистрации
     var registerInputs = $('.b-menu__wrapp-register-popup').find('.tab-input');
     $('.button-registration').on('click', function(){
-      disableScroll();
+      disableScroll(); // Блокирование скролла/пролистывания
       $('.b-menu__wrapp-login-popup').removeClass('m-open-popap');
       $('.b-menu__wrapp-register-popup').addClass('m-open-popap');
       workForm('register');
@@ -75,7 +75,7 @@
   // Закрытие попапа
     $('.b-menu__wrapp-login-popup-close').on('click', function(){
       $('.m-open-popap').removeClass('m-open-popap');
-      enableScroll();
+      enableScroll(); // Разрешение скролла/пролистывания
       return false;
     });
 

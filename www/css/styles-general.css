@@ -11,7 +11,8 @@ html {
 /* Header styles */
 h1 {
   font-family: 'Open Sans', sans-serif;
-  font-size : 3.6rem;
+  font-weight: bold;
+  font-size : 2.4rem;
   line-height : 1.1em;
   color : #333333;
 }
@@ -29,7 +30,6 @@ h3 {
 }
 h4 {
   font-family: 'Open Sans', sans-serif;
-  font-weight : bold;
   font-size : 1.2rem;
   line-height : 1.25em;
   color : #333333;
@@ -58,7 +58,7 @@ h6 {
 }
 .lead {
   font-family: 'Open Sans', sans-serif;
-  font-size : 0.75rem;
+  font-size : 0.8rem;
   line-height : 1.42em;
   color : #333333;
 }
@@ -84,7 +84,7 @@ input[type=number] {
   -moz-appearance:textfield;
 }
 .button,
-input[type='submit'].button {
+input.button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -97,6 +97,7 @@ input[type='submit'].button {
   color : #FFFFFF;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
   background-color: #0038A8;
   -webkit-transition: background-color 0.15s linear,
                       color 0.15s linear;
@@ -104,10 +105,9 @@ input[type='submit'].button {
                          color 0.15s linear;
 }
   .button:hover,
-  input[type='submit'].button:hover,
+  input.button:hover,
   .button:focus,
-  input[type='submit'].button:focus,
-  input[type='submit'].button.focus-button {
+  input.button:focus, {
     background-color: #297DE2;
     cursor: pointer;
   }
@@ -167,11 +167,15 @@ input[type='submit'].button {
       font-size: 0.7rem;
       content: '\f067';
     }
-    .submit-button.button.big {
+    .submit-button.button {
+      padding: 2px 25px;
+      width: auto;
       background-color: #ABE766;
       color: #187900;
     }
-      .submit-button.button.big:hover {
+      input.button.submit-button:focus,
+      button.button.submit-button:focus,
+      .submit-button.button:hover {
         background-color: #8FDF33;
         color: #F2FFEF;
       }
@@ -250,7 +254,8 @@ input:not([type="submit"]) {
       background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);
     }
   .b-form-item-title {
-    min-width: 180px;
+    padding-right: 20px;
+    min-width: 200px;
     line-height: 40px;
   }
     .m-form-item-inline {
@@ -640,7 +645,7 @@ main {
     flex-direction: column;
     position: relative;
     width: 100%;
-    padding: 30px 20px 30px;
+    padding: 20px;
     background : #FFFFFF;
     -moz-border-radius : 4px;
     -webkit-border-radius : 4px;
@@ -744,12 +749,13 @@ main {
           color: #FF0000;
           content: '\f014';
         }
-      .b-form-item-add-photo {
+      .b-form-item-add-photo,
+      .m-form-item_textarea textarea {
         width: 554px;
       }
       .b-add__form-button {
         position: fixed;
-        bottom: 80px;
+        bottom: 175px;
         right: 50%;
         margin-top: -40px;
         margin-right: -540px;
@@ -762,15 +768,20 @@ main {
         }
         .b-add__form-button button {
           position: relative;
-          padding: 1px 20px 1px 60px;
+          padding: 1px 15px 1px 45px;
           line-height: 40px;
           cursor: pointer;
+        }
+        #addPostPhoto,
+        #addPostText {
+          width: auto;
+          min-width: 170px;
         }
           #addPostPhoto:before,
           #addPostText:before {
             position: absolute;
             top: 0;
-            left: 20px;
+            left: 15px;
             font-family: 'FontAwesome';
             font-size: 0.7rem;
             max-width: 15px;

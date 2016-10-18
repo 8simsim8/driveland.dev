@@ -213,7 +213,6 @@ section {
   .b-news__inner {
   }
     .b-news__inner-item {
-      height: 234px;
       position: relative;
       margin-bottom: 15px;
       z-index: 1;

@@ -46,6 +46,10 @@ section.col.l-similar {
     .b-one-ad__form {
       margin-top: 20px;
     }
+    
+    .b-one-ad__form input[type='submit']{
+      margin-top: 20px;
+    }
 
 .b-similar {
   

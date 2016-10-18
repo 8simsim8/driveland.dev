@@ -23,7 +23,8 @@
     margin-right: 0;
   }
   #name,
-  .b-form-item-add-photo {
+  .b-form-item-add-photo,
+  .b-add-ad__form-item.m-form-item_textarea textarea {
     width: 554px;
   }
   .b-add-ad__form .button.middle {

@@ -10,7 +10,3 @@
   $('.b-filter__switch-item').eq(0).trigger('click');
 
 })();
-
-
-
-

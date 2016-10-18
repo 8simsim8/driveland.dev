@@ -17,8 +17,8 @@
     });
 
   // Сокращение текста с блоке с новостями
-    $(".b-news__inner-item").dotdotdot({
-      ellipsis  : '...'
+    $(".b-news__inner-item a").each(function(index, el){
+      $clamp(el, {clamp: 3});
     });
 
 })();

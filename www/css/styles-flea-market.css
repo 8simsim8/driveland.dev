@@ -73,7 +73,6 @@
   }
 
   .b-ad__item a {
-    font-weight: bold;
     color: #1C5BC9;
     -webkit-transition: color 0.2s ease;
     transition: color 0.2s ease;

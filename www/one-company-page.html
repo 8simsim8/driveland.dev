@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset-min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles-general.css">
+    <link rel="stylesheet" type="text/css" href="css/paginator.css">
     <link rel="stylesheet" type="text/css" href="css/styles-one-company.css">
      <link rel="stylesheet" type="text/css" href="css/styles-aside-block-author.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -31,9 +32,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/1.7.4/jquery.dotdotdot.min.js"></script>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Clamp.js/0.5.1/clamp.min.js"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script type="text/javascript" src="js/script-droplist.js"></script>
     <script type="text/javascript" src="js/script-general.js"></script>
   </head>
   <body>
@@ -65,7 +67,7 @@
 
       <!-- Меню пользователя -->
         <div class="b-menu__wrapp-login-nav">
-          <img src="/img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
+          <img src="img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
           <p class="b-menu__wrapp-login-nav-name text">Leonidis Castonedis</p>
           <ul class="b-menu__wrapp-login-nav-list text">
             <li><a href="my-page.html" class="b-menu__user-item m-menu__user-item_my-page text">Моя страница</a></li>
@@ -99,33 +101,111 @@
 
         <div class="row">
           <section class="l-one-company col xs-9">
+          
             <div class="block b-one-company">
-              <h3>Company name</h3>
-              <p class="b-one-company__sector text">Сфера деятельности: <a href="#" title="Sector">Мойки</a></p>
-              <p class="b-one-company__rating text">Рейтинг: <span>2</span></p>
-              <img src="" alt="" class="b-one-company__rating-viewport" id="galleryPhoto">
-              <div class="b-one-company__img-block">
-                <img src="/img/temp/56738aes-480.jpg" alt="" class="b-one-company__img-item galleryThumb">
-                <img src="/img/temp/c1c36aes-960.jpg" alt="" class="b-one-company__img-item galleryThumb">
-                <img src="/img/temp/e5ac4aes-480.jpg" alt="" class="b-one-company__img-item galleryThumb">
-                <img src="/img/temp/e5ac4aes-480.jpg" alt="" class="b-one-company__img-item galleryThumb">
-                <img src="/img/temp/e5ac4aes-480.jpg" alt="" class="b-one-company__img-item galleryThumb">
-                <img src="/img/temp/e5ac4aes-480.jpg" alt="" class="b-one-company__img-item galleryThumb">
-              </div>
-              <p class="b-one-company__about text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint minus impedit provident, ipsa vitae consequuntur neque quo eum autem veniam! Blanditiis, nesciunt! Suscipit porro maxime magnam blanditiis, nam maiores delectus.</p>
-              <p class="b-one-company__contact m-one-company__contact_address text">Address: <span>Sokratous 46, Athina 104 31, Greece</span></p>
-              <p class="b-one-company__contact m-one-company__contact_telephone text">Telephone: <a href="tel:+302105241296">+30 21 0524 1296</span></p>
-              <p class="b-one-company__contact m-one-company__contact_email text">Email: <a href="mailto:email@email.com?subject=feedback">email@email.com</a></p>
-
-              <form action="one-company-page_submit" method="get" accept-charset="utf-8" class="b-one-company__form">
-                <h4>Написать сообщение</h4>
-                <div class="b-form-item m-form-item_textarea m-form-item-inline">
-                  <p class="b-form-item-title text bold"><label>Введите текст сообщения </label></p>
-                  <p><textarea rows="4" cols="60" name="hobby" class="text tab-input"></textarea></p>
+              <div class=" b-one-company__title">
+                <img src="img/temp/logo-company/1.svg" alt="" class="b-one-company__title-logo">
+                <div class="b-one-company__title-note">
+                  <p class="b-one-company__tag text subtext"><a href="#" title="Sector">Мойки</a></p>
+                  <h1 id="nameCompany">Рога и копыта</h1>
+                  <span class="b-one-company__rating">2335</span>
+                  <p class="b-one-company__short-about lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorem eius deserunt libero distinctio, iusto illum repellendus commodi unde, dolores facere repudiandae. Nisi unde blanditiis sunt porro officiis, nostrum et!</p>
                 </div>
-                <input type="submit" value="Опубликовать" class="submit-button big button middle tab-input"></input>
+              </div>
+
+              <div class="b-one-company__info">
+                <div class="b-one-company__info-text">
+                  <button class="button middle" name="open-message-popup">Написать сообщение</button>
+                  <p class="b-one-company__info-text-item m-one-company__title-info-item_tel text lead"><a href="tel:+302105241296">+30 21 0524 1296</a></p>
+                  <p class="b-one-company__info-text-item m-one-company__title-info-item_tel text lead"><a href="tel:+302105241296">+30 21 0524 1296</a></p>
+                  
+                  <p class="b-one-company__info-text-item m-one-company__info-text-item_address text lead" id="textAddress">Sokratous 46, Athina, Greece</p>
+                  <p class="b-one-company__info-text-item m-one-company__info-text-item_email text lead"><a href="mailto:email@email.com?subject=feedback">email@email.com</a></p>
+
+                </div>
+                <div class="b-one-company__info-map" id="map"></div>
+              </div>
+            </div>
+
+            <div class="block b-one-company__about">
+              <h4>О компании</h4>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint minus impedit provident, ipsa vitae consequuntur neque quo eum autem veniam! Blanditiis, nesciunt! Suscipit porro maxime magnam blanditiis, nam maiores delectusLorem ipsum dolor sit amet, consectetur adipisicing elit. Sint minus impedit provident, ipsa vitae consequuntur neque quo eum autem veniam! Blanditiis, nesciunt! Suscipit porro maxime magnam blanditiis, nam maiores delectusLorem ipsum dolor sit amet, consectetur adipisicing elit. Sint minus impedit provident, ipsa vitae consequuntur neque quo eum autem veniam! Blanditiis, nesciunt! Suscipit porro maxime magnam blanditiis, nam maiores delectusLorem ipsum dolor sit amet, consectetur adipisicing elit. Sint minus impedit provident, ipsa vitae consequuntur neque quo eum autem veniam! Blanditiis, nesciunt! Suscipit porro maxime magnam blanditiis, nam maiores delectus.</p>
+              <img src="" alt="" class="b-one-company__about-viewport" id="galleryPhoto">
+              <div class="b-one-company__img-block">
+                <img src="img/temp/56738aes-480.jpg" alt="" class="b-one-company__img-item galleryThumb">
+                <img src="img/temp/c1c36aes-960.jpg" alt="" class="b-one-company__img-item galleryThumb">
+                <img src="img/temp/e5ac4aes-480.jpg" alt="" class="b-one-company__img-item galleryThumb">
+                <img src="img/temp/e5ac4aes-480.jpg" alt="" class="b-one-company__img-item galleryThumb">
+                <img src="img/temp/e5ac4aes-480.jpg" alt="" class="b-one-company__img-item galleryThumb">
+                <img src="img/temp/e5ac4aes-480.jpg" alt="" class="b-one-company__img-item galleryThumb">
+              </div>
+            </div>
+
+            <div class="block b-one-company__news paginator">
+              <h4>Новости компании</h4>
+              <div class="b-one-company__news-wrapp container">
+
+                <div class="b-one-company__news-wrapp-item">
+                  <img src="img/temp/auto/9.png" alt="">
+                  <div class="b-one-company__news-wrapp-item-text">
+                    <p class="b-one-company__news-wrapp-item-text-date text">12.10.2016</p>
+                    <h5><a href="#">Новость 1</a></h5>
+                    <p class="b-one-company__news-wrapp-item-text-main text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.</p>
+                  </div>
+                </div>
+
+                <div class="b-one-company__news-wrapp-item">
+                  <img src="img/temp/auto/8.png" alt="">
+                  <div class="b-one-company__news-wrapp-item-text">
+                    <p class="b-one-company__news-wrapp-item-text-date text">12.10.2016</p>
+                    <h5><a href="#">Новость 2</a></h5>
+                    <p class="b-one-company__news-wrapp-item-text-main text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.</p>
+                  </div>
+                </div>
+
+                <div class="b-one-company__news-wrapp-item">
+                  <img src="img/temp/auto/7.png" alt="">
+                  <div class="b-one-company__news-wrapp-item-text">
+                    <p class="b-one-company__news-wrapp-item-text-date text">12.10.2016</p>
+                    <h5><a href="#">Новость 3 em ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.</a></h5>
+                    <p class="b-one-company__news-wrapp-item-text-main text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.</p>
+                  </div>
+                </div>
+
+                <div class="b-one-company__news-wrapp-item">
+                  <img src="img/temp/auto/6.png" alt="">
+                  <div class="b-one-company__news-wrapp-item-text">
+                    <p class="b-one-company__news-wrapp-item-text-date text">12.10.2016</p>
+                    <h5><a href="#">Новость 4</a></h5>
+                    <p class="b-one-company__news-wrapp-item-text-main text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="b-company__pagination controll">
+                <span class="b-company__pagination-item item text m-pagination_prev m-pagination_hide"><<</span>
+                <span class="b-company__pagination-item item text m-pagination-item_current">1</span>
+                <span class="b-company__pagination-item item text">2</span>
+                <span class="b-company__pagination-item item text">3</span>
+                <span class="b-company__pagination-item item text">4</span>
+                <span class="b-company__pagination-item item text m-pagination-item_next">>></span>
+              </div>
+            </div>
+            
+            <div class="b-one-company__message popup" popup-message="close">
+              <div class="b-popup-message-close"></div>
+              <h4>Написать сообщение</h4>
+              <form action="one-company-page_submit" method="get" accept-charset="utf-8" class="b-one-company__form">
+                <div class="b-form-item m-form-item_textarea m-form-item-inline">
+                  <p><textarea rows="4" cols="60" name="message" class="text tab-input"></textarea></p>
+                </div>
+                <input type="submit" value="Отправить" class="button submit-button big tab-input"></input>
               </form>
             </div>
+
           </section>
 
           <section class="l-similar col xs-3">
@@ -133,23 +213,23 @@
               <p class="text bold"><span>100</span> похожих компаний</p>
               <div class="b-similar__wrapp">
                 <div class="b-similar__item">
-                  <img src="/img/temp/img-previous-2.jpg" alt="" class="b-similar__item-img">
+                  <img src="img/temp/img-previous-2.jpg" alt="" class="b-similar__item-img">
                   <a href="#" class="text">Name company 1</a>
                 </div>
                 <div class="b-similar__item">
-                  <img src="/img/temp/img-previous-1.jpg" alt="" class="b-similar__item-img">
+                  <img src="img/temp/img-previous-1.jpg" alt="" class="b-similar__item-img">
                   <a href="#" class="text">Name company 2</a>
                 </div>
                 <div class="b-similar__item">
-                  <img src="/img/temp/img-previous-1.jpg" alt="" class="b-similar__item-img">
+                  <img src="img/temp/img-previous-1.jpg" alt="" class="b-similar__item-img">
                   <a href="#" class="text">Name company 2</a>
                 </div>
                 <div class="b-similar__item">
-                  <img src="/img/temp/img-previous-1.jpg" alt="" class="b-similar__item-img">
+                  <img src="img/temp/img-previous-1.jpg" alt="" class="b-similar__item-img">
                   <a href="#" class="text">Name company 2</a>
                 </div>
                 <div class="b-similar__item">
-                  <img src="/img/temp/img-previous-1.jpg" alt="" class="b-similar__item-img">
+                  <img src="img/temp/img-previous-1.jpg" alt="" class="b-similar__item-img">
                   <a href="#" class="text">Name company 2</a>
                 </div>
               </div>
@@ -158,6 +238,7 @@
         </div>
 
       <script type="text/javascript" src="js/slim.jquery.min.js"></script>
+      <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA0dzIKLNt22A8WoTU7GojHwlhNR_dAaxI"></script>
       <script type="text/javascript" src="js/script-one-company.js"></script>
 <!-- Footer -->
       </div>
