@@ -79,14 +79,6 @@
           border-bottom: 1px dashed transparent;
         }
 
-    .b-add-ad__form .button.middle[type='submit'] {
-      background-color: #8FDF33;
-      color: #187900;
-    }
-      .b-add-ad__form .button.middle[type='submit']:hover {
-        background-color: #8FDF33;
-        color: #f2ffef;
-      }
     .b-add-ad__form-add-inner {
       margin: 0 0 30px;
       padding-top: 20px;

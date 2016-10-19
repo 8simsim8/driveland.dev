@@ -100,7 +100,9 @@
         <div class="row">
           <section class="l-one-ad col xs-9">
             <div class="block b-one-ad">
-              <h3>Название обьявления</h3>
+              <div class="b-main-title">
+                <h1>Название обьявления</h1>
+              </div>
               <p class="b-one-ad__sector text">Раздел: <a href="#" title="Sector">Колесо</a></p>
               <h3 class="b-one-ad__price">Цена: <span>20$</span></h3>
               <img src="" alt="" class="b-one-ad__viewport" id="galleryPhoto">
@@ -113,8 +115,8 @@
                 <img src="img/temp/e5ac4aes-480.jpg" alt="" class="b-one-ad__img-item galleryThumb">
               </div>
               <p class="b-one-ad__about text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint minus impedit provident, ipsa vitae consequuntur neque quo eum autem veniam! Blanditiis, nesciunt! Suscipit porro maxime magnam blanditiis, nam maiores delectus.</p>
-              <p class="b-one-ad__contact m-one-ad__contact_telephone text">Telephone: <a href="tel:+302105241296">+30 21 0524 1296</span></p>
-              <p class="b-one-ad__contact m-one-ad__contact_email text">Email: <a href="mailto:email@email.com?subject=feedback">email@email.com</a></p>
+              <p class="b-one-ad__contact m-one-ad__contact_telephone lead">Telephone: <a href="tel:+302105241296">+30 21 0524 1296</span></a></p>
+              <p class="b-one-ad__contact m-one-ad__contact_email lead">Email: <a href="mailto:email@email.com?subject=feedback">email@email.com</a></p>
 
               <form action="one-ad-page_submit" method="get" accept-charset="utf-8" class="b-one-ad__form">
                 <h4>Написать сообщение продавцу</h4>
@@ -122,35 +124,38 @@
                   <p class="b-form-item-title text bold"><label>Введите текст сообщения </label></p>
                   <p><textarea rows="4" cols="60" name="hobby" class="text tab-input"></textarea></p>
                 </div>
-                <input type="submit" value="Опубликовать" class="button submit-button big tab-input"></input>
+                <input type="submit" value="Отправить" class="button submit-button big tab-input"></input>
               </form>
             </div>
           </section>
-
+          <div class="b-message-confirm" style="display: none;">
+            <div class="b-popup-message-close"></div>
+            <h3>Сообщение отправлено</h3>
+          </div>
           <section class="l-similar col xs-3">
             <div class="block b-similar">
-              <p class="text bold"><span>100</span> похожих компаний</p>
-              <p class="text bold"><a href="#">10</a> новых компаний</p>
+              <h3><span>100</span> похожих</h3>
+              <h4><a href="#"><span>10</span> новых</a></h4>
               <div class="b-similar__wrapp">
                 <div class="b-similar__item">
                   <img src="img/temp/img-previous-2.jpg" alt="" class="b-similar__item-img">
-                  <a href="#" class="text">Name company 1</a>
+                  <a href="#" class="text">Тема обьявления 1</a>
                 </div>
                 <div class="b-similar__item">
                   <img src="img/temp/img-previous-1.jpg" alt="" class="b-similar__item-img">
-                  <a href="#" class="text">Name company 2</a>
+                  <a href="#" class="text">Тема обьявления 2</a>
                 </div>
                 <div class="b-similar__item">
                   <img src="img/temp/img-previous-1.jpg" alt="" class="b-similar__item-img">
-                  <a href="#" class="text">Name company 2</a>
+                  <a href="#" class="text">Тема обьявления 2</a>
                 </div>
                 <div class="b-similar__item">
                   <img src="img/temp/img-previous-1.jpg" alt="" class="b-similar__item-img">
-                  <a href="#" class="text">Name company 2</a>
+                  <a href="#" class="text">Тема обьявления 2</a>
                 </div>
                 <div class="b-similar__item">
                   <img src="img/temp/img-previous-1.jpg" alt="" class="b-similar__item-img">
-                  <a href="#" class="text">Name company 2</a>
+                  <a href="#" class="text">Тема обьявления 2</a>
                 </div>
               </div>
             </div>

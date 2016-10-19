@@ -46,7 +46,9 @@ section.col.l-similar {
     .b-one-ad__form {
       margin-top: 20px;
     }
-    
+    .m-one-ad__contact_telephone a {
+      color: #333333;
+    }
     .b-one-ad__form input[type='submit']{
       margin-top: 20px;
     }
@@ -54,6 +56,10 @@ section.col.l-similar {
 .b-similar {
   
 }
+  .b-similar h3,
+  .b-similar h3+h4 {
+    text-align: center;
+  }
   .b-similar__wrapp {
     margin-top: 20px;
   }

@@ -1,4 +1,5 @@
 h1,
+h3,
 h4 {
   color: #0038A8;
 }
@@ -19,7 +20,7 @@ h4 {
     .b-one-company__title-note {
       -webkit-flex: 3;
       flex: 3;
-      margin-left: 40px;
+      margin-right: 40px;
     }
       .b-one-company__tag {
         margin-bottom: 15px;
@@ -74,7 +75,7 @@ h4 {
       -webkit-flex: 3;
       flex: 3;
       height: 250px;
-      margin-left: 40px;
+      margin-right: 40px;
     }
     .b-one-company__info-text-item:not(:last-child) {
       margin-bottom: 10px;
@@ -163,35 +164,29 @@ h4 {
     pointer-events: auto;
   }
     .b-one-company__message {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-left: -297px;
-      margin-top: -150px;
-      padding: 20px;
-      width: 595px;
-      height: 265px;
-      background-color: #FFFFFF;
-      border-radius: 4px;
-      box-shadow: 0px 0px 5px rgba(130, 130, 130, 0.2);
-      z-index: 999;
-      -webkit-transition: opacity 0.2s ease;
-      transition: opacity 0.2s ease;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.7);
+      z-index: 10001;
     }
-      .b-popup-message-close {
+      .b-one-company__message-wrapp {
         position: absolute;
-        top: 10px;
-        right: 10px;
-        height: 15px;
-        width: 15px;
+        top: 50%;
+        left: 50%;
+        margin-left: -297px;
+        margin-top: -150px;
+        padding: 20px;
+        width: 595px;
+        height: 265px;
         background-color: #FFFFFF;
-        background-image: url(../img/icon-button-close.svg);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0px 0px 5px rgba(130, 130, 130, 0.2);
+        -webkit-transition: opacity 0.2s ease;
+        transition: opacity 0.2s ease;
       }
-
     .b-one-company__form {
       margin-top: 20px;
     }
@@ -201,8 +196,10 @@ h4 {
 .b-similar {
   
 }
-  .b-similar p {
+  .b-similar h3 {
     text-align: center;
+    color: #333333;
+    line-height: 1.2em;
   }
   .b-similar__wrapp {
     margin-top: 20px;

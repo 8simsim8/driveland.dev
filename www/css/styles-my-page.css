@@ -9,45 +9,10 @@
       content: '>';
       margin: 0 5px;
     }
-  .block-redactor.subtext {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding-right: 30px;
-    color: rgba(51,51,51,0.4);
-    line-height: 25px;
-    opacity: 0;
-    pointer-events: none;
-    cursor: pointer;
-    -webkit-transition: opacity 0.2s ease,
-                        color 0.2s ease;
-    transition: opacity 0.2s ease,
-                color 0.2s ease;
-  }
-    .block-redactor.subtext:hover {
-      color: rgba(51,51,51,1);
-    }
-    .m-block-redactor_show.block-redactor {
-      opacity: 1;
-      pointer-events: auto;
-    }
-    .block-redactor:after {
-      position: absolute;
-      display: block;
-      content: '';
-      top: 0;
-      right: 0;
-      width: 25px;
-      height: 25px;
-      background-image: url("../img/icon-redact.svg");
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
   .b-title__content {
     margin-top: 40px;
   }
-    .b-title__content h2 {
+    .b-title__content h1 {
       margin-bottom: 20px;
       color : #1C5BC9;
     }

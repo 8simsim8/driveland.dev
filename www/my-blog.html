@@ -22,9 +22,10 @@
     <link rel="stylesheet" type="text/css" href="css/gird-column.css">
     <link rel="stylesheet" type="text/css" href="css/reset-min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles-general.css">
     <link rel="stylesheet" type="text/css" href="css/slim.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles-droplist.css"> 
+    <link rel="stylesheet" type="text/css" href="css/styles-general.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-droplist.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-aside-block-author.css">
     <link rel="stylesheet" type="text/css" href="css/styles-my-blog.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -98,9 +99,9 @@
       <!-- /Header -->
 
         <div class="row">
-          <section class="l-blog col xs-12">
+          <section class="l-blog col xs-9">
             <div class="block b-blog">
-            <h3>Мой блог</h3>
+            <h1>Мой блог</h1>
             <div class="b-blog__wrap">
                 <div class="b-blog__wrap-item">
                   
@@ -122,6 +123,60 @@
                 </div>
             </div>
             </div>
+          </section>
+
+          <section class="l-author col xs-3">
+            <div class="block b-author redact-block">
+              <a href="edit-my-profile.html" class="block-redactor text subtext">Редактировать</a>
+              <div class="b-author__wrapp">
+
+                <img src="img/temp/author/author-1.jpg" alt="" class="b-author__wrapp-photo">
+                <p class="b-author__wrapp-name text bold">Leonidis Castonedis</p>
+                <p class="b-author__wrapp-city text">Athens</p>
+
+                <button type="button" class="b-author__wrapp-follow button small">Follow</button>
+                <button type="button" class="b-author__wrapp-message button small">Message</button>
+                
+                <p class="b-author__wrapp-note text bold">Все машины продаются! Пишите в личку!</p>
+
+                <ul class="b-author__wrapp-info">
+                  <li class="sum-car" data-text="машины">2</li>
+                  <li class="sum-folow" data-text="подписчика">23</li>
+                  <li class="sum-signed" data-text="подписан">25</li>
+                </ul>
+
+                <div class="b-author__wrapp-about">
+                  <h6>Работаю</h6>
+                  <p class="text">CFO Marriot Hotels Greece</p>
+                  <h6>О СЕБЕ</h6>
+                  <p class="text">Люблю машины, тюнинг и загорелых девиц</p>
+                  <h6>Увлечения</h6>
+                  <p class="text">Спортзал, книги, рыбалка, яхты и путешествия</p>
+                </div>
+                
+                <a href="add-blog.html" class="text button middle">Добавить запись в блоге</a>
+
+              </div>
+
+              <div class="b-author__car">
+                <h3>Мои авто</h3>
+                <a href="add-my-car.html" class="button small">Добавить</a>
+                <div class="b-author__car-item">
+                  <img src="img/temp/auto/2.png" alt="">
+                  <p><a href="#" class="text">Nissan Terrano 2.6L 200hp</a></p>
+                </div>
+                <div class="b-author__car-item">
+                  <img src="img/temp/auto/2.png" alt="">
+                  <p><a href="#" class="text">Nissan Terrano 2.6L 200hp</a></p>
+                </div>
+                <div class="b-author__car-item">
+                  <img src="img/temp/auto/2.png" alt="">
+                  <p><a href="#" class="text">Nissan Terrano 2.6L 200hp</a></p>
+                </div>
+              </div>
+              
+            </div>
+            
           </section>
 
         </div>

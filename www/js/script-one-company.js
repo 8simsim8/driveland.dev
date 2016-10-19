@@ -66,7 +66,13 @@
       return false;
     });
 
-    
+    // Клик по кнопке отправить сообщение
+     $('input.submit-button').on('click', function(){
+        $('.b-one-company__message-wrapp').fadeOut('200', function(){
+          $('.b-one-company__message-confirm').fadeIn('300');
+        });
+        return false;
+      });
 
   // Вывод карты, в зависимости от адресса компании
     initialize();
