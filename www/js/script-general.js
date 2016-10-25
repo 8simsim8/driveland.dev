@@ -98,6 +98,28 @@
     }
   });
 
+  // Кнопка "вверх"
+  var buttonToTop = document.getElementsByClassName('button-to-top')[0];
+
+  if(window.pageYOffset >= 500) {
+    $(buttonToTop).fadeIn(200);
+  }
+
+  $(window).on('scroll', function(){
+    var scrollWindow = window.pageYOffset || document.documentElement.scrollTop;
+    if(scrollWindow >= 500) {
+      $(buttonToTop).fadeIn(200);
+    } else {
+      $(buttonToTop).fadeOut(200);
+    }
+  });
+
+  $(buttonToTop).on('click', function(){
+    $("html, body").animate({
+      scrollTop: 0
+    }, 500);
+  });
+
   var pageMyCar = new MakePageMyCar();
 
   function MakePageMyCar() {

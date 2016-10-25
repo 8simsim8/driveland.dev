@@ -1,0 +1,29 @@
+img {
+  width: 100%;
+  height: auto;
+}
+  h3,
+  h4 {
+    margin-top: 15px;
+  }
+  .b-new__item-top.text {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .text-content p.lead,
+  .text-content p.text {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+  .text-content ul {
+    margin: 15px 0;
+  }
+    .text-content ul > li {
+      list-style: disc;
+      margin-left: 20px;
+      margin-bottom: 5px;
+    }

@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DRIVELAND</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/gird-column.css">
+    <link rel="stylesheet" type="text/css" href="css/reset-min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slim.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-general.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-droplist.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-aside-filter.css">
+    <link rel="stylesheet" type="text/css" href="css/paginator.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-about.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Clamp.js/0.5.1/clamp.min.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script type="text/javascript" src="js/script-general.js"></script>
+  </head>
+  <body>
+
+    <header class="l-menu">
+      <nav class="b-menu__wrapp wrapper row row-center">
+        <a href="index.html" title="Main" class="b-menu__wrapp-logo col xs-2"></a>
+        <ul class="b-menu__wrapp-list col xs-8">
+          <li><a href="main.html" title="" class="text bold">Новости</a></li>
+          <li><a href="community.html" title="" class="text bold">Сообщества</a></li>
+          <li><a href="company.html" title="" class="text bold">Компании</a></li>
+          <li><a href="flea-market.html" title="" class="text bold">Барахолка</a></li>
+        </ul>
+
+        <!-- Попап входа -->
+        <button class="b-menu__wrapp-login button small text bold col xs-offset-1 xs-1" style="display: none;">Войти</button>
+        <div class="b-menu__wrapp-login-popup">
+          <div class="b-menu__wrapp-login-popup-close"></div>
+          <form action="/" method="POST" class="b-menu__wrapp-login-popup-enter">
+            <h3>Вход на сайт</h3>
+            <input type="email" name="username" placeholder="Email" tabindex="1">
+            <input type="password" name="password" placeholder="Пароль" tabindex="2">
+            <input type="submit" value="Войти" class="button middle enter" tabindex="3">
+            <div class="button-registration text">Регистрация</div>
+            <a href="#" title="" class="text">Забыли пароль?</a>
+          </form>
+        </div>
+
+      <!-- Меню пользователя -->
+        <div class="b-menu__wrapp-login-nav">
+          <img src="img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
+          <p class="b-menu__wrapp-login-nav-name text">Leonidis Castonedis</p>
+          <ul class="b-menu__wrapp-login-nav-list text">
+            <li><a href="my-page.html" class="b-menu__user-item m-menu__user-item_my-page text">Моя страница</a></li>
+            <li><a href="my-blog.html" class="b-menu__user-item m-menu__user-item_my-blog text">Блог</a></li>
+            <li><a href="add-my-car.html" class="b-menu__user-item m-menu__user-item_add-car text">Добавить авто</a></li>
+            <li><a href="/logout" class="b-menu__user-item m-menu__user-item_exit text">Выход</a></li>
+          </ul>
+        </div>
+
+      </nav>
+    </header>
+    <!-- Попап регистрации -->
+      <div class="b-menu__wrapp-register-popup">
+        <div class="b-menu__wrapp-register-popup-window">
+          <div class="b-menu__wrapp-login-popup-close"></div>
+          <h3>Рeгистрация</h3>
+          <form action="/register" method="POST" class="b-menu__wrapp-register-popup-window-register" name="register">
+            <input type="text" name="nickname" placeholder="Имя" class="tab-input">
+            <p class="input-radio-block"><label class="text"><input type="radio" name="gender" value="male" class="click-element tab-input"><span>Male</span></label></p>
+            <p class="input-radio-block"><label class="text"><input type="radio" name="gender" value="female" class="click-element tab-input"><span>Female</span></label></p>
+            <input type="email" name="email" placeholder="Email" class="tab-input">
+            <input type="password" name="password" placeholder="Пароль" class="tab-input">
+            <input type="submit" value="Зарегестрироваться" class="button middle tab-input">
+          </form>
+          <div class="b-menu__wrapp-login text">Вход</div>
+        </div>
+      </div>
+    <main>
+      <div class="wrapper">
+      <!-- /Header -->
+
+        <div class="row">
+          <section class="l-news col xs-9">
+            <div class="block b-news">
+              <div class="text-content">
+                <div class="b-main-title">
+                  <h1>О проекте</h1>
+                </div>
+                <p class="text b-new__item-top">
+                
+                  <span class="date">16.10.2016</span>
+                  <a href="#" class="author">Администратор</a>
+                  <span class="tag">
+                    <a href="#" class="">О проекте</a>
+                  </span>
+                  
+                </p>
+                <img src="img/temp/Rules.jpg" alt="">
+                <p class="lead">Вы любите её. Вы разговариваете с ней. Вы любуетесь ею каждый день. Вы знаете о ней всё и можете рассказывать о её качествах неделями. Вы прощаете ей её несовершенство, закрывая глаза на недостатки, а она боготворит вас. Ревнуя вас к другим красоткам, она стойко хранит верность. Вы знаете, что в критической ситуации она не раздумывая отдаст свою жизнь, спасая вас… Но всё равно где-то в глубине души вы мечтаете о другой.</p>
+                <h3>Для чего мы создали сайт</h3>
+                <p class="text">Мы создали этот сайт, потому что мы — такие же. Мы очень любим машины. И ещё мы очень любим людей. Хотя бы потому, что без них машины жить пока не могут.</p>
+                <p class="text">Люди наделали для себя миллионы сайтов. Пришло время DRIVE2 — сообщества машин и людей, в котором главные действующие лица — машины.</p>
+                <p class="text">Участвовать в проекте очень просто — достаточно зарегистрироваться и загрузить информацию о своей машине: одну или несколько фотографий и небольшой рассказ (вы ведь напишете о своей любимой лучше любого автожурналиста, правда?)</p>
+                <img src="img/temp/journal.jpg" alt="">
+                <h3>Преимущества сайта</h3>
+                <ul class="text">
+                  <li>Вашу замечательную машину увидят и оценят не только соседи по потоку, но и огромное количество других хороших людей</li>
+                  <li>Здесь вы легко найдёте друзей и единомышленников, у которых такая же машина, как у вас</li>
+                  <li>Вы внесёте свой вклад в создание уникальной базы знаний обо всех автомобилях мира и реальном опыте их эксплуатации</li>
+                  <li>Оценивая и комментируя авто других пользователей, вы примете самое непосредственное участие в формировании рейтингов машин, моделей и марок</li>
+                  <li>Вместе мы сделаем автомобильный мир лучше</li>
+                </ul>
+              
+              <p class="text">Вне зависимости от того, какая у вас машина, на вершине она рейтинга или нет, любите вы общаться или не очень, — интересно будет абсолютно всем! Присоединяйтесь прямо сейчас!</p>
+
+              </div>
+            </div>
+          </section>
+        </div>
+      <script type="text/javascript" src="js/script-rules.js"></script>
+<!-- Footer -->
+      </div>
+    </main>
+    <footer class="l-footer">
+      <div class="wrapper">
+
+        <nav>
+          <ul>
+            <li><a href="#" class="b-footer-link text">Помощь</a></li>
+            <li><a href="#" class="b-footer-link text">Новости сайта</a></li>
+            <li><a href="#" class="b-footer-link text">Мобильный DRIVE</a></li>
+            <li><a href="#" class="b-footer-link text">О проекте</a></li>
+            <li><a href="#" class="b-footer-link text">Реклама и сотрудничество</a></li>
+            <li><a href="#" class="b-footer-link text">Правила сайта</a></li>
+            <li><a href="#" class="b-footer-link text">&#169; 2016 DRIVE.Gr</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </footer>
+  </body>
+</html>
