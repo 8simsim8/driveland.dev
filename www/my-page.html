@@ -22,34 +22,32 @@
     <link rel="stylesheet" type="text/css" href="css/gird-column.css">
     <link rel="stylesheet" type="text/css" href="css/reset-min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/paginator.css">
     <link rel="stylesheet" type="text/css" href="css/styles-general.css">
     <link rel="stylesheet" type="text/css" href="css/styles-my-page.css">
     <link rel="stylesheet" type="text/css" href="css/styles-aside-block-author.css">
+    <link rel="stylesheet" type="text/css" href="css/comments.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Clamp.js/0.5.1/clamp.min.js"></script>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <script type="text/javascript" src="js/script-general.js"></script>
   </head>
   <body>
 
-
     <header class="l-menu">
       <nav class="b-menu__wrapp wrapper row row-center">
         <a href="index.html" title="Main" class="b-menu__wrapp-logo col xs-2"></a>
-        <ul class="b-menu__wrapp-list col xs-8">
-          <li><a href="main.html" title="" class="text bold">Новости</a></li>
-          <li><a href="community.html" title="" class="text bold">Сообщества</a></li>
-          <li><a href="company.html" title="" class="text bold">Компании</a></li>
-          <li><a href="flea-market.html" title="" class="text bold">Барахолка</a></li>
+        <ul class="b-menu__wrapp-list col xs-7">
         </ul>
 
         <!-- Попап входа -->
-        <button class="b-menu__wrapp-login button small text bold col xs-offset-1 xs-1" style="display: none;">Войти</button>
+        <button class="b-menu__wrapp-login button small text bold col xs-offset-2 xs-1" style="display: none;">Войти</button>
         <div class="b-menu__wrapp-login-popup">
           <div class="b-menu__wrapp-login-popup-close"></div>
           <form action="/" method="POST" class="b-menu__wrapp-login-popup-enter">
@@ -63,15 +61,18 @@
         </div>
 
       <!-- Меню пользователя -->
-        <div class="b-menu__wrapp-login-nav">
-          <img src="img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
-          <p class="b-menu__wrapp-login-nav-name text">Leonidis Castonedis</p>
-          <ul class="b-menu__wrapp-login-nav-list text">
-            <li><a href="my-page.html" class="b-menu__user-item m-menu__user-item_my-page text">Моя страница</a></li>
-            <li><a href="my-blog.html" class="b-menu__user-item m-menu__user-item_my-blog text">Блог</a></li>
-            <li><a href="add-my-car.html" class="b-menu__user-item m-menu__user-item_add-car text">Добавить авто</a></li>
-            <li><a href="/logout" class="b-menu__user-item m-menu__user-item_exit text">Выход</a></li>
-          </ul>
+        <div class="b-menu__wrapp-login-nav col xs-3">
+          <a href="#" class="text b-menu__user-notification-messages"></a>
+          <div class="b-menu__wrapp-login-wrapp">
+            <img src="img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
+            <p class="b-menu__wrapp-login-nav-name text">Leonidis Castonedis</p>
+            <ul class="b-menu__wrapp-login-nav-list text">
+              <li><a href="my-page.html" class="b-menu__user-item m-menu__user-item_my-page text">Моя страница</a></li>
+              <li><a href="my-blog.html" class="b-menu__user-item m-menu__user-item_my-blog text">Блог</a></li>
+              <li><a href="add-my-car.html" class="b-menu__user-item m-menu__user-item_add-car text">Добавить авто</a></li>
+              <li><a href="/logout" class="b-menu__user-item m-menu__user-item_exit text">Выход</a></li>
+            </ul>
+          </div>
         </div>
 
       </nav>
@@ -97,7 +98,7 @@
       <!-- /Header -->
 
         <div class="row">
-          <section class="l-title col xs-9">
+          <section class="l-title col xs-12 sm-9">
             <div class="block b-title redact-block">
               <div class="b-title__navigation text">
 
@@ -107,29 +108,29 @@
               <a href="add-my-car.html" class="block-redactor text subtext">Редактировать</a>
               <div class="b-title__content">
               
-                <h1>Lexus LX : новый двс+выхлоп на 800 борзых лошадей!</h1>
+                <h1>Обновленный Nissan GT-R</h1>
                 
                 <div class="b-title__content-photo">
                 
                   <div class="b-title__content-photo-vote"><span>232 DRIVE</span></div>
-                  <img src="img/temp/auto/10.jpg" alt="">
+                  <img src="img/temp/auto/nissan.jpg" alt="">
                 </div>
                 
                 <ul class="b-title__content-list">
-                
-                  <li><a href="#" alt="lexus" style="background-image: url('img/temp/logo-auto/lexus.png');"></a></li>
-                  <li class="b-title__content-list-buy" data-text="куплена">2016</li>
-                  <li class="b-title__content-list-relese" data-text="год выпуска">2012</li>
+
+                  <li><a href="#" alt="" style="background-image: url('img/temp/logo-auto/2x/Driverland_logo_0016.png');"></a></li>
+                  <li class="b-title__content-list-relese" data-text="год выпуска">2016</li>
+                  <li class="b-title__content-list-fuel" data-text="топливо">бензин</li>
+                  <li class="b-title__content-list-capacity" data-text="обьем, л">1,6</li>
                   <li class="b-title__content-list-power" data-text="л.с.">215</li>
-                  <li class="b-title__content-list-spead" data-text="0-100км/ч">2.5</li>
-                  
+                  <!-- <li class="b-title__content-list-spead" data-text="0-100км/ч">2.5</li> -->
+
                 </ul>
-                <button type="button" class="button middle">Подписаться<span>16</span></button>
               </div>
             </div>
           </section>
 
-          <section class="l-author col xs-3">
+          <section class="l-author col xs-5 sm-3">
             <div class="block b-author redact-block">
               <a href="edit-my-profile.html" class="block-redactor text subtext">Редактировать</a>
               <div class="b-author__wrapp">
@@ -159,6 +160,7 @@
                 </div>
                 
                 <a href="my-blog.html" class="text button middle">Мой блог</a>
+                <button id="button-author-auto" class="text button middle">Мои авто</a>
 
               </div>
 
@@ -185,33 +187,8 @@
         </div>
 
         <div class="row">
-          <section class="l-property col xs-9">
-            <div class="block b-property redact-block">
-              <div class="block-redactor text subtext">Редактировать</div>
-              <div class="b-property-wrapp">
-                <h3>Характеристики</h3>
-
-                <h6>Комфорт</h6>
-                <p class="text">Бортовой компьютер, Датчик света, Климат контроль, Кожаный салон, Круиз контроль, Люк, Омыватель фар, Подогрев зеркал, Подогрев сидений, Сенсор дождя, Усилитель руля, Эл. стеклоподъемники, Электропакет</p>
-
-                <h6>Мультимедиа</h6>
-                <p class="text">CD, DVD, MP3</p>
-
-                <h6>Прочее</h6>
-                <p class="text">Газовая установка (ГБО), Тонирование стекол</p>
-
-                <h6>Безопасность</h6>
-                <p class="text">ABD, ABS, ESP, Галогенные фары, Иммобилайзер, Подушка безопасности (Airbag), Серворуль, Сигнализация, Центральный замок </p>
-
-              </div>
-            </div>
-          </section>
-        </div>
-
-        <div class="row">
-          <section class="l-about-auto col xs-9">
+          <section class="l-about-auto col xs-12 sm-9">
             <div class="block b-about-auto redact-block">
-              <div class="block-redactor text subtext">Редактировать</div>
               <div class="b-about-auto-wrapp">
                 <h3>О моем автомобиле</h3>
                 <p class="text">Добро пожаловать на страничку моего авто )Идея покупки была проста и банальна. Нужен был авто, который не выделяется в потоке и имеет большую надежность для ежедневной эксплуатации в режиме дом-пробка-пробка-работа-пробка-пробка-дом )))Немцев отмел сразу тк есть большой опыт их любви ко мне и моей к ним (знаю по именам все смены в сервисах).По отделке даже не буду спорить, японец сильно проигрывает собратьям из германии. Почему именно 600НL? Во первых интересен гибрид тк никогда не было. Во вторых пробки, зачем просто так жечь бензин. В третьих это топовая версия и там есть все )). Раздельный диван с оттоманом</p>
@@ -221,10 +198,161 @@
         </div>
 
         <div class="row">
-          <section class="l-coment col xs-9">
+          <section class="l-property col xs-12 sm-9">
+            <div class="block b-property redact-block">
+              <div class="b-property-wrapp">
+                <h3>Характеристики</h3>
+
+                <div class="b-property-string">
+                  <h6>Марка</h6>
+                  <p class="text">Nissan</p>
+                </div>
+
+                <div class="b-property-string">
+                  <h6>Модель</h6>
+                  <p class="text">GT-R</p>
+                </div>
+
+                <div class="b-property-string">
+                  <h6>Пробег</h6>
+                  <p class="text">50 000 тыс км</p>
+                </div>
+
+                <div class="b-property-string">
+                  <h6>Цвет</h6>
+                  <p class="text">Темно-краный</p>
+                </div>
+
+                <div class="b-property-string">
+                  <h6>Тип трансмиссии</h6>
+                  <p class="text">Ручная</p>
+                </div>
+
+                <div class="b-property-string">
+                  <h6>Тип привода</h6>
+                  <p class="text">Передний</p>
+                </div>
+
+                <div class="b-property-string">
+                  <h6>Расход по городу</h6>
+                  <p class="text">11 л/км</p>
+                </div>
+
+                <div class="b-property-string">
+                  <h6>Расход по трассе, л/км</h6>
+                  <p class="text">6 л/км</p>
+                </div>
+
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="row">
+          <section class="l-logbook col xs-12 sm-9">
+            <div class="block b-logbook redact-block">
+              <div class="b-logbook-wrapp">
+                <h3>Бортовой журнал <span class='b-logbook-sum'>13</span></h3>
+                <a href="add-blog.html" class="button middle add-button">Добавить запись</a>
+
+                <div class="b-logbook__container">
+                  <article class="b-logbook__container-item">
+                    <img src="img/temp/c3a0e1u-960.jpg" alt="">
+                    <div class="b-logbook__container-item-text">
+                      <div class="b-logbook__container-title">
+                        <h4 data-clamp><a href="#" title="">Установил новый глушитель</a></h4>
+                        <p class="text subtext data">24.10.2016</p>
+                      </div>
+                      <p class="text" data-clamp>Установил… ГРОМКО всеравно, ну я не знаю, почему-то на этой машинке более громкий выхлоп чем на черной. Типично волговский рык. Глушитель Мотор Сич. Качество среднее. Не понравилось исполнение выходного фланца. Вообще это мне не нравится во всех Волговских глушителях. Но на предыдущем как-то поаккуратней этот выходной загиб вверх исполнен.</p>
+                    </div>
+                  </article>
+                  <article class="b-logbook__container-item">
+                    <img src="img/temp/66a6ba6s-480.jpg" alt="">
+                    <div class="b-logbook__container-item-text">
+                      <div class="b-logbook__container-title">
+                        <h4 data-clamp><a href="#" title="">Полирнул…</a></h4>
+                        <p class="text subtext data">03.08.2016</p>
+                      </div>
+                      <p class="text" data-clamp>В выходные- старт!</p>
+                    </div>
+                  </article>
+                  <article class="b-logbook__container-item">
+                    <img src="img/temp/725c0c2s-960.jpg" alt="">
+                    <div class="b-logbook__container-item-text">
+                      <div class="b-logbook__container-title">
+                        <h4 data-clamp><a href="#" title="">Ксенон в два этажа!</a></h4>
+                        <p class="text subtext data">13.05.2016</p>
+                      </div>
+                      <p class="text" data-clamp>Наконец-то установил ксенон в птф. Взял 4300к под оригинальный ближний цвет. Светит отлично! Ничего не заменит ксенона, какие лампы только не ставил!</p>
+                    </div>
+                  </article>
+                  <p class="display-all text"><span>показать все записи</span></p>
+                </div>
+
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="row">
+          <section class="l-coment col xs-12 sm-9">
             <div class="block b-coment">
-              <div class="b-coment-wrapp">
+              <div class="b-coment-wrapp paginator">
                 <h3>Комментарии</h3>
+
+                <div class="alert-register">
+                  <h5>Участвовать в обсуждениях могут только зарегистрированные пользователи.</h5>
+                  <div>
+                    <button class="button middle button-registration">Зарегистрироваться</a>
+                    <button class="button middle button-enter">Войти</a>
+                  </div>
+                </div>
+
+                <div class="b-comments-container pagin-container pagin-wrap">
+
+                  <div class="b-comments-item item">
+                    <div class="b-comments-title">
+                      <div class="b-comments-title-user">
+                        <img src="img/temp/logo-user-1.png" alt="">
+                        <a href="#" class="text">Alen</a>
+                      </div>
+                      <p class="text subtext data">03.10.2016</p>
+                    </div>
+                    
+                    <p class="b-comments-text text">
+                      Бывает и по литру, если действительно 20 уе, то, конечно, лучше её втарить
+                    </p>
+                  </div>
+
+                  <div class="b-comments-item item">
+                    <div class="b-comments-title">
+                      <div class="b-comments-title-user">
+                        <img src="img/temp/logo-user-24.png" alt="">
+                        <a href="#" class="text">Alen</a>
+                      </div>
+                      <p class="text subtext data">15.08.2016</p>
+                    </div>
+                    <p class="b-comments-text text">
+                      Да, спасибо за помощь.В принципе по твоему названию и нашел нужное))
+                    </p>
+                  </div>
+
+                </div>
+
+                <div class="b-comments__add">
+                  <textarea name="add-comment" class="text" rows="4" cols="60" placeholder="Введите Ваше сообщение"></textarea>
+                  <button type="button" class="button middle submit-button">Отправить</button>
+                </div>
+
+                <div class="b-company__pagination controll">
+                  <span class="b-company__pagination-item item text m-pagination_prev m-pagination_hide"><<</span>
+                  <span class="b-company__pagination-item item text m-pagination-item_current">1</span>
+                  <span class="b-company__pagination-item item text">2</span>
+                  <span class="b-company__pagination-item item text">3</span>
+                  <span class="b-company__pagination-item item text">4</span>
+                  <span class="b-company__pagination-item item text m-pagination-item_next">>></span>
+                </div>
+                
               </div>
             </div>
           </section>

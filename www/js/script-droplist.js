@@ -1,19 +1,17 @@
 function workForm(nameForm) {
 
   // Логика дроплиста ----------------------------------------------------------
-    var form = document.getElementsByName(nameForm)[0];
-    var itemInputs = form.getElementsByClassName('tab-input');
-    var currentInput = 0;
-    var currentString = 0;
-    var heightList = 0;
+    var form            = document.getElementsByName(nameForm)[0];
+    var itemInputs      = form.getElementsByClassName('tab-input');
+    var currentInput    = 0;
+    var currentString   = 0;
+    var heightList      = 0;
     var $thisList;
-    var sumInputs = itemInputs.length;
-    var keyUp = 38,
-        keyDown = 40,
-        keyEnter = 13,
-        keyTab = 9;
-
-
+    var sumInputs       = itemInputs.length;
+    var keyUp           = 38,
+        keyDown         = 40,
+        keyEnter        = 13,
+        keyTab          = 9;
 
     // При загрузке фокус на первом поле
       if($(itemInputs).eq(currentInput).hasClass('click-element')) {

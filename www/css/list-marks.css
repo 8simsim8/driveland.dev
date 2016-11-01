@@ -1,6 +1,5 @@
 .block.b-mark {
-  /* position: fixed; */
-  width: 57px;
+
 }
   .b-mark__list {
     width: 57px;
@@ -17,33 +16,6 @@
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-    }
-    .m-mark__list-item_audi.b-mark__list-item {
-      background-image: url("../img/temp/logo-auto/audi.png");
-    }
-    .m-mark__list-item_toyota.b-mark__list-item {
-      background-image: url("../img/temp/logo-auto/toyota.png");
-    }
-    .m-mark__list-item_shkoda.b-mark__list-item {
-      background-image: url("../img/temp/logo-auto/shkoda.png");
-    }
-    .m-mark__list-item_honda.b-mark__list-item {
-      background-image: url("../img/temp/logo-auto/honda.png");
-    }
-    .m-mark__list-item_lexus.b-mark__list-item {
-      background-image: url("../img/temp/logo-auto/lexus.png");
-    }
-    .m-mark__list-item_chevrolet.b-mark__list-item {
-      background-image: url("../img/temp/logo-auto/chevrolet.png");
-    }
-    .m-mark__list-item_vw.b-mark__list-item {
-      background-image: url("../img/temp/logo-auto/vw.png");
-    }
-    .m-mark__list-item_nissan.b-mark__list-item {
-      background-image: url("../img/temp/logo-auto/nissan.png");
-    }
-    .m-mark__list-item_ford.b-mark__list-item {
-      background-image: url("../img/temp/logo-auto/ford.png");
     }
 @media (min-width: 769px) {
   section .block.b-mark {

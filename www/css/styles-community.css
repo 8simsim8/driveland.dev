@@ -1,18 +1,47 @@
 .b-community {
   
 }
+  .b-community .b-main-title {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .b-main-title > h1 {
+    margin: 0;
+  }
+    .b-main-title .b-filter__switch {
+      min-width: 360px;
+    }
   .paginator .container .item {
     font-size: 0.7rem;
     line-height: 1.7rem;
     width: calc(25% - 8px);
   }
+  .b-community__item {
+    -ms-flex-preferred-size: calc(33.33337% - 10px);
+    -webkit-flex-basis: calc(33.33337% - 10px);
+    flex-basis: calc(33.33337% - 10px);
+    max-width: calc(33.33337% - 10px);
+  }
+    .b-community__item img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
   .b-community__item .text {
     line-height: 1.1rem;
   }
   .b-community__item a {
     font-weight: bold;
     color: #1C5BC9;
-    -webkit-transition: color 0.2s ease;
     transition: color 0.2s ease;
   }
     .b-community__item a:hover {
@@ -26,31 +55,26 @@
     color: #0038A8;
   }
   .b-filter__switch {
-    margin-top: 20px;
+    margin-top: 0;
   }
+   
   .b-filter__switch-item {
     float: left;
     height: 40px;
     width: 33.3333337%;
     text-align: center;
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     line-height: 36px;
-    border: 2px solid #0038A8;
     border-left: none;
     background-color: #FFFFFF;
     color: #0038A8;
-    -webkit-transition: color 0.2s ease,
-                background-color 0.2s ease;
     transition: color 0.2s ease,
                 background-color 0.2s ease;
   }
     .b-filter__switch-item:first-child {
-      border-radius: 18px 0 0 18px;
-      border: 2px solid #0038A8;
+
     }
     .b-filter__switch-item:last-child {
-      border-radius: 0 18px 18px 0;
-      border: 2px solid #0038A8;
       border-left: none;
     }
     .m-filter__switch-item_active.b-filter__switch-item {

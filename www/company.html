@@ -44,15 +44,11 @@
     <header class="l-menu">
       <nav class="b-menu__wrapp wrapper row row-center">
         <a href="index.html" title="Main" class="b-menu__wrapp-logo col xs-2"></a>
-        <ul class="b-menu__wrapp-list col xs-8">
-          <li><a href="main.html" title="" class="text bold">Новости</a></li>
-          <li><a href="community.html" title="" class="text bold">Сообщества</a></li>
-          <li><a href="company.html" title="" class="text bold">Компании</a></li>
-          <li><a href="flea-market.html" title="" class="text bold">Барахолка</a></li>
+        <ul class="b-menu__wrapp-list col xs-7">
         </ul>
 
         <!-- Попап входа -->
-        <button class="b-menu__wrapp-login button small text bold col xs-offset-1 xs-1" style="display: none;">Войти</button>
+        <button class="b-menu__wrapp-login button small text bold col xs-offset-2 xs-1" style="display: none;">Войти</button>
         <div class="b-menu__wrapp-login-popup">
           <div class="b-menu__wrapp-login-popup-close"></div>
           <form action="/" method="POST" class="b-menu__wrapp-login-popup-enter">
@@ -66,15 +62,18 @@
         </div>
 
       <!-- Меню пользователя -->
-        <div class="b-menu__wrapp-login-nav">
-          <img src="img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
-          <p class="b-menu__wrapp-login-nav-name text">Leonidis Castonedis</p>
-          <ul class="b-menu__wrapp-login-nav-list text">
-            <li><a href="my-page.html" class="b-menu__user-item m-menu__user-item_my-page text">Моя страница</a></li>
-            <li><a href="my-blog.html" class="b-menu__user-item m-menu__user-item_my-blog text">Блог</a></li>
-            <li><a href="add-my-car.html" class="b-menu__user-item m-menu__user-item_add-car text">Добавить авто</a></li>
-            <li><a href="/logout" class="b-menu__user-item m-menu__user-item_exit text">Выход</a></li>
-          </ul>
+        <div class="b-menu__wrapp-login-nav col xs-3">
+          <a href="#" class="text b-menu__user-notification-messages"></a>
+          <div class="b-menu__wrapp-login-wrapp">
+            <img src="img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
+            <p class="b-menu__wrapp-login-nav-name text">Leonidis Castonedis</p>
+            <ul class="b-menu__wrapp-login-nav-list text">
+              <li><a href="my-page.html" class="b-menu__user-item m-menu__user-item_my-page text">Моя страница</a></li>
+              <li><a href="my-blog.html" class="b-menu__user-item m-menu__user-item_my-blog text">Блог</a></li>
+              <li><a href="add-my-car.html" class="b-menu__user-item m-menu__user-item_add-car text">Добавить авто</a></li>
+              <li><a href="/logout" class="b-menu__user-item m-menu__user-item_exit text">Выход</a></li>
+            </ul>
+          </div>
         </div>
 
       </nav>
@@ -107,77 +106,132 @@
                 <h1>Компании</h1>
               </div>
               <div class="paginator">
-                <div class="b-company__container container">
+                <div class="b-company__container pagin-container pagin-wrap">
 
                     <div class="b-company__item item">
-                      <img src="img/temp/auto/1.png" alt="">
-                      <h4><a href="one-company-page.html" class="b-company__item-name">Company 1</a></h4>
-                      <a href="#" class="text subtext b-company__item-sector">Мойки</a>
-                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorem nostrum sapiente officiis accusantium nemo culpa aliquid aspernatur odio incidunt, soluta obcaecati quae. Deleniti eveniet nostrum aliquam, minus odit maiores.<a href="#" title="" class="link"></a></p>
+                      <img src="img/temp/logo-company/logo-comp1.png" alt="">
+                      <div class="b-company__item-info">
+                        <p class="b-company__rating text">10</p>
+                        <p class="b-company__comments text">150</p>
+                      </div>
+                      <h4 data-clamp><a href="one-company-page.html" class="b-company__item-name">Re-Styling</a></h4>
+                      <p><a href="#" class="text subtext b-company__item-sector">  Автомойка, Автосервис, Шиномонтаж / Ремонт дисков, Бренд, Автоателье</a></p>
+                      <p class="text" data-clamp>Re-styling.ru является основоположником индустрии автовинилового стайлинга (оклейка автомобилей пленкой) в России и осуществляет профессиональное нанесение виниловых пленочных покрытий на кузовные элементы, автооптику, стекла, молдинги, бамперы, элементы интерьера и все, что вы только сможете придумать. Ну, или придумает наша дизайн-студия.<a href="#" title="" class="link"></a></p>
                     </div>
                     
                     <div class="b-company__item item">
-                      <img src="img/temp/auto/2.png" alt="">
-                      <h4><a href="one-company-page.html" class="b-company__item-name">Company 1</a></h4>
+                      <img src="img/temp/logo-company/logo-comp2.png" alt="">
+                      <div class="b-company__item-info">
+                        <p class="b-company__rating text">100</p>
+                        <p class="b-company__comments text">230</p>
+                      </div>
+                      <h4 data-clamp><a href="one-company-page.html" class="b-company__item-name">4точки - интернет-магазин по продаже шин и дисков - 4tochki</a></h4>
                       <a href="#" class="text subtext b-company__item-sector">Мойки</a>
-                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorem nostrum sapiente officiis accusantium nemo culpa aliquid aspernatur odio incidunt, soluta obcaecati quae. Deleniti eveniet nostrum aliquam, minus odit maiores.<a href="#" title="" class="link"></a></p>
+                      <p class="text" data-clamp>Компания 4tochki.ru, занимающая лидирующее положение на рынке по продаже шин и литых дисков, представляет свыше 5 000 наименований автомобильных шин и 40 000 позиций литых дисков, более чем 70 известных мировых брендов. Мы предлагаем нашим клиентам зимние, летние и всесезонные шины для всех типов автомобилей и мотоциклов по доступным ценам. Совершая покупку онлайн на 4tochki.ru, вы значительно экономите свое время на поиск нужных шин или дисков для вашего автомобиля по магазинам, подбор типоразмеров, сравнение цен. За более чем пятнадцатилетнюю историю компании, покупателями интернет-магазина стали тысячи автовладельцев, многие из которых продолжают оставаться нашими клиентами и до сих пор. Высокий уровень обслуживания и безупречное качество продаваемой нами продукции подтверждают многочисленные положительные отзывы наших клиентов на Яндекс.Маркет.<a href="#" title="" class="link"></a></p>
                     </div>
                    <div class="b-company__item item">
-                      <img src="img/temp/auto/3.png" alt="">
-                      <h4><a href="one-company-page.html" class="b-company__item-name">Company 1</a></h4>
+                      <img src="img/temp/logo-company/logo-comp3.png" alt="">
+                      <div class="b-company__item-info">
+                        <p class="b-company__rating text">50</p>
+                        <p class="b-company__comments text">130</p>
+                      </div>
+                      <h4 data-clamp><a href="one-company-page.html" class="b-company__item-name">AIMOL PREMIUM MOTOROILS</a></h4>
                       <a href="#" class="text subtext b-company__item-sector">Мойки</a>
-                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorem nostrum sapiente officiis accusantium nemo culpa aliquid aspernatur odio incidunt, soluta obcaecati quae. Deleniti eveniet nostrum aliquam, minus odit maiores.<a href="#" title="" class="link"></a></p>
+                      <p class="text" data-clamp>AIMOL - голландский бренд высокотехнологичных смазочных материалов для автомобилей: моторные масла, трансмиссионные масла, антифризы, тормозная жидкость, автохимия. История марки началась в 2005 году с выпуска первых моторных масел серии SPORTLINE, которые в процессе создания тестировались на гоночных болидах. И по сей день эта серия остается самой известной среди продуктов AIMOL. А самые популярные продукты AIMOL – это Sportline 5W-50 и Streetline 5W-40.<a href="#" title="" class="link"></a></p>
                     </div>
                     <div class="b-company__item item">
-                      <img src="img/temp/auto/4.png" alt="">
-                      <h4><a href="one-company-page.html" class="b-company__item-name">Company 1</a></h4>
+                      <img src="img/temp/logo-company/logo-comp1.png" alt="">
+                      <div class="b-company__item-info">
+                        <p class="b-company__rating text">10</p>
+                        <p class="b-company__comments text">150</p>
+                      </div>
+                      <h4 data-clamp><a href="one-company-page.html" class="b-company__item-name">Re-Styling</a></h4>
                       <a href="#" class="text subtext b-company__item-sector">Мойки</a>
-                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorem nostrum sapiente officiis accusantium nemo culpa aliquid aspernatur odio incidunt, soluta obcaecati quae. Deleniti eveniet nostrum aliquam, minus odit maiores.<a href="#" title="" class="link"></a></p>
+                      <p class="text" data-clamp>Re-styling.ru является основоположником индустрии автовинилового стайлинга (оклейка автомобилей пленкой) в России и осуществляет профессиональное нанесение виниловых пленочных покрытий на кузовные элементы, автооптику, стекла, молдинги, бамперы, элементы интерьера и все, что вы только сможете придумать. Ну, или придумает наша дизайн-студия.<a href="#" title="" class="link"></a></p>
+                    </div>
+                    
+                    <div class="b-company__item item">
+                      <img src="img/temp/logo-company/logo-comp2.png" alt="">
+                      <div class="b-company__item-info">
+                        <p class="b-company__rating text">100</p>
+                        <p class="b-company__comments text">230</p>
+                      </div>
+                      <h4 data-clamp><a href="one-company-page.html" class="b-company__item-name">4точки - интернет-магазин по продаже шин и дисков - 4tochki</a></h4>
+                      <a href="#" class="text subtext b-company__item-sector">Мойки</a>
+                      <p class="text" data-clamp>Компания 4tochki.ru, занимающая лидирующее положение на рынке по продаже шин и литых дисков, представляет свыше 5 000 наименований автомобильных шин и 40 000 позиций литых дисков, более чем 70 известных мировых брендов. Мы предлагаем нашим клиентам зимние, летние и всесезонные шины для всех типов автомобилей и мотоциклов по доступным ценам. Совершая покупку онлайн на 4tochki.ru, вы значительно экономите свое время на поиск нужных шин или дисков для вашего автомобиля по магазинам, подбор типоразмеров, сравнение цен. За более чем пятнадцатилетнюю историю компании, покупателями интернет-магазина стали тысячи автовладельцев, многие из которых продолжают оставаться нашими клиентами и до сих пор. Высокий уровень обслуживания и безупречное качество продаваемой нами продукции подтверждают многочисленные положительные отзывы наших клиентов на Яндекс.Маркет.<a href="#" title="" class="link"></a></p>
+                    </div>
+                   <div class="b-company__item item">
+                      <img src="img/temp/logo-company/logo-comp3.png" alt="">
+                      <div class="b-company__item-info">
+                        <p class="b-company__rating text">50</p>
+                        <p class="b-company__comments text">130</p>
+                      </div>
+                      <h4 data-clamp><a href="one-company-page.html" class="b-company__item-name">AIMOL PREMIUM MOTOROILS</a></h4>
+                      <a href="#" class="text subtext b-company__item-sector">Мойки</a>
+                      <p class="text" data-clamp>AIMOL - голландский бренд высокотехнологичных смазочных материалов для автомобилей: моторные масла, трансмиссионные масла, антифризы, тормозная жидкость, автохимия. История марки началась в 2005 году с выпуска первых моторных масел серии SPORTLINE, которые в процессе создания тестировались на гоночных болидах. И по сей день эта серия остается самой известной среди продуктов AIMOL. А самые популярные продукты AIMOL – это Sportline 5W-50 и Streetline 5W-40.<a href="#" title="" class="link"></a></p>
                     </div>
                     <div class="b-company__item item">
-                      <img src="img/temp/auto/5.png" alt="">
-                      <h4><a href="one-company-page.html" class="b-company__item-name">Company 1</a></h4>
+                      <img src="img/temp/logo-company/logo-comp1.png" alt="">
+                      <div class="b-company__item-info">
+                        <p class="b-company__rating text">10</p>
+                        <p class="b-company__comments text">150</p>
+                      </div>
+                      <h4 data-clamp><a href="one-company-page.html" class="b-company__item-name">Re-Styling</a></h4>
                       <a href="#" class="text subtext b-company__item-sector">Мойки</a>
-                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorem nostrum sapiente officiis accusantium nemo culpa aliquid aspernatur odio incidunt, soluta obcaecati quae. Deleniti eveniet nostrum aliquam, minus odit maiores.<a href="#" title="" class="link"></a></p>
+                      <p class="text" data-clamp>Re-styling.ru является основоположником индустрии автовинилового стайлинга (оклейка автомобилей пленкой) в России и осуществляет профессиональное нанесение виниловых пленочных покрытий на кузовные элементы, автооптику, стекла, молдинги, бамперы, элементы интерьера и все, что вы только сможете придумать. Ну, или придумает наша дизайн-студия.<a href="#" title="" class="link"></a></p>
+                    </div>
+                    
+                    <div class="b-company__item item">
+                      <img src="img/temp/logo-company/logo-comp2.png" alt="">
+                      <div class="b-company__item-info">
+                        <p class="b-company__rating text">100</p>
+                        <p class="b-company__comments text">230</p>
+                      </div>
+                      <h4 data-clamp><a href="one-company-page.html" class="b-company__item-name">4точки - интернет-магазин по продаже шин и дисков - 4tochki</a></h4>
+                      <a href="#" class="text subtext b-company__item-sector">Мойки</a>
+                      <p class="text" data-clamp>Компания 4tochki.ru, занимающая лидирующее положение на рынке по продаже шин и литых дисков, представляет свыше 5 000 наименований автомобильных шин и 40 000 позиций литых дисков, более чем 70 известных мировых брендов. Мы предлагаем нашим клиентам зимние, летние и всесезонные шины для всех типов автомобилей и мотоциклов по доступным ценам. Совершая покупку онлайн на 4tochki.ru, вы значительно экономите свое время на поиск нужных шин или дисков для вашего автомобиля по магазинам, подбор типоразмеров, сравнение цен. За более чем пятнадцатилетнюю историю компании, покупателями интернет-магазина стали тысячи автовладельцев, многие из которых продолжают оставаться нашими клиентами и до сих пор. Высокий уровень обслуживания и безупречное качество продаваемой нами продукции подтверждают многочисленные положительные отзывы наших клиентов на Яндекс.Маркет.<a href="#" title="" class="link"></a></p>
+                    </div>
+                   <div class="b-company__item item">
+                      <img src="img/temp/logo-company/logo-comp3.png" alt="">
+                      <div class="b-company__item-info">
+                        <p class="b-company__rating text">50</p>
+                        <p class="b-company__comments text">130</p>
+                      </div>
+                      <h4 data-clamp><a href="one-company-page.html" class="b-company__item-name">AIMOL PREMIUM MOTOROILS</a></h4>
+                      <a href="#" class="text subtext b-company__item-sector">Мойки</a>
+                      <p class="text" data-clamp>AIMOL - голландский бренд высокотехнологичных смазочных материалов для автомобилей: моторные масла, трансмиссионные масла, антифризы, тормозная жидкость, автохимия. История марки началась в 2005 году с выпуска первых моторных масел серии SPORTLINE, которые в процессе создания тестировались на гоночных болидах. И по сей день эта серия остается самой известной среди продуктов AIMOL. А самые популярные продукты AIMOL – это Sportline 5W-50 и Streetline 5W-40.<a href="#" title="" class="link"></a></p>
                     </div>
                     <div class="b-company__item item">
-                      <img src="img/temp/auto/6.png" alt="">
-                      <h4><a href="one-company-page.html" class="b-company__item-name">Company 1</a></h4>
+                      <img src="img/temp/logo-company/logo-comp1.png" alt="">
+                      <div class="b-company__item-info">
+                        <p class="b-company__rating text">10</p>
+                        <p class="b-company__comments text">150</p>
+                      </div>
+                      <h4 data-clamp><a href="one-company-page.html" class="b-company__item-name">Re-Styling</a></h4>
                       <a href="#" class="text subtext b-company__item-sector">Мойки</a>
-                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorem nostrum sapiente officiis accusantium nemo culpa aliquid aspernatur odio incidunt, soluta obcaecati quae. Deleniti eveniet nostrum aliquam, minus odit maiores.<a href="#" title="" class="link"></a></p>
+                      <p class="text" data-clamp>Re-styling.ru является основоположником индустрии автовинилового стайлинга (оклейка автомобилей пленкой) в России и осуществляет профессиональное нанесение виниловых пленочных покрытий на кузовные элементы, автооптику, стекла, молдинги, бамперы, элементы интерьера и все, что вы только сможете придумать. Ну, или придумает наша дизайн-студия.<a href="#" title="" class="link"></a></p>
+                    </div>
+                    
+                    <div class="b-company__item item">
+                      <img src="img/temp/logo-company/logo-comp2.png" alt="">
+                      <div class="b-company__item-info">
+                        <p class="b-company__rating text">100</p>
+                        <p class="b-company__comments text">230</p>
+                      </div>
+                      <h4 data-clamp><a href="one-company-page.html" class="b-company__item-name">4точки - интернет-магазин по продаже шин и дисков - 4tochki</a></h4>
+                      <a href="#" class="text subtext b-company__item-sector">Мойки</a>
+                      <p class="text" data-clamp>Компания 4tochki.ru, занимающая лидирующее положение на рынке по продаже шин и литых дисков, представляет свыше 5 000 наименований автомобильных шин и 40 000 позиций литых дисков, более чем 70 известных мировых брендов. Мы предлагаем нашим клиентам зимние, летние и всесезонные шины для всех типов автомобилей и мотоциклов по доступным ценам. Совершая покупку онлайн на 4tochki.ru, вы значительно экономите свое время на поиск нужных шин или дисков для вашего автомобиля по магазинам, подбор типоразмеров, сравнение цен. За более чем пятнадцатилетнюю историю компании, покупателями интернет-магазина стали тысячи автовладельцев, многие из которых продолжают оставаться нашими клиентами и до сих пор. Высокий уровень обслуживания и безупречное качество продаваемой нами продукции подтверждают многочисленные положительные отзывы наших клиентов на Яндекс.Маркет.<a href="#" title="" class="link"></a></p>
                     </div>
                     <div class="b-company__item item">
-                      <img src="img/temp/auto/7.png" alt="">
-                       <h4><a href="one-company-page.html" class="b-company__item-name">Company 1</a></h4>
+                      <img src="img/temp/logo-company/logo-comp3.png" alt="">
+                      <div class="b-company__item-info">
+                        <p class="b-company__rating text">50</p>
+                        <p class="b-company__comments text">130</p>
+                      </div>
+                      <h4 data-clamp><a href="one-company-page.html" class="b-company__item-name">AIMOL PREMIUM MOTOROILS</a></h4>
                       <a href="#" class="text subtext b-company__item-sector">Мойки</a>
-                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorem nostrum sapiente officiis accusantium nemo culpa aliquid aspernatur odio incidunt, soluta obcaecati quae. Deleniti eveniet nostrum aliquam, minus odit maiores.<a href="#" title="" class="link"></a></p>
+                      <p class="text" data-clamp>AIMOL - голландский бренд высокотехнологичных смазочных материалов для автомобилей: моторные масла, трансмиссионные масла, антифризы, тормозная жидкость, автохимия. История марки началась в 2005 году с выпуска первых моторных масел серии SPORTLINE, которые в процессе создания тестировались на гоночных болидах. И по сей день эта серия остается самой известной среди продуктов AIMOL. А самые популярные продукты AIMOL – это Sportline 5W-50 и Streetline 5W-40.<a href="#" title="" class="link"></a></p>
                     </div>
-                    <div class="b-company__item item">
-                      <img src="img/temp/auto/8.png" alt="">
-                      <h4><a href="one-company-page.html" class="b-company__item-name">Company 1</a></h4>
-                      <a href="#" class="text subtext b-company__item-sector">Мойки</a>
-                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorem nostrum sapiente officiis accusantium nemo culpa aliquid aspernatur odio incidunt, soluta obcaecati quae. Deleniti eveniet nostrum aliquam, minus odit maiores.<a href="#" title="" class="link"></a></p>
-                    </div>
-                    <div class="b-company__item item">
-                      <img src="img/temp/auto/9.png" alt="">
-                      <h4><a href="one-company-page.html" class="b-company__item-name">Company 1</a></h4>
-                      <a href="#" class="text subtext b-company__item-sector">Мойки</a>
-                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorem nostrum sapiente officiis accusantium nemo culpa aliquid aspernatur odio incidunt, soluta obcaecati quae. Deleniti eveniet nostrum aliquam, minus odit maiores.<a href="#" title="" class="link"></a></p>
-                    </div>
-                    <div class="b-company__item item">
-                      <img src="img/temp/auto/1.png" alt="">
-                      <h4><a href="one-company-page.html" class="b-company__item-name">Company 1</a></h4>
-                      <a href="#" class="text subtext b-company__item-sector">Мойки</a>
-                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorem nostrum sapiente officiis accusantium nemo culpa aliquid aspernatur odio incidunt, soluta obcaecati quae. Deleniti eveniet nostrum aliquam, minus odit maiores.<a href="#" title="" class="link"></a></p>
-                    </div>
-                    <div class="b-company__item item">
-                      <img src="img/temp/auto/2.png" alt="">
-                      <h4><a href="one-company-page.html" class="b-company__item-name">Company 1</a></h4>
-                      <a href="#" class="text subtext b-company__item-sector">Мойки</a>
-                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorem nostrum sapiente officiis accusantium nemo culpa aliquid aspernatur odio incidunt, soluta obcaecati quae. Deleniti eveniet nostrum aliquam, minus odit maiores.<a href="#" title="" class="link"></a>
-                      </p>
-                    </div>
-
                   </div>
 
                 <!-- 

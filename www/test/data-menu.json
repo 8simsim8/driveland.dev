@@ -1,0 +1,22 @@
+[
+  {
+    "linkMenu":"news.html",
+    "text":"Новости"
+  },
+  {
+    "linkMenu":"community.html",
+    "text":"Автомобили"
+  },
+  {
+    "linkMenu":"company.html",
+    "text":"Компании"
+  },
+  {
+    "linkMenu":"flea-market.html",
+    "text":"Барахолка"
+  }
+]
+
+
+
+

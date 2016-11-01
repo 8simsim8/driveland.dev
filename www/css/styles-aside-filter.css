@@ -20,31 +20,34 @@
   .b-filter__switch {
     margin-top: 20px;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
   .b-filter__switch-item {
     -webkit-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     height: 40px;
+    padding: 0 3px;
+    white-space: nowrap;
     text-align: center;
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     line-height: 36px;
-    border: 2px solid #0038A8;
+    border: 1px solid rgba(28, 91, 201, 0.1);
     border-left: none;
     background-color: #FFFFFF;
     color: #0038A8;
-    -webkit-transition: color 0.2s ease,
-                background-color 0.2s ease;
+    overflow: hidden;
     transition: color 0.2s ease,
                 background-color 0.2s ease;
   }
     .b-filter__switch-item:first-child {
       border-radius: 18px 0 0 18px;
-      border: 2px solid #0038A8;
+      border: 1px solid rgba(28, 91, 201, 0.1);
     }
     .b-filter__switch-item:last-child {
       border-radius: 0 18px 18px 0;
-      border: 2px solid #0038A8;
+      border: 1px solid rgba(28, 91, 201, 0.1);
       border-left: none;
     }
     .m-filter__switch-item_active.b-filter__switch-item {
@@ -53,5 +56,5 @@
     }
   .b-filter__form {
     clear: both;
-    padding-top: 10px;
   }
+    

@@ -44,8 +44,7 @@ h4 {
       z-index: 1;
     }
       .b-content__lider-article-img {
-        margin-bottom: 25px
-        height: 408px;
+        margin-bottom: 25px;
         width: 100%;
         border-radius: 4px;
         object-fit: cover;
@@ -166,7 +165,7 @@ h4 {
         border-radius: 4px;
       }
       .paginator .pagin-container .item:not(.b-content__lider-previous-item) img {
-        height: 120px;
+        
       }
       
       .b-content__lider-previous p{
@@ -189,7 +188,7 @@ h4 {
         max-width: calc(33.33337% - 10px);
       }
         .b-content__lider-previous-item img {
-          height: 170px;
+          
         }
       .b-content__lider-gaining p,
       .b-content__popular p {
@@ -224,13 +223,15 @@ h4 {
   }
     
     .b-news__inner-item {
-      position: relative;
       margin-bottom: 15px;
       z-index: 1;
     }
-    .b-news__inner-item:after {
+      .b-news__inner-item > div {
+        position: relative;
+      }
+      .b-news__inner-item > div:after {
         position: absolute;
-        top: 125px;
+        bottom: 15px;
         left:  10px;
         display: block;
         height: 22px;
@@ -247,7 +248,6 @@ h4 {
       }
       .b-news__inner-item img {
         margin-bottom: 5px;
-        height: 160px;
         width:  100%;
         border-radius: 4px;
         object-fit: cover;
@@ -262,13 +262,13 @@ h4 {
         .b-news__inner-item span {
           color:  #CC3F3D;
         }
-      .b-news__inner-item.m-news__inner-item_blog:after {
+      .b-news__inner-item.m-news__inner-item_blog > div:after {
         background-color: #29ABE2;
       }
-      .b-news__inner-item.m-news__inner-item_news-market:after {
+      .b-news__inner-item.m-news__inner-item_news-market > div:after {
         background-color: #CCB33D;
       }
-      .b-news__inner-item.m-news__inner-item_company:after {
+      .b-news__inner-item.m-news__inner-item_company > div:after {
         background-color: #CC3F3D;
       }
 
@@ -280,9 +280,9 @@ h4 {
   }
       .b-new-auto__item {
         padding-bottom: 10px;
-        -webkit-flex-basis: calc(16.666667% - 10px);
-        flex-basis: calc(16.666667% - 10px);
-        max-width: calc(16.666667% - 10px);
+        -webkit-flex-basis: calc(25% - 10px);
+        flex-basis: calc(25% - 10px);
+        max-width: calc(25% - 10px);
       }
         .b-new-auto__item-name,
         .b-new-auto__item-auto {

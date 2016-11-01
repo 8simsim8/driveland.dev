@@ -41,18 +41,15 @@
   </head>
   <body>
 
+
     <header class="l-menu">
       <nav class="b-menu__wrapp wrapper row row-center">
         <a href="index.html" title="Main" class="b-menu__wrapp-logo col xs-2"></a>
-        <ul class="b-menu__wrapp-list col xs-8">
-          <li><a href="main.html" title="" class="text bold">Новости</a></li>
-          <li><a href="community.html" title="" class="text bold">Сообщества</a></li>
-          <li><a href="company.html" title="" class="text bold">Компании</a></li>
-          <li><a href="flea-market.html" title="" class="text bold">Барахолка</a></li>
+        <ul class="b-menu__wrapp-list col xs-7">
         </ul>
 
         <!-- Попап входа -->
-        <button class="b-menu__wrapp-login button small text bold col xs-offset-1 xs-1" style="display: none;">Войти</button>
+        <button class="b-menu__wrapp-login button small text bold col xs-offset-2 xs-1" style="display: none;">Войти</button>
         <div class="b-menu__wrapp-login-popup">
           <div class="b-menu__wrapp-login-popup-close"></div>
           <form action="/" method="POST" class="b-menu__wrapp-login-popup-enter">
@@ -66,15 +63,18 @@
         </div>
 
       <!-- Меню пользователя -->
-        <div class="b-menu__wrapp-login-nav">
-          <img src="img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
-          <p class="b-menu__wrapp-login-nav-name text">Leonidis Castonedis</p>
-          <ul class="b-menu__wrapp-login-nav-list text">
-            <li><a href="my-page.html" class="b-menu__user-item m-menu__user-item_my-page text">Моя страница</a></li>
-            <li><a href="my-blog.html" class="b-menu__user-item m-menu__user-item_my-blog text">Блог</a></li>
-            <li><a href="add-my-car.html" class="b-menu__user-item m-menu__user-item_add-car text">Добавить авто</a></li>
-            <li><a href="/logout" class="b-menu__user-item m-menu__user-item_exit text">Выход</a></li>
-          </ul>
+        <div class="b-menu__wrapp-login-nav col xs-3">
+          <a href="#" class="text b-menu__user-notification-messages"></a>
+          <div class="b-menu__wrapp-login-wrapp">
+            <img src="img/temp/author/author-1.jpg" alt="" class="b-menu__wrapp-login-nav-photo">
+            <p class="b-menu__wrapp-login-nav-name text">Leonidis Castonedis</p>
+            <ul class="b-menu__wrapp-login-nav-list text">
+              <li><a href="my-page.html" class="b-menu__user-item m-menu__user-item_my-page text">Моя страница</a></li>
+              <li><a href="my-blog.html" class="b-menu__user-item m-menu__user-item_my-blog text">Блог</a></li>
+              <li><a href="add-my-car.html" class="b-menu__user-item m-menu__user-item_add-car text">Добавить авто</a></li>
+              <li><a href="/logout" class="b-menu__user-item m-menu__user-item_exit text">Выход</a></li>
+            </ul>
+          </div>
         </div>
 
       </nav>
@@ -101,246 +101,276 @@
 
         <div class="row">
           <section class="l-news col xs-9">
-            <div class="block b-news">
+            <div class="block b-news paginator">
               <div class="b-main-title">
-                <h1>Новости</h1>
+                <h1>Лента</h1>
+                <div class="b-filter__switch">
+                  <a href="#" class="b-filter__switch-item text bold" data-filter-category="news">Новости</a>
+                  <a href="#" class="b-filter__switch-item text bold" data-filter-category="blogs">Блоги</a>
+                  <a href="#" class="b-filter__switch-item text bold" data-filter-category="posts">Посты</a>
+                  <a href="#" class="b-filter__switch-item text bold" data-filter-category="logbooks">Бортовые журналы</a>
+                </div>
+                <div class="b-filter__find">
+                  <input type="text" name="search">
+                </div>
               </div>
-              <div class="b-news__wrap container">
-                <div class="b-news__wrap-item item">
-                  <img src="img/temp/auto/2.png" alt="">
-                  <p class="text subtext b-new__item-top"><span class="date">16.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="one-item-news.html">
-                    <h5>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h5>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam </p>
-                  </a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
-                </div>
-                <div class="b-news__wrap-item item">
-                  <img src="img/temp/img-previous-1.jpg" alt="">
-                  <p class="text subtext b-new__item-top"><span class="date">16.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="one-item-news.html">
-                    <h5>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h5>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!</p>
-                  </a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
-                </div>
-                <div class="b-news__wrap-item item">
-                  <img src="img/temp/auto/2.png" alt="">
-                  <p class="text subtext b-new__item-top"><span class="date">16.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="one-item-news.html">
-                    <h5>Как научить Рено Дастер плавать или не повторяйте моих ошибокКак научить Рено Дастер плавать или не повторяйте моих ошибокКак научить Рено Дастер плавать или не повторяйте моих ошибок</h5>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!</p>
-                  </a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
-                </div>
-                <div class="b-news__wrap-item item">
-                  <img src="img/temp/auto/4.png" alt="">
-                  <p class="text subtext b-new__item-top"><span class="date">16.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="one-item-news.html">
-                    <h5>В париже представлен новый Mitsubishi L200</h5>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus.</p>
-                  </a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
-                </div>
-                <div class="b-news__wrap-item item">
-                  <img src="img/temp/auto/4.png" alt="">
-                  <p class="text subtext b-new__item-top"><span class="date">16.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="one-item-news.html">
-                    <h5>В париже представлен новый Mitsubishi L200</h5>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus.</p>
-                  </a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
-                </div>
-                
-                <div class="b-news__wrap-item item">
-                  <img src="img/temp/auto/4.png" alt="">
-                  <p class="text subtext b-new__item-top"><span class="date">16.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="one-item-news.html">
-                    <h5>В париже представлен новый Mitsubishi L200</h5>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus.</p>
-                  </a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
-                </div>
-                <div class="b-news__wrap-item item">
-                  <img src="img/temp/auto/2.png" alt="">
-                  <p class="text subtext b-new__item-top"><span class="date">16.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="one-item-news.html">
-                    <h5>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h5>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam </p>
-                  </a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
-                </div>
-                <div class="b-news__wrap-item item">
-                  <img src="img/temp/auto/5.png" alt="">
-                  <p class="text subtext b-new__item-top"><span class="date">16.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="one-item-news.html">
-                    <h5>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h5>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!</p>
-                  </a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
-                </div>
-                
-                <div class="b-news__wrap-item item">
-                  <img src="img/temp/auto/6.png" alt="">
-                  <p class="text subtext b-new__item-top"><span class="date">16.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="one-item-news.html">
-                    <h5>Как научить Рено Дастер плавать</h5>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!</p>
-                  </a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
-                </div>
-                <div class="b-news__wrap-item item">
-                  <img src="img/temp/auto/5.png" alt="">
-                  <p class="text subtext b-new__item-top"><span class="date">16.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="one-item-news.html">
-                    <h5>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h5>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!</p>
-                  </a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
-                </div>
-                <div class="b-news__wrap-item item">
-                  <img src="img/temp/auto/2.png" alt="">
-                  <p class="text subtext b-new__item-top"><span class="date">16.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="one-item-news.html">
-                    <h5>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h5>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam </p>
-                  </a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
-                </div>
-                <div class="b-news__wrap-item item">
-                  <img src="img/temp/auto/6.png" alt="">
-                  <p class="text subtext b-new__item-top"><span class="date">16.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="one-item-news.html">
-                    <h5>Как научить Рено Дастер плавать</h5>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima id alias ad, eveniet rem? Hic natus similique voluptatem id nam corrupti expedita repellendus. Alias voluptatem tempora, explicabo debitis sapiente!</p>
-                  </a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
-                </div>
-            </div>
-            <!-- 
+              <div class="b-news__wrap pagin-container pagin-wrap">
+
+                <article class="b-news__wrap-item item">
+                  <h4>В париже представлен новый Mitsubishi L200</h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+
+                  <img src="img/temp/Rules.jpg" alt="">
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="button small">Читать далее</a>
+                </article>
+
+                <article class="b-news__wrap-item item">
+                  <h4>Как научить Рено Дастер плавать или не повторяйте моих ошибок. В париже представлен новый Mitsubishi L200</h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+
+                  <img src="img/temp/13.jpg" alt="">
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="button small">Читать далее</a>
+                </article>
+
+                <article class="b-news__wrap-item item">
+                  <h4>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+
+                  <img src="img/temp/12.jpg" alt="">
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="button small">Читать далее</a>
+                </article>
+                <article class="b-news__wrap-item item">
+                  <h4>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+
+                  <img src="img/temp/11.jpg" alt="">
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="button small">Читать далее</a>
+                </article>
+
+                <article class="b-news__wrap-item item">
+                  <h4>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+
+                  <img src="img/temp/Rules.jpg" alt="">
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="button small">Читать далее</a>
+                </article>
+
+                <article class="b-news__wrap-item item">
+                  <h4>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+
+                  <img src="img/temp/13.jpg" alt="">
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="button small">Читать далее</a>
+                </article>
+
+                <article class="b-news__wrap-item item">
+                  <h4>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+
+                  <img src="img/temp/12.jpg" alt="">
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="button small">Читать далее</a>
+                </article>
+                <article class="b-news__wrap-item item">
+                  <h4>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+
+                  <img src="img/temp/11.jpg" alt="">
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="button small">Читать далее</a>
+                </article>
+
+                <article class="b-news__wrap-item item">
+                  <h4>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+
+                  <img src="img/temp/Rules.jpg" alt="">
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="button small">Читать далее</a>
+                </article>
+
+                <article class="b-news__wrap-item item">
+                  <h4>Как научить Рено Дастер плавать или не повторяйте моих ошибок</h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+
+                  <img src="img/temp/13.jpg" alt="">
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="button small">Читать далее</a>
+                </article>
+
+              </div>
+              <!-- 
                   Скрыть кнопку переключения класс .m-pagination_hide;
                   Текущая страница пагинации класс .m-pagination-item_current;
                 -->
-            <div class="b-new-auto__pagination controll">
-              <span class="b-new-auto__pagination-item item text m-pagination_prev m-pagination_hide"><<</span>
-              <span class="b-new-auto__pagination-item item text m-new-auto__pagination-item_current">1</span>
-              <span class="b-new-auto__pagination-item item text">2</span>
-              <span class="b-new-auto__pagination-item item text">3</span>
-              <span class="b-new-auto__pagination-item item text">4</span>
-              <span class="b-new-auto__pagination-item item text m-pagination-item_next">>></span>
+              <div class="b-new-auto__pagination controll">
+                <span class="b-new-auto__pagination-item item text m-pagination_prev m-pagination_hide"><<</span>
+                <span class="b-new-auto__pagination-item item text m-new-auto__pagination-item_current">1</span>
+                <span class="b-new-auto__pagination-item item text">2</span>
+                <span class="b-new-auto__pagination-item item text">3</span>
+                <span class="b-new-auto__pagination-item item text">4</span>
+                <span class="b-new-auto__pagination-item item text m-pagination-item_next">>></span>
+              </div>
             </div>
           </section>
 
           <!-- Класс m-filter__switch-item_active - выбранный фильтр -->
           <section class="l-filter col xs-3">
-            <div class="block b-filter">
-              <div class="b-filter-wrapp">
-                <h3><span class="all-company">256</span> постов</h3>
-                <h4><a href="#"><span>12</span> новых</a></h4>
-                <div class="b-filter__switch">
-                  <a href="#" class="b-filter__switch-item text bold">Свежие</a>
-                  <a href="#" class="b-filter__switch-item text bold">Популярные</a>
-                </div>
+            <div id="float-bar">
+              
+            
+            <div class="block b-add-post">
+              <h5>Нашли интересную новость, видео или тест-драйв на You Tube?</h5>
+              <a href="add-blog.html" title="" class="button middle add-button">Добавить пост</a>
+            </div>
+
+            <div class="block b-popular">
+              <div class="b-popular__wrapp">
+
+                <h4>Популярное</h4>
+                
                 <form class="b-filter__form" name="filter">
                   <div class="b-filter__form-item droplist">
                     <input type="text" id="category" value="all" hidden>
-                    <span class="droplist-current text bold tab-input">Все категории</span>
+                    <span class="droplist-current text bold tab-input">За вчера</span>
                     <ul class="droplist-block">
-                      <li class="droplist-item text">Все категории</li>
-                      <li class="droplist-item text">ДТП</li>
-                      <li class="droplist-item text">Конфликты</li>
-                      <li class="droplist-item text">Парковка</li>
-                      <li class="droplist-item text">Другое</li>
+                      <li class="droplist-item text">За вчера</li>
+                      <li class="droplist-item text">За неделю</li>
+                      <li class="droplist-item text">За месяц</li>
+                      <li class="droplist-item text">За год</li>
                     </ul>
                   </div>
                 </form>
-
-              </div>
-            </div>
-            
-            <div class="block b-popular">
-              <div class="b-popular__wrapp">
-                <h4>Популярные посты</h4>
               
                 <div class="b-popular__item item">
-                  <img src="img/temp/img-previous-2.jpg" alt="" class="b-news__inner-item-img">
-                  <p class="text subtext b-new__item-top"><span class="date">19.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="#" class="text">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
+                  <img src="img/temp/auto/2.png" alt="" class="b-news__inner-item-img">
+                  <a href="#" class="text bold" data-clamp>Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
                 </div>
 
                 <div class="b-popular__item item">
                   <img src="img/temp/img-previous-1.jpg" alt="" class="b-news__inner-item-img">
-                  <p class="text subtext b-new__item-top"><span class="date">19.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="#" class="text">В париже представлен новый Mitsubishi L200</a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
+                  <a href="#" class="text bold" data-clamp>В париже представлен новый Mitsubishi L200</a>
                 </div>
 
                 <div class="b-popular__item item">
                   <img src="img/temp/e5ac4aes-480.jpg" alt="" class="b-news__inner-item-img">
-                  <p class="text subtext b-new__item-top"><span class="date">19.10.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="#" class="text"><span>XASTOMTUNING:</span> Наш опыт восстановления  по оригинальным чертежам</a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
+                  <a href="#" class="text bold" data-clamp>Наш опыт восстановления  по оригинальным чертежам</a>
                 </div>
 
                 <div class="b-popular__item item">
-                  <img src="img/temp/img-previous-1.jpg" alt="" class="b-news__inner-item-img">
-                  <p class="text subtext b-new__item-top"><span class="date">12.09.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="#" class="text">В париже представлен новый Mitsubishi L200</a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
+                  <img src="img/temp/auto/9.png" alt="" class="b-news__inner-item-img">
+                  <a href="#" class="text bold" data-clamp>В париже представлен новый Mitsubishi L200</a>
                 </div>
 
                 <div class="b-popular__item item">
                   <img src="img/temp/img-previous-2.jpg" alt="" class="b-news__inner-item-img">
-                  <p class="text subtext b-new__item-top"><span class="date">12.08.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="#" class="text">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
+                  <a href="#" class="text bold" data-clamp>Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
                 </div>
 
                 <div class="b-popular__item item">
-                  <img src="img/temp/img-previous-2.jpg" alt="" class="b-news__inner-item-img">
-                  <p class="text subtext b-new__item-top"><span class="date">12.08.2016</span><a href="#" class="tag">Категория</a></p>
-                  <a href="#" class="text">Как научить Рено Дастер плавать или не повторяйте моих ошибокКак научить Рено Дастер плавать или не повторяйте моих ошибокКак научить Рено Дастер плавать или не повторяйте моих ошибок</a>
-                  <a href="#" class="text subtext b-new__item-bottom">
-                    <span class="comments" data-name="комментариев">40</span>
-                  </a>
+                  <img src="img/temp/auto/10.jpg" alt="" class="b-news__inner-item-img">
+                  <a href="#" class="text bold" data-clamp>Как научить Рено Дастер плавать или не повторяйте моих ошибок. Как научить Рено Дастер плавать или не повторяйте моих ошибокКак научить Рено Дастер плавать или не повторяйте моих ошибок</a>
                 </div>
 
-                <p class="show-yet"><a href="#" title="" class="text subtext">Показать еще</a></p>
+                <p class="display-all text subtext"><a href="#" title="" class="">Показать еще</a></p>
+              </div>
+              
               </div>
             </div>
 

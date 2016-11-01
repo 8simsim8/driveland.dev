@@ -1,13 +1,13 @@
 .b-company {
   
 }
-  .paginator .container .item {
+  .paginator .pagin-container .b-company__item.item.item {
     font-size: 0.7rem;
     line-height: 1.2rem;
-    margin:  0 10px;
+    margin-bottom: 20px;
     width: calc(50% - 20px);
   }
-    .paginator .container .b-company__item.item img {
+    .paginator .pagin-container .b-company__item.item img {
       height: auto;
       width: auto;
       max-height: 250px;
@@ -15,29 +15,72 @@
       padding-bottom: 5px;
       margin: 0;
     }
+    .b-company__item-info {
+      float: right;
+      margin-right: 20px;
+    }
+
+      .b-company__rating {
+        min-width: 80px;
+        padding: 1px 10px 1px 60px;
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 2em;
+        font-weight: bold;
+        color: #FFFFFF;
+        border-radius: 1em;
+        background: rgba(255, 157, 0, 0.8);
+      }
+        .b-company__rating:before {
+          position: absolute;
+          left: 15px;
+          top: 0;
+          font-family: 'FontAwesome';
+          font-size: 1.25rem;
+          vertical-align: middle;
+          color: #F67C21;
+          content: '\f005';
+        }
+      .b-company__comments {
+        margin-top: 10px;
+        line-height: 2em;
+        padding: 0 10px 0 40px;
+        text-align: right;
+        background-image: url('../img/comments.svg');
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 30px auto;
+      }
     .paginator .container .b-company__item.item .text {
       line-height: 1.1rem;
       margin-top: 15px;
     }
     .b-company__item h4 a {
       margin-bottom: 10px;
-      
       color: #333333;
     }
       .b-company__item a {
-        font-weight: bold;
         color: #1C5BC9;
-        -webkit-transition: color 0.2s ease;
+        line-height: 1.2em;
         transition: color 0.2s ease;
       }
         .b-company__item a:hover {
           color: #297DE2;
         }
       .b-company__item-sector {
-        padding: 2px 0x;
+        padding: 2px 0px;
+      }
+      .b-company__item p {
+        position: relative;
+      }
+      .b-company__item p .link {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(90deg, transparent 0%, #FFFFFF 35%);
       }
       .link:before {
-        margin: 0 10px;
+        margin: 0 10px 0 30px;
         font-family: 'FontAwesome';
         font-weight: normal;
         font-size: 0.7rem;

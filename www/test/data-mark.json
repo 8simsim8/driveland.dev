@@ -1,66 +1,104 @@
 [
   {
     "linkMark":"#",
-    "linkMarkLogo":"/img/temp/logo-auto/audi.png",
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0007.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0007.png",
     "nameMark":"Audi"
   },
   {
     "linkMark":"#",
-    "linkMarkLogo":"/img/temp/logo-auto/chevrolet.png",
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0021.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0021.png",
+    "nameMark":"BMW"
+  },
+  {
+    "linkMark":"#",
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0004.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0004.png",
     "nameMark":"Chevrolet"
   },
   {
     "linkMark":"#",
-    "linkMarkLogo":"/img/temp/logo-auto/ford.png",
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0005.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0005.png",
     "nameMark":"Ford"
   },
   {
     "linkMark":"#",
-    "linkMarkLogo":"/img/temp/logo-auto/honda.png",
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0002.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0002.png",
     "nameMark":"Honda"
   },
   {
     "linkMark":"#",
-    "linkMarkLogo":"/img/temp/logo-auto/audi.png",
-    "nameMark":"Audi"
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0006.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0006.png",
+    "nameMark":"Hyundai"
   },
   {
     "linkMark":"#",
-    "linkMarkLogo":"/img/temp/logo-auto/chevrolet.png",
-    "nameMark":"Chevrolet"
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0001.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0001.png",
+    "nameMark":"KIA"
   },
   {
     "linkMark":"#",
-    "linkMarkLogo":"/img/temp/logo-auto/ford.png",
-    "nameMark":"Ford"
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0019.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0019.png",
+    "nameMark":"Mazda"
   },
   {
     "linkMark":"#",
-    "linkMarkLogo":"/img/temp/logo-auto/honda.png",
-    "nameMark":"Honda"
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0018.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0018.png",
+    "nameMark":"Mercedes"
   },
   {
     "linkMark":"#",
-    "linkMarkLogo":"/img/temp/logo-auto/audi.png",
-    "nameMark":"Audi"
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0009.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0009.png",
+    "nameMark":"Mitsubishi"
   },
   {
     "linkMark":"#",
-    "linkMarkLogo":"/img/temp/logo-auto/chevrolet.png",
-    "nameMark":"Chevrolet"
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0016.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0016.png",
+    "nameMark":"Nissan"
   },
   {
     "linkMark":"#",
-    "linkMarkLogo":"/img/temp/logo-auto/ford.png",
-    "nameMark":"Ford"
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0015.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0015.png",
+    "nameMark":"Opel"
   },
   {
     "linkMark":"#",
-    "linkMarkLogo":"/img/temp/logo-auto/honda.png",
-    "nameMark":"Honda"
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0003.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0003.png",
+    "nameMark":"Peugeot"
+  },
+  {
+    "linkMark":"#",
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0014.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0014.png",
+    "nameMark":"Skoda"
+  },
+  {
+    "linkMark":"#",
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0011.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0011.png",
+    "nameMark":"Subaru"
+  },
+  {
+    "linkMark":"#",
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0010.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0010.png",
+    "nameMark":"Toyota"
+  },
+  {
+    "linkMark":"#",
+    "linkMarkLogo1x":"img/temp/logo-auto/1x/Driverland_logo___0008.png",
+    "linkMarkLogo2x":"img/temp/logo-auto/2x/Driverland_logo_0008.png",
+    "nameMark":"VW"
   }
 ]
-
-
-
-

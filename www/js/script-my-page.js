@@ -1,5 +1,19 @@
 (function () {
 
+  var redact = new MakeRedact();
+
+  var aside = $('.l-author');
+
+  var asideBar = new MakeAsideBar(aside);
+
+  $("h4[data-clamp]").each(function(index, el){
+    $clamp(el, {clamp: 3});
+  });
+
+  $(".text[data-clamp]").each(function(index, el){
+    $clamp(el, {clamp: 6});
+  });
+
 // -----------------------------------------------------------------------------
 
 // ADD COMMENT ON THE USER MAIN PAGE
