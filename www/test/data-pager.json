@@ -93,6 +93,22 @@
       "linkProfile":"#",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
+      "linkAvatar":"/img/temp/author/author-1.jpg",
+      "auto":[
+        {
+        "autoName":"Audi1 Q7",
+        "linkAutoPhoto":"/img/temp/auto/1.png",
+        "linkAuto":"#",
+        "voteAuto":"350",
+        "headerAuto":"My old-school bulltet proof E-Klasse",
+        "noteAuto":"Реальность всё расставляет на свои места. Машины, которые в статьях и обзорах ругали — сплошь и рядом встречаются на дорогах. А те, которые хвалили — редкость. Просто любой автомобиль может стать очень хорошим. Потому что он стал вашим. Ведь как бывает, придёшь в магазин, а там в линию выстроились штук пятнадцать телевизоров."
+        }
+      ]
+    },
+    {
+      "linkProfile":"#",
+      "name":"Alexis.Sanches",
+      "city":"Kyiv",
       "auto":[
         {
           "autoName":"Audi Q7 Quattttttrooo!",
@@ -110,6 +126,22 @@
           "autoName":"Audi Q7 Quattttttrooo!",
           "linkAutoPhoto":"/img/temp/auto/8.png",
           "linkAuto":"#"
+        }
+      ]
+    },
+    {
+      "linkProfile":"#",
+      "name":"Alexis.Sanches",
+      "city":"Kyiv",
+      "linkAvatar":"/img/temp/author/author-1.jpg",
+      "auto":[
+        {
+        "autoName":"Audi1 Q7",
+        "linkAutoPhoto":"/img/temp/auto/1.png",
+        "linkAuto":"#",
+        "voteAuto":"350",
+        "headerAuto":"My old-school bulltet proof E-Klasse",
+        "noteAuto":"Реальность всё расставляет на свои места. Машины, которые в статьях и обзорах ругали — сплошь и рядом встречаются на дорогах. А те, которые хвалили — редкость. Просто любой автомобиль может стать очень хорошим. Потому что он стал вашим. Ведь как бывает, придёшь в магазин, а там в линию выстроились штук пятнадцать телевизоров."
         }
       ]
     },
@@ -144,7 +176,31 @@
       "auto":[
         {
           "autoName":"Audi Q7 Quattttttrooo!",
+          "linkAutoPhoto":"/img/temp/auto/9.png",
+          "linkAuto":"#"
+        }
+      ]
+    },
+    {
+      "linkProfile":"#",
+      "name":"Alexis.Sanches",
+      "city":"Kyiv",
+      "auto":[
+        {
+          "autoName":"Audi Q7 Quattttttrooo!",
           "linkAutoPhoto":"/img/temp/auto/5.png",
+          "linkAuto":"#"
+        }
+      ]
+    },
+    {
+      "linkProfile":"#",
+      "name":"Alexis.Sanches",
+      "city":"Kyiv",
+      "auto":[
+        {
+          "autoName":"Audi Q7 Quattttttrooo!",
+          "linkAutoPhoto":"/img/temp/auto/9.png",
           "linkAuto":"#"
         }
       ]

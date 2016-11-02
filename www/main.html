@@ -35,6 +35,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Clamp.js/0.5.1/clamp.min.js"></script>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/script-droplist.js"></script>
     <script type="text/javascript" src="js/script-general.js"></script>
   </head>
@@ -44,22 +45,9 @@
       <nav class="b-menu__wrapp wrapper row row-center">
         <a href="index.html" title="Main" class="b-menu__wrapp-logo col xs-2"></a>
         <ul class="b-menu__wrapp-list col xs-7">
-        <!--           <li><a href="main.html" title="" class="text bold">Главная</a></li> -->
         </ul>
 
-        <!-- Попап входа -->
         <button class="b-menu__wrapp-login button small text bold col xs-offset-2 xs-1">Войти</button>
-        <div class="b-menu__wrapp-login-popup">
-          <div class="b-menu__wrapp-login-popup-close"></div>
-          <form action="/" method="POST" class="b-menu__wrapp-login-popup-enter">
-            <h3>Вход на сайт</h3>
-            <input type="email" name="username" placeholder="Email" tabindex="1">
-            <input type="password" name="password" placeholder="Пароль" tabindex="2">
-            <input type="submit" value="Войти" class="button middle enter" tabindex="3">
-            <div class="button-registration text">Регистрация</div>
-            <a href="#" title="" class="text">Забыли пароль?</a>
-          </form>
-        </div>
 
       <!-- Меню пользователя -->
         <div class="b-menu__wrapp-login-nav col xs-3" style="display: none;">
@@ -80,6 +68,19 @@
     </header>
     <!-- Попап регистрации -->
       <div class="b-menu__wrapp-register-popup">
+
+        <div class="b-menu__wrapp-login-popup">
+          <div class="b-menu__wrapp-login-popup-close"></div>
+          <form action="/" method="POST" class="b-menu__wrapp-login-popup-enter">
+            <h3>Вход на сайт</h3>
+            <input type="email" name="username" placeholder="Email" tabindex="1">
+            <input type="password" name="password" placeholder="Пароль" tabindex="2">
+            <input type="submit" value="Войти" class="button middle enter" tabindex="3">
+            <div class="button-registration text">Регистрация</div>
+            <a href="#" title="" class="text">Забыли пароль?</a>
+          </form>
+        </div>
+
         <div class="b-menu__wrapp-register-popup-window">
           <div class="b-menu__wrapp-login-popup-close"></div>
           <h3>Рeгистрация</h3>
@@ -93,6 +94,7 @@
           </form>
           <div class="b-menu__wrapp-login text">Вход</div>
         </div>
+
       </div>
     <main>
       <div class="wrapper">
@@ -123,13 +125,13 @@
                 <article class="b-content__lider-article">
                   <img src="img/temp/c1c36aes-960.jpg" alt="" class="b-content__lider-article-img">
                   <div class="b-content__lider-article-vote">Лидер голосования <span>225</span> голосов</div>
-                  <h4>Заголовок</h4>
+                  <h4>My old-school bulltet proof E-Klasse</h4>
                   <div class="b-content__lider-article-author">
-                    <img src="#" alt="" class="b-content__lider-article-author-photo">
-                    <span class="b-content__lider-article-author-name text">Name</span><span class="b-content__lider-article-author-city text">City</span>
+                    <img src="/img/temp/author/author-1.jpg" alt="" class="b-content__lider-article-author-photo">
+                    <a href="#" class="b-content__lider-article-author-name text">Alexis.Sanches</a><a href="#" class="b-content__lider-article-author-city text">Kyiv</a>
                   </div>
-                  <p class="b-content__lider-article-text text">Note text</p>
-                  <a href="" class="b-content__lider-article-read button small">Читать далее</a>
+                  <p class="b-content__lider-article-text text">Реальность всё расставляет на свои места. Машины, которые в статьях и обзорах ругали — сплошь и рядом встречаются на дорогах. А те, которые хвалили — редкость. Просто любой автомобиль может стать очень хорошим. Потому что он стал вашим. Ведь как бывает, придёшь в магазин, а там в линию выстроились штук пятнадцать телевизоров.</p>
+                  <a href="" class="read-button button small">Читать далее</a>
                 </article>
 
                 <div class="b-content__lider-previous paginator">
@@ -167,7 +169,7 @@
           <section class="l-news col sm-3 order-xs-2 xs-12">
             <div class="block b-news">
               <div class="b-news__inner">
-                <h3>Новое</h3>
+                <h4>Новое</h4>
                 <a href="news.html" title="" class="b-link-show-all text">Все новое</a>
                 <div class="b-news__container">
 
@@ -182,14 +184,14 @@
                     <div data-name="Новости рынка">
                       <img src="img/temp/img-previous-1.jpg" alt="" class="b-news__inner-item-img">
                     </div>
-                    <a href="#" class="text">В париже представлен новый Mitsubishi L200</a>
+                    <a href="#" class="text">Онлайн-журнал: Полиция и ГФС начинают охоту на «польские бляхи». Тест-драйв электромобиля BMW i3.</a>
                   </div>
 
                   <div class="b-news__inner-item m-news__inner-item_company">
                     <div data-name="Новости рынка">
                       <img src="img/temp/e5ac4aes-480.jpg" alt="" class="b-news__inner-item-img">
                     </div>
-                    <a href="#" class="text"><span>XASTOMTUNING:</span> Наш опыт восстановления  по оригинальным чертежам</a>
+                    <a href="#" class="text">Наш опыт восстановления  по оригинальным чертежам</a>
                   </div>
 
                   <div class="b-news__inner-item m-news__inner-item_news-market">
@@ -201,7 +203,7 @@
 
                   <div class="b-news__inner-item m-news__inner-item_blog">
                     <div data-name="Блоги">
-                      <img src="img/temp/img-previous-2.jpg" alt="" class="b-news__inner-item-img">
+                      <img src="img/temp/725c0c2s-960.jpg" alt="" class="b-news__inner-item-img">
                     </div>
                     <a href="#" class="text">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
                   </div>
@@ -210,7 +212,7 @@
                     <div data-name="Блоги">
                       <img src="img/temp/img-previous-2.jpg" alt="" class="b-news__inner-item-img">
                     </div>
-                    <a href="#" class="text">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
+                    <a href="#" class="text">Обновленную Skoda Octavia наделили «кристальным взглядом»</a>
                   </div>
 
                 </div>

@@ -1,9 +1,17 @@
-;window.onload = function() {
+;document.addEventListener("DOMContentLoaded", general);
+
+function general() {
 
   var scroll = new MakeDisableScroll();
   var header = new makeHeader();            // Обьект "Меню"
 
+  var messages = 10;
+  header.checkNewNotification(messages);     // Метод отображения колличества сообщений
+
+  var buttonToTop = new makeButtonToTop();  // Кнопка "вверх"
+
 // **************** TEST *****************************************
+// Создание навигации МЕНЮ
 $.ajax('/test/data-menu.json', {
         type: 'GET',
         dataType: 'json',
@@ -16,19 +24,16 @@ $.ajax('/test/data-menu.json', {
             strInsert = '<li><a href="'+ array[i].linkMenu +'" title="'+ array[i].text +'" class="text bold">'+ array[i].text +'</a></li>';
           $container.append(strInsert);
           }
+
         },
         error: function(req,status,err) {
           console.log("Error " + req,status,err);
         }
       });
-
 // *****************************************************************
 
-  var buttonToTop = new makeButtonToTop();  // Кнопка "вверх"
 
-  var messages = 10;
-  header.checkNewNotification(messages);     // Передается колличество сообщений
-
+// *** Меню ***
   function makeHeader(){
     var $header = $('header');
 
@@ -52,7 +57,7 @@ $.ajax('/test/data-menu.json', {
       if(messages > 0) {
         $('.b-menu__user-notification-messages').addClass('new-notification').html(messages);
       }
-  }
+    }
 
   // Отрытие формы входа
     $('.b-menu__wrapp-login, .button-enter').on('click', function(){
@@ -95,8 +100,10 @@ $.ajax('/test/data-menu.json', {
       }
     });
   }
+// *** /Меню ***
 
-  // Disable scroll
+
+// *** Disable scroll ***
   function MakeDisableScroll(){
     // left: 37, up: 38, right: 39, down: 40,
     // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
@@ -134,6 +141,8 @@ $.ajax('/test/data-menu.json', {
       document.onkeydown = null;
     }
   }
+// *** /Disable scroll ***
+
 
   // Add/delete photo
   var blogNum = 1;
@@ -207,86 +216,3 @@ $.ajax('/test/data-menu.json', {
     
 
 };
-
-// ***************** COMMON **********************************************************
-  var DISTANCE_SMALL_HEADER = 200;
-  var DISTANCE_SHOW_BUTTON_TOP = 500;
-  var WIDTH_WINDOW_TABLET = 768;
-
-  // Появление кнопки редактирования
-  function MakeRedact() {
-    var heightWindow        = window.innerHeight;
-    var widthWindow         = window.innerWidth;
-    if(widthWindow > WIDTH_WINDOW_TABLET) {
-      $('.redact-block').on('mouseover', function(event) {
-        var $this = $(this);
-        $this.children().filter('.block-redactor').addClass('m-block-redactor_show');
-      });
-
-      $('.redact-block').on('mouseout', function(event) {
-        $('.block-redactor').removeClass('m-block-redactor_show');
-      });
-    } else {
-      $('.block-redactor').addClass('m-block-redactor_show');
-    }
-
-    $(window).on('load resize', function(){
-      heightWindow        = window.innerHeight;
-      widthWindow         = window.innerWidth;
-      if(widthWindow < WIDTH_WINDOW_TABLET) { 
-        $('.block-redactor').addClass('m-block-redactor_show');
-      } else {
-        $('.block-redactor').removeClass('m-block-redactor_show');
-      }
-    });
-
-  }
-
-  // Кнопка "ВВЕРХ"
-  function makeButtonToTop() {
-
-    var block = document.getElementsByTagName('main')[0];
-    var buttonTop = document.createElement('div');
-
-    buttonTop.classList.add('button-to-top');
-    buttonTop.classList.add('text');
-    buttonTop.innerHTML = 'TOP';
-    buttonTop.style.display = 'none';
-    block.appendChild(buttonTop);
-
-    if(window.pageYOffset >= DISTANCE_SHOW_BUTTON_TOP) {
-      $(buttonTop).fadeIn(200);
-    }
-
-    $(window).on('scroll', function(){
-      var scrollWindow = window.pageYOffset || document.documentElement.scrollTop;
-      if(scrollWindow >= DISTANCE_SHOW_BUTTON_TOP) {
-        $(buttonTop).fadeIn(200);
-      } else {
-        $(buttonTop).fadeOut(200);
-      }
-    });
-
-    $(buttonTop).on('click', function(){
-      $("html, body").animate({
-        scrollTop: 0
-      }, 200);
-    });
-
-  }
-
-  function MakeAsideBar(aside) {
-
-    var buttonOpenMyCar = document.getElementById('button-author-auto');
-    var blockAuthorCar = document.getElementsByClassName('b-author__car')[0];
-
-    $(buttonOpenMyCar).on('click', clickOnButtonMyCar);
-
-    function clickOnButtonMyCar(e) {
-      $(blockAuthorCar).addClass('open-block');
-      return false;
-    }
-  }
-
-  function MakeCalc() {
-  }

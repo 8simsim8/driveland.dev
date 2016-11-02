@@ -10,17 +10,19 @@
       margin: 0 5px;
     }
   .b-title__content {
-    margin-top: 40px;
+    margin-top: 26px;
   }
     .b-title__content h1 {
-      margin-bottom: 20px;
       color : #1C5BC9;
+    }
+    .b-title-text {
+      margin-bottom: 10px;
     }
     .b-title__content-photo {
       position: relative;
     }
       .b-title__content-photo img {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         height: 569px;
         width: 100%;
         object-fit: cover;
@@ -97,7 +99,7 @@
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
     border-bottom: 1px solid rgba(163, 163, 163, 0.4);
   }
   .b-property-string:last-child {
@@ -161,8 +163,8 @@
         flex: 1 0 calc(33.3333337% - 20px);
         max-width: calc(33.3333337% - 20px);
         width: calc(33.3333337% - 20px);
-        height: 100%;
-        object-fit: contain;
+        max-height: 120px;
+        object-fit: cover;
         border-radius: 4px;
       }
       .b-logbook__container-item-text {
@@ -209,14 +211,6 @@
 }
   .b-about-auto h3,
   .b-coment h3 {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     color : #1C5BC9;
-  }
-
-.l-coment {
-}
-  .b-coment {
-  }
-  .b-coment-wrapp h5 {
-    
   }

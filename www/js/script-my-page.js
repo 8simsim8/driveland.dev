@@ -1,4 +1,6 @@
-(function () {
+;document.addEventListener("DOMContentLoaded", general);
+
+function general() {
 
   var redact = new MakeRedact();
 
@@ -7,11 +9,11 @@
   var asideBar = new MakeAsideBar(aside);
 
   $("h4[data-clamp]").each(function(index, el){
-    $clamp(el, {clamp: 3});
+    $clamp(el, {clamp: 1});
   });
 
   $(".text[data-clamp]").each(function(index, el){
-    $clamp(el, {clamp: 6});
+    $clamp(el, {clamp: 3});
   });
 
 // -----------------------------------------------------------------------------
@@ -210,4 +212,4 @@ $('#avatarSlim').slim({
     }        
 });
 
-})();
+}

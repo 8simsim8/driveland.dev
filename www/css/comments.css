@@ -1,3 +1,22 @@
+/* Сообщение о регистрации */
+  .alert-register {
+    text-align: center;
+    padding: 20px;
+    color : #1C5BC9;
+    border: 1px solid #CECECE;
+    border-radius: 4px;
+  }
+    .alert-register__buttons {
+      margin-top: 20px;
+      height: 40px;
+    }
+      .alert-register .button.middle {
+        display: inline-block;
+        margin: 0 15px;
+        padding: 1px 15px;
+        width: auto;
+        min-width: 170px;
+      }
 /* Стили блока комментов */
   .b-comments-container {
     margin: 20px 0 0 20px;
