@@ -1,58 +1,3 @@
-.b-news .b-main-title {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 26px;
-  margin-bottom: 20px;
-}
-  .b-news .b-main-title h1 {
-    margin: 0;
-  }
-  .b-news .b-main-title .b-filter__switch {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    margin: 0 30px;
-  }
-  .b-main-title .b-filter__find {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 1rem;
-    border: 1px solid rgba(28, 91, 201, 0.1);
-    transition: width 0.5s ease;
-    cursor: pointer;
-  }
-    .b-main-title .b-filter__find:after {
-      position: absolute;
-      margin: auto;
-      font-family: 'FontAwesome';
-      top: -2px;
-      left: 0.49em;
-      line-height: 40px;
-      font-size: 1rem;
-      content: '\f002';
-    }
-    .open-search.b-filter__find {
-      width: 350px;
-    }
-  .b-filter__find input {
-    height: 100%;
-    width: 100%;
-    padding: 1px 10px 1px 40px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    border-radius: 1rem;
-    cursor: pointer;
-  }
-
   .b-news__wrap-item {
     margin-top: 16px;
     margin-bottom: 20px !important;
@@ -75,6 +20,7 @@
 
 .b-add-post {
   margin-bottom: 20px;
+  border: 2px solid #ABE766;
 }
   .b-add-post h5 {
     position: relative;

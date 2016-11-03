@@ -44,19 +44,7 @@
         <ul class="b-menu__wrapp-list col xs-7">
         </ul>
 
-        <!-- Попап входа -->
-        <button class="b-menu__wrapp-login button small text bold col xs-offset-2 xs-1" style="display: none;">Войти</button>
-        <div class="b-menu__wrapp-login-popup">
-          <div class="b-menu__wrapp-login-popup-close"></div>
-          <form action="/" method="POST" class="b-menu__wrapp-login-popup-enter">
-            <h3>Вход на сайт</h3>
-            <input type="email" name="username" placeholder="Email" tabindex="1">
-            <input type="password" name="password" placeholder="Пароль" tabindex="2">
-            <input type="submit" value="Войти" class="button middle enter" tabindex="3">
-            <div class="button-registration text">Регистрация</div>
-            <a href="#" title="" class="text">Забыли пароль?</a>
-          </form>
-        </div>
+        <button class="b-menu__wrapp-login button small text bold col xs-offset-2 xs-1 button-enter" style="display: none;">Войти</button>
 
       <!-- Меню пользователя -->
         <div class="b-menu__wrapp-login-nav col xs-3">
@@ -76,20 +64,34 @@
       </nav>
     </header>
     <!-- Попап регистрации -->
-      <div class="b-menu__wrapp-register-popup">
+      <div class="b-menu__wrapp-popup">
+
+        <div class="b-menu__wrapp-login-popup">
+          <div class="b-menu__wrapp-login-popup-close"></div>
+          <form action="/" method="POST" class="b-menu__wrapp-login-popup-enter">
+            <h3>Вход на сайт</h3>
+            <input type="email" name="username" placeholder="Email" tabindex="1">
+            <input type="password" name="password" placeholder="Пароль" tabindex="2">
+            <input type="submit" value="Войти" class="button middle enter" tabindex="3">
+            <div class="button-registration text">Регистрация</div>
+            <p><a href="#" title="" class="text">Забыли пароль?</a></p>
+          </form>
+        </div>
+
         <div class="b-menu__wrapp-register-popup-window">
           <div class="b-menu__wrapp-login-popup-close"></div>
-          <h3>Рeгистрация</h3>
           <form action="/register" method="POST" class="b-menu__wrapp-register-popup-window-register" name="register">
+            <h3>Рeгистрация</h3>
             <input type="text" name="nickname" placeholder="Имя" class="tab-input">
             <p class="input-radio-block"><label class="text"><input type="radio" name="gender" value="male" class="click-element tab-input"><span>Male</span></label></p>
             <p class="input-radio-block"><label class="text"><input type="radio" name="gender" value="female" class="click-element tab-input"><span>Female</span></label></p>
             <input type="email" name="email" placeholder="Email" class="tab-input">
             <input type="password" name="password" placeholder="Пароль" class="tab-input">
             <input type="submit" value="Зарегестрироваться" class="button middle tab-input">
+            <div class="b-menu__wrapp-login text button-enter">Вход</div>
           </form>
-          <div class="b-menu__wrapp-login text">Вход</div>
         </div>
+
       </div>
     <main>
       <div class="wrapper">

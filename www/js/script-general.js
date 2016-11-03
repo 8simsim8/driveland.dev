@@ -61,18 +61,19 @@ $.ajax('/test/data-menu.json', {
 
   // Отрытие формы входа
     $('.b-menu__wrapp-login, .button-enter').on('click', function(){
-      $('.b-menu__wrapp-login-popup-close').trigger('click');
-      $('.b-menu__wrapp-login-popup').addClass('m-open-popap');
+        $('.b-menu__wrapp-popup').addClass('m-open-popap');
+        $('.b-menu__wrapp-register-popup-window').removeClass('m-open-popap');
+        scroll.disableScroll(); // Блокирование скролла/пролистывания
+        $('.b-menu__wrapp-login-popup').addClass('m-open-popap');
       return false;
     });
 
-  // Открытие попапа регистрации
-    var registerInputs = $('.b-menu__wrapp-register-popup').find('.tab-input');
+  // Отрытие формы регистрации
     $('.button-registration').on('click', function(){
-      scroll.disableScroll(); // Блокирование скролла/пролистывания
+      $('.b-menu__wrapp-popup').addClass('m-open-popap');
       $('.b-menu__wrapp-login-popup').removeClass('m-open-popap');
-      $('.b-menu__wrapp-register-popup').addClass('m-open-popap');
-      workForm('register');
+      scroll.disableScroll(); // Блокирование скролла/пролистывания
+      $('.b-menu__wrapp-register-popup-window').addClass('m-open-popap');
     });
 
   // Закрытие попапа
@@ -143,6 +144,20 @@ $.ajax('/test/data-menu.json', {
   }
 // *** /Disable scroll ***
 
+// *************************************
+// Скрытие/открытие поиска на страницах:
+// "Новости, "Компании"
+  $('.b-filter__find').on('click', function(){
+    $('.b-filter__find').addClass('open-search');
+    $('.b-filter__find').find('[name=search]').focus();
+    return false;
+  });
+
+  $('.b-filter__find').find('[name=search]').on('blur', function(){
+    $('.b-filter__find').removeClass('open-search');
+    return false;
+  });
+// ***************************************
 
   // Add/delete photo
   var blogNum = 1;

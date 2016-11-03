@@ -69,6 +69,29 @@
 
   }
 
+  // Вывод рейтинга
+  function MakeRating(ratingBlock, positive, all) {
+
+    $(ratingBlock).each(function(index, el){
+      var $currentElem = $(el).find('.wrap-rating');
+      var $star = $currentElem.find('.rating-stars').children('span');
+
+    // Колличество звездочек
+      var sumStars = $star.length;
+
+      var res = Math.floor((positive[index] * sumStars)/all[index]);
+      for(i = 0; i < res; i++) {
+        $star.eq(i).attr('data-ative', '');
+      }
+      console.log(res);
+      $currentElem.find('.print-rating').html(all[index]);
+    });
+
+  }
+
+
+
+
   function MakeAsideBar(aside) {
 
     var buttonOpenMyCar     = document.getElementById('button-author-auto');
@@ -94,7 +117,6 @@
   //   });
 
   // }
-
 
   // Плавающее боковое окно
   function floatSideBar($container) {
