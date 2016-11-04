@@ -44,7 +44,7 @@ h5 {
 }
 h6 {
   font-family: 'Open Sans', sans-serif;
-  font-size : 0.7rem;
+  font-size : 0.8rem;
   line-height : 1.15em;
   color : #333333;
 }
@@ -81,9 +81,15 @@ a {
 a.text {
   color: #0038A8;
 }
-h4 > a {
+h4 > a,
+h5 > a,
+h6 > a {
   color: #333333;
 }
+  h4 > a:hover,
+  h5 > a:hover {
+    color: #595959
+  }
   a.text:not(.b-filter__switch-item):hover {
     color: #1C86C9;
   }
@@ -739,6 +745,13 @@ label {
     .author {
         margin: 0 0 0 5px;
       }
+  .wrap-tags {
+    white-space: nowrap;
+    }
+    .wrap-tags a.tag {
+      line-height: 1.9em;
+      white-space: nowrap;
+    }
     .tag {
       color: #808080;
       background-color: rgba(128, 128, 128, 0.1);
@@ -1124,6 +1137,38 @@ main {
       line-height: 1em;
       content: '\f062';
     }
+
+/* Звездочки рейтинга */
+    .wrap-rating {
+      -webkit-flex: 1 0 150px;
+      -ms-flex: 1 0 150px;
+      flex: 1 0 150px;
+      min-width: 150px;
+    }
+      .wrap-rating p {
+        float: left;
+      }
+        .wrap-rating span:after {
+          margin-right: 3px;
+          font-family: 'FontAwesome';
+          font-size: 0.9rem;
+          content: '\f005';
+          color: #D2D2D2;
+        }
+          .wrap-rating span[data-active]:after {
+            color: #EDB867;
+          }
+        .print-rating {
+          margin-left: 5px;
+          width: 30px;
+        }
+          .print-rating:before {
+            content: '(';
+          }
+            .print-rating:after {
+              content: ')';
+            }
+
 /* -------------------- */
 
 .l-footer {
@@ -1136,6 +1181,7 @@ main {
     display: -ms-flexbox;
     display: flex;
     height: 100%;
+    min-width: 960px;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;

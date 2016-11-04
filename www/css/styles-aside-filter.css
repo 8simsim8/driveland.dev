@@ -1,13 +1,18 @@
 .b-filter-wrapp {
   width: 100%;
 }
-  .b-filter-wrapp h3,
-  .b-filter-wrapp h3+h4 {
-    text-align: center;
-  }
-    .b-filter-wrapp a {
-      color: #0038A8;
+    .b-filter-wrapp h4 {
+      color: #1C5BC9;
+      text-align: center;
+      font-weight: bold;
     }
+      .b-filter-wrapp h4 + p {
+        margin-top: 10px;
+        text-align: center;
+      }
+        .b-filter-wrapp h4 + p a {
+          color: #333333;
+        }
       .b-filter__form-item.droplist {
         margin-top: 20px;
         width: 100%;

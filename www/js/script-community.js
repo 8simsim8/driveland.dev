@@ -17,7 +17,7 @@ function community() {
           var strInsert = '';
           sumElemOnPage = sumElemOnPage || array.length;
           for(var i = 0; i < sumElemOnPage; i++) {
-            strInsert = '<div class="b-community__item item"><img src="' + array[i].auto[0].linkAutoPhoto + '" alt="' + array[i].auto[0].autoName + '"><p class="text"><a href="' + array[i].linkProfile + '" class="b-community__item-name">' + array[i].name + '</a><span> из города </span><a href="#" class="b-community__item-city">' + array[i].city + '</a><span> ездит на </span><a href="#" class="b-community__item-auto">' + array[i].auto[0].autoName + '</a></p>';
+            strInsert = '<div class="b-community__item item"><img src="' + array[i].auto[0].linkAutoPhoto + '" alt="' + array[i].auto[0].autoName + '"><div class="b-community__item-info text"><div class="b-community__item-avatar"><img src="' + array[i].linkAvatar + '" alt=""></div><p><a href="#" class="b-community__item-auto">' + array[i].auto[0].autoName + '</a></p><p class="b-community__item-author"><a href="my-page.html" class="text">' + array[i].name + '</a><a href="#" class="text subtext">' + array[i].city + '</a></p></div></div>';
             $container.append(strInsert);
           }
 

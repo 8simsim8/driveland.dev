@@ -28,7 +28,6 @@
     <link rel="stylesheet" type="text/css" href="css/styles-droplist.css">
     <link rel="stylesheet" type="text/css" href="css/styles-aside-filter.css">
     <link rel="stylesheet" type="text/css" href="css/styles-company.css">
-    <link rel="stylesheet" type="text/css" href="css/fontawesome-stars.css">
     
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -111,16 +110,16 @@
 
               <div class="b-main-title title-search">
                   <h1>Компании</h1>
-                <div class="b-filter__find">
+                <form name="search" class="b-filter__find">
                   <input type="text" name="search">
-                </div>
+                </form>
               </div>
               <h3>Тюниг и прокачка авто <span>12</span></h3>
 
               <div class="b-company__container pagin-container pagin-wrap">
 
-<!-- Для добавления стиля ТОП компании добавить атрибут "data-top-company" -->
-                <div class="b-company__item item" data-top-company>
+<!-- Для добавления стиля ТОП компании добавить атрибут "data-top-item" -->
+                <div class="b-company__item item" data-top-item>
                   <div class="b-company__logo">
                     <img src="img/temp/logo-company/1.jpg" alt="">
                   </div>
@@ -131,17 +130,20 @@
                         <a href="#" class="text subtext tag">Автомойка</a>
                         <a href="#" class="text subtext tag">Автосервис</a>
                         <a href="#" class="text subtext tag">Шиномонтаж</a>
+                        <a href="#" class="text subtext tag">Шиномонтаж</a>
                       </p>
                       <div class="wrap-rating text">
                         <p class="rating-stars">
-        <!-- Рейтинг добавить аттрибут "data-ative" -->
+        <!-- Рейтинг добавить аттрибут 
+             "data-aсtive" - целая звезда
+       -->
                           <span></span>
                           <span></span>
                           <span></span>
                           <span></span>
                           <span></span>
                         </p>
-                        <p class="print-rating">123300</p>
+                        <p class="print-rating text bold"></p>
                       </div>
                     </div>
                     <p class="text" data-clamp>Re-styling.ru является основоположником индустрии автовинилового стайлинга (оклейка автомобилей пленкой) в России и осуществляет профессиональное нанесение виниловых пленочных покрытий на кузовные элементы, автооптику, стекла, молдинги, бамперы, элементы интерьера и все, что вы только сможете придумать. Ну, или придумает наша дизайн-студия.</p>
@@ -149,7 +151,7 @@
                   <a href='#' class="b-company__item-comments text bold">123</a>
                 </div>
 
-                <div class="b-company__item item" data-top-company>
+                <div class="b-company__item item" data-top-item>
                   <div class="b-company__logo">
                     <img src="img/temp/logo-company/2.jpg" alt="">
                   </div>
@@ -169,7 +171,7 @@
                           <span></span>
                           <span></span>
                         </p>
-                        <p class="print-rating">300</p>
+                        <p class="print-rating text bold"></p>
                       </div>
                     </div>
                     <p class="text" data-clamp>Компания 4tochki.ru, занимающая лидирующее положение на рынке по продаже шин и литых дисков, представляет свыше 5 000 наименований автомобильных шин и 40 000 позиций литых дисков, более чем 70 известных мировых брендов. Мы предлагаем нашим клиентам зимние, летние и всесезонные шины для всех типов автомобилей и мотоциклов по доступным ценам. Совершая покупку онлайн на 4tochki.ru, вы значительно экономите свое время на поиск нужных шин или дисков для вашего автомобиля по магазинам, подбор типоразмеров, сравнение цен. За более чем пятнадцатилетнюю историю компании, покупателями интернет-магазина стали тысячи автовладельцев, многие из которых продолжают оставаться нашими клиентами и до сих пор. Высокий уровень обслуживания и безупречное качество продаваемой нами продукции подтверждают многочисленные положительные отзывы наших клиентов на Яндекс.Маркет.</p>
@@ -187,6 +189,8 @@
                       <p class="wrap-tags">
                         <a href="#" class="text subtext tag">Автомойка</a>
                         <a href="#" class="text subtext tag">Автосервис</a>
+                        <a href="#" class="text subtext tag">Шиномонтаж</a><a href="#" class="text subtext tag">Автосервис</a>
+                        <a href="#" class="text subtext tag">Шиномонтаж</a>
                         <a href="#" class="text subtext tag">Шиномонтаж</a>
                       </p>
                       <div class="wrap-rating text">
@@ -197,7 +201,7 @@
                           <span></span>
                           <span></span>
                         </p>
-                        <p class="print-rating">30</p>
+                        <p class="print-rating text bold"></p>
                       </div>
                     </div>
                     <p class="text" data-clamp>AIMOL - голландский бренд высокотехнологичных смазочных материалов для автомобилей: моторные масла, трансмиссионные масла, антифризы, тормозная жидкость, автохимия. История марки началась в 2005 году с выпуска первых моторных масел серии SPORTLINE, которые в процессе создания тестировались на гоночных болидах. И по сей день эта серия остается самой известной среди продуктов AIMOL. А самые популярные продукты AIMOL – это Sportline 5W-50 и Streetline 5W-40.</p>
@@ -224,7 +228,7 @@
                           <span></span>
                           <span></span>
                         </p>
-                        <p class="print-rating">12</p>
+                        <p class="print-rating text bold"></p>
                       </div>
                     </div>
                     <p class="text" data-clamp>Re-styling.ru является основоположником индустрии автовинилового стайлинга (оклейка автомобилей пленкой) в России и осуществляет профессиональное нанесение виниловых пленочных покрытий на кузовные элементы, автооптику, стекла, молдинги, бамперы, элементы интерьера и все, что вы только сможете придумать. Ну, или придумает наша дизайн-студия.</p>
@@ -252,7 +256,7 @@
                           <span></span>
                           <span></span>
                         </p>
-                        <p class="print-rating">12</p>
+                        <p class="print-rating text bold"></p>
                       </div>
                     </div>
                     <p class="text" data-clamp>AIMOL - голландский бренд высокотехнологичных смазочных материалов для автомобилей: моторные масла, трансмиссионные масла, антифризы, тормозная жидкость, автохимия. История марки началась в 2005 году с выпуска первых моторных масел серии SPORTLINE, которые в процессе создания тестировались на гоночных болидах. И по сей день эта серия остается самой известной среди продуктов AIMOL. А самые популярные продукты AIMOL – это Sportline 5W-50 и Streetline 5W-40.</p>
@@ -278,7 +282,7 @@
                           <span></span>
                           <span></span>
                         </p>
-                        <p class="print-rating">123</p>
+                        <p class="print-rating text bold"></p>
                       </div>
                     </div>
                     <p class="text" data-clamp>Re-styling.ru является основоположником индустрии автовинилового стайлинга (оклейка автомобилей пленкой) в России и осуществляет профессиональное нанесение виниловых пленочных покрытий на кузовные элементы, автооптику, стекла, молдинги, бамперы, элементы интерьера и все, что вы только сможете придумать. Ну, или придумает наша дизайн-студия.</p>
@@ -305,7 +309,7 @@
                           <span></span>
                           <span></span>
                         </p>
-                        <p class="print-rating">1233</p>
+                        <p class="print-rating text bold"></p>
                       </div>
                     </div>
                     <p class="text" data-clamp>Re-styling.ru является основоположником индустрии автовинилового стайлинга (оклейка автомобилей пленкой) в России и осуществляет профессиональное нанесение виниловых пленочных покрытий на кузовные элементы, автооптику, стекла, молдинги, бамперы, элементы интерьера и все, что вы только сможете придумать. Ну, или придумает наша дизайн-студия.</p>

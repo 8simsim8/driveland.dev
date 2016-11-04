@@ -2,8 +2,14 @@
 
   workForm('filter');
 
+  var $tags = $('.wrap-tags');
+  cropTag($tags);
+
   // Сокращение текста с блоке с новостями
-    $(".b-ad__item-info h5 a").each(function(index, el){
+    $("h5[data-clamp]").each(function(index, el){
+      $clamp(el, {clamp: 2});
+    });
+    $("p.text[data-clamp]").each(function(index, el){
       $clamp(el, {clamp: 3});
     });
 })();

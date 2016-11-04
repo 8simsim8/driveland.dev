@@ -94,8 +94,9 @@ h4 {
     .b-content__lider-gaining {
       margin-bottom: 20px;
     }
-      .paginator .pagin-container .item img {
+      .item img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: 4px;
       }
@@ -119,10 +120,8 @@ h4 {
         -webkit-flex-basis: calc(33.33337% - 20px);
         flex-basis: calc(33.33337% - 20px);
         max-width: calc(33.33337% - 20px);
+        height: 155px;
       }
-        .b-content__lider-previous-item img {
-          
-        }
       .b-content__lider-gaining p,
       .b-content__popular p {
         margin-bottom: 5px;
@@ -215,6 +214,9 @@ h4 {
         flex-basis: calc(25% - 20px);
         max-width: calc(25% - 20px);
       }
+        .b-new-auto__item img {
+          height: 120px;
+        }
         .b-new-auto__item-name,
         .b-new-auto__item-auto {
           font-family: 'Open Sans', sans-serif;;

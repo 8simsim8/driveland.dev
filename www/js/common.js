@@ -79,17 +79,41 @@
     // Колличество звездочек
       var sumStars = $star.length;
 
-      var res = Math.floor((positive[index] * sumStars)/all[index]);
-      for(i = 0; i < res; i++) {
-        $star.eq(i).attr('data-ative', '');
+      var resData = Math.floor((positive[index] * sumStars)/all[index]);
+
+      for(i = 0; i < resData; i++) {
+        $star.eq(i).attr('data-active', '');
       }
-      console.log(res);
       $currentElem.find('.print-rating').html(all[index]);
     });
 
   }
 
+  // Убирать лишние теги
 
+    function cropTag($tags) {
+      $(window).on('load resize', function(){
+        cropFunctionTag($tags);
+      });
+    }
+
+  function cropFunctionTag($tags) {
+    $tags.each(function(index, el){
+
+      if($tags[index].offsetWidth < $tags[index].scrollWidth) {
+        $tags.eq(index).children().last().remove();
+
+        var dottedStr = '<span class="text subtext tag">...</span>';
+        $tags.eq(index).append(dottedStr);
+
+        while($tags[index].offsetWidth < $tags[index].scrollWidth) {
+          $tags.eq(index).children().last().remove();
+          $tags.eq(index).children().last().remove();
+          $tags.eq(index).append(dottedStr);
+        }
+      }
+    });
+  }
 
 
   function MakeAsideBar(aside) {

@@ -1,17 +1,29 @@
 [
   {
     "linkProfile":"#",
-    "name":"Alexis.Sanches",
-    "city":"Kyiv",
+    "name":"Alex Sanches",
+    "city":"Athens",
     "linkAvatar":"/img/temp/author/author-1.jpg",
     "auto":[
       {
       "autoName":"Audi1 Q7",
-      "linkAutoPhoto":"/img/temp/auto/1.png",
+      "linkAutoPhoto":"/img/temp/auto/1.jpg",
       "linkAuto":"#",
-      "voteAuto":"350",
-      "headerAuto":"My old-school bulltet proof E-Klasse",
-      "noteAuto":"Реальность всё расставляет на свои места. Машины, которые в статьях и обзорах ругали — сплошь и рядом встречаются на дорогах. А те, которые хвалили — редкость. Просто любой автомобиль может стать очень хорошим. Потому что он стал вашим. Ведь как бывает, придёшь в магазин, а там в линию выстроились штук пятнадцать телевизоров."
+      "voteAuto":"350"
+      }
+    ]
+  },
+  {
+    "linkProfile":"#",
+    "name":"Andre",
+    "city":"Kyiv",
+    "linkAvatar":"/img/temp/author/2.jpg",
+    "auto":[
+      {
+      "autoName":"Lexus",
+      "linkAutoPhoto":"/img/temp/auto/2.jpg",
+      "linkAuto":"#",
+      "voteAuto":"350"
       }
     ]
   },
@@ -19,49 +31,27 @@
     "linkProfile":"#",
     "name":"Alexis.Sanches",
     "city":"Kyiv",
-    "linkAvatar":"/img/temp/author/author-1.jpg",
+    "linkAvatar":"/img/temp/author/3.jpg",
     "auto":[
       {
-      "autoName":"Audi Q7 Quattttttrooo!",
-      "linkAutoPhoto":"/img/temp/auto/2.png",
+      "autoName":"Audi",
+      "linkAutoPhoto":"/img/temp/auto/3.jpg",
       "linkAuto":"#",
-      "voteAuto":"350",
-      "headerAuto":"My old-school bulltet proof E-Klasse",
-      "noteAuto":"Реальность всё расставляет на свои места. Машины, которые в статьях и обзорах ругали — сплошь и рядом встречаются на дорогах. А те, которые хвалили — редкость. Просто любой автомобиль может стать очень хорошим. Потому что он стал вашим. Ведь как бывает, придёшь в магазин, а там в линию выстроились штук пятнадцать телевизоров."
+      "voteAuto":"350"
       }
     ]
   },
   {
     "linkProfile":"#",
-    "name":"Alexis.Sanches",
-    "city":"Kyiv",
-    "linkAvatar":"/img/temp/author/author-1.jpg",
+    "name":"Sanches",
+    "city":"Barsa",
+    "linkAvatar":"/img/temp/author/4.jpg",
     "auto":[
       {
       "autoName":"Audi Q7 Quattttttrooo!",
-      "linkAutoPhoto":"/img/temp/auto/3.png",
+      "linkAutoPhoto":"/img/temp/auto/4.jpg",
       "linkAuto":"#",
-      "linkAuto":"#",
-      "voteAuto":"350",
-      "headerAuto":"My old-school bulltet proof E-Klasse",
-      "noteAuto":"Реальность всё расставляет на свои места. Машины, которые в статьях и обзорах ругали — сплошь и рядом встречаются на дорогах. А те, которые хвалили — редкость. Просто любой автомобиль может стать очень хорошим. Потому что он стал вашим. Ведь как бывает, придёшь в магазин, а там в линию выстроились штук пятнадцать телевизоров."
-      }
-    ]
-  },
-  {
-    "linkProfile":"#",
-    "name":"Alexis.Sanches",
-    "city":"Kyiv",
-    "linkAvatar":"/img/temp/author/author-1.jpg",
-    "auto":[
-      {
-      "autoName":"Audi Q7 Quattttttrooo!",
-      "linkAutoPhoto":"/img/temp/auto/4.png",
-      "linkAuto":"#",
-      "linkAuto":"#",
-      "voteAuto":"350",
-      "headerAuto":"My old-school bulltet proof E-Klasse",
-      "noteAuto":"Реальность всё расставляет на свои места. Машины, которые в статьях и обзорах ругали — сплошь и рядом встречаются на дорогах. А те, которые хвалили — редкость. Просто любой автомобиль может стать очень хорошим. Потому что он стал вашим. Ведь как бывает, придёшь в магазин, а там в линию выстроились штук пятнадцать телевизоров."
+      "voteAuto":"350"
       }
     ]
   },
@@ -69,10 +59,24 @@
       "linkProfile":"#",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
+      "linkAvatar":"/img/temp/author/5.jpg",
       "auto":[
         {
-          "autoName":"Audi Q7 Quattttttrooo!",
-          "linkAutoPhoto":"/img/temp/auto/5.png",
+          "autoName":"Audi TT",
+          "linkAutoPhoto":"/img/temp/auto/5.jpg",
+          "linkAuto":"#"
+        }
+      ]
+    },
+    {
+      "linkProfile":"#",
+      "name":"Alexis Sanc",
+      "city":"Paris",
+      "linkAvatar":"/img/temp/author/6.jpg",
+      "auto":[
+        {
+          "autoName":"BMW",
+          "linkAutoPhoto":"/img/temp/auto/6.jpg",
           "linkAuto":"#"
         }
       ]
@@ -81,27 +85,13 @@
       "linkProfile":"#",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
-      "auto":[
-        {
-          "autoName":"Audi Q7 Quattttttrooo!",
-          "linkAutoPhoto":"/img/temp/auto/6.png",
-          "linkAuto":"#"
-        }
-      ]
-    },
-    {
-      "linkProfile":"#",
-      "name":"Alexis.Sanches",
-      "city":"Kyiv",
-      "linkAvatar":"/img/temp/author/author-1.jpg",
+      "linkAvatar":"/img/temp/author/7.jpg",
       "auto":[
         {
         "autoName":"Audi1 Q7",
-        "linkAutoPhoto":"/img/temp/auto/1.png",
+        "linkAutoPhoto":"/img/temp/auto/7.jpg",
         "linkAuto":"#",
-        "voteAuto":"350",
-        "headerAuto":"My old-school bulltet proof E-Klasse",
-        "noteAuto":"Реальность всё расставляет на свои места. Машины, которые в статьях и обзорах ругали — сплошь и рядом встречаются на дорогах. А те, которые хвалили — редкость. Просто любой автомобиль может стать очень хорошим. Потому что он стал вашим. Ведь как бывает, придёшь в магазин, а там в линию выстроились штук пятнадцать телевизоров."
+        "voteAuto":"350"
         }
       ]
     },
@@ -109,10 +99,11 @@
       "linkProfile":"#",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
+      "linkAvatar":"/img/temp/author/8.jpg",
       "auto":[
         {
-          "autoName":"Audi Q7 Quattttttrooo!",
-          "linkAutoPhoto":"/img/temp/auto/7.png",
+          "autoName":"BMW",
+          "linkAutoPhoto":"/img/temp/auto/8.jpg",
           "linkAuto":"#"
         }
       ]
@@ -121,10 +112,11 @@
       "linkProfile":"#",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
+      "linkAvatar":"/img/temp/author/9.jpg",
       "auto":[
         {
           "autoName":"Audi Q7 Quattttttrooo!",
-          "linkAutoPhoto":"/img/temp/auto/8.png",
+          "linkAutoPhoto":"/img/temp/auto/9.jpg",
           "linkAuto":"#"
         }
       ]
@@ -133,26 +125,94 @@
       "linkProfile":"#",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
-      "linkAvatar":"/img/temp/author/author-1.jpg",
+      "linkAvatar":"/img/temp/author/10.jpg",
       "auto":[
         {
         "autoName":"Audi1 Q7",
-        "linkAutoPhoto":"/img/temp/auto/1.png",
+        "linkAutoPhoto":"/img/temp/auto/10.jpg",
         "linkAuto":"#",
-        "voteAuto":"350",
-        "headerAuto":"My old-school bulltet proof E-Klasse",
-        "noteAuto":"Реальность всё расставляет на свои места. Машины, которые в статьях и обзорах ругали — сплошь и рядом встречаются на дорогах. А те, которые хвалили — редкость. Просто любой автомобиль может стать очень хорошим. Потому что он стал вашим. Ведь как бывает, придёшь в магазин, а там в линию выстроились штук пятнадцать телевизоров."
+        "voteAuto":"350"
+        }
+      ]
+    },
+{
+    "linkProfile":"#",
+    "name":"Alex Sanches",
+    "city":"Athens",
+    "linkAvatar":"/img/temp/author/2.jpg",
+    "auto":[
+      {
+      "autoName":"Audi1 Q7",
+      "linkAutoPhoto":"/img/temp/auto/11.jpg",
+      "linkAuto":"#",
+      "voteAuto":"350"
+      }
+    ]
+  },
+  {
+    "linkProfile":"#",
+    "name":"Andre",
+    "city":"Kyiv",
+    "linkAvatar":"/img/temp/author/3.jpg",
+    "auto":[
+      {
+      "autoName":"Lexus",
+      "linkAutoPhoto":"/img/temp/auto/12.jpg",
+      "linkAuto":"#",
+      "voteAuto":"350"
+      }
+    ]
+  },
+  {
+    "linkProfile":"#",
+    "name":"Alexis.Sanches",
+    "city":"Kyiv",
+    "linkAvatar":"/img/temp/author/4.jpg",
+    "auto":[
+      {
+      "autoName":"Audi",
+      "linkAutoPhoto":"/img/temp/auto/13.jpg",
+      "linkAuto":"#",
+      "voteAuto":"350"
+      }
+    ]
+  },
+  {
+    "linkProfile":"#",
+    "name":"Sanches",
+    "city":"Barsa",
+    "linkAvatar":"/img/temp/author/5.jpg",
+    "auto":[
+      {
+      "autoName":"Audi Q7 Quattttttrooo!",
+      "linkAutoPhoto":"/img/temp/auto/14.jpg",
+      "linkAuto":"#",
+      "voteAuto":"350"
+      }
+    ]
+  },
+    {
+      "linkProfile":"#",
+      "name":"Alexis.Sanches",
+      "city":"Kyiv",
+      "linkAvatar":"/img/temp/author/6.jpg",
+      "auto":[
+        {
+          "autoName":"Audi TT",
+          "linkAutoPhoto":"/img/temp/auto/15.jpg",
+          "linkAuto":"#"
         }
       ]
     },
     {
       "linkProfile":"#",
-      "name":"Alexis.Sanches",
-      "city":"Kyiv",
+      "name":"Alexis Sanc",
+      "city":"Paris",
+      "linkAvatar":"/img/temp/author/7.jpg",
       "auto":[
         {
-          "autoName":"Audi Q7 Quattttttrooo!",
-          "linkAutoPhoto":"/img/temp/auto/9.png",
+          "autoName":"BMW",
+          "linkAutoPhoto":"/img/temp/auto/16.jpg",
           "linkAuto":"#"
         }
       ]
@@ -161,11 +221,13 @@
       "linkProfile":"#",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
+      "linkAvatar":"/img/temp/author/8.jpg",
       "auto":[
         {
-        "autoName":"Audi Q7 Quattttttrooo!",
-        "linkAutoPhoto":"/img/temp/auto/4.png",
-        "linkAuto":"#"
+        "autoName":"Audi1 Q7",
+        "linkAutoPhoto":"/img/temp/auto/17.jpg",
+        "linkAuto":"#",
+        "voteAuto":"350"
         }
       ]
     },
@@ -173,71 +235,13 @@
       "linkProfile":"#",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
+      "linkAvatar":"/img/temp/author/9.jpg",
       "auto":[
         {
-          "autoName":"Audi Q7 Quattttttrooo!",
-          "linkAutoPhoto":"/img/temp/auto/9.png",
-          "linkAuto":"#"
-        }
-      ]
-    },
-    {
-      "linkProfile":"#",
-      "name":"Alexis.Sanches",
-      "city":"Kyiv",
-      "auto":[
-        {
-          "autoName":"Audi Q7 Quattttttrooo!",
-          "linkAutoPhoto":"/img/temp/auto/5.png",
-          "linkAuto":"#"
-        }
-      ]
-    },
-    {
-      "linkProfile":"#",
-      "name":"Alexis.Sanches",
-      "city":"Kyiv",
-      "auto":[
-        {
-          "autoName":"Audi Q7 Quattttttrooo!",
-          "linkAutoPhoto":"/img/temp/auto/9.png",
-          "linkAuto":"#"
-        }
-      ]
-    },
-    {
-      "linkProfile":"#",
-      "name":"Alexis.Sanches",
-      "city":"Kyiv",
-      "auto":[
-        {
-          "autoName":"Audi Q7 Quattttttrooo!",
-          "linkAutoPhoto":"/img/temp/auto/1.png",
-          "linkAuto":"#"
-        }
-      ]
-    },
-    {
-      "linkProfile":"#",
-      "name":"Alexis.Sanches",
-      "city":"Kyiv",
-      "auto":[
-        {
-          "autoName":"Audi Q7 Quattttttrooo!",
-          "linkAutoPhoto":"/img/temp/auto/2.png",
-          "linkAuto":"#"
-        }
-      ]
-    },
-    {
-      "linkProfile":"#",
-      "name":"Alexis.Sanches",
-      "city":"Kyiv",
-      "auto":[
-        {
-          "autoName":"Audi Q7 Quattttttrooo!",
-          "linkAutoPhoto":"/img/temp/auto/3.png",
-          "linkAuto":"#"
+        "autoName":"Audi1 Q7",
+        "linkAutoPhoto":"/img/temp/auto/18.jpg",
+        "linkAuto":"#",
+        "voteAuto":"350"
         }
       ]
     }
