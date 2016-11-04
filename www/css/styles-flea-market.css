@@ -65,24 +65,49 @@
   }
     .b-ad__item-fav {
       position: absolute;
-      bottom: 0;
-      right: 0;
-      height: 2rem;
-      margin-right: 20px;
+      bottom: 5px;
+      right: 5px;
+      height: 2.2rem;
+	  width: 2.2rem;
+	  border-radius: 50%;
+	  background-color: #FFFFFF;
+	  cursor: pointer;
     }
       .b-ad__item-fav:before {
         position: absolute;
-        bottom: 0;
+        top: 50%;
         right: 0;
-        margin-right: -0.75rem;
-        margin-top: -0.75rem;
+		left: 0;
+		text-align: center;
+        margin-top: -1rem;
         font-family: 'FontAwesome';
         font-size: 2rem;
         vertical-align: middle;
         color: #D2D2D2;
         content: '\f005';
-        cursor: pointer;
       }
+	  .b-ad__item-fav:after {
+		  position: absolute;
+		  top: 0.5rem;
+		  left: -400%;
+		  content: attr(data-message);
+		  display: block;
+		  white-space: nowrap;
+		  font-family: 'Open Sans', sans-serif;
+		  font-size: 0.6rem;
+		  padding: 3px 5px;
+		  opacity: 0;
+		  pointer-events: none;
+		  color: #333333;
+		  background-color: #FFFFFF;
+		  border-radius: 0.2rem;
+		  transition: opacity 0.2s ease;
+	  }
+		.show-text-favorite.b-ad__item-fav:after {
+			opacity: 1;
+			pointer-events: auto;
+		}
+        .add-to-favorite.b-ad__item-fav:before,
         .b-ad__item-fav:hover:before {
           color: #EDB867;
         }
@@ -105,10 +130,10 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     height: 100%;
-    -webkit-flex: 1 0 56%;
-    -ms-flex: 1 0 56%;
-    flex: 1 0 56%;
-    min-width: 56%;
+    -webkit-flex: 1 0 45%;
+    -ms-flex: 1 0 45%;
+    flex: 1 0 45%;
+    min-width: 45%;
     padding: 10px 20px 10px 0;
     margin-right: 20px;
     border-right: 1px solid  rgba(163, 163, 163, 0.2);
@@ -152,13 +177,13 @@
       max-width: 30%;
     }
   .b-ad__item-price {
-    -webkit-flex: 1 0 10%;
-    -ms-flex: 1 0 10%;
-    flex: 1 0 10%;
-    max-width: 10%;
+    -webkit-flex: 1 0 11%;
+    -ms-flex: 1 0 11%;
+    flex: 1 0 11%;
+    max-width: 11%;
     font-weight: bold;
     font-size: 1rem;
-    text-align: right;
+    text-align: center;
     margin: auto;
   }
 
