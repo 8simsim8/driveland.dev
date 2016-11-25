@@ -1,9 +1,11 @@
-(function () {
+;document.addEventListener("DOMContentLoaded", oneCompany);
+
+function oneCompany() {
 
   var strReduceHeader = $(".b-one-company__news-wrapp-item-text h5")[2];
   var strReduce = $(".b-one-company__news-wrapp-item-text")[2];
   var asideStr = ".b-similar__item";
-  
+
   $(".b-similar__item [data-clamp]").each(function(index, el){
     $clamp(el, {clamp: 3});
   });
@@ -65,4 +67,4 @@
       });
     }
 
-})();
+};

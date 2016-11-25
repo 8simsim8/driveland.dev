@@ -1,34 +1,97 @@
-section.col.l-one-company,
-section.col.l-similar {
+/* .l-one-ad, 
+.l-similar {
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+} */
+.b-one-ad-top {
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
+  .b-one-ad .top:not(:last-child):after {
+    padding: 0 15px;
+    content: '›';
+  }
 
 .b-one-ad h3,
 .b-one-ad h4 {
   color: #0038A8;
-  margin-bottom: 32px;
 }
-  .b-one-ad__rating {
+.b-main-title {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 26px;
+  margin-bottom: 10px;
+}
+  .b-main-title h1 {
+    -webkit-flex: 0 0 75%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .b-one-ad__info {
+      -webkit-flex: 0 0 18%;
+      -ms-flex: 0 0 18%;
+      flex: 0 0 18%;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      max-width: 18%;
+  }
+    .b-one-ad__info-price {
+      padding: 5px 35px 15px 35px;
+      margin-bottom: 20px;
+      background-color: #FFCC5C;
+      border-radius: 1px 16px 1px 16px;
+    }
+      .b-one-ad__info-price h3 {
+        line-height: 1.5em
+      }
+      .b-one-ad__info-price[data-bargain]:after {
+        display: block;
+        content: attr(data-bargain);
+        font-family: 'Open Sans', sans-serif;
+        font-size : 0.6rem;
+        line-height : 1.16em;
+        color : #800000;
+      }
+  .b-one-company__date {
+    margin-top: 20px;
     margin-bottom: 20px;
+    color: #ADADAD;
   }
   .b-one-ad__viewport {
-    height: 400px;
-    width: 100%;
+    background-color: #000000;
+    height: 550px;
+    width: calc(100% + 40px);
     margin-bottom: 20px;
-    object-fit: cover;
-    border-radius: 4px;
+    object-fit: contain;
+    margin-left: -20px;
+    margin-right: -20px;
   }
     .b-one-ad__img-block {
       display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
       -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       margin-right: -10px;
       margin-bottom: 20px;
     }
       .b-one-ad__img-item {
         height: 120px;
+        -webkit-flex: 0 0 calc(25% - 20px);
+        -ms-flex: 0 0 calc(25% - 20px);
         flex: 0 0 calc(25% - 20px);
         min-width: calc(25% - 10px);
         margin-right: 10px;
@@ -38,10 +101,8 @@ section.col.l-similar {
         cursor: pointer;
       }
     .b-one-ad__about {
+      max-width: 600px;
       margin-bottom: 20px;
-    }
-    .b-one-ad__contact {
-      margin-bottom: 10px;
     }
     .b-one-ad__form {
       margin-top: 20px;
@@ -49,33 +110,38 @@ section.col.l-similar {
     .m-one-ad__contact_telephone a {
       color: #333333;
     }
-    .b-one-ad__form input[type='submit']{
-      margin-top: 20px;
-    }
 
-.b-similar {
-  
-}
-  .b-similar h3,
-  .b-similar h3+h4 {
+  .b-contact .text.bold {
+    text-align: center;
+    color: #1C5BC9;
+  }
+  .b-contact > .text.bold {
+    margin: 5px 0 25px;
+  }
+  .b-contact__saler {
+    margin: 5px -20px 40px;
+    border-top: 1px solid #EDEDED;
+    padding-top: 50px;
+  }
+    .b-contact__saler img {
+      display: block;
+      height: 120px;
+      width: 120px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  .b-contact p.text.bold a {
+    color: #1C5BC9;
+  }
+  .b-contact__saler-city {
+    margin-top: 5px;
+    margin-bottom: 40px;
     text-align: center;
   }
-  .b-similar__wrapp {
-    margin-top: 20px;
+  .b-contact h5 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
   }
-    .b-similar__item {
-      height: 220px;
-      width: 100%;
-      margin-bottom: 10px;
-    }
-      .b-similar__item img {
-        margin-bottom: 5px;
-        height: 160px;
-        width: 100%;
-        border-radius: 4px;
-        object-fit: cover;
-      }
-      .b-similar__item a {
-        font-weight: bold;
-        color: #1C5BC9;
-      }

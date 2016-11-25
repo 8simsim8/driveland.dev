@@ -2,7 +2,6 @@
 
 function general() {
 
-  var scroll = new MakeDisableScroll();
   var header = new makeHeader();            // Обьект "Меню"
 
   var messages = 10;
@@ -63,7 +62,7 @@ $.ajax('/test/data-menu.json', {
     $('.b-menu__wrapp-login, .button-enter').on('click', function(){
         $('.b-menu__wrapp-popup').addClass('m-open-popap');
         $('.b-menu__wrapp-register-popup-window').removeClass('m-open-popap');
-        scroll.disableScroll(); // Блокирование скролла/пролистывания
+        disableScroll(); // Блокирование скролла/пролистывания
         $('.b-menu__wrapp-login-popup').addClass('m-open-popap');
       return false;
     });
@@ -72,14 +71,14 @@ $.ajax('/test/data-menu.json', {
     $('.button-registration').on('click', function(){
       $('.b-menu__wrapp-popup').addClass('m-open-popap');
       $('.b-menu__wrapp-login-popup').removeClass('m-open-popap');
-      scroll.disableScroll(); // Блокирование скролла/пролистывания
+      disableScroll(); // Блокирование скролла/пролистывания
       $('.b-menu__wrapp-register-popup-window').addClass('m-open-popap');
     });
 
   // Закрытие попапа
     $('.b-menu__wrapp-login-popup-close').on('click', function(){
       $('.m-open-popap').removeClass('m-open-popap');
-      scroll.enableScroll(); // Разрешение скролла/пролистывания
+      enableScroll(); // Разрешение скролла/пролистывания
       return false;
     });
 
@@ -102,47 +101,6 @@ $.ajax('/test/data-menu.json', {
     });
   }
 // *** /Меню ***
-
-
-// *** Disable scroll ***
-  function MakeDisableScroll(){
-    // left: 37, up: 38, right: 39, down: 40,
-    // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-    var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-    function preventDefault(e) {
-      e = e || window.event;
-      if (e.preventDefault)
-          e.preventDefault();
-      e.returnValue = false;
-    }
-
-    function preventDefaultForScrollKeys(e) {
-      if (keys[e.keyCode]) {
-        preventDefault(e);
-        return false;
-      }
-    }
-
-    this.disableScroll = function () {
-      if (window.addEventListener) // older FF
-          window.addEventListener('DOMMouseScroll', preventDefault, false);
-      window.onwheel = preventDefault; // modern standard
-      window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-      window.ontouchmove  = preventDefault; // mobile
-      document.onkeydown  = preventDefaultForScrollKeys;
-    }
-
-    this.enableScroll = function() {
-      if (window.removeEventListener)
-        window.removeEventListener('DOMMouseScroll', preventDefault, false);
-      window.onmousewheel = document.onmousewheel = null;
-      window.onwheel = null;
-      window.ontouchmove = null;
-      document.onkeydown = null;
-    }
-  }
-// *** /Disable scroll ***
 
 // *************************************
 // Скрытие/открытие поиска на страницах:
@@ -185,11 +143,18 @@ $.ajax('/test/data-menu.json', {
     if($('.galleryThumb').length > 0) {
       var photoSrc = $('.galleryThumb').eq(0).attr('src').replace('thumb', '');
       $('#galleryPhoto').attr('src', photoSrc);
+      $('.galleryThumb').css({
+        'opacity': 0.5
+      });
+      $('.galleryThumb').eq(0).addClass('select-photo');
+      $('.b-one-ad__img-block').addClass('after-load');
     }
   
     $('.galleryThumb').on('click', function (e) {
         e.preventDefault();
         var photoSrc = $(this).attr('src').replace('thumb', '');
+        $('.select-photo').removeClass('select-photo');
+        $(this).addClass('select-photo');
         $('#galleryPhoto').fadeOut(200, function() {
             $('#galleryPhoto').attr('src', photoSrc);
           }

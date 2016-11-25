@@ -60,6 +60,7 @@
     .b-popular__item img {
       width: 100%;
       margin-bottom: 7px;
+      border-radius: 4px;
     }
 
   .display-all {

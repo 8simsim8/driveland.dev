@@ -62,4 +62,8 @@
   .b-filter__form {
     clear: both;
   }
-    
+
+.droplist-block,
+.droplist-current {
+  text-align: center;
+ }

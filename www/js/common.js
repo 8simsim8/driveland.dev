@@ -92,7 +92,14 @@
   // Убирать лишние теги
 
     function cropTag($tags) {
+      var startStr = [];
+      $tags.each(function(index, el){
+        startStr[index] = $(el).html();
+      });
       $(window).on('load resize', function(){
+        $tags.each(function(index, el){
+          $(el).html(startStr[index]);
+        });
         cropFunctionTag($tags);
       });
     }
@@ -114,7 +121,6 @@
       }
     });
   }
-
 
   function MakeAsideBar(aside) {
 
@@ -142,13 +148,53 @@
 
   // }
 
+// *** Disable scroll ***
+    // left: 37, up: 38, right: 39, down: 40,
+    // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+    var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+    function preventDefault(e) {
+      e = e || window.event;
+      if (e.preventDefault)
+          e.preventDefault();
+      e.returnValue = false;
+    }
+
+    function preventDefaultForScrollKeys(e) {
+      if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+      }
+    }
+
+    this.disableScroll = function () {
+      if (window.addEventListener) // older FF
+          window.addEventListener('DOMMouseScroll', preventDefault, false);
+      window.onwheel = preventDefault; // modern standard
+      window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+      window.ontouchmove  = preventDefault; // mobile
+      document.onkeydown  = preventDefaultForScrollKeys;
+    }
+
+    this.enableScroll = function() {
+      if (window.removeEventListener)
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+      window.onmousewheel = document.onmousewheel = null;
+      window.onwheel = null;
+      window.ontouchmove = null;
+      document.onkeydown = null;
+    }
+// *** /Disable scroll ***
+
   // Плавающее боковое окно
   function floatSideBar($container) {
-    
-    var $footer = $('.l-footer');
+
+    var $footer = $('footer');
+    var $header = $('header');
     var heightBar           = $container[0].offsetHeight;
     var heightWindow        = window.innerHeight;
     var heightFooter        = $footer[0].offsetHeight;
+    var heightHeader        = $header[0].offsetHeight;
 
     $(window).on('load resize', function(){
       heightBar             = $container.height();
@@ -156,7 +202,7 @@
       heightWindow          = window.innerHeight;
     });
 
-    if((heightWindow - heightFooter) < heightBar) {
+    if((heightWindow - heightFooter - heightHeader) < heightBar) {
       floatBigBar($container);
     } else {
       floatSmallBar($container);
@@ -247,68 +293,89 @@
   // Small bar
   function floatSmallBar($container) {
 
-    var $parentNode       = $container.parent();
-    
-    var distanseScrollBar = $parentNode.offset().top;
-    var distanseLeftBar   = $parentNode.offset().left;
     var heightWindow      = window.innerHeight;
     var widthWindow       = window.innerWidth;
 
+    var $parentNode       = $container.parent();
+
     var heightBar         = $container[0].offsetHeight;
     var widthBar          = $parentNode[0].offsetWidth - 20;
-    
+
     var positionFixedBar  = Math.floor((heightWindow - heightBar)/2);
     var halfHeightBar     = Math.floor(heightBar/2);
 
-    var isFixedBar = false;
-    var isEnableFloat;
+    var $footer = $('footer');
+    var $header = $('header');
 
-    isEnableFloat = widthWindow > WIDTH_WINDOW_TABLET ? true : false;
+    var heightFooter        = $footer[0].offsetHeight;
+    var heightHeader        = $header[0].offsetHeight;
 
-    $(window).on('load resize', function(){
-      heightWindow        = window.innerHeight;
-      widthWindow         = window.innerWidth;
-      heightBar           = $container[0].offsetHeight;
-      widthBar            = $parentNode[0].offsetWidth - 20;
-      distanseScrollBar   = $container.offset().top;
-      positionFixedBar    = Math.floor((heightWindow - heightBar)/2);
-      halfHeightBar       = Math.floor(heightBar/2);
-      distanseLeftBar     = $parentNode.offset().left;
+    var distanseScrollBar = $parentNode.offset().top;
+    var distanseLeftBar   = $parentNode.offset().left;
+
+    var isScrollStart = (distanseScrollBar > heightHeader + 20)? true : false;
+
+    if(!isScrollStart) {
+      $container.css({
+        'position': 'fixed',
+        'width': widthBar + 'px',
+        'height': heightBar + 'px'
+      });
+    }
+
+    if(isScrollStart) {
+      var halfHeightBar     = Math.floor(heightBar/2);
+
+      var isFixedBar = false;
+      var isEnableFloat;
 
       isEnableFloat = widthWindow > WIDTH_WINDOW_TABLET ? true : false;
 
-      if(isFixedBar && isEnableFloat) {
-        $container.css({
-          'left': distanseLeftBar + 10 + "px",
-          'width': widthBar + 'px'
-        });
-      }
-    });
+      $(window).on('load resize', function(){
+        heightWindow        = window.innerHeight;
+        widthWindow         = window.innerWidth;
+        heightBar           = $container[0].offsetHeight;
+        widthBar            = $parentNode[0].offsetWidth - 20;
+        distanseScrollBar   = $container.offset().top;
+        positionFixedBar    = Math.floor((heightWindow - heightBar)/2);
+        halfHeightBar       = Math.floor(heightBar/2);
+        distanseLeftBar     = $parentNode.offset().left;
 
-    $(window).on('scroll', function(){
-      if(isFixedBar && isEnableFloat) {
-        $container.css("left", distanseLeftBar - $(this).scrollLeft() + "px");
-      }
-      var distanseScroll = window.pageYOffset || document.documentElement.scrollTop;
-      if(distanseScroll >= (distanseScrollBar - positionFixedBar) && isEnableFloat) {
-        isFixedBar = true;
-        $container.css({
-          'position':'fixed',
-          'top': '50%',
-          'width': widthBar + 'px',
-          "left": distanseLeftBar + 10 - $(this).scrollLeft() + "px",
-          'margin-top': -halfHeightBar + 'px'
-        });
-      } else {
-        isFixedBar = false;
-        $container.css({
-          'position':'',
-          'top': '',
-          'width': '',
-          'left': '',
-          'margin-top': ''
-        });
-      }
-    });
+        isEnableFloat = widthWindow > WIDTH_WINDOW_TABLET ? true : false;
+
+        if(isFixedBar && isEnableFloat) {
+          $container.css({
+            'left': distanseLeftBar + 10 + "px",
+            'width': widthBar + 'px'
+          });
+        }
+      });
+
+      $(window).on('scroll', function(){
+        if(isFixedBar && isEnableFloat) {
+          $container.css("left", distanseLeftBar - $(this).scrollLeft() + "px");
+        }
+        var distanseScroll = window.pageYOffset || document.documentElement.scrollTop;
+        if(distanseScroll >= (distanseScrollBar - positionFixedBar) && isEnableFloat) {
+          isFixedBar = true;
+          $container.css({
+            'position':'fixed',
+            'top': '50%',
+            'width': widthBar + 'px',
+            "left": distanseLeftBar + 10 - $(this).scrollLeft() + "px",
+            'margin-top': -halfHeightBar + 'px'
+          });
+        } else {
+          isFixedBar = false;
+          $container.css({
+            'position':'',
+            'top': '',
+            'width': '',
+            'left': '',
+            'margin-top': ''
+          });
+        }
+      });
+    }
 
   }
