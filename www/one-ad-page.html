@@ -31,7 +31,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Clamp.js/0.5.1/clamp.min.js"></script>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
@@ -110,23 +109,32 @@
               </div>
               <div class="b-main-title">
                 <h1>Продам литые диски OPEL б.у 4шт.R16.</h1>
-
-<!-- "Торг уместный" навесить аттрибут "bargain" -->
-                <div class="b-one-ad__info">
-                  <div class="b-one-ad__info-price text" data-bargain="Торг уместен">
-                    <h3>500$</h3>
-                  </div>
-                </div>
               </div>
-              
-              <p class="b-one-company__date text subtext">
-                <span>Добавлено: </span>
-                <span>12.10.2016</span>
-              </p>
 
               <a href="add-new-ad.html" class="block-redactor text subtext">Редактировать</a>
 
-              <img src="" alt="" class="b-one-ad__viewport" id="galleryPhoto">
+
+              <div class="b-one-ad__main-block">
+                <img src="" alt="" class="b-one-ad__viewport" id="galleryPhoto">
+              <!-- "Торг уместный" навесить аттрибут "bargain" -->
+                <div class="b-one-ad__info">
+                  <h3 class="b-one-ad__info-price" data-bargain="Торг уместен">500$</h3>
+                  <p class="b-one-company__date text subtext">
+                    <span>Добавлено: </span>
+                    <span>12.10.2016</span>
+                  </p>
+                  <p class="b-one-company__date text subtext">
+                    <span>Просмотров: </span>
+                    <span>565</span>
+                  </p>
+                  <p class="wrap-tags">
+                        <a href="#" class="text subtext tag">Колеса</a>
+                        <a href="#" class="text subtext tag">диски</a>
+                        <a href="#" class="text subtext tag">фары</a>
+                  </p>
+                </div>
+              </div>
+
               <div class="b-one-ad__img-block">
                 <img src="img/temp/market-1.jpg" alt="" class="b-one-ad__img-item galleryThumb">
                 <img src="img/temp/market-2.jpg" alt="" class="b-one-ad__img-item galleryThumb">
@@ -137,22 +145,31 @@
               <p class="b-one-ad__about text">Комплект легкосплавных дисков R16 5х110 для Opel Omega B/Opel Vectra В/C, ОТПРАВКА В ДЕНЬ ЗАКАЗА, НОВАЯ ПОЧТА, ИНТАЙМ, ДЕЛИВЕРИ, есть все запчасти по даному авто, разборка опель,без резины цена дисков 4000 грн</p>
             </div>
           </section>
+          <div class="b-message-confirm" style="display: none;">
+            <div class="b-popup-message-close"></div>
+            <h3>Сообщение отправлено</h3>
+          </div>
           <section class="l-contact col xs-3">
             <div class="block b-contact">
-              <p class="text bold">Свяжитесь с продавцом</p>
-
+              <p class="text subtext">Продавец</p>
               <div class="b-contact__saler">
                 <img src="img/temp/author/3.jpg" alt="Продавец" class="b-contact__saler-photo">
-                <p class="b-contact__saler-name text bold"><a href="my-page.html" title="">Leonidis Castonedis</a></p>
-                <p class="b-contact__saler-city text">Lamia</p>
-                <h5 class="b-contact__saler-tel"><a href="tel:+302105241296" title="Telephone">+30 21 0524 1296</a></h5>
-                <h5 class="b-contact__saler-email" ><a href="mailto:email@email.com?subject=feedback"title="E-mail">email@email.com</a></h5>
+                <p class="b-contact__saler-item name text bold"><a href="my-page.html" title="">Leonidis Castonedis</a></p>
+                <p class="b-contact__saler-item city text">Lamia</p>
+                <p class="b-contact__saler-item tel"><a href="tel:+302105241296" title="Telephone" class="text">+30 21 0524 1296</a></p>
+                <p class="b-contact__saler-item email"><a href="mailto:email@email.com?subject=feedback" title="E-mail" class="text">email@email.com</a></p>
               </div>
-
+              <form action="one-ad-page_submit" method="get" accept-charset="utf-8" class="b-one-ad__form">
+                <div class="b-form-item m-form-item_textarea m-form-item-inline">
+                  <p><textarea rows="4" cols="60" name="hobby" class="text tab-input" placeholder="Оставить сообщение"></textarea></p>
+                </div>
+                <input type="submit" value="Отправить" class="button submit-button middle"></input>
+              </form>
               <p class="text bold"><a href="#" title="Другие обьявления">Другие обьявления автора</a></p>
             </div>
           </section>
         </div>
+        
       </div>
 
       <script type="text/javascript" src="js/slim.jquery.min.js"></script>

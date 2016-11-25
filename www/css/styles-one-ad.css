@@ -22,61 +22,63 @@
   color: #0038A8;
 }
 .b-main-title {
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+.b-one-ad__main-block {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 26px;
-  margin-bottom: 10px;
 }
-  .b-main-title h1 {
-    -webkit-flex: 0 0 75%;
-    -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
   .b-one-ad__info {
-      -webkit-flex: 0 0 18%;
-      -ms-flex: 0 0 18%;
-      flex: 0 0 18%;
-      -webkit-align-self: center;
-      -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-      max-width: 18%;
+    -webkit-flex: 0 0 calc(25% - 20px);
+    -ms-flex: 0 0 calc(25% - 20px);
+    flex: 0 0 calc(25% - 20px);
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    max-width: calc(25% - 20px);
+    margin-left: 20px;
   }
-    .b-one-ad__info-price {
+    h3.b-one-ad__info-price {
+      display: inline-block;
       padding: 5px 35px 15px 35px;
       margin-bottom: 20px;
       background-color: #FFCC5C;
       border-radius: 1px 16px 1px 16px;
+      color: #333333;
+      line-height: 1.5em
     }
-      .b-one-ad__info-price h3 {
-        line-height: 1.5em
-      }
       .b-one-ad__info-price[data-bargain]:after {
         display: block;
         content: attr(data-bargain);
         font-family: 'Open Sans', sans-serif;
         font-size : 0.6rem;
         line-height : 1.16em;
-        color : #800000;
+        color: #333333;
       }
   .b-one-company__date {
     margin-top: 20px;
     margin-bottom: 20px;
     color: #ADADAD;
   }
+  .wrap-tags {
+    white-space: normal;
+    line-height: 1.2rem;
+  }
   .b-one-ad__viewport {
-    background-color: #000000;
+    -webkit-flex: 0 0 75%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
     height: 550px;
-    width: calc(100% + 40px);
+    background-color: #000000;
     margin-bottom: 20px;
     object-fit: contain;
-    margin-left: -20px;
-    margin-right: -20px;
   }
     .b-one-ad__img-block {
       display: -webkit-flex;
@@ -89,11 +91,11 @@
       margin-bottom: 20px;
     }
       .b-one-ad__img-item {
-        height: 120px;
-        -webkit-flex: 0 0 calc(25% - 20px);
-        -ms-flex: 0 0 calc(25% - 20px);
-        flex: 0 0 calc(25% - 20px);
-        min-width: calc(25% - 10px);
+        height: 80px;
+        -webkit-flex: 0 0 calc(20% - 20px);
+        -ms-flex: 0 0 calc(20% - 20px);
+        flex: 0 0 calc(20% - 20px);
+        min-width: calc(20% - 10px);
         margin-right: 10px;
         margin-bottom: 10px;
         object-fit: cover;
@@ -110,18 +112,28 @@
     .m-one-ad__contact_telephone a {
       color: #333333;
     }
+    .m-form-item_textarea textarea {
+      width: 100%;
+    }
+    .b-one-ad__form input[type='submit']{
+      margin-top: 20px;
+    }
+    .m-one-ad__contact_telephone a {
+      color: #333333;
+    }
 
+  .b-contact p.text.subtext {
+    color: #ADADAD;
+    text-align: center;
+    margin: 5px 0 25px;
+  }
   .b-contact .text.bold {
     text-align: center;
     color: #1C5BC9;
   }
-  .b-contact > .text.bold {
-    margin: 5px 0 25px;
-  }
   .b-contact__saler {
-    margin: 5px -20px 40px;
-    border-top: 1px solid #EDEDED;
-    padding-top: 50px;
+    margin: 5px 0 40px;
+    padding-top: 30px;
   }
     .b-contact__saler img {
       display: block;
@@ -135,13 +147,29 @@
   .b-contact p.text.bold a {
     color: #1C5BC9;
   }
-  .b-contact__saler-city {
+.b-contact__saler-item {
+    text-align: center;
+  }
+  .b-contact__saler-item a {
+    text-align: center;
+    color: #333333;
+  }
+  .b-contact__saler-item.city {
     margin-top: 5px;
     margin-bottom: 40px;
     text-align: center;
+  }
+  .b-contact__saler-item.email {
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
   .b-contact h5 {
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #ADADAD;
+  }
+  .b-contact .button {
+    width: 100%;
+    margin-bottom: 20px;
   }

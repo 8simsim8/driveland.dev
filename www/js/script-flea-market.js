@@ -30,13 +30,6 @@ function market() {
 	  1000);
   });
 
-  // Сокращение текста с блоке с новостями
-    $("h5[data-clamp]").each(function(index, el){
-      $clamp(el, {clamp: 2});
-    });
-    $("p.text[data-clamp]").each(function(index, el){
-      $clamp(el, {clamp: 3});
-    });
 };
 
 
