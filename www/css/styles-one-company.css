@@ -160,6 +160,12 @@ h4 {
         .b-one-company__news-wrapp-item-text h5 {
           margin-bottom: 10px;
         }
+        .firefox.b-one-company__news-wrapp-item-text h5[data-clamp] {
+          max-height: 3em;
+        }
+        .firefox .b-one-company__news-wrapp-item-text p.text[data-clamp] {
+          max-height: 5.8em;
+        }
   .b-one-company__about-viewport {
     height: 400px;
     width: 100%;
@@ -242,6 +248,9 @@ h4 {
       width: 100%;
       margin-bottom: 20px;
     }
+      .firefox .b-similar__item [data-clamp] {
+        max-height: 4.8em;
+      }
       .b-similar__item:last-child {
         margin-bottom: 0;
       }

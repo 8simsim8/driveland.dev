@@ -95,22 +95,9 @@
       margin-bottom: 10px;
       font-size: 0.7rem;
     }
-      .b-ad__item-info-top h5[data-clamp] {
-          position: relative;
-          height: 2.65em;
-          overflow: hidden;
+      .firefox .b-ad__item-info-top h5[data-clamp] {
+          max-height: 2.65em;
       }
-        [data-clamp]:after {
-          content: "";
-          text-align: right;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          width: 15%;
-          height: 1.2em;
-          background: linear-gradient(to right, rgba(255, 255, 255, 0), white 100%);
-          pointer-events: none;
-        }
     .b-ad__item-info-bottom {
       display: -webkit-flex;
       display: -ms-flexbox;

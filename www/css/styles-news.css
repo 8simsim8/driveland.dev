@@ -17,6 +17,9 @@
     .b-news__wrap-item p.text {
       margin-bottom: 10px;
     }
+      .firefox .b-news__wrap-item p.text[data-clamp] {
+        height: 4.3em;
+      }
 
 .b-add-post {
   margin-bottom: 20px;
@@ -61,6 +64,9 @@
       width: 100%;
       margin-bottom: 7px;
       border-radius: 4px;
+    }
+    .firefox .b-popular__item a.text[data-clamp] {
+      max-height: 4.2em;
     }
 
   .display-all {

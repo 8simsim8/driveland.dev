@@ -3,6 +3,9 @@
   var DISTANCE_SHOW_BUTTON_TOP = 500;
   var WIDTH_WINDOW_TABLET = 768;
 
+  var user = detect.parse(navigator.userAgent);
+  var IS_FIREFOX = user.browser.family == 'Firefox' ? true : false;
+
   // Появление кнопки редактирования
   function MakeRedact() {
 

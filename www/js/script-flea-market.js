@@ -30,6 +30,13 @@ function market() {
 	  1000);
   });
 
+  if(!IS_FIREFOX) {
+  // Обрезка текста до 2 строчек
+    $(".b-ad__item-info-top h5[data-clamp]").each(function(index, el){
+      $clamp(el, {clamp: 2});
+    });
+  }
+
 };
 
 

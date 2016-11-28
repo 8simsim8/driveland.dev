@@ -189,6 +189,9 @@
           -ms-flex: 5;
           flex: 5;
         }
+          .firefox .b-logbook__container-item-text h4[data-clamp] {
+            max-height: 1.6em;
+          }
         .b-logbook__container-item-text .data {
           min-width: 80px;
           -webkit-flex: 1;
@@ -201,6 +204,9 @@
           clear: both;
           max-height: 5.7rem;
         }
+          .firefox .b-logbook__container-item-text p.text[data-clamp] {
+            max-height: 3.1rem;
+          }
     .display-all {
       text-align: center;
       color: #1C5BC9;

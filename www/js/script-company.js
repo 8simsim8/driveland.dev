@@ -16,14 +16,16 @@ function company() {
   var blocksRating        = $('.b-company__item');
   var rating              = new MakeRating(blocksRating, positiveVote, allVote);  // Обьект вывода рейтинга
 
-  // Обрезать текст
-  $("h4[data-clamp]").each(function(index, el){
-    $clamp(el, {clamp: 2});
-  });
+  if(!IS_FIREFOX) {
+    // Обрезать текст
+    $("h4[data-clamp]").each(function(index, el){
+      $clamp(el, {clamp: 2});
+    });
 
-  $(".item p.text[data-clamp]").each(function(index, el){
-    $clamp(el, {clamp: 4});
-  });
+    $(".item p.text[data-clamp]").each(function(index, el){
+      $clamp(el, {clamp: 4});
+    });
+  }
 
 };
 

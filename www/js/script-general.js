@@ -4,6 +4,10 @@ function general() {
 
   var header = new makeHeader();            // Обьект "Меню"
 
+  if(IS_FIREFOX) {
+    $('body').addClass('firefox');
+  }
+
   var messages = 10;
   header.checkNewNotification(messages);     // Метод отображения колличества сообщений
 

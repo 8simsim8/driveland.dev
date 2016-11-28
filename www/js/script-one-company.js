@@ -6,15 +6,17 @@ function oneCompany() {
   var strReduce = $(".b-one-company__news-wrapp-item-text")[2];
   var asideStr = ".b-similar__item";
 
-  $(".b-similar__item [data-clamp]").each(function(index, el){
-    $clamp(el, {clamp: 3});
-  });
-  $("h5[data-clamp]").each(function(index, el){
-    $clamp(el, {clamp: 3});
-  });
-  $("p.text[data-clamp]").each(function(index, el){
-    $clamp(el, {clamp: '80px'});
-  });
+  if(!IS_FIREFOX) {
+    $(".b-similar__item [data-clamp]").each(function(index, el){
+      $clamp(el, {clamp: 3});
+    });
+    $("h5[data-clamp]").each(function(index, el){
+      $clamp(el, {clamp: 3});
+    });
+    $("p.text[data-clamp]").each(function(index, el){
+      $clamp(el, {clamp: 4});
+    });
+  }
 
   // Открыть попап "написать компании"
     var messagePopup = document.getElementsByClassName('b-one-company__message')[0];

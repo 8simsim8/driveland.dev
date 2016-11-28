@@ -17,12 +17,15 @@ function news() {
     return false;
   });
 
-  $(".b-news__wrap-item p.text[data-clamp]").each(function(index, el){
-    $clamp(el, {clamp: 3});
-  });
-
-  $(".b-popular__item a.text[data-clamp]").each(function(index, el){
-    $clamp(el, {clamp: 3});
-  });
+  if(!IS_FIREFOX) {
+  // Обрезка текста до 2 строчек
+    $(".b-news__wrap-item p.text[data-clamp]").each(function(index, el){
+      $clamp(el, {clamp: 3});
+    });
+  // Обрезка текста до 3 строчек
+    $(".b-popular__item a.text[data-clamp]").each(function(index, el){
+      $clamp(el, {clamp: 3});
+    });
+  }
 
 }

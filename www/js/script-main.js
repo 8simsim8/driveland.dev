@@ -120,10 +120,12 @@ logoBar          = new makeLogoBar($('.b-mark'));
     var $newsBar          = $('.b-news');
     floatSideBar($newsBar);  // Плавающий блок
 
-    // Обрезка текста до 3 строчек
-    $(".b-news__inner-item a").each(function(index, el){
-      $clamp(el, {clamp: 3});
-    });
+    if(!IS_FIREFOX) {
+      // Обрезка текста до 3 строчек
+      $(".b-news__inner-item a[data-clamp]").each(function(index, el){
+        $clamp(el, {clamp: 3});
+      });
+    }
   }
 
 // ******** "Конструктор блока логотипов" ***********

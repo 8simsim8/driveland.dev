@@ -228,6 +228,9 @@ h4 {
           font-weight: bold;
           color : #1C5BC9;
         }
+          .firefox .b-news__inner-item a.text[data-clamp] {
+            max-height: 4.2em;
+          }
 
 @media (max-width: 1100px) {
   .b-new-auto__item {
