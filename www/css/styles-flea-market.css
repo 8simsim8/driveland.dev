@@ -144,17 +144,17 @@
     justify-content: center;
     max-width: 11%;
     height: 100%;
-    padding-right: 10px;
     font-weight: bold;
     font-size: 1rem;
     text-align: right;
-    margin-right: 20px;
-    border-right: 1px solid  rgba(163, 163, 163, 0.2);
+/*     margin-right: 20px;
+    padding-right: 10px;
+    border-right: 1px solid  rgba(163, 163, 163, 0.2); */
   }
     .b-ad__item-price span {
       margin: auto 0;
     }
-    .b-ad__item-fav {
+/*     .b-ad__item-fav {
       position: relative;
       -webkit-flex: 1 0 2.2rem;
       -ms-flex: 1 0 2.2rem;
@@ -203,7 +203,7 @@
         .add-to-favorite.b-ad__item-fav:before,
         .b-ad__item-fav:hover:before {
           color: #EDB867;
-        }
+        } */
 
 
 .b-add-ad {
@@ -228,3 +228,9 @@
       background-position: center center;
       background-size: 185px auto;
     }
+
+@media (max-width: 1000px) {
+  .add-button.button.middle {
+    font-size: 0.65rem;
+  }
+}

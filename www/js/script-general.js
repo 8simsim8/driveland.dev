@@ -111,13 +111,12 @@ $.ajax('/test/data-menu.json', {
 // "Новости, "Компании"
   $('.b-filter__find').on('click', function(){
     $('.b-filter__find').addClass('open-search');
-    $('.b-filter__find').find('[name=search]').focus();
+    // $('.b-filter__find').find('[name=search]').focus();
     return false;
   });
 
-  $('.b-filter__find').find('[name=search]').on('blur', function(){
+  $(document).on('click', function(){
     $('.b-filter__find').removeClass('open-search');
-    return false;
   });
 // ***************************************
 

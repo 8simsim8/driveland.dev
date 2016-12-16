@@ -48,21 +48,6 @@ h4 {
         border-radius: 4px;
         object-fit: cover;
       }
-      .b-content__lider-article-vote {
-        position: absolute;
-        top:  10px;
-        left: 10px;
-        background : rgba(255, 96, 82, 0.8);
-        padding: 1px 10px;
-        height : 40px;
-        font-family: Open Sans, sans-serif;
-        text-align: center;
-        font-size: 0.8rem;
-        line-height: 2.5em;
-        font-weight: bold;
-        color: #FFFFFF;
-        border-radius : 20px;
-      }
       .b-content__lider-article-author {
         margin-bottom: 10px;
       }

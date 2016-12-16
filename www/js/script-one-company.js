@@ -4,7 +4,9 @@ function oneCompany() {
 
   var strReduceHeader = $(".b-one-company__news-wrapp-item-text h5")[2];
   var strReduce = $(".b-one-company__news-wrapp-item-text")[2];
-  var asideStr = ".b-similar__item";
+
+  var $asideFloatBar = $('.b-similar');
+  floatSideBar($asideFloatBar);  // Плавающий блок
 
   if(!IS_FIREFOX) {
     $(".b-similar__item [data-clamp]").each(function(index, el){

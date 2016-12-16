@@ -5,6 +5,9 @@ function market() {
 
   var $tags = $('.wrap-tags');
   cropTag($tags);					// Обрезание лишних тегов
+
+  var $asideFloatBar = $('.aside-panel-wrapp');
+  floatSideBar($asideFloatBar);  // Плавающий блок
   
   // Анимация кнопки "Избранное"
   var $favorite = $('.b-ad__item-fav');

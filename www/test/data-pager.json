@@ -1,6 +1,6 @@
 [
   {
-    "linkProfile":"#",
+    "linkProfile":"my-page.html",
     "name":"Alex Sanches",
     "city":"Athens",
     "linkAvatar":"/img/temp/author/author-1.jpg",
@@ -8,13 +8,13 @@
       {
       "autoName":"Audi1 Q7",
       "linkAutoPhoto":"/img/temp/auto/1.jpg",
-      "linkAuto":"#",
+      "linkProfile":"my-page.html",
       "voteAuto":"350"
       }
     ]
   },
   {
-    "linkProfile":"#",
+    "linkProfile":"my-page.html",
     "name":"Andre",
     "city":"Kyiv",
     "linkAvatar":"/img/temp/author/2.jpg",
@@ -22,13 +22,13 @@
       {
       "autoName":"Lexus",
       "linkAutoPhoto":"/img/temp/auto/2.jpg",
-      "linkAuto":"#",
+      "linkProfile":"my-page.html",
       "voteAuto":"350"
       }
     ]
   },
   {
-    "linkProfile":"#",
+    "linkProfile":"my-page.html",
     "name":"Alexis.Sanches",
     "city":"Kyiv",
     "linkAvatar":"/img/temp/author/3.jpg",
@@ -36,13 +36,13 @@
       {
       "autoName":"Audi",
       "linkAutoPhoto":"/img/temp/auto/3.jpg",
-      "linkAuto":"#",
+      "linkProfile":"my-page.html",
       "voteAuto":"350"
       }
     ]
   },
   {
-    "linkProfile":"#",
+    "linkProfile":"my-page.html",
     "name":"Sanches",
     "city":"Barsa",
     "linkAvatar":"/img/temp/author/4.jpg",
@@ -50,13 +50,13 @@
       {
       "autoName":"Audi Q7 Quattttttrooo!",
       "linkAutoPhoto":"/img/temp/auto/4.jpg",
-      "linkAuto":"#",
+      "linkProfile":"my-page.html",
       "voteAuto":"350"
       }
     ]
   },
     {
-      "linkProfile":"#",
+      "linkProfile":"my-page.html",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
       "linkAvatar":"/img/temp/author/5.jpg",
@@ -64,12 +64,12 @@
         {
           "autoName":"Audi TT",
           "linkAutoPhoto":"/img/temp/auto/5.jpg",
-          "linkAuto":"#"
+          "linkAuto":"my-page.html"
         }
       ]
     },
     {
-      "linkProfile":"#",
+      "linkProfile":"my-page.html",
       "name":"Alexis Sanc",
       "city":"Paris",
       "linkAvatar":"/img/temp/author/6.jpg",
@@ -77,12 +77,12 @@
         {
           "autoName":"BMW",
           "linkAutoPhoto":"/img/temp/auto/6.jpg",
-          "linkAuto":"#"
+          "linkAuto":"my-page.html"
         }
       ]
     },
     {
-      "linkProfile":"#",
+      "linkProfile":"my-page.html",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
       "linkAvatar":"/img/temp/author/7.jpg",
@@ -90,13 +90,13 @@
         {
         "autoName":"Audi1 Q7",
         "linkAutoPhoto":"/img/temp/auto/7.jpg",
-        "linkAuto":"#",
+        "linkProfile":"my-page.html",
         "voteAuto":"350"
         }
       ]
     },
     {
-      "linkProfile":"#",
+      "linkProfile":"my-page.html",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
       "linkAvatar":"/img/temp/author/8.jpg",
@@ -104,12 +104,12 @@
         {
           "autoName":"BMW",
           "linkAutoPhoto":"/img/temp/auto/8.jpg",
-          "linkAuto":"#"
+          "linkAuto":"my-page.html"
         }
       ]
     },
     {
-      "linkProfile":"#",
+      "linkProfile":"my-page.html",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
       "linkAvatar":"/img/temp/author/9.jpg",
@@ -117,12 +117,12 @@
         {
           "autoName":"Audi Q7 Quattttttrooo!",
           "linkAutoPhoto":"/img/temp/auto/9.jpg",
-          "linkAuto":"#"
+          "linkAuto":"my-page.html"
         }
       ]
     },
     {
-      "linkProfile":"#",
+      "linkProfile":"my-page.html",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
       "linkAvatar":"/img/temp/author/10.jpg",
@@ -130,13 +130,13 @@
         {
         "autoName":"Audi1 Q7",
         "linkAutoPhoto":"/img/temp/auto/10.jpg",
-        "linkAuto":"#",
+        "linkProfile":"my-page.html",
         "voteAuto":"350"
         }
       ]
     },
 {
-    "linkProfile":"#",
+    "linkProfile":"my-page.html",
     "name":"Alex Sanches",
     "city":"Athens",
     "linkAvatar":"/img/temp/author/2.jpg",
@@ -144,13 +144,13 @@
       {
       "autoName":"Audi1 Q7",
       "linkAutoPhoto":"/img/temp/auto/11.jpg",
-      "linkAuto":"#",
+      "linkProfile":"my-page.html",
       "voteAuto":"350"
       }
     ]
   },
   {
-    "linkProfile":"#",
+    "linkProfile":"my-page.html",
     "name":"Andre",
     "city":"Kyiv",
     "linkAvatar":"/img/temp/author/3.jpg",
@@ -158,13 +158,13 @@
       {
       "autoName":"Lexus",
       "linkAutoPhoto":"/img/temp/auto/12.jpg",
-      "linkAuto":"#",
+      "linkProfile":"my-page.html",
       "voteAuto":"350"
       }
     ]
   },
   {
-    "linkProfile":"#",
+    "linkProfile":"my-page.html",
     "name":"Alexis.Sanches",
     "city":"Kyiv",
     "linkAvatar":"/img/temp/author/4.jpg",
@@ -172,13 +172,13 @@
       {
       "autoName":"Audi",
       "linkAutoPhoto":"/img/temp/auto/13.jpg",
-      "linkAuto":"#",
+      "linkProfile":"my-page.html",
       "voteAuto":"350"
       }
     ]
   },
   {
-    "linkProfile":"#",
+    "linkProfile":"my-page.html",
     "name":"Sanches",
     "city":"Barsa",
     "linkAvatar":"/img/temp/author/5.jpg",
@@ -186,13 +186,13 @@
       {
       "autoName":"Audi Q7 Quattttttrooo!",
       "linkAutoPhoto":"/img/temp/auto/14.jpg",
-      "linkAuto":"#",
+      "linkProfile":"my-page.html",
       "voteAuto":"350"
       }
     ]
   },
     {
-      "linkProfile":"#",
+      "linkProfile":"my-page.html",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
       "linkAvatar":"/img/temp/author/6.jpg",
@@ -200,12 +200,12 @@
         {
           "autoName":"Audi TT",
           "linkAutoPhoto":"/img/temp/auto/15.jpg",
-          "linkAuto":"#"
+          "linkAuto":"my-page.html"
         }
       ]
     },
     {
-      "linkProfile":"#",
+      "linkProfile":"my-page.html",
       "name":"Alexis Sanc",
       "city":"Paris",
       "linkAvatar":"/img/temp/author/7.jpg",
@@ -213,12 +213,12 @@
         {
           "autoName":"BMW",
           "linkAutoPhoto":"/img/temp/auto/16.jpg",
-          "linkAuto":"#"
+          "linkAuto":"my-page.html"
         }
       ]
     },
     {
-      "linkProfile":"#",
+      "linkProfile":"my-page.html",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
       "linkAvatar":"/img/temp/author/8.jpg",
@@ -226,13 +226,13 @@
         {
         "autoName":"Audi1 Q7",
         "linkAutoPhoto":"/img/temp/auto/17.jpg",
-        "linkAuto":"#",
+        "linkProfile":"my-page.html",
         "voteAuto":"350"
         }
       ]
     },
     {
-      "linkProfile":"#",
+      "linkProfile":"my-page.html",
       "name":"Alexis.Sanches",
       "city":"Kyiv",
       "linkAvatar":"/img/temp/author/9.jpg",
@@ -240,7 +240,7 @@
         {
         "autoName":"Audi1 Q7",
         "linkAutoPhoto":"/img/temp/auto/18.jpg",
-        "linkAuto":"#",
+        "linkProfile":"my-page.html",
         "voteAuto":"350"
         }
       ]

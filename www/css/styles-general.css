@@ -980,6 +980,9 @@ main {
     border-radius: 1rem;
     cursor: pointer;
   }
+    .b-filter__find.open-search input {
+      background: #F0F0F0;
+    }
 
     .dropdown-block {
       position: absolute;

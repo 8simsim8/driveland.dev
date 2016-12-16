@@ -13,18 +13,18 @@ function workForm(nameForm) {
         keyEnter        = 13,
         keyTab          = 9;
 
-    // При загрузке фокус на первом поле
-      if($(itemInputs).eq(currentInput).hasClass('click-element')) {
-        $(itemInputs).eq(currentInput).click();
-      } else {
-        $(itemInputs).eq(currentInput).focus();
-      }
+    // // При загрузке фокус на первом поле
+    //   if($(itemInputs).eq(currentInput).hasClass('click-element')) {
+    //     $(itemInputs).eq(currentInput).click();
+    //   } else {
+    //     $(itemInputs).eq(currentInput).focus();
+    //   }
 
-    $(itemInputs).on('click', function(){
-      if(currentInput != 0) $(itemInputs).eq(currentInput).blur();
-      var $this = $(this);
-      currentInput = $(itemInputs).index($this);
-    });
+    // $(itemInputs).on('click', function(){
+    //   if(currentInput != 0) $(itemInputs).eq(currentInput).blur();
+    //   var $this = $(this);
+    //   currentInput = $(itemInputs).index($this);
+    // });
 
     // Переключение inputs по "Tab"
     $(document).on('keydown', form, function(e){
