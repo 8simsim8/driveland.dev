@@ -1,6 +1,46 @@
 (function () {
 
-  workForm('add-car');
+  // workForm('add-car');
+  
+  $('#brand').dropList({
+    search:               true,
+    text:                 'Выбрать марку'
+  });
+
+  $('#wrapperBrand').on('click',function(){
+    $(this).find('.SelectItem').on('click',function(){
+      $('#wrapperModel').show(200);
+    });
+  });
+
+  $('#model').dropList({
+    search:               true,
+    text:                 'Выбрать модель'
+  });
+
+  $('#type').dropList({
+    selected:            '["Sedan"]'
+  });
+
+  $('#fueltype').dropList({
+    selected:            '["Unleaded"]'
+  });
+
+  $('#year').dropList({
+    selected:            '["2012"]'
+  });
+
+  $('#color').dropList({
+    selected:            '["Black"]'
+  });
+
+  $('#gearbox').dropList({
+    selected:            '["Manual"]'
+  });
+
+  $('#drivetype').dropList({
+    selected:            '["Front"]'
+  });
 
 // Добавление замеров
 $('.b-add-car__form-add p').eq(0).addClass('m-add-car__form-add_active');

@@ -1,6 +1,11 @@
 (function (){
 
-  workForm('add-blog');
+  // workForm('add-blog');
+  
+  $('#tag').dropList({
+    multiple  : true,
+    selected  : '["Личное"]'
+  });
 
 // ADD POSTS (GIVE USER ABILITY TO ADD TEXT BLOCKS AND PHOTOS WHEN CREATING NEW POST)
 

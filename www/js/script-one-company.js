@@ -2,6 +2,13 @@
 
 function oneCompany() {
 
+  var positiveVote        = [50];   // Массив положительных голосов по компании
+  var allVote             = [75];   // Всего голосов по компании
+
+  // Рейтинг
+  var blocksRating        = $('.b-one-company__title-note');
+  var rating              = new MakeRating(blocksRating, positiveVote, allVote);  // Обьект вывода рейтинга
+
   var strReduceHeader = $(".b-one-company__news-wrapp-item-text h5")[2];
   var strReduce = $(".b-one-company__news-wrapp-item-text")[2];
 

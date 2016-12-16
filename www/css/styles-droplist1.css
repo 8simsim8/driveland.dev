@@ -1,0 +1,129 @@
+/* Дроплист */
+.droplist {
+  position: relative;
+  height: 40px;
+  width: -webkit-calc( 98.5% / 3);
+  width: calc( 98.5% / 3);
+}
+    .droplist input::-webkit-input-placeholder {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: bold;
+      line-height: 40px;
+      color: #333333;
+    }
+    .droplist input::-moz-placeholder {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: bold;
+      line-height: 40px;
+      color: #333333;
+    }
+    .droplist input:-ms-input-placeholder {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: bold;
+      line-height: 40px;
+      color: #333333;
+    }
+
+  .dListholder {
+    position: relative;
+    background: #F0F0F0;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+    .dListText {
+      padding: 0 9px;
+      width: 100%;
+      float: left;
+      overflow: hidden;
+    }
+    input.dlsearch,
+    .dListText {
+      padding: 0 13px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: bold;
+      line-height: 40px;
+      color: #333333;
+    }
+      .dListText input.dlsearch:focus {
+        background-color: #F0F0F0;
+      }
+    .dListBtn {
+      position: absolute;
+      right: 0;
+      height: 40px;
+      background: url('../img/icon-date-arrow.svg');
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 9px;
+      float: right;
+      margin-right: 7px;
+    }
+    .dListdivider {
+      height: 10px;
+    }
+    .dListdrop {
+      background: #FFFFFF;
+      max-height: 300px;
+      overflow-y: auto;
+      border-radius: 4px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      -webkit-box-shadow: 0px 0px 5px rgba(130, 130, 130, 0.2);
+      box-shadow: 0px 0px 5px rgba(130, 130, 130, 0.2);
+      display: none;
+    }
+      .dlitem {
+        padding: 7px 18px;
+        font-family: "Lucida Sans", Arial, Helvetica, sans-serif;
+        font-size: 0.7rem;
+        border-bottom: 1px dotted #CECECE;
+        cursor: pointer;
+      }
+      .ItemAdded {
+          background: #F0F0F0;
+        }
+      .dlitem:last-child {
+        border-bottom: none;
+      }
+        .dlithov:hover {
+          background: #f7f7f7;
+        }
+  .droplist input.dlsearch {
+    width: 100%;
+    background: none;
+    border: none;
+  }
+  
+  .dlsearch:focus { outline: none; }
+::-webkit-input-placeholder {
+ color: #333333;
+ font-family: "Lucida Sans", Arial, Helvetica, sans-serif;
+ font-size: 0.7rem;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+ color: #333333;
+ font-family: "Lucida Sans", Arial, Helvetica, sans-serif;
+ font-size: 0.7rem;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+ color: #333333;
+ font-family: "Lucida Sans", Arial, Helvetica, sans-serif;
+ font-size: 0.7rem;
+}
+
+:-ms-input-placeholder {
+ color: #333333;
+ font-family: "Lucida Sans", Arial, Helvetica, sans-serif;
+ font-size: 0.7rem;
+}

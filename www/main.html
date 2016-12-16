@@ -31,7 +31,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Detect.js/2.2.2/detect.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Clamp.js/0.5.1/clamp.min.js"></script>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
@@ -46,6 +46,13 @@
       <nav class="b-menu__wrapp wrapper row row-center">
         <a href="index.html" title="Main" class="b-menu__wrapp-logo col xs-2"></a>
         <ul class="b-menu__wrapp-list col xs-7">
+          <!-- На активный пункт меню навесить класс .active -->
+            <li><a href="/main.html" title="Главная" class="text bold active">Главная</a></li>
+            <li><a href="/news.html" title="Новости" class="text bold">Новости</a></li>
+            <li><a href="/community.html" title="Сообщества" class="text bold">Сообщества</a></li>
+            <li><a href="/company.html" title="Компании" class="text bold">Компании</a></li>
+            <li><a href="/flea-market.html" title="Барахолка" class="text bold">Барахолка</a></li>
+         
         </ul>
 
         <button class="b-menu__wrapp-login button small text bold col xs-offset-2 xs-1 button-enter">Войти</button>
@@ -111,34 +118,31 @@
           <section class="l-content col sm-8 order-xs-1 xs-12">
             <div class="block b-content">
 
-                <div class="b-content__lider-date dropdown-block">
-                  <p class="b-content__lider-date-currnet text dropdown-block-current">Сегодня</p>
-                  <ul class="b-content__lider-date-list dropdown-block-list">
-                    <li><a href="#">Сегодня</a></li>
-                    <li><a href="#">Вчера</a></li>
-                    <li><a href="#">На прошлой недели</a></li>
-                    <li><a href="#">В прошлом году</a></li>
-                  </ul>
-                </div>
-
               <div class="b-content__lider">
-
+                <h4>Тачка дня</h4>
                 <article class="b-content__lider-article">
-                  <img src="img/temp/c1c36aes-960.jpg" alt="" class="b-content__lider-article-img">
-                  <h4>My old-school bulltet proof E-Klasse</h4>
-                  <div class="b-content__lider-article-author">
-                    <img src="/img/temp/author/author-1.jpg" alt="" class="b-content__lider-article-author-photo">
-                    <a href="#" class="b-content__lider-article-author-name text">Alexis.Sanches</a><a href="#" class="b-content__lider-article-author-city text">Kyiv</a>
+                  <figure>
+                    <img src="img/temp/c1c36aes-960.jpg" alt="">
+                  </figure>
+                  <div class="b-content__lider-article-note">
+                    <h5>My old-school bulltet proof E-Klasse</h5>
+                    <div class="b-content__lider-article-author">
+                      <img src="/img/temp/author/author-1.jpg" alt="" class="b-content__lider-article-author-photo">
+                      <p>
+                        <a href="#" class="b-content__lider-article-author-name text">Alexis.Sanches</a>
+                        <a href="#" class="b-content__lider-article-author-city text">Kyiv</a>
+                      </p>
+                    </div>
                   </div>
-                  <p class="b-content__lider-article-text text">Реальность всё расставляет на свои места. Машины, которые в статьях и обзорах ругали — сплошь и рядом встречаются на дорогах. А те, которые хвалили — редкость. Просто любой автомобиль может стать очень хорошим. Потому что он стал вашим. Ведь как бывает, придёшь в магазин, а там в линию выстроились штук пятнадцать телевизоров.</p>
-                  <a href="" class="read-button button small">Читать далее</a>
                 </article>
 
                 <div class="b-content__lider-previous paginator">
                   <h4>Предидущие победители</h4>
                   <div class="b-content__container pagin-container">
 <!--                     <a href="#" title="" class="b-content__lider-previous-item item">
-                      <img src="img/temp/img-previous-1.jpg" alt="">
+                      <figure>
+                        <img src="img/temp/img-previous-1.jpg" alt="">
+                      </figure>
                     </a>-->
                   </div>
                 </div>
@@ -147,7 +151,9 @@
                   <h4>Набирают популярность</h4>
                    <div class="b-content__container pagin-container">
 <!--                 <a href="#" title="" class="b-content__lider-gaining-item item">
-                      <img src="img/temp/img-previous-1.jpg" alt="">
+                      <figure>
+                        <img src="img/temp/img-previous-1.jpg" alt="">
+                      </figure>
                     </a> -->
                   </div>
                 </div>
@@ -157,12 +163,35 @@
                   <a href="community.html" title="" class="b-link-show-all text">Показать все</a>
                   <div class="b-content__popular-container pagin-container pagin-wrap">
                     <!-- <a href="#" title="" class="b-content__popular-item item">
-                      <img src="img/temp/img-previous-1.jpg" alt="">
+                      <figure>
+                        <img src="img/temp/img-previous-1.jpg" alt="">
+                      </figure>
                     </a> -->
                   </div>
                 </div>
               </div>
 
+            </div>
+
+            <div class="block b-new-auto">
+
+              <div class="b-new-auto__inner">
+                <h4>Новые машины</h4>
+                <a href="community.html" title="" class="b-link-show-all text">Показать все</a>
+                <div class="paginator">
+                  <div class="b-new-auto__container pagin-container pagin-wrap">
+
+                    <!-- <a href="#" title="" class="b-new-auto__item item">
+                      <figure>
+                        <img src="img/temp/auto/1.png" alt="">
+                      </figure>
+                      <p class="b-new-auto__item-name">Alexis.Sanches</p>
+                      <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
+                    </a> -->
+
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
@@ -174,44 +203,44 @@
                 <div class="b-news__container">
 
                   <div class="b-news__inner-item m-news__inner-item_blog">
-                    <div data-name="Блоги">
-                      <img src="img/temp/auto/2.jpg" alt="" class="b-news__inner-item-img">
-                    </div>
+                    <figure class="b-news__inner-item-img" data-name="Блоги">
+                      <img src="img/temp/auto/2.jpg" alt="">
+                    </figure>
                     <a href="#" class="text" data-clamp>Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
                   </div>
 
                   <div class="b-news__inner-item m-news__inner-item_news-market">
-                    <div data-name="Новости рынка">
-                      <img src="img/temp/img-previous-1.jpg" alt="" class="b-news__inner-item-img">
-                    </div>
+                    <figure class="b-news__inner-item-img" data-name="Новости рынка">
+                      <img src="img/temp/img-previous-1.jpg" alt="">
+                    </figure>
                     <a href="#" class="text" data-clamp>Онлайн-журнал: Полиция и ГФС начинают охоту на «польские бляхи». Тест-драйв электромобиля BMW i3.</a>
                   </div>
 
                   <div class="b-news__inner-item m-news__inner-item_company">
-                    <div data-name="Новости рынка">
-                      <img src="img/temp/e5ac4aes-480.jpg" alt="" class="b-news__inner-item-img">
-                    </div>
+                    <figure class="b-news__inner-item-img" data-name="Компании">
+                      <img src="img/temp/e5ac4aes-480.jpg" alt="">
+                    </figure>
                     <a href="#" class="text" data-clamp>Наш опыт восстановления  по оригинальным чертежам</a>
                   </div>
 
                   <div class="b-news__inner-item m-news__inner-item_news-market">
-                    <div data-name="Новости рынка">
-                      <img src="img/temp/img-previous-1.jpg" alt="" class="b-news__inner-item-img">
-                    </div>
+                    <figure class="b-news__inner-item-img" data-name="Новости рынка">
+                      <img src="img/temp/img-previous-1.jpg" alt="">
+                    </figure>
                     <a href="#" class="text" data-clamp>В париже представлен новый Mitsubishi L200</a>
                   </div>
 
                   <div class="b-news__inner-item m-news__inner-item_blog">
-                    <div data-name="Блоги">
-                      <img src="img/temp/725c0c2s-960.jpg" alt="" class="b-news__inner-item-img">
-                    </div>
+                    <figure class="b-news__inner-item-img" data-name="Блоги">
+                      <img src="img/temp/725c0c2s-960.jpg" alt="">
+                    </figure>
                     <a href="#" class="text" data-clamp>Как научить Рено Дастер плавать</a>
                   </div>
 
                   <div class="b-news__inner-item m-news__inner-item_blog">
-                    <div data-name="Блоги">
-                      <img src="img/temp/img-previous-2.jpg" alt="" class="b-news__inner-item-img">
-                    </div>
+                    <figure class="b-news__inner-item-img" data-name="Блоги">
+                      <img src="img/temp/img-previous-2.jpg" alt="">
+                    </figure>
                     <a href="#" class="text" data-clamp>Обновленную Skoda Octavia наделили «кристальным взглядом»</a>
                   </div>
 
@@ -227,31 +256,6 @@
               </ul>
             </div>
           </section>
-        </div>
-
-        <div class="row">
-
-          <section class="l-new-auto col sm-8 order-xs-1 xs-12">
-            <div class="block b-new-auto">
-
-              <div class="b-new-auto__inner">
-                <h4>Новые машины</h4>
-                <a href="community.html" title="" class="b-link-show-all text">Показать все</a>
-                <div class="paginator">
-                  <div class="b-new-auto__container pagin-container pagin-wrap">
-
-                    <!-- <a href="#" title="" class="b-new-auto__item item">
-                      <img src="img/temp/auto/1.png" alt="">
-                      <p class="b-new-auto__item-name">Alexis.Sanches</p>
-                      <p class="b-new-auto__item-auto">Audi Q7 Quattttttrooo!</p>
-                    </a> -->
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
         </div>
       <script type="text/javascript" src="js/script-main.js"></script>
 <!-- Footer -->

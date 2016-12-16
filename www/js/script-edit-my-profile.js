@@ -6,7 +6,21 @@
     }
     });
 
-    workForm('aboutme');
+      $('#city').dropList({
+        selected              : '["Киев"]'
+      });
+
+      $('#country').dropList({
+        selected              : '["Греция"]'
+      });
+
+      $('#wrapperCountry').on('click',function(){
+        $(this).find('.SelectItem').on('click',function(){
+          $('#wrapperCity').show(200);
+        });
+      });
+
+    // workForm('aboutme');
 
   // ADD PHOTO TO THE USER ALBUM MODAL (USER PAGE)
 

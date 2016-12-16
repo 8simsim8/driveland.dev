@@ -1,7 +1,8 @@
   .b-news__wrap-item {
     margin-top: 16px;
     margin-bottom: 20px !important;
-    min-width: calc(100% - 10px);
+    min-width: -webkit-calc(100% - 20px);
+    min-width: calc(100% - 20px);
   }
     .b-news__wrap-item h4 {
       margin-bottom: 10px;
@@ -11,7 +12,7 @@
     }
     .b-news__wrap-item img {
       margin-bottom: 10px;
-      width: 600px;
+      width: 100%;
       height: auto;
     }
     .b-news__wrap-item p.text {
@@ -44,6 +45,19 @@
       background-size: 185px auto;
     }
 
+.b-filter__switch {
+  width: 100%;
+}
+  .b-filter__switch .dListText,
+  .b-filter__switch .SelectItem {
+    text-align: center;
+  }
+  
+
+.b-popular {
+  margin-top: 20px;
+}
+
 .b-popular__wrapp {
   
 }
@@ -51,6 +65,7 @@
     color: #1C5BC9;
     text-align: center;
     font-weight: bold;
+    margin-bottom: 20px;
   }
     .b-popular__wrapp .droplist-item,
     .b-popular__wrapp .droplist-current {

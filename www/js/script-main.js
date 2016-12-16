@@ -8,7 +8,6 @@ function main() {
   // Создаем обьект "панели марки"
   var logoBar;
 
-
   // ******************** TEST ***********************
     // Основной контент (левая панель)
       var liderAuto;
@@ -39,7 +38,7 @@ function main() {
       var strInsert = '';
       var sumElemOnPage = sumElemOnPage || array.length;
       for(var i = 0; i < sumElemOnPage; i++) {
-        strInsert = '<a href="' + array[i].auto[0].linkAuto + '" title="'+ array[i].name +'" class="b-content__lider-previous-item item"><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].autoName +'"></a>';
+        strInsert = '<a href="' + array[i].auto[0].linkAuto + '" title="'+ array[i].name +'" class="b-content__lider-previous-item item"><figure><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].autoName +'"></figure></a>';
         $container.append(strInsert);
       }
     }
@@ -50,7 +49,7 @@ function main() {
       var strInsert = '';
       var sumElemOnPage = sumElemOnPage || array.length;
       for(var i = 0; i < sumElemOnPage; i++) {
-        strInsert = '<a href="' + array[i].auto[0].linkAuto + '" title="'+ array[i].name +'" class="b-content__lider-gaining-item item"><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].autoName +'"></a>';
+        strInsert = '<a href="' + array[i].auto[0].linkAuto + '" title="'+ array[i].name +'" class="b-content__lider-gaining-item item"><figure><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].autoName +'"></figure></a>';
         $container.append(strInsert);
       }
     }
@@ -61,7 +60,7 @@ function main() {
       var strInsert = '';
       var sumElemOnPage = sumElemOnPage || array.length;
       for(var i = 0; i < sumElemOnPage; i++) {
-        strInsert = '<a href="' + array[i].auto[0].linkAuto + '" title="'+ array[i].name +'" class="b-content__popular-item item"><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].autoName +'"></a>';
+        strInsert = '<a href="' + array[i].auto[0].linkAuto + '" title="'+ array[i].name +'" class="b-content__popular-item item"><figure><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].autoName +'"></figure></a>';
         $container.append(strInsert);
       }
     }
@@ -72,7 +71,7 @@ function main() {
       var strInsert = '';
       var sumElemOnPage = sumElemOnPage || array.length;
       for(var i = 0; i < sumElemOnPage; i++) {
-        strInsert = '<a href="' + array[i].linkProfile + '" title="'+ array[i].name +'" class="b-new-auto__item item text"><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].linkAuto +'"><p class="b-new-auto__item-name">'+ array[i].name +'</p><p class="b-new-auto__item-auto">'+ array[i].auto[0].autoName +'</p></a>';
+        strInsert = '<a href="' + array[i].linkProfile + '" title="'+ array[i].name +'" class="b-new-auto__item item text"><figure><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].linkAuto +'"></figure><p class="b-new-auto__item-name">'+ array[i].name +'</p><p class="b-new-auto__item-auto">'+ array[i].auto[0].autoName +'</p></a>';
         $container.append(strInsert);
       }
     }

@@ -5,24 +5,21 @@
     margin-top: 26px;
     margin-bottom: 5px;
   }
-  .b-main-title + h3 {
+  .b-main-title h3 {
     margin-bottom: 26px;
   }
-    .b-main-title + h3 span:before {
-      content: '(';
-    }
-    .b-main-title + h3 span:after {
-      content: ')';
-    }
 
   .b-company__item {
     display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -webkit-align-items: center;
     -ms-flex-align: center;
+    -webkit-box-align: center;
     align-items: center;
     padding: 10px 20px;
+    min-width: -webkit-calc(100% - 20px);
     min-width: calc(100% - 20px);
     border-radius: 10px;
     border: 1px solid  rgba(163, 163, 163, 0.4);
@@ -63,9 +60,11 @@
     .b-company__logo {
       display: -webkit-flex;
       display: -ms-flexbox;
+      display: -webkit-box;
       display: flex;
       -webkit-flex: 1 0 25%;
       -ms-flex: 1 0 25%;
+      -webkit-box-flex: 1;
       flex: 1 0 25%;
       margin: 10px 0;
       max-width: 25%;
@@ -79,6 +78,7 @@
     .b-company-text {
       -webkit-flex: 1 0 65%;
       -ms-flex: 1 0 65%;
+      -webkit-box-flex: 1;
       flex: 1 0 65%;
       margin-left: 20px;
       padding: 10px 20px 10px 0;
@@ -97,12 +97,15 @@
         .b-company-info {
           display: -webkit-flex;
           display: -ms-flexbox;
+          display: -webkit-box;
           display: flex;
           -webkit-align-items: center;
           -ms-flex-align: center;
+          -webkit-box-align: center;
           align-items: center;
           -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
+          -webkit-box-pack: justify;
           justify-content: space-between;
           margin-bottom: 10px;
         }
@@ -112,6 +115,7 @@
     .wrap-tags {
       -webkit-flex: 1 0 70%;
       -ms-flex: 1 70%;
+      -webkit-box-flex: 1;
       flex: 1 0 70%;
       max-width: 320px;
     }
@@ -128,6 +132,7 @@
     .wrap-tags + div {
       -webkit-flex: 1 0 30%;
       -ms-flex: 1 30%;
+      -webkit-box-flex: 1;
       flex: 1 0 230%;
       max-width: 30%;
       text-align: right;
@@ -135,6 +140,7 @@
       .b-company__item-comments {
         -webkit-flex: 1 0 5%;
         -ms-flex: 1 0 5%;
+        -webkit-box-flex: 1;
         flex: 1 0 5%;
         max-width: 5%;
         display: block;
@@ -148,6 +154,12 @@
         color: #333333;
         text-align: center;
       }
+  
+  .b-filter__form-item.droplist input.dlsearch,
+  .b-filter__form-item.droplist .dListText,
+  .b-filter__form-item.droplist .SelectItem {
+    text-align: center;
+  }
 
 .b-add-post {
   margin-bottom: 20px;

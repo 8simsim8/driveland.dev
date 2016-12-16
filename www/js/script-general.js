@@ -2,7 +2,7 @@
 
 function general() {
 
-  var header = new makeHeader();            // Обьект "Меню"
+  var header = new makeHeader();             // Обьект "Меню"
 
   if(IS_FIREFOX) {
     $('body').addClass('firefox');
@@ -11,28 +11,30 @@ function general() {
   var messages = 10;
   header.checkNewNotification(messages);     // Метод отображения колличества сообщений
 
-  var buttonToTop = new makeButtonToTop();  // Кнопка "вверх"
+  var buttonToTop = new makeButtonToTop();   // Кнопка "вверх"
 
 // **************** TEST *****************************************
 // Создание навигации МЕНЮ
-$.ajax('/test/data-menu.json', {
-        type: 'GET',
-        dataType: 'json',
-        success: function(array) {
-          
-          var $container = $('.b-menu__wrapp-list');
-          var strInsert = '';
-          var sumElemOnPage = sumElemOnPage || array.length;
-          for(var i = 0; i < sumElemOnPage; i++) {
-            strInsert = '<li><a href="'+ array[i].linkMenu +'" title="'+ array[i].text +'" class="text bold">'+ array[i].text +'</a></li>';
-          $container.append(strInsert);
+if( $('.b-menu__wrapp-list').children().length < 1) {
+  $.ajax('/test/data-menu.json', {
+          type: 'GET',
+          dataType: 'json',
+          success: function(array) {
+
+            var $container = $('.b-menu__wrapp-list');
+            var strInsert = '';
+            var sumElemOnPage = sumElemOnPage || array.length;
+            for(var i = 0; i < sumElemOnPage; i++) {
+              strInsert = '<li><a href="'+ array[i].linkMenu +'" title="'+ array[i].text +'" class="text bold">'+ array[i].text +'</a></li>';
+            $container.append(strInsert);
           }
 
-        },
-        error: function(req,status,err) {
-          console.log("Error " + req,status,err);
-        }
-      });
+          },
+          error: function(req,status,err) {
+            console.log("Error " + req,status,err);
+          }
+        });
+}
 // *****************************************************************
 
 

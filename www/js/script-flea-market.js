@@ -1,7 +1,9 @@
 ;document.addEventListener("DOMContentLoaded",  market);
 
 function market() {
-  workForm('filter');
+  // workForm('filter');
+  
+    $('#category').dropList({});
 
   var $tags = $('.wrap-tags');
   cropTag($tags);					// Обрезание лишних тегов

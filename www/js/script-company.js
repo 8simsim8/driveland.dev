@@ -5,7 +5,7 @@ function company() {
   var positiveVote        = [3,8,1,18,50,50,17];   // Массив положительных голосов по компании
   var allVote             = [10,15,33,34,75,62,17];   // Всего голосов по компании
 
-  workForm('filter');
+  // workForm('filter');
 
   var $asideFloatBar = $('.aside-panel-wrapp');
   floatSideBar($asideFloatBar);  // Плавающий блок
@@ -13,6 +13,36 @@ function company() {
   // Убирать лишние теги
   var $tags               = $('.wrap-tags');
   cropTag($tags);
+
+  $('#category').dropList({});
+
+  $('#city').dropList({
+    search:               true,
+    text:                 'Город'
+  });
+
+  $('#district').dropList({
+    search:               true,
+    text:                 'Район'
+  });
+
+
+  $('#wrapperCategory').on('click',function(){
+    $(this).find('.SelectItem').on('click',function(){
+      var $strTitle = $('.b-main-title h3');
+      $strTitle.html($(this).html());
+    });
+  });
+ 
+  //   var strSelect = $(this).html();
+  //   var $title = $('.title-search h1');
+  //   if(strSelect == "Все") {
+  //     $title.html("Сообщества");
+  //   } else {
+  //     $title.html(strSelect);
+  //   }
+  //   return false;
+  // });
 
   // Рейтинг
   var blocksRating        = $('.b-company__item');

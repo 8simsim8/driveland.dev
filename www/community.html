@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="css/gird-column.css">
     <link rel="stylesheet" type="text/css" href="css/reset-min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles-droplist.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-droplist1.css">
     <link rel="stylesheet" type="text/css" href="css/styles-aside-filter.css">
     <link rel="stylesheet" type="text/css" href="css/styles-general.css">
     <link rel="stylesheet" type="text/css" href="css/styles-community.css">
@@ -34,6 +34,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/jquery.dropList.1.0.0.js"></script>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Detect.js/2.2.2/detect.min.js"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
@@ -46,6 +48,12 @@
       <nav class="b-menu__wrapp wrapper row row-center">
         <a href="index.html" title="Main" class="b-menu__wrapp-logo col xs-2"></a>
         <ul class="b-menu__wrapp-list col xs-7">
+          <!-- На активный пункт меню навесить класс .active -->
+            <li><a href="/main.html" title="Главная" class="text bold">Главная</a></li>
+            <li><a href="/news.html" title="Новости" class="text bold">Новости</a></li>
+            <li><a href="/community.html" title="Сообщества" class="text bold active">Сообщества</a></li>
+            <li><a href="/company.html" title="Компании" class="text bold">Компании</a></li>
+            <li><a href="/flea-market.html" title="Барахолка" class="text bold">Барахолка</a></li>
         </ul>
 
         <button class="b-menu__wrapp-login button small text bold col xs-offset-2 xs-1 button-enter" style="display: none;">Войти</button>
@@ -121,7 +129,9 @@
               <div class="b-community__container pagin-container pagin-wrap">
 
 <!--                     <div class="b-community__item item">
+                      <figure>
                       <img src="img/temp/auto/1.png" alt="">
+                      </figure>
                       <div class="b-community__item-info text">
 
                         <div class="b-community__item-avatar">
@@ -161,61 +171,42 @@
           <section class="l-filter col xs-3">
             <div class="block b-filter">
               <div class="b-filter-wrapp">
-                <h4><span class="all-community">256</span> сообществ</h4>
-                <p class="text"><a href="#"><span class="new-company">12</span> новых</a></p>
+                <!-- <h4><span class="all-community">256</span> сообществ</h4> -->
 
                 <form class="b-filter__form" name="filter">
 
-                  <div class="b-add-car__form-item droplist">
-                    <input type="text" id="city" value="all" hidden>
-                    <span class="droplist-current text bold tab-input">Всe</span>
-                    <ul class="droplist-block">
-                      <li class="droplist-item text">Авто</li>
-                      <li class="droplist-item text">Мото</li>
-                      <li class="droplist-item text">Водители</li>
-                    </ul>
+                <div class="b-filter__switch" id="driver">
+                  <a href="#" class="b-filter__switch-item text bold" data-filter-category="men">Парень</a>
+                  <a href="#" class="b-filter__switch-item text bold" data-filter-category="girl">Девушка</a>
+                </div>
+
+                <div class="b-filter__switch" id="category">
+                  <a href="#" class="b-filter__switch-item text bold" data-filter-category="all">Все</a>
+                  <a href="#" class="b-filter__switch-item text bold" data-filter-category="auto">Авто</a>
+                  <a href="#" class="b-filter__switch-item text bold" data-filter-category="moto">Мото</a>
+                </div>
+
+                  <div id="wrapperCity" class="b-add-car__form-item droplist">
+                    <select id="city">
+                      <option data-title value="all">Все города</option>
+                      <option>Odessa</option>
+                      <option>Kiev</option>
+                      <option>Paris</option>
+                    </select>
                   </div>
 
-                  <div class="b-add-car__form-item droplist">
-                    <input type="text" id="city" value="all" hidden>
-                    <span class="droplist-current text bold tab-input">Все города</span>
-                    <ul class="droplist-block">
-                      <li class="droplist-item text">Odessa</li>
-                      <li class="droplist-item text">Kiev</li>
-                      <li class="droplist-item text">Paris</li>
-                    </ul>
+                  <div id="wrapperMark" class="b-add-car__form-item droplist">
+                    <select id="mark">
+                      <option data-title value="all">Марка</option>
+                      <option>Марка</option>
+                    </select>
                   </div>
-                  <div class="b-add-car__form-item droplist">
-                    <input type="text" id="driver" value="all" hidden>
-                    <span class="droplist-current text bold tab-input">Пол</span>
-                    <ul class="droplist-block">
-                      <li class="droplist-item text">Парень</li>
-                      <li class="droplist-item text">Девушка</li>
-                    </ul>
-                  </div>
-                  <div class="b-add-car__form-item droplist">
-                    <input type="text" id="mark" value="all" hidden>
-                    <span class="droplist-current text bold tab-input">Все марки</span>
-                    <ul class="droplist-block">
-                      <li class="droplist-item text">Марка</li>
-                      <li class="droplist-item text">Марка</li>
-                      <li class="droplist-item text">Марка</li>
-                      <li class="droplist-item text">Марка</li>
-                      <li class="droplist-item text">Марка</li>
-                      <li class="droplist-item text">Марка</li>
-                    </ul>
-                  </div>
-                  <div class="b-add-car__form-item droplist">
-                    <input type="text" id="model" value="all" hidden>
-                    <span class="droplist-current text bold tab-input">Все модели</span>
-                    <ul class="droplist-block">
-                      <li class="droplist-item text">Модель</li>
-                      <li class="droplist-item text">Модель</li>
-                      <li class="droplist-item text">Модель</li>
-                      <li class="droplist-item text">Модель</li>
-                      <li class="droplist-item text">Модель</li>
-                      <li class="droplist-item text">Модель</li>
-                    </ul>
+
+                  <div id="wrapperModel" class="b-add-car__form-item droplist">
+                    <select id="model">
+                      <option data-title value="all">Модель</option>
+                      <option>Модель</option>
+                    </select>
                   </div>
 
                   <p class="icon-search"><input type="submit" value="Найти" class="button middle tab-input"></p>
@@ -226,7 +217,7 @@
           </section>
 
         </div>
-      <script type="text/javascript" src="js/script-droplist.js"></script>
+      <!-- <script type="text/javascript" src="js/script-droplist.js"></script> -->
       <script type="text/javascript" src="js/script-community.js"></script>
 <!-- Footer -->
       </div>

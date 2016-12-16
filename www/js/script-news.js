@@ -2,7 +2,11 @@
 
 function news() {
 
-  workForm('filter');
+  // workForm('filter');
+
+  $('#category').dropList({});
+
+  $('#date').dropList({});
 
   floatSideBar($('#float-bar'));
 

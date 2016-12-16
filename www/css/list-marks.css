@@ -6,9 +6,9 @@
     margin: 0 auto;
   }
     .b-mark__list li {
-      width: 100%;
     }
     .b-mark__list-item {
+      will-change: transform;
       display: block;
       height: 35px;
       width: 100%;
@@ -16,7 +16,17 @@
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
+      transition: -webkit-transform 0.2s ease;
+      -webkit-transition: -webkit-transform 0.2s ease;
+      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, -webkit-transform 0.2s ease;
     }
+      .b-mark__list-item:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+      }
+
 @media (min-width: 769px) {
   section .block.b-mark {
     padding-left: 0;
