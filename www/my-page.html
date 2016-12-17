@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="css/paginator.css">
     <link rel="stylesheet" type="text/css" href="css/styles-general.css">
     <link rel="stylesheet" type="text/css" href="css/styles-my-page.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-droplist1.css">
     <link rel="stylesheet" type="text/css" href="css/styles-aside-block-author.css">
     <link rel="stylesheet" type="text/css" href="css/comments.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -33,6 +34,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/jquery.dropList.1.0.0.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Detect.js/2.2.2/detect.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Clamp.js/0.5.1/clamp.min.js"></script>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
@@ -113,7 +116,10 @@
                 <div class="b-title__content-photo">
                 
                   <div class="b-title__content-photo-vote"><span>232 DRIVE</span></div>
-                  <img src="img/temp/auto/nissan.jpg" alt="">
+                  <figure>
+                    <img src="img/temp/auto/nissan.jpg" alt="">
+                  </figure>
+
                 </div>
                 
                 <ul class="b-title__content-list">
@@ -168,15 +174,21 @@
                 <h3>Мои авто</h3>
                 <a href="add-my-car.html" class="button small">Добавить</a>
                 <div class="b-author__car-item">
-                  <img src="img/temp/auto/2.jpg" alt="">
+                  <figure>
+                    <img src="img/temp/auto/2.jpg" alt="">
+                  </figure>
                   <p><a href="#" class="text">Nissan Terrano 2.6L 200hp</a></p>
                 </div>
                 <div class="b-author__car-item">
-                  <img src="img/temp/auto/5.jpg" alt="">
+                  <figure>
+                    <img src="img/temp/auto/5.jpg" alt="">
+                  </figure>
                   <p><a href="#" class="text">Nissan Terrano 2.6L 200hp</a></p>
                 </div>
                 <div class="b-author__car-item">
-                  <img src="img/temp/auto/10.jpg" alt="">
+                  <figure>
+                    <img src="img/temp/auto/10.jpg" alt="">
+                  </figure>
                   <p><a href="#" class="text">Nissan Terrano 2.6L 200hp</a></p>
                 </div>
               </div>
@@ -328,12 +340,26 @@
           <section class="l-logbook col xs-12 sm-9">
             <div class="block b-logbook redact-block">
               <div class="b-logbook-wrapp">
-                <h3>Бортовой журнал <span class='b-logbook-sum'>13</span></h3>
+                <!-- Колличество записей в атрибут data-sum -->
+                <h3 data-sum='13'>Бортовой журнал</h3>
+                <div id="wrapperTag" class="droplist">
+                  <select id="tag">
+                    <option data-title value="all">Все отрасли</option>
+                    <option>Сервисы</option>
+                    <option>Авто</option>
+                    <option>Авто</option>
+                    <option>Мото</option>
+                  </select>
+                </div>
                 <a href="add-blog.html" class="button middle add-button">Добавить запись</a>
 
                 <div class="b-logbook__container">
                   <article class="b-logbook__container-item">
-                    <img src="img/temp/c3a0e1u-960.jpg" alt="">
+                    <div  class="b-logbook__container-item-img">
+                      <figure>
+                        <img src="img/temp/c3a0e1u-960.jpg" alt="">
+                      </figure>
+                    </div>
                     <div class="b-logbook__container-item-text">
                       <div class="b-logbook__container-title">
                         <h4 data-clamp><a href="#" title="">Установил новый глушитель</a></h4>
@@ -343,17 +369,29 @@
                     </div>
                   </article>
                   <article class="b-logbook__container-item">
-                    <img src="img/temp/66a6ba6s-480.jpg" alt="">
+                    <div  class="b-logbook__container-item-img">
+                      <figure>
+                        <img src="img/temp/66a6ba6s-480.jpg" alt="">
+                      </figure>
+                    </div>
                     <div class="b-logbook__container-item-text">
                       <div class="b-logbook__container-title">
                         <h4 data-clamp><a href="#" title="">Полирнул…</a></h4>
                         <p class="text subtext data">03.08.2016</p>
                       </div>
                       <p class="text" data-clamp>В выходные- старт!</p>
+                      <p class="rating-comments-block text">
+                        <span class="rating" title="Рейтинг">12</span>
+                        <span class="comments" title="Комментариев">200</span>
+                      </p>
                     </div>
                   </article>
                   <article class="b-logbook__container-item">
-                    <img src="img/temp/725c0c2s-960.jpg" alt="">
+                    <div  class="b-logbook__container-item-img">
+                      <figure>
+                        <img src="img/temp/725c0c2s-960.jpg" alt="">
+                      </figure>
+                    </div>
                     <div class="b-logbook__container-item-text">
                       <div class="b-logbook__container-title">
                         <h4 data-clamp><a href="#" title="">Ксенон в два этажа!</a></h4>
@@ -427,7 +465,7 @@
             </div>
           </section>
         </div>
-        
+
       <script type="text/javascript" src="js/slim.jquery.min.js"></script>
       <script type="text/javascript" src="js/script-my-page.js"></script>
 <!-- Footer -->

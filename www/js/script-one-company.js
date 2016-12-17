@@ -27,28 +27,6 @@ function oneCompany() {
     });
   }
 
-  // Открыть попап "написать компании"
-    var messagePopup = document.getElementsByClassName('b-one-company__message')[0];
-    var buttonOpenMessagePopup = document.getElementsByName('open-message-popup');
-    $(buttonOpenMessagePopup).on('click', function() {
-      messagePopup.setAttribute('popup-message','open');
-      disableScroll();
-      return false;
-    });
-    $('.b-popup-message-close').on('click', function() {
-      messagePopup.setAttribute('popup-message','close');
-      enableScroll();
-      return false;
-    });
-
-    // Клик по кнопке отправить сообщение
-     $('input.submit-button').on('click', function(){
-        $('.b-one-company__message-wrapp').fadeOut('200', function(){
-          $('.b-one-company__message-confirm').fadeIn('300');
-        });
-        return false;
-      });
-
   // Вывод карты, в зависимости от адресса компании
     initialize();
 

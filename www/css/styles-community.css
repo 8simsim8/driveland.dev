@@ -1,22 +1,6 @@
 .b-community {
   
 }
-  .b-community .b-main-title {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-    align-items: center;
-    margin-top: 26px;
-    margin-bottom: 20px;
-  }
     .b-main-title.title-search h1 {
       margin-right: auto;
     }

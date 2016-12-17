@@ -140,12 +140,9 @@
       padding-top: 20px;
       width: 100%;
     }
-      .b-author__car-item img {
-        height: 200px;
+      .b-author__car-item figure{
         width: 100%;
         margin-bottom: 10px;
-        object-fit: cover;
-        border-radius: 4px;
       }
       .b-author__car-item p {
         text-align: center;

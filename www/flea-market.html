@@ -116,7 +116,8 @@
             <div class="block b-ad-block paginator">
 
               <div class="b-main-title title-search">
-                  <h1>Все предложения</h1>
+              <!-- Колличество передать в атрибут data-sum -->
+                  <h3 data-sum="10">Все предложения</h3>
                 <div class="b-filter__find">
                   <input type="text" name="search">
                 </div>
@@ -126,7 +127,9 @@
 <!-- Для добавления стиля ТОП обьявления добавить атрибут "data-top-item" -->
                 <div class="b-ad__item item" data-top-item>
                   <div class="b-ad__item-img">
-                    <img src="img/temp/11.jpg" alt="">
+                    <figure>
+                      <img src="img/temp/11.jpg" alt="">
+                    </figure>
                   </div>
                   <div class="b-ad__item-info">
 
@@ -150,7 +153,9 @@
 
                 <div class="b-ad__item item" data-top-item>
                   <div class="b-ad__item-img">
-                    <img src="img/temp/12.jpg" alt="">
+                    <figure>
+                      <img src="img/temp/12.jpg" alt="">
+                    </figure>
                   </div>
                   <div class="b-ad__item-info">
                     <div class="b-ad__item-info-top">
@@ -173,7 +178,9 @@
 
                 <div class="b-ad__item item">
                   <div class="b-ad__item-img">
-                    <img src="img/temp/auto/3.jpg" alt="">
+                    <figure>
+                      <img src="img/temp/auto/3.jpg" alt="">
+                    </figure>
                   </div>
                   <div class="b-ad__item-info">
                     <div class="b-ad__item-info-top">
@@ -194,7 +201,9 @@
 
                 <div class="b-ad__item item">
                   <div class="b-ad__item-img">
-                    <img src="img/temp/auto/4.jpg" alt="">
+                    <figure>
+                      <img src="img/temp/auto/4.jpg" alt="">
+                    </figure>
                   </div>
                   <div class="b-ad__item-info">
                     <div class="b-ad__item-info-top">
@@ -217,7 +226,9 @@
 
                 <div class="b-ad__item item">
                   <div class="b-ad__item-img">
-                    <img src="img/temp/auto/6.jpg" alt="">
+                    <figure>
+                      <img src="img/temp/auto/6.jpg" alt="">
+                    </figure>
                   </div>
                   <div class="b-ad__item-info">
                     <div class="b-ad__item-info-top">
@@ -240,7 +251,9 @@
 
                 <div class="b-ad__item item">
                   <div class="b-ad__item-img">
-                    <img src="img/temp/auto/5.jpg" alt="">
+                    <figure>
+                      <img src="img/temp/auto/5.jpg" alt="">
+                    </figure>
                   </div>
                   <div class="b-ad__item-info">
                     <div class="b-ad__item-info-top">
@@ -262,7 +275,9 @@
 
                 <div class="b-ad__item item">
                   <div class="b-ad__item-img">
-                    <img src="img/temp/auto/7.jpg" alt="">
+                    <figure>
+                      <img src="img/temp/auto/7.jpg" alt="">
+                    </figure>
                   </div>
                   <div class="b-ad__item-info">
                     <div class="b-ad__item-info-top">
@@ -284,7 +299,9 @@
                 </div>
                 <div class="b-ad__item item">
                   <div class="b-ad__item-img">
-                    <img src="img/temp/auto/3.jpg" alt="">
+                    <figure>
+                      <img src="img/temp/auto/3.jpg" alt="">
+                    </figure>
                   </div>
                   <div class="b-ad__item-info">
                     <div class="b-ad__item-info-top">
@@ -305,7 +322,9 @@
 
                 <div class="b-ad__item item">
                   <div class="b-ad__item-img">
-                    <img src="img/temp/auto/9.jpg" alt="">
+                    <figure>
+                      <img src="img/temp/auto/9.jpg" alt="">
+                    </figure>
                   </div>
                   <div class="b-ad__item-info">
                     <div class="b-ad__item-info-top">
@@ -330,7 +349,9 @@
 
                 <div class="b-ad__item item">
                   <div class="b-ad__item-img">
-                    <img src="img/temp/auto/6.jpg" alt="">
+                    <figure>
+                      <img src="img/temp/auto/6.jpg" alt="">
+                    </figure>
                   </div>
                   <div class="b-ad__item-info">
                     <div class="b-ad__item-info-top">
@@ -389,63 +410,41 @@
                       </select>
                     </div>
 
-                    <div class="b-filter__form-item droplist">
-                      <input type="text" id="city" value="all" hidden>
-                      <span class="droplist-current text bold tab-input">Все марки</span>
-                      <ul class="droplist-block">
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                        <li class="droplist-item text">Марка</li>
-                      </ul>
+                    <div id="wrapperMark" class="b-filter__form-item droplist">
+                      <select id="mark">
+                        <option data-title value="all">Все марки</option>
+                        <option>Марка</option>
+                        <option>Марка</option>
+                        <option>Марка</option>
+                        <option>Марка</option>
+                        <option>Марка</option>
+                        <option>Марка</option>
+                        <option>Марка</option>
+                        <option>Марка</option>
+                        <option>Марка</option>
+                        <option>Марка</option>
+                      </select>
                     </div>
-                    <div class="b-filter__form-item droplist">
-                      <input type="text" id="driver" value="all" hidden>
-                      <span class="droplist-current text bold tab-input">Все модели</span>
-                      <ul class="droplist-block">
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                        <li class="droplist-item text">Модель</li>
-                      </ul>
+
+                    <div id="wrapperModel" class="b-filter__form-item droplist">
+                      <select id="model">
+                        <option data-title value="all">Все модели</option>
+                        <option>Модель</option>
+                        <option>Модель</option>
+                        <option>Модель</option>
+                        <option>Модель</option>
+                        <option>Модель</option>
+                        <option>Модель</option>
+                        <option>Модель</option>
+                        <option>Модель</option>
+                        <option>Модель</option>
+                        <option>Модель</option>
+                        <option>Модель</option>
+                        <option>Модель</option>
+                        <option>Модель</option>
+                      </select>
                     </div>
-                    <div class="b-filter__form-item droplist">
-                      <input type="text" id="driver" value="all" hidden>
-                      <span class="droplist-current text bold tab-input">Сортировать по</span>
-                      <ul class="droplist-block">
-                        <li class="droplist-item text">От дешевого к дорогому</li>
-                        <li class="droplist-item text">От дорогого к дешевому</li>
-                        <li class="droplist-item text">Город</li>
-                      </ul>
-                    </div>
+
                     <p class="icon-search"><input type="submit" value="Найти" class="button middle tab-input"></p>
                   </form>
                 </div>

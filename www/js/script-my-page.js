@@ -1,12 +1,14 @@
-;document.addEventListener("DOMContentLoaded", general);
+;document.addEventListener("DOMContentLoaded", myPage);
 
-function general() {
+function myPage() {
 
   var redact = new MakeRedact();
 
   var aside = $('.l-author');
 
   var asideBar = new MakeAsideBar(aside);
+
+  $('#tag').dropList({});
 
   if(!IS_FIREFOX) {
     $("h4[data-clamp]").each(function(index, el){
@@ -17,6 +19,8 @@ function general() {
       $clamp(el, {clamp: 3});
     });
   }
+
+
 
 // -----------------------------------------------------------------------------
 
@@ -207,7 +211,7 @@ $('#status-btn').on('click', function (e) {
 
 $('#avatarSlim').slim({
     service: '/user/avatar',
-    ratio: '1:1',
+    ratio: '16:9',
     size: {
         width: 240,
         height: 240

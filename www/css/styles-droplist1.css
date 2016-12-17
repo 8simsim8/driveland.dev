@@ -41,9 +41,11 @@
       float: left;
       overflow: hidden;
     }
-    input.dlsearch,
     .dListText {
       padding: 0 13px;
+    }
+    input.dlsearch,
+    .dListText {
       font-family: 'Open Sans', sans-serif;
       font-size: 0.7rem;
       font-weight: bold;
@@ -98,6 +100,7 @@
           background: #f7f7f7;
         }
   .droplist input.dlsearch {
+    padding: 0;
     width: 100%;
     background: none;
     border: none;

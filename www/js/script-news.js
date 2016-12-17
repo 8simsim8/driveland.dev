@@ -8,18 +8,17 @@ function news() {
 
   $('#date').dropList({});
 
+  $('#wrapperCategory').on('click',function(){
+    $(this).find('.SelectItem').on('click',function(){
+      var valueStr = $('#category').val();
+      $('.show-filter').removeClass('show-filter');
+        $('.b-filter__switch[data-name-filter='+ valueStr +']').addClass('show-filter');
+      return false;
+    });
+  });
+
+
   floatSideBar($('#float-bar'));
-
-  $('.b-filter__find').on('click', function(){
-    $('.b-filter__find').addClass('open-search');
-    $('.b-filter__find').find('[name=search]').focus();
-    return false;
-  });
-
-  $('.b-filter__find').find('[name=search]').on('blur', function(){
-    $('.b-filter__find').removeClass('open-search');
-    return false;
-  });
 
   if(!IS_FIREFOX) {
   // Обрезка текста до 2 строчек

@@ -26,7 +26,7 @@ function company() {
     text:                 'Район'
   });
 
-
+  // Отображение в заголовке выбранной категории
   $('#wrapperCategory').on('click',function(){
     $(this).find('.SelectItem').on('click',function(){
       var $strTitle = $('.b-main-title h3');

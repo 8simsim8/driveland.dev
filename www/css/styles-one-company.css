@@ -189,45 +189,6 @@ h4 {
         cursor: pointer;
       }
 
-  .popup[popup-message="close"] {
-    opacity: 0;
-    pointer-events: none;
-  }
-  .popup[popup-message="open"] {
-    opacity: 1;
-    pointer-events: auto;
-  }
-    .b-one-company__message {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0,0,0,0.7);
-      z-index: 10001;
-    }
-      .b-one-company__message-wrapp {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-left: -297px;
-        margin-top: -150px;
-        padding: 20px;
-        width: 595px;
-        height: 265px;
-        background-color: #FFFFFF;
-        border-radius: 4px;
-        -webkit-box-shadow: 0px 0px 5px rgba(130, 130, 130, 0.2);
-        box-shadow: 0px 0px 5px rgba(130, 130, 130, 0.2);
-        -webkit-transition: opacity 0.2s ease;
-        transition: opacity 0.2s ease;
-      }
-    .b-one-company__form {
-      margin-top: 20px;
-    }
-      .b-one-company__form input[type='submit']{
-        margin-top: 20px;
-      }
 .b-similar {
   
 }

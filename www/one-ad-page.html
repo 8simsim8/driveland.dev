@@ -101,13 +101,6 @@
         <div class="row">
           <section class="l-one-ad col xs-9">
             <div class="block b-one-ad redact-block">
-              <div class="b-one-ad-top">
-                <p class="b-one-company__tag">
-                  <a href="#" title="Sector" class="text top">Барахолка</a>
-                  <a href="#" title="Sector" class="text top">Ходовая</a>
-                  <a href="#" title="Sector" class="text top">Диски</a>
-                </p>
-              </div>
               <div class="b-main-title">
                 <h1>Продам литые диски OPEL б.у 4шт.R16.</h1>
               </div>
@@ -116,7 +109,10 @@
 
 
               <div class="b-one-ad__main-block">
-                <img src="" alt="" class="b-one-ad__viewport" id="galleryPhoto">
+                <figure class="b-one-ad__viewport" >
+                  <img src="" alt=""id="galleryPhoto">
+                </figure>
+               
               <!-- "Торг уместный" навесить аттрибут "bargain" -->
                 <div class="b-one-ad__info">
                   <h3 class="b-one-ad__info-price" data-bargain="Торг уместен">500$</h3>
@@ -128,28 +124,40 @@
                     <span>Просмотров: </span>
                     <span>565</span>
                   </p>
-                  <p class="wrap-tags">
-                        <a href="#" class="text subtext tag">Колеса</a>
-                        <a href="#" class="text subtext tag">диски</a>
-                        <a href="#" class="text subtext tag">фары</a>
-                  </p>
                 </div>
               </div>
 
               <div class="b-one-ad__img-block">
-                <img src="img/temp/market-1.jpg" alt="" class="b-one-ad__img-item galleryThumb">
-                <img src="img/temp/market-2.jpg" alt="" class="b-one-ad__img-item galleryThumb">
-                <img src="img/temp/market-3.jpg" alt="" class="b-one-ad__img-item galleryThumb">
-                <img src="img/temp/market-4.jpg" alt="" class="b-one-ad__img-item galleryThumb">
-                <img src="img/temp/market-2.jpg" alt="" class="b-one-ad__img-item galleryThumb">
+                <div class="b-one-ad__img-item">
+                  <figure>
+                    <img src="img/temp/market-1.jpg" alt="" class="galleryThumb">
+                </figure>
+                </div>
+                <div class="b-one-ad__img-item">
+                  <figure>
+                    <img src="img/temp/market-2.jpg" alt="" class="b-one-ad__img-item galleryThumb">
+                  </figure>
+                </div>
+                <div class="b-one-ad__img-item">
+                  <figure>
+                    <img src="img/temp/market-3.jpg" alt="" class="b-one-ad__img-item galleryThumb">
+                  </figure>
+                </div>
+                <div class="b-one-ad__img-item">
+                  <figure>
+                    <img src="img/temp/market-4.jpg" alt="" class="b-one-ad__img-item galleryThumb">
+                  </figure>
+                </div>
+                <div class="b-one-ad__img-item">
+                  <figure>
+                    <img src="img/temp/market-2.jpg" alt="" class="b-one-ad__img-item galleryThumb">
+                  </figure>
+                </div>
               </div>
               <p class="b-one-ad__about text">Комплект легкосплавных дисков R16 5х110 для Opel Omega B/Opel Vectra В/C, ОТПРАВКА В ДЕНЬ ЗАКАЗА, НОВАЯ ПОЧТА, ИНТАЙМ, ДЕЛИВЕРИ, есть все запчасти по даному авто, разборка опель,без резины цена дисков 4000 грн</p>
             </div>
           </section>
-          <div class="b-message-confirm" style="display: none;">
-            <div class="b-popup-message-close"></div>
-            <h3>Сообщение отправлено</h3>
-          </div>
+
           <section class="l-contact col xs-3">
             <div class="block b-contact">
               <p class="text subtext">Продавец</p>
@@ -160,18 +168,39 @@
                 <p class="b-contact__saler-item tel"><a href="tel:+302105241296" title="Telephone" class="text">+30 21 0524 1296</a></p>
                 <p class="b-contact__saler-item email"><a href="mailto:email@email.com?subject=feedback" title="E-mail" class="text">email@email.com</a></p>
               </div>
-              <form action="one-ad-page_submit" method="get" accept-charset="utf-8" class="b-one-ad__form">
-                <div class="b-form-item m-form-item_textarea m-form-item-inline">
-                  <p><textarea rows="4" cols="60" name="hobby" class="text tab-input" placeholder="Оставить сообщение"></textarea></p>
-                </div>
-                <input type="submit" value="Отправить" class="button submit-button middle"></input>
-              </form>
-              <p class="text bold"><a href="#" title="Другие обьявления">Другие обьявления автора</a></p>
-            </div>
+              <button class="button middle" name="open-message-popup">Написать сообщение</button>
+              <p class="b-contact__other-ad text bold" title="Другие обьявления" data-sum-ad="10">Другие обьявления автора</p>
+
+              <div class="b-contact__other-ad-wrapp">
+                <div class="b-contact__other-ad-item">
+                    <figure>
+                      <img src="img/temp/auto/2.jpg" alt="">
+                    </figure>
+                    <a href="#" class="text" data-clamp="">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
+                  </div>
+              </div>
+
           </section>
         </div>
         
       </div>
+
+      <div class="message-popup" popup-message="close">
+        <div class="b-message-confirm">
+          <div class="b-popup-message-close"></div>
+            <h3>Сообщение отправлено</h3>
+          </div>
+          <div class="message-popup-wrapp">
+          <div class="b-popup-message-close"></div>
+            <h4>Написать сообщение</h4>
+            <form action="" method="get" accept-charset="utf-8" class="message-popup__form">
+              <div class="b-form-item m-form-item_textarea m-form-item-inline">
+                <p><textarea rows="4" cols="60" name="message" class="text tab-input"></textarea></p>
+              </div>
+              <input type="submit" value="Отправить" class="button submit-button big tab-input"></input>
+            </form>
+          </div>
+        </div>
 
       <script type="text/javascript" src="js/slim.jquery.min.js"></script>
       <script type="text/javascript" src="js/script-one-ad.js"></script>

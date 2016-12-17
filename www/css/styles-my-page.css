@@ -21,12 +21,9 @@
     .b-title__content-photo {
       position: relative;
     }
-      .b-title__content-photo img {
+      .b-title__content-photo figure {
         margin-bottom: 10px;
-        height: 569px;
         width: 100%;
-        object-fit: cover;
-        border-radius: 4px;
       }
       .b-title__content-photo-vote {
         position: absolute;
@@ -133,15 +130,14 @@
     .b-logbook-wrapp h3 {
       float: left;
     }
-      .b-logbook-sum {
-        
+      .b-logbook-wrapp h3:after{
+        content: '\00A0('attr(data-sum)')';
       }
-        .b-logbook-sum:after {
-          content: ')';
-        }
-        .b-logbook-sum:before{
-          content: '(';
-        }
+    #wrapperTag {
+      width: 250px;
+      float: left;
+      margin-left: 60px;
+    }
     .b-logbook-wrapp a.add-button {
       float: right;
     }
@@ -161,15 +157,12 @@
       .b-logbook__container-item:not(:last-child) {
         margin-bottom: 20px;
       }
-      .b-logbook__container-item img {
-        -webkit-flex: 1 0 calc(33.3333337% - 20px);
-        -ms-flex: 1 0 calc(33.3333337% - 20px);
-        flex: 1 0 calc(33.3333337% - 20px);
+      .b-logbook__container-item .b-logbook__container-item-img {
+        -webkit-flex: 0 0 calc(33.3333337% - 20px);
+        -ms-flex: 0 0 calc(33.3333337% - 20px);
+        flex: 0 0 calc(33.3333337% - 20px);
         max-width: calc(33.3333337% - 20px);
         width: calc(33.3333337% - 20px);
-        max-height: 120px;
-        object-fit: cover;
-        border-radius: 4px;
       }
       .b-logbook__container-item-text {
         -webkit-flex: 3 0 66.66667%;

@@ -111,22 +111,6 @@
               </div>
               <form role="form" action="/companies/addad" method="POST" enctype="multipart/form-data" class="b-add-ad__form" name="add-ad">
 
-                <div class="b-add-ad__form-item m-form-item-inline text">
-                  <p class="b-form-item-title"><label for="name" class="text">Тема обьявления</label></p>
-                  <p><input type="text" id="name" name="name" class="tab-input"></p>
-                </div>
-
-                <div class="b-add-ad__form-item m-form-item-inline">
-                  <p class="b-form-item-title text bold"><label>Главное фото товара</label></p>
-                  <div id="postMainPhotoSlim"
-                    data-label="Drop photo here"
-                    data-size="800,400"
-                    data-ratio="2:1"
-                    class="b-form-item-add-photo text slim">
-                    <input type="file" name="mainphoto" required />
-                  </div>
-                </div>
-
                 <div class="b-add-ad__form-item m-form-item-inline">
                   <div class="b-form-item-title text bold">Категория</div>
                   <div id="wrapperCategory" class="droplist">
@@ -157,6 +141,21 @@
                     </select>
                   </div>
 
+                </div>
+
+                <div class="b-add-ad__form-item m-form-item-inline text">
+                  <p class="b-form-item-title"><label for="name" class="text">Тема обьявления</label></p>
+                  <p><input type="text" id="name" name="name" class="tab-input"></p>
+                </div>
+
+                <div class="b-add-ad__form-item m-form-item-inline">
+                  <p class="b-form-item-title text bold"><label>Главное фото товара</label></p>
+                  <div id="postMainPhotoSlim"
+                    data-label="Drop photo here"
+                    data-ratio="16:9"
+                    class="b-form-item-add-photo text slim">
+                    <input type="file" name="mainphoto" required />
+                  </div>
                 </div>
 
                 <div class="b-add-ad__form-item m-form-item_textarea m-form-item-inline">

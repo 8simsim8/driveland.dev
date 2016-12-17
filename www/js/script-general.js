@@ -13,6 +13,28 @@ function general() {
 
   var buttonToTop = new makeButtonToTop();   // Кнопка "вверх"
 
+  // Открыть попап "написать"
+    var messagePopup = document.getElementsByClassName('message-popup')[0];
+    var buttonOpenMessagePopup = document.getElementsByName('open-message-popup');
+    $(buttonOpenMessagePopup).on('click', function() {
+      messagePopup.setAttribute('popup-message','open');
+      disableScroll();
+      return false;
+    });
+    $('.b-popup-message-close').on('click', function() {
+      messagePopup.setAttribute('popup-message','close');
+      enableScroll();
+      return false;
+    });
+
+    // Клик по кнопке отправить сообщение
+     $('input.submit-button').on('click', function(){
+        $('.message-popup-wrapp').fadeOut('200', function(){
+          $('.b-message-confirm').fadeIn('200');
+        });
+        return false;
+      });
+
 // **************** TEST *****************************************
 // Создание навигации МЕНЮ
 if( $('.b-menu__wrapp-list').children().length < 1) {
@@ -113,7 +135,7 @@ if( $('.b-menu__wrapp-list').children().length < 1) {
 // "Новости, "Компании"
   $('.b-filter__find').on('click', function(){
     $('.b-filter__find').addClass('open-search');
-    // $('.b-filter__find').find('[name=search]').focus();
+    $('.b-filter__find').find('[name=search]').focus();
     return false;
   });
 
@@ -166,6 +188,13 @@ if( $('.b-menu__wrapp-list').children().length < 1) {
         );
         $('#galleryPhoto').fadeIn(200);
     });
+
+// Добавить подсказку на фильры
+  $('.b-filter__switch').each(function(i,filter){
+    $(filter).find('.b-filter__switch-item').each(function(index,element){
+        $(element).attr('title',$(element).html());
+    });
+  });
 
     /*
       Переключатели 'Фильтров': 

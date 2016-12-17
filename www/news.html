@@ -25,7 +25,9 @@
     <link rel="stylesheet" type="text/css" href="css/slim.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles-general.css">
     <link rel="stylesheet" type="text/css" href="css/styles-droplist1.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-aside-filter.css">
     <link rel="stylesheet" type="text/css" href="css/paginator.css">
+
     <link rel="stylesheet" type="text/css" href="css/styles-news.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -114,7 +116,36 @@
             <div class="block b-news paginator">
 
               <div class="b-main-title title-search">
-                <h1>Лента</h1>
+                <h1>Новости</h1>
+              <!-- Новости -->
+                <div class="b-filter__switch show-filter" data-name-filter="Новости">
+                  <span class="b-filter__switch-item text" data-filter-category="presentations">Презентации</span>
+                  <span class="b-filter__switch-item text" data-filter-category="traffic-laws">Правила дорожного движения</span>
+                  <span class="b-filter__switch-item text" data-filter-category="supercars">Суперкары</span>
+                  <span class="b-filter__switch-item text" data-filter-category="autoshow">Автошоу</span>
+                </div>
+              <!-- Тест драйвы -->
+                <div class="b-filter__switch" data-name-filter="Тест-драйвы">
+                  <span class="b-filter__switch-item text bold" data-filter-category="tuning">Тюниг</span>
+                  <span class="b-filter__switch-item text bold" data-filter-category="repairs">Ремонт</span>
+                </div>
+              <!-- Посты -->
+                <div class="b-filter__switch" data-name-filter="Посты">
+                  <span class="b-filter__switch-item text bold" data-filter-category="crash">ДТП</span>
+                  <span class="b-filter__switch-item text bold" data-filter-category="parking">Парковка</span>
+                  <span class="b-filter__switch-item text bold" data-filter-category="showdown">Разборки</span>
+                  <span class="b-filter__switch-item text bold" data-filter-category="police">Полиция</span>
+                </div>
+              <!-- Блоги -->
+                <div class="b-filter__switch" data-name-filter="Блоги">
+                  <span class="b-filter__switch-item text bold" data-filter-category="privat">Личное</span>
+                  <span class="b-filter__switch-item text bold" data-filter-category="travel">Путешествия</span>
+                  <span class="b-filter__switch-item text bold" data-filter-category="fishing">Рыбалка</span>
+                  <span class="b-filter__switch-item text bold" data-filter-category="animals">Животные</span>
+                  <span class="b-filter__switch-item text bold" data-filter-category="family">Семья</span>
+                  <span class="b-filter__switch-item text bold" data-filter-category="child">Дети</span>
+                  <span class="b-filter__switch-item text bold" data-filter-category="work">Работа</span>
+                </div>
                 <div class="b-filter__find">
                   <input type="text" name="search">
                 </div>
@@ -132,12 +163,15 @@
                     Добавил
                     <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
                   </p>
+                  <figure>
+                    <img src="img/temp/Rules.jpg" alt="">
+                  </figure>
 
-                  <img src="img/temp/Rules.jpg" alt="">
 
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
+
                 </article>
 
                 <article class="b-news__wrap-item item">
@@ -150,12 +184,85 @@
                     Добавил
                     <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
                   </p>
-
-                  <img src="img/temp/13.jpg" alt="">
+                  <figure>
+                    <img src="img/temp/13.jpg" alt="">
+                  </figure>
 
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
+                  <p class="rating-comments-block text">
+                    <span class="rating" title="Рейтинг">102</span>
+                    <span class="comments" title="Комментариев">20</span>
+                  </p>
+                </article>
+
+                <article class="b-news__wrap-item item">
+                  <h4><a href="one-item-news.html">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a></h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+                  <figure>
+                    <img src="img/temp/12.jpg" alt="">
+                  </figure>
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
+                  <p class="rating-comments-block text">
+                    <span class="rating" title="Рейтинг">120</span>
+                    <span class="comments" title="Комментариев">20</span>
+                  </p>
+                </article>
+                <article class="b-news__wrap-item item">
+                  <h4><a href="one-item-news.html">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a></h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+                  <figure>
+                    <img src="img/temp/11.jpg" alt="">
+                  </figure>
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
+                  <p class="rating-comments-block text">
+                    <span class="rating" title="Рейтинг">12</span>
+                    <span class="comments" title="Комментариев">200</span>
+                  </p>
+                </article>
+
+                <article class="b-news__wrap-item item">
+                  <h4><a href="one-item-news.html">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a></h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+                  <figure>
+                    <img src="img/temp/Rules.jpg" alt="">
+                  </figure>
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
+                  <p class="rating-comments-block text">
+                    <span class="rating" title="Рейтинг">102</span>
+                    <span class="comments" title="Комментариев">20</span>
+                  </p>
                 </article>
 
                 <article class="b-news__wrap-item item">
@@ -169,28 +276,17 @@
                     <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
                   </p>
 
-                  <img src="img/temp/12.jpg" alt="">
+                  <figure>
+                    <img src="img/temp/13.jpg" alt="">
+                  </figure>
 
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
-                </article>
-                <article class="b-news__wrap-item item">
-                  <h4><a href="one-item-news.html">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a></h4>
-
-                  <p class="b-news__item-info text subtext">
-                    <a href="#" class="tag">Новости</a>
-                    <a href="#" class="tag">Тест-драйвы</a>
-                    <span class="date">12.10.16</span>
-                    Добавил
-                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  <p class="rating-comments-block text">
+                    <span class="rating" title="Рейтинг">12</span>
+                    <span class="comments" title="Комментариев">20</span>
                   </p>
-
-                  <img src="img/temp/11.jpg" alt="">
-
-                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
-
-                  <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
                 </article>
 
                 <article class="b-news__wrap-item item">
@@ -204,11 +300,40 @@
                     <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
                   </p>
 
-                  <img src="img/temp/Rules.jpg" alt="">
+                  <figure>
+                    <img src="img/temp/12.jpg" alt="">
+                  </figure>
 
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
+                  <p class="rating-comments-block text">
+                    <span class="rating" title="Рейтинг">12</span>
+                    <span class="comments" title="Комментариев">200</span>
+                  </p>
+                </article>
+                <article class="b-news__wrap-item item">
+                  <h4><a href="one-item-news.html">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a></h4>
+
+                  <p class="b-news__item-info text subtext">
+                    <a href="#" class="tag">Новости</a>
+                    <a href="#" class="tag">Тест-драйвы</a>
+                    <span class="date">12.10.16</span>
+                    Добавил
+                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  </p>
+
+                  <figure>
+                    <img src="img/temp/11.jpg" alt="">
+                  </figure>
+
+                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
+
+                  <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
+                  <p class="rating-comments-block text">
+                    <span class="rating" title="Рейтинг">120</span>
+                    <span class="comments" title="Комментариев">20</span>
+                  </p>
                 </article>
 
                 <article class="b-news__wrap-item item">
@@ -222,11 +347,17 @@
                     <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
                   </p>
 
-                  <img src="img/temp/13.jpg" alt="">
+                  <figure>
+                    <img src="img/temp/Rules.jpg" alt="">
+                  </figure>
 
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
+                  <p class="rating-comments-block text">
+                    <span class="rating" title="Рейтинг">12</span>
+                    <span class="comments" title="Комментариев">2</span>
+                  </p>
                 </article>
 
                 <article class="b-news__wrap-item item">
@@ -240,64 +371,17 @@
                     <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
                   </p>
 
-                  <img src="img/temp/12.jpg" alt="">
+                  <figure>
+                    <img src="img/temp/13.jpg" alt="">
+                  </figure>
 
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
-                </article>
-                <article class="b-news__wrap-item item">
-                  <h4><a href="one-item-news.html">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a></h4>
-
-                  <p class="b-news__item-info text subtext">
-                    <a href="#" class="tag">Новости</a>
-                    <a href="#" class="tag">Тест-драйвы</a>
-                    <span class="date">12.10.16</span>
-                    Добавил
-                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
+                  <p class="rating-comments-block text">
+                    <span class="rating" title="Рейтинг">2</span>
+                    <span class="comments" title="Комментариев">20</span>
                   </p>
-
-                  <img src="img/temp/11.jpg" alt="">
-
-                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
-
-                  <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
-                </article>
-
-                <article class="b-news__wrap-item item">
-                  <h4><a href="one-item-news.html">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a></h4>
-
-                  <p class="b-news__item-info text subtext">
-                    <a href="#" class="tag">Новости</a>
-                    <a href="#" class="tag">Тест-драйвы</a>
-                    <span class="date">12.10.16</span>
-                    Добавил
-                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
-                  </p>
-
-                  <img src="img/temp/Rules.jpg" alt="">
-
-                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
-
-                  <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
-                </article>
-
-                <article class="b-news__wrap-item item">
-                  <h4><a href="one-item-news.html">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a></h4>
-
-                  <p class="b-news__item-info text subtext">
-                    <a href="#" class="tag">Новости</a>
-                    <a href="#" class="tag">Тест-драйвы</a>
-                    <span class="date">12.10.16</span>
-                    Добавил
-                    <a href="#" class="author text subtext">Georgis Kastanedipopulos</a>
-                  </p>
-
-                  <img src="img/temp/13.jpg" alt="">
-
-                  <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
-
-                  <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
                 </article>
 
               </div>
@@ -326,12 +410,13 @@
             </div>
 
             <div class="block b-filter">
-              <div id="wrapperCategory" class="b-filter__switch droplist">
+              <div id="wrapperCategory" class="droplist">
                 <select id="category">
                   <option data-title>Новости</option>
+                  <option>Тест-драйвы</option>
+                  <option>Бортовые журналы</option>
                   <option>Блоги</option>
                   <option>Посты</option>
-                  <option>Бортовые журналы</option>
                 </select>
               </div>
             </div>
@@ -339,7 +424,7 @@
             <div class="block b-popular">
               <div class="b-popular__wrapp">
                 <h4>Популярное</h4>
-                  <div id="wrapperDate" class="b-filter__switch droplist">
+                  <div id="wrapperDate" class="droplist">
                     <select id="date">
                       <option data-title>За вчера</option>
                       <option>За неделю</option>
@@ -349,42 +434,42 @@
                   </div>
                 </div>
                 <div class="b-popular__item item">
-                  <figure class="b-news__inner-item-img">
+                  <figure class="b-popular__item-img">
                     <img src="img/temp/auto/2.png" alt="">
                   </figure>
                   <a href="#" class="text bold" data-clamp>Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
                 </div>
 
                 <div class="b-popular__item item">
-                  <figure class="b-news__inner-item-img">
+                  <figure class="b-popular__item-img"">
                     <img src="img/temp/img-previous-1.jpg" alt="">
                   </figure>
                   <a href="#" class="text bold" data-clamp>В париже представлен новый Mitsubishi L200</a>
                 </div>
 
                 <div class="b-popular__item item">
-                  <figure class="b-news__inner-item-img">
+                  <figure class="b-popular__item-img"">
                     <img src="img/temp/e5ac4aes-480.jpg" alt="">
                   </figure>
                   <a href="#" class="text bold" data-clamp>Наш опыт восстановления  по оригинальным чертежам</a>
                 </div>
 
                 <div class="b-popular__item item">
-                  <figure class="b-news__inner-item-img">
+                  <figure class="b-popular__item-img"">
                     <img src="img/temp/auto/9.png" alt="">
                   </figure>
                   <a href="#" class="text bold" data-clamp>В париже представлен новый Mitsubishi L200</a>
                 </div>
 
                 <div class="b-popular__item item">
-                  <figure class="b-news__inner-item-img">
+                  <figure class="b-popular__item-img"">
                     <img src="img/temp/img-previous-2.jpg" alt="">
                   </figure>
                   <a href="#" class="text bold" data-clamp>Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
                 </div>
 
                 <div class="b-popular__item item">
-                  <figure class="b-news__inner-item-img">
+                  <figure class="b-popular__item-img"">
                     <img src="img/temp/auto/10.jpg" alt="">
                   </figure>
                   <a href="#" class="text bold" data-clamp>Как научить Рено Дастер плавать или не повторяйте моих ошибок. Как научить Рено Дастер плавать или не повторяйте моих ошибокКак научить Рено Дастер плавать или не повторяйте моих ошибок</a>

@@ -3,7 +3,7 @@ h3,
 h4 {
   color: #0038A8;
 }
-  .b-one-news img {
+  .b-one-news figure {
     width: 100%;
     margin: 15px 0;
   }
@@ -36,6 +36,13 @@ h4 {
       .b-one-news__content p {
         margin: 5px 0;
       }
+
+.b-coment-wrapp h3 {
+  display: inline-block;
+}
+.like-dislike {
+  float:  right;
+}
 
   .b-reclame-item {
     margin-top: 20px;

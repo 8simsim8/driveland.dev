@@ -4,18 +4,6 @@
   display: -ms-flexbox !important;
   display: flex !important;
 } */
-.b-one-ad-top {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-  .b-one-ad .top:not(:last-child):after {
-    padding: 0 15px;
-    content: '›';
-  }
 
 .b-one-ad h3,
 .b-one-ad h4 {
@@ -62,19 +50,13 @@
     margin-bottom: 20px;
     color: #ADADAD;
   }
-  .wrap-tags {
-    white-space: normal;
-    line-height: 1.2rem;
-  }
   .b-one-ad__viewport {
     -webkit-flex: 0 0 75%;
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
-    height: 550px;
     background-color: #000000;
     margin-bottom: 20px;
-    object-fit: contain;
   }
     .b-one-ad__img-block {
       display: -webkit-flex;
@@ -87,15 +69,12 @@
       margin-bottom: 20px;
     }
       .b-one-ad__img-item {
-        height: 80px;
         -webkit-flex: 0 0 calc(20% - 20px);
         -ms-flex: 0 0 calc(20% - 20px);
         flex: 0 0 calc(20% - 20px);
         min-width: calc(20% - 10px);
         margin-right: 10px;
         margin-bottom: 10px;
-        object-fit: cover;
-        border-radius: 4px;
         cursor: pointer;
       }
     .b-one-ad__about {
@@ -125,11 +104,10 @@
   }
   .b-contact .text.bold {
     text-align: center;
-    color: #1C5BC9;
+    color: #0038A8;
   }
   .b-contact__saler {
     margin: 5px 0 40px;
-    padding-top: 30px;
   }
     .b-contact__saler img {
       display: block;
@@ -141,7 +119,7 @@
       object-fit: cover;
     }
   .b-contact p.text.bold a {
-    color: #1C5BC9;
+    color: #0038A8;
   }
 .b-contact__saler-item {
     text-align: center;
@@ -152,7 +130,7 @@
   }
   .b-contact__saler-item.city {
     margin-top: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
   }
   .b-contact__saler-item.email {
@@ -167,5 +145,23 @@
   }
   .b-contact .button {
     width: 100%;
-    margin-bottom: 20px;
+  }
+  button + p.text {
+    margin-top: 20px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .b-contact__other-ad {
+
+  }
+  .b-contact__other-ad:after {
+    content: '\00A0('attr(data-sum-ad)')';
+  }
+    .b-contact__other-ad:hover {
+      color: #1C5BC9;
+    }
+  .b-contact__other-ad-wrapp {
+    margin-top: 20px;
+    height: 300px;
+    border: 3px solid;
   }
