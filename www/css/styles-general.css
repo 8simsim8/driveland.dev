@@ -408,6 +408,7 @@ label {
   left: 0;
   right: 0;
   height: 60px;
+  overflow: hidden;
   background-color: #FFFFFF;
   -webkit-transition: height 0.3s ease;
   transition: height 0.3s ease;
