@@ -71,8 +71,14 @@ function main() {
       var strInsert = '';
       var sumElemOnPage = sumElemOnPage || array.length;
       for(var i = 0; i < sumElemOnPage; i++) {
-        strInsert = '<a href="' + array[i].linkProfile + '" title="'+ array[i].name +'" class="b-new-auto__item item text"><figure><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].linkAuto +'"></figure><p class="b-new-auto__item-name">'+ array[i].name +'</p><p class="b-new-auto__item-auto">'+ array[i].auto[0].autoName +'</p></a>';
+        strInsert = '<a href="' + array[i].linkProfile + '" title="'+ array[i].name +'" class="b-new-auto__item item text"><figure><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].linkAuto +'"></figure><p class="b-new-auto__item-name" data-clamp>'+ array[i].name +'</p><p class="b-new-auto__item-auto">'+ array[i].auto[0].autoName +'</p></a>';
         $container.append(strInsert);
+        if(!IS_FIREFOX) {
+          // Обрезка текста до 1 строчrb
+          $(".b-new-auto__item-name[data-clamp]").each(function(index, el){
+            $clamp(el, {clamp: 1});
+          });
+        }
       }
     }
 

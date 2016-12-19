@@ -111,12 +111,6 @@ h4 {
           line-height: 1em;
           content: '\f091';
         }
-      .item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 4px;
-      }
       .b-content__lider-vote {
         position: absolute;
         bottom: 0;
@@ -198,9 +192,6 @@ h4 {
         max-width: -webkit-calc(25% - 20px);
         max-width: calc(25% - 20px);
       }
-        .b-new-auto__item img {
-          height: 120px;
-        }
         .b-new-auto__item-name,
         .b-new-auto__item-auto {
           font-family: 'Open Sans', sans-serif;;
