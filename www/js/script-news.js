@@ -4,19 +4,31 @@ function news() {
 
   // workForm('filter');
 
-  $('#category').dropList({});
+  $('#sort').dropList({});
 
-  $('#date').dropList({});
-
-  $('#wrapperCategory').on('click',function(){
-    $(this).find('.SelectItem').on('click',function(){
-      var valueStr = $('#category').val();
-      $('.show-filter').removeClass('show-filter');
-        $('.b-filter__switch[data-name-filter='+ valueStr +']').addClass('show-filter');
-      return false;
-    });
+  $('#mark').dropList({
+    search:           true,
+    text:             "Марка"
   });
 
+  $('#model').dropList({
+    search:           true,
+    text:             "Модель"
+  });
+
+  // открытие строки с фильтром
+  $('.b-news__submenu span').on('click', function(e){
+    var target = e.target;
+    var strTraget = target.innerHTML;
+    if(!$(target).parent('li').hasClass('active')) {
+      $('.active').removeClass('active');
+      $('.filter-wrapp').slideUp(200);
+      $(target).parent('li').addClass('active');
+      $('.show-filter[data-name-filter="'+ strTraget +'"]').parent('.filter-wrapp').slideDown(200);
+    }
+  });
+
+$('.b-news__submenu span').eq(0).trigger('click');
 
   floatSideBar($('#float-bar'));
 

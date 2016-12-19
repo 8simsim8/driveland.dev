@@ -15,7 +15,7 @@
   },
   {
     "linkProfile":"my-page.html",
-    "name":"Andre",
+    "name":"Alex Sanches Andre Barsa Albert",
     "city":"Kyiv",
     "linkAvatar":"/img/temp/author/2.jpg",
     "auto":[
@@ -23,7 +23,7 @@
       "autoName":"Lexus",
       "linkAutoPhoto":"/img/temp/auto/2.jpg",
       "linkProfile":"my-page.html",
-      "voteAuto":"350"
+      "voteAuto":"30"
       }
     ]
   },
@@ -37,7 +37,7 @@
       "autoName":"Audi",
       "linkAutoPhoto":"/img/temp/auto/3.jpg",
       "linkProfile":"my-page.html",
-      "voteAuto":"350"
+      "voteAuto":"450"
       }
     ]
   },
@@ -51,7 +51,7 @@
       "autoName":"Audi Q7 Quattttttrooo!",
       "linkAutoPhoto":"/img/temp/auto/4.jpg",
       "linkProfile":"my-page.html",
-      "voteAuto":"350"
+      "voteAuto":"320"
       }
     ]
   },
@@ -64,7 +64,7 @@
         {
           "autoName":"Audi TT",
           "linkAutoPhoto":"/img/temp/auto/5.jpg",
-          "linkAuto":"my-page.html"
+          "voteAuto":"300"
         }
       ]
     },
@@ -77,7 +77,8 @@
         {
           "autoName":"BMW",
           "linkAutoPhoto":"/img/temp/auto/6.jpg",
-          "linkAuto":"my-page.html"
+          "linkAuto":"my-page.html",
+          "voteAuto":"50"
         }
       ]
     },
@@ -91,7 +92,7 @@
         "autoName":"Audi1 Q7",
         "linkAutoPhoto":"/img/temp/auto/7.jpg",
         "linkProfile":"my-page.html",
-        "voteAuto":"350"
+        "voteAuto":"100"
         }
       ]
     },
@@ -104,7 +105,8 @@
         {
           "autoName":"BMW",
           "linkAutoPhoto":"/img/temp/auto/8.jpg",
-          "linkAuto":"my-page.html"
+          "linkAuto":"my-page.html",
+          "voteAuto":"550"
         }
       ]
     },
@@ -117,7 +119,8 @@
         {
           "autoName":"Audi Q7 Quattttttrooo!",
           "linkAutoPhoto":"/img/temp/auto/9.jpg",
-          "linkAuto":"my-page.html"
+          "linkAuto":"my-page.html",
+          "voteAuto":"550"
         }
       ]
     },
@@ -159,7 +162,7 @@
       "autoName":"Lexus",
       "linkAutoPhoto":"/img/temp/auto/12.jpg",
       "linkProfile":"my-page.html",
-      "voteAuto":"350"
+      "voteAuto":"40"
       }
     ]
   },
@@ -173,7 +176,7 @@
       "autoName":"Audi",
       "linkAutoPhoto":"/img/temp/auto/13.jpg",
       "linkProfile":"my-page.html",
-      "voteAuto":"350"
+      "voteAuto":"36"
       }
     ]
   },
@@ -187,7 +190,7 @@
       "autoName":"Audi Q7 Quattttttrooo!",
       "linkAutoPhoto":"/img/temp/auto/14.jpg",
       "linkProfile":"my-page.html",
-      "voteAuto":"350"
+      "voteAuto":"56"
       }
     ]
   },
@@ -200,7 +203,8 @@
         {
           "autoName":"Audi TT",
           "linkAutoPhoto":"/img/temp/auto/15.jpg",
-          "linkAuto":"my-page.html"
+          "linkAuto":"my-page.html",
+          "voteAuto":"83"
         }
       ]
     },
@@ -213,7 +217,8 @@
         {
           "autoName":"BMW",
           "linkAutoPhoto":"/img/temp/auto/16.jpg",
-          "linkAuto":"my-page.html"
+          "linkAuto":"my-page.html",
+          "voteAuto":"55"
         }
       ]
     },
@@ -227,7 +232,7 @@
         "autoName":"Audi1 Q7",
         "linkAutoPhoto":"/img/temp/auto/17.jpg",
         "linkProfile":"my-page.html",
-        "voteAuto":"350"
+        "voteAuto":"89"
         }
       ]
     },
@@ -241,7 +246,7 @@
         "autoName":"Audi1 Q7",
         "linkAutoPhoto":"/img/temp/auto/18.jpg",
         "linkProfile":"my-page.html",
-        "voteAuto":"350"
+        "voteAuto":"126"
         }
       ]
     }

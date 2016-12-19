@@ -4,17 +4,17 @@
   .b-ad-block h3:after {
     content: '\00A0('attr(data-sum)')';
   }
-  .b-ad__container {
-    padding-top: 26px;
-  }
   .b-ad__item {
     display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -webkit-align-items: center;
     -ms-flex-align: center;
+    -webkit-box-align: center;
     align-items: center;
     padding: 0 20px 20px;
+    min-width: -webkit-calc(100% - 20px);
     min-width: calc(100% - 20px);
     font-size: 0.7rem;
   }
@@ -60,9 +60,11 @@
   .b-ad__item-img {
     -webkit-flex: 1 0 25%;
     -ms-flex: 1 0 25%;
+    -webkit-box-flex: 1;
     flex: 1 0 25%;
     display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     max-width: 25%;
     margin-right: 20px;
@@ -73,16 +75,21 @@
   .b-ad__item-info {
     display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
     justify-content: space-between;
     height: 100%;
     -webkit-flex: 1 0 45%;
     -ms-flex: 1 0 45%;
+    -webkit-box-flex: 1;
     flex: 1 0 45%;
     min-width: 45%;
     padding: 10px 20px 10px 0;
@@ -99,18 +106,22 @@
     .b-ad__item-info-bottom {
       display: -webkit-flex;
       display: -ms-flexbox;
+      display: -webkit-box;
       display: flex;
       -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
+      -webkit-box-pack: justify;
       justify-content: space-between;
       -webkit-align-items: center;
       -ms-flex-align: center;
+      -webkit-box-align: center;
       align-items: center;
       margin-top: 10px;
     }
     .wrap-tags {
       -webkit-flex: 1 0 70%;
       -ms-flex: 1 70%;
+      -webkit-box-flex: 1;
       flex: 1 0 70%;
       max-width: 300px;
     }
@@ -127,18 +138,22 @@
     .wrap-tags + p {
       -webkit-flex: 1 0 30%;
       -ms-flex: 1 30%;
+      -webkit-box-flex: 1;
       flex: 1 0 230%;
       max-width: 30%;
     }
   .b-ad__item-price {
     -webkit-flex: 1 0 11%;
     -ms-flex: 1 0 11%;
+    -webkit-box-flex: 1;
     flex: 1 0 11%;
     display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
+    -webkit-box-pack: center;
     justify-content: center;
     max-width: 11%;
     height: 100%;
@@ -230,6 +245,11 @@
     .b-filter-wrapp input.dlsearch,
     .b-filter-wrapp .dListText {
       text-align: center;
+    }
+
+    .b-filter-other-view {
+      text-align: center;
+      margin-top: 20px;
     }
 
 @media (max-width: 1000px) {

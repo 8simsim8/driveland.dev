@@ -275,7 +275,6 @@ input:not([type="submit"]) {
   height : 40px;
   padding: 7px 18px;
   font-family: 'Open Sans', sans-serif;
-  font-weight : bold;
   font-size : 0.7rem;
   line-height : 1rem;
   color : #333333;
@@ -300,41 +299,41 @@ input:not([type="submit"]) {
   textarea::-webkit-input-placeholder {
     color:#B7B7B7;
     opacity: 1; 
-    -webkit-transition: opacity 0.3s ease; 
-    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.2s ease; 
+    transition: opacity 0.2s ease;
   }
   input::-moz-placeholder,
   textarea::-webkit-input-placeholder {
     color: #B7B7B7;
     opacity: 1;
-    -webkit-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
   }
   input:-ms-input-placeholder,
   textarea:-ms-input-placeholder  {
     color: #B7B7B7;
     opacity: 1;
-    -webkit-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
   }
 
   input:focus::-webkit-input-placeholder,
   textarea:focus::-webkit-input-placeholder {
     opacity: 0;
-    -webkit-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
   }
   input:focus::-moz-placeholder,
   textarea:focus::-moz-placeholder {
     opacity: 0;
-    -webkit-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
   }
   input:focus:-ms-input-placeholder,
   textarea:focus:-ms-input-placeholder {
     opacity: 0;
-    -webkit-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
   }
     /* Reset autocomplit */
     input:-webkit-autofill,
@@ -408,7 +407,7 @@ label {
   left: 0;
   right: 0;
   height: 60px;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #FFFFFF;
   -webkit-transition: height 0.3s ease;
   transition: height 0.3s ease;
@@ -905,55 +904,6 @@ label {
         color: #A8A8A8;
         background-color: rgba(81, 81, 81, 0.1);
       }
-        .rating:before {
-          margin-right: 5px;
-          font-family: 'FontAwesome';
-          font-weight: normal;
-          color: #333333;
-          font-size: 0.75rem;
-          content: '\f201\00A0';
-        }
-        .comments {
-          margin-left: 20px;
-        }
-        .comments:before {
-          margin-right: 5px;
-          font-family: 'FontAwesome';
-          font-weight: normal;
-          color: #333333;
-          font-size: 0.75rem;
-          content: '\f0e5\00A0';
-        }
-        .like,
-        .dislike {
-          position: relative;
-          display: inline-block;
-          height: 50px;
-          width: 50px;
-          cursor: pointer;
-        }
-        .like:before,
-        .dislike:before {
-          position: absolute;
-          top: 0;
-          left: 0;
-          margin-right: 5px;
-          font-family: 'FontAwesome';
-          font-weight: normal;
-          color: #333333;
-          font-size: 2rem;
-          transition: font-size 0.2s ease;
-        }
-        .like:hover:before,
-        .dislike:hover:before {
-          font-size: 2.1rem;
-        }
-        .like:before {
-          content: '\f087\00A0';
-        }
-        .dislike:before {
-          content: '\f088\00A0';
-        }
 
   /* Социальные сети */
     .b-social {
@@ -984,6 +934,15 @@ label {
         .m-social-item_gm.b-social-item {
           background-image: url('../img/social-logo/gm.svg');
         }
+
+  /* Панель плюслвания инфо о просмотрах и рейтинге */
+  .b-rating-dislike-bar {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: #F4F6F9;
+    border-radius: 5px;
+  }
 
   /* Сообщение о подтверждени отправки/опубликования */
       .b-message-confirm {
@@ -1111,31 +1070,30 @@ main {
               background-color 0.2s ease;
     }
     .m-filter__switch-item_active.b-filter__switch-item {
-      background-color: #0038A8;
-      color: #FFFFFF;
+      background-color: #F1F1F1;
   }
   .title-search.b-main-title .b-filter__find {
     position: relative;
-    width: 40px;
+    width: 240px;
     height: 40px;
     border-radius: 1rem;
     border: 1px solid rgba(28, 91, 201, 0.1);
-    -webkit-transition: width 0.5s ease;
-    transition: width 0.5s ease;
+    -webkit-transition: width 0.2s ease;
+    transition: width 0.2s ease;
     cursor: pointer;
+    overflow: hidden;
   }
     .title-search.b-main-title .b-filter__find:after {
       position: absolute;
       margin: auto;
       font-family: 'FontAwesome';
       top: -2px;
-      left: 0.49em;
+      left: 1em;
       line-height: 40px;
-      font-size: 1rem;
+      font-size: 0.8rem;
       content: '\f002';
-    }
-    .title-search.b-main-title .open-search.b-filter__find {
-      width: 350px;
+      -webkit-transition: opacity 0.2s ease;
+      transition: opacity 0.2s ease;
     }
   .b-filter__find input {
     height: 100%;
@@ -1147,8 +1105,11 @@ main {
     border-radius: 1rem;
     cursor: pointer;
   }
-    .b-filter__find.open-search input {
-      background: #F0F0F0;
+    .title-search.b-main-title .b-filter__find.open-search input {
+      background-color: transparent;
+    }
+    .title-search.b-main-title .b-filter__find.open-search:after  {
+      /* opacity: 0; */
     }
 
     .dropdown-block {
@@ -1317,7 +1278,7 @@ main {
   bottom: 80px;
   right: 40px;
   height: 2.7rem;
-  padding-top: 2.5em;
+  padding-top: 1.5rem;
   width: 50px;
   color: #FFFFFF;
   text-align: center;
@@ -1339,14 +1300,16 @@ main {
   }
     .button-to-top:before {
       position: absolute;
-      top: 0;
+      top: 0.2rem;
       left: 50%;
       width: 50px;
+      height: 1.2rem;
+      overflow: hidden;
       margin-left: -25px;
       font-family: 'FontAwesome';
       font-size: 1.8rem;
       line-height: 1em;
-      content: '\f062';
+      content: '\f176';
     }
 
 /* Звездочки рейтинга */

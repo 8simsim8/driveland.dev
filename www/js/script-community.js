@@ -33,7 +33,6 @@ function community() {
     return false;
   });
 
-
   // ******************** TEST ***********************
   
     var sumElemOnPage = 18;
@@ -46,8 +45,14 @@ function community() {
           var strInsert = '';
           sumElemOnPage = sumElemOnPage || array.length;
           for(var i = 0; i < sumElemOnPage; i++) {
-            strInsert = '<div class="b-community__item item"><figure><img src="' + array[i].auto[0].linkAutoPhoto + '" alt="' + array[i].auto[0].autoName + '"></figure><div class="b-community__item-info text"><div class="b-community__item-avatar"><img src="' + array[i].linkAvatar + '" alt=""></div><p><a href="' + array[i].linkProfile + '" class="b-community__item-auto">' + array[i].auto[0].autoName + '</a></p><p class="b-community__item-author"><a href="my-page.html" class="text">' + array[i].name + '</a><a href="#" class="text subtext">' + array[i].city + '</a></p></div></div>';
+            strInsert = '<div class="b-community__item item"><figure><img src="' + array[i].auto[0].linkAutoPhoto + '" alt="' + array[i].auto[0].autoName + '"><p class="b-community__item-name text"><a href="' +array[i].linkProfile + '" class="text" data-clamp>' + array[i].name + '</a></p></figure><div class="b-community__item-info text"><div class="b-community__item-avatar"><img src="' + array[i].linkAvatar + '" alt=""></div><p class="b-community__item-auto"><a href="' + array[i].linkProfile + '" class="text">' + array[i].auto[0].autoName + '</a></p><p class="b-community__item-city text subtext"><a href="#" class="text subtext">' + array[i].city + '</a></p></div></div>';
             $container.append(strInsert);
+              if(!IS_FIREFOX) {
+              // Обрезка текста до 1 строчrb
+                $(".b-community__item-name a[data-clamp]").each(function(index, el){
+                  $clamp(el, {clamp: 1});
+                });
+              }
           }
 
         },

@@ -1,3 +1,68 @@
+  .b-main-title .droplist {
+    width: 180px;
+    margin-left: 40px;
+  }
+  .b-main-title .droplist .dListText,
+  .b-main-title .droplist .SelectItem {
+    font-size: 0.6rem;
+    font-weight: normal;
+  }
+  .b-main-title .droplist .dListText {
+    color: #CFCFCF;
+  }
+      .b-main-title .droplist .dListText[data-clamp] {
+        height: 40px;
+      }
+  .b-main-title .droplist .dListholder {
+    background-color: transparent;
+    border: 1px solid #F0F0F0;
+  }
+.b-filter__find,
+.b-main-title .droplist {
+  float: left;
+}
+  .b-news__submenu {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 10px 20px;
+    background-color: rgba(138, 138, 138, 0.1);
+  }
+    .b-news__submenu ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+      .b-news__submenu li {
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        color: #1C5BC9;
+      }
+      .b-news__submenu li.active {
+        color: #333333;
+      }
+.filter-wrapp {
+  display: none;
+}
+.b-filter__switch[data-name-filter="Тест-драйв"] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 10px 20px 30px 20px;
+  border-bottom: 1px solid #F0F0F0;
+}
+  .b-filter__switch[data-name-filter="Тест-драйв"] .droplist:not(:last-child) {
+    margin-right: 20px;
+  }
+
   .b-news__wrap-item {
     clear: both;
     margin-top: 16px;
@@ -20,15 +85,11 @@
     }
     .read-button {
       display: inline-block;
+      margin-bottom: 10px;
     }
       .firefox .b-news__wrap-item p.text[data-clamp] {
         height: 4.3em;
       }
-    .b-news__wrap-item p.rating-comments-block {
-      float: right;
-      margin-bottom: 0;
-      line-height: 32px;
-    }
 
 .b-add-post {
   margin-bottom: 20px;
@@ -63,6 +124,43 @@
   }
   
 
+.b-tags {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+  .b-tags h4,
+  .b-popular__wrapp h4 {
+    color: #1C5BC9;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+    .b-tags h4 {
+      margin-bottom: 30px;
+    }
+
+  .b-tags-item.tag {
+    display: table;
+    margin-bottom: 10px;
+    padding: 3px 20px;
+    background-color: rgba(28, 91, 201, 0.1);
+    color : #1C5BC9;
+    cursor: pointer;
+    -webkit-transition: background-color 0.15s ease,
+                color 0.15s ease;
+    transition: background-color 0.15s ease,
+                color 0.15s ease;
+  }
+    .b-tags-item.tag:hover {
+      background-color: rgba(28, 91, 201, 0.2);
+      color : #297DE2;
+    }
+    .b-tags-item.tag:after {
+      content: '+'attr(data-new);
+      margin-left: 10px;
+      color: #FF5600;
+    }
+
 .b-popular {
   margin-top: 20px;
 }
@@ -70,12 +168,6 @@
 .b-popular__wrapp {
   
 }
-  .b-popular__wrapp h4 {
-    color: #1C5BC9;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
     .b-popular__wrapp .droplist-item,
     .b-popular__wrapp .droplist-current {
       text-align: center;

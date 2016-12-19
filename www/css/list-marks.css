@@ -8,6 +8,8 @@
     .b-mark__list li {
     }
     .b-mark__list-item {
+      -webkit-perspective: 100px;
+      perspective: 100px;
       will-change: transform;
       display: block;
       height: 35px;
@@ -22,9 +24,9 @@
       transition: transform 0.2s ease, -webkit-transform 0.2s ease;
     }
       .b-mark__list-item:hover {
-        -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
       }
 
 @media (min-width: 769px) {

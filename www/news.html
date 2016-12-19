@@ -116,38 +116,50 @@
             <div class="block b-news paginator">
 
               <div class="b-main-title title-search">
-                <h1>Новости</h1>
-              <!-- Новости -->
-                <div class="b-filter__switch show-filter" data-name-filter="Новости">
-                  <span class="b-filter__switch-item text" data-filter-category="presentations">Презентации</span>
-                  <span class="b-filter__switch-item text" data-filter-category="traffic-laws">Правила дорожного движения</span>
-                  <span class="b-filter__switch-item text" data-filter-category="supercars">Суперкары</span>
-                  <span class="b-filter__switch-item text" data-filter-category="autoshow">Автошоу</span>
+                <h1>Лента</h1>
+                <div>
+                  <div class="b-filter__find text">
+                    <input type="text" name="search" placeholder="Поиск по ленте">
+                  </div>
+
+                  <div id="wrapperSort" class="droplist">
+                    <select id="sort">
+                      <option data-title>Самые новые</option>
+                      <option>Самые популярные</option>
+                      <option>Самые рейтинговые</option>
+                    </select>
+                  </div>
                 </div>
-              <!-- Тест драйвы -->
-                <div class="b-filter__switch" data-name-filter="Тест-драйвы">
-                  <span class="b-filter__switch-item text bold" data-filter-category="tuning">Тюниг</span>
-                  <span class="b-filter__switch-item text bold" data-filter-category="repairs">Ремонт</span>
-                </div>
-              <!-- Посты -->
-                <div class="b-filter__switch" data-name-filter="Посты">
-                  <span class="b-filter__switch-item text bold" data-filter-category="crash">ДТП</span>
-                  <span class="b-filter__switch-item text bold" data-filter-category="parking">Парковка</span>
-                  <span class="b-filter__switch-item text bold" data-filter-category="showdown">Разборки</span>
-                  <span class="b-filter__switch-item text bold" data-filter-category="police">Полиция</span>
-                </div>
-              <!-- Блоги -->
-                <div class="b-filter__switch" data-name-filter="Блоги">
-                  <span class="b-filter__switch-item text bold" data-filter-category="privat">Личное</span>
-                  <span class="b-filter__switch-item text bold" data-filter-category="travel">Путешествия</span>
-                  <span class="b-filter__switch-item text bold" data-filter-category="fishing">Рыбалка</span>
-                  <span class="b-filter__switch-item text bold" data-filter-category="animals">Животные</span>
-                  <span class="b-filter__switch-item text bold" data-filter-category="family">Семья</span>
-                  <span class="b-filter__switch-item text bold" data-filter-category="child">Дети</span>
-                  <span class="b-filter__switch-item text bold" data-filter-category="work">Работа</span>
-                </div>
-                <div class="b-filter__find">
-                  <input type="text" name="search">
+              </div>
+
+              <nav class="b-news__submenu text">
+                <ul>
+                  <li><span>Новости</span></li>
+                  <li><span>Тест-драйв</span></li>
+                  <li><span>Бортовые журналы</span></li>
+                  <li><span>Блоги</span></li>
+                  <li><span>Посты</span></li>
+                </ul>
+              </nav>
+
+            <!-- тест-драйв -->
+              <div class="filter-wrapp">
+                <div class="b-filter__switch show-filter" data-name-filter="Тест-драйв" hidden>
+                  <div id="wrapperMark" class="droplist">
+                    <select id="mark">
+                      <option valur="all" data-title>Все марки</option>
+                      <option>BMW</option>
+                      <option>Opel</option>
+                    </select>
+                  </div>
+
+                  <div id="wrapperModel" class="droplist">
+                    <select id="model">
+                      <option value="all" data-title>Все модели</option>
+                      <option>Tusson</option>
+                      <option>Logan</option>
+                    </select>
+                  </div>
                 </div>
               </div>
 
@@ -172,6 +184,10 @@
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
 
+                  <div class="b-rating-dislike-bar">
+                    
+                  </div>
+
                 </article>
 
                 <article class="b-news__wrap-item item">
@@ -191,10 +207,7 @@
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
-                  <p class="rating-comments-block text">
-                    <span class="rating" title="Рейтинг">102</span>
-                    <span class="comments" title="Комментариев">20</span>
-                  </p>
+
                 </article>
 
                 <article class="b-news__wrap-item item">
@@ -214,10 +227,7 @@
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
-                  <p class="rating-comments-block text">
-                    <span class="rating" title="Рейтинг">120</span>
-                    <span class="comments" title="Комментариев">20</span>
-                  </p>
+
                 </article>
                 <article class="b-news__wrap-item item">
                   <h4><a href="one-item-news.html">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a></h4>
@@ -236,10 +246,7 @@
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
-                  <p class="rating-comments-block text">
-                    <span class="rating" title="Рейтинг">12</span>
-                    <span class="comments" title="Комментариев">200</span>
-                  </p>
+
                 </article>
 
                 <article class="b-news__wrap-item item">
@@ -259,10 +266,6 @@
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
-                  <p class="rating-comments-block text">
-                    <span class="rating" title="Рейтинг">102</span>
-                    <span class="comments" title="Комментариев">20</span>
-                  </p>
                 </article>
 
                 <article class="b-news__wrap-item item">
@@ -283,10 +286,6 @@
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
-                  <p class="rating-comments-block text">
-                    <span class="rating" title="Рейтинг">12</span>
-                    <span class="comments" title="Комментариев">20</span>
-                  </p>
                 </article>
 
                 <article class="b-news__wrap-item item">
@@ -307,10 +306,7 @@
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
-                  <p class="rating-comments-block text">
-                    <span class="rating" title="Рейтинг">12</span>
-                    <span class="comments" title="Комментариев">200</span>
-                  </p>
+
                 </article>
                 <article class="b-news__wrap-item item">
                   <h4><a href="one-item-news.html">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a></h4>
@@ -330,10 +326,6 @@
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
-                  <p class="rating-comments-block text">
-                    <span class="rating" title="Рейтинг">120</span>
-                    <span class="comments" title="Комментариев">20</span>
-                  </p>
                 </article>
 
                 <article class="b-news__wrap-item item">
@@ -354,10 +346,6 @@
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
-                  <p class="rating-comments-block text">
-                    <span class="rating" title="Рейтинг">12</span>
-                    <span class="comments" title="Комментариев">2</span>
-                  </p>
                 </article>
 
                 <article class="b-news__wrap-item item">
@@ -378,10 +366,6 @@
                   <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam in exercitationem tenetur aut. Alias officiis ut quia excepturi, repellendus saepe repellat eveniet consequatur vel dolor molestias impedit doloremque deserunt.</p>
 
                   <a href="one-item-news.html" title="" class="read-button button small">Читать далее</a>
-                  <p class="rating-comments-block text">
-                    <span class="rating" title="Рейтинг">2</span>
-                    <span class="comments" title="Комментариев">20</span>
-                  </p>
                 </article>
 
               </div>
@@ -400,7 +384,6 @@
             </div>
           </section>
 
-          <!-- Класс m-filter__switch-item_active - выбранный фильтр -->
           <section class="l-filter col xs-3">
             <div id="float-bar">
               
@@ -409,30 +392,59 @@
               <a href="add-blog.html" title="" class="button middle add-button">Добавить пост</a>
             </div>
 
-            <div class="block b-filter">
-              <div id="wrapperCategory" class="droplist">
-                <select id="category">
-                  <option data-title>Новости</option>
-                  <option>Тест-драйвы</option>
-                  <option>Бортовые журналы</option>
-                  <option>Блоги</option>
-                  <option>Посты</option>
-                </select>
+            <div class="b-tags">
+              <h4>Теги</h4>
+              <!-- Новости -->
+              <div class="filter-wrapp">
+                <div class="show-filter" data-name-filter="Новости">
+                  <span class="b-tags-item tag text" data-filter-category="presentations" data-new="1">Презентации</span>
+                  <span class="b-tags-item tag text" data-filter-category="traffic-laws" data-new="10">Правила дорожного движения</span>
+                  <span class="b-tags-item tag text" data-filter-category="supercars" data-new="2">Суперкары</span>
+                  <span class="b-tags-item tag text" data-filter-category="autoshow" data-new="4">Автошоу</span>
+                </div>
               </div>
+              <!-- Тест-драйв -->
+              <div class="filter-wrapp">
+                <div class="show-filter" data-name-filter="Тест-драйв">
+                  <span class="b-tags-item tag text" data-filter-category="VW" data-new="6">VW</span>
+                  <span class="b-tags-item tag text" data-filter-category="BMW" data-new="1">BMW</span>
+                </div>
+              </div>
+              <!-- Бортовой журнал -->
+              <div class="filter-wrapp">
+                <div class="show-filter" data-name-filter="Бортовые журналы">
+                  <span class="b-tags-item tag text" data-filter-category="tuning" data-new="6">Тюнинг</span>
+                  <span class="b-tags-item tag text" data-filter-category="repair" data-new="8">Ремонт</span>
+                </div>
+              </div>
+              <!-- Посты -->
+              <div class="filter-wrapp">
+                <div class="show-filter" data-name-filter="Посты">
+                  <span class="b-tags-item tag text" data-filter-category="crash" data-new="6">ДТП</span>
+                  <span class="b-tags-item tag text" data-filter-category="parking" data-new="8">Парковка</span>
+                  <span class="b-tags-item tag text" data-filter-category="showdown" data-new="2">Разборки</span>
+                  <span class="b-tags-item tag text" data-filter-category="police" data-new="3">Полиция</span>
+                </div>
+              </div>
+              <!-- Блоги -->
+              <div class="filter-wrapp">
+                <div class="show-filter" data-name-filter="Блоги">
+                  <span class="b-tags-item tag text" data-filter-category="privat" data-new="4">Личное</span>
+                  <span class="b-tags-item tag text" data-filter-category="travel" data-new="4">Путешествия</span>
+                  <span class="b-tags-item tag text" data-filter-category="fishing" data-new="5">Рыбалка</span>
+                  <span class="b-tags-item tag text" data-filter-category="animals" data-new="1">Животные</span>
+                  <span class="b-tags-item tag text" data-filter-category="family" data-new="3">Семья</span>
+                  <span class="b-tags-item tag text" data-filter-category="child" data-new="2">Дети</span>
+                  <span class="b-tags-item tag text" data-filter-category="work" data-new="10">Работа</span>
+                </div>
+              </div>
+
             </div>
+              
 
             <div class="block b-popular">
               <div class="b-popular__wrapp">
                 <h4>Популярное</h4>
-                  <div id="wrapperDate" class="droplist">
-                    <select id="date">
-                      <option data-title>За вчера</option>
-                      <option>За неделю</option>
-                      <option>За месяц</option>
-                      <option>За год</option>
-                    </select>
-                  </div>
-                </div>
                 <div class="b-popular__item item">
                   <figure class="b-popular__item-img">
                     <img src="img/temp/auto/2.png" alt="">

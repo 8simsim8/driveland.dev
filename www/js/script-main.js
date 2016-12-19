@@ -38,7 +38,7 @@ function main() {
       var strInsert = '';
       var sumElemOnPage = sumElemOnPage || array.length;
       for(var i = 0; i < sumElemOnPage; i++) {
-        strInsert = '<a href="' + array[i].auto[0].linkAuto + '" title="'+ array[i].name +'" class="b-content__lider-previous-item item"><figure><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].autoName +'"></figure></a>';
+        strInsert = '<a href="' + array[i].auto[0].linkAuto + '" title="'+ array[i].name +'" class="b-content__lider-previous-item item"><figure><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].autoName +'"><p class="b-content__lider-vote text bold"><span>' + array[i].auto[0].voteAuto + '</span></p></figure></a>';
         $container.append(strInsert);
       }
     }
@@ -49,7 +49,7 @@ function main() {
       var strInsert = '';
       var sumElemOnPage = sumElemOnPage || array.length;
       for(var i = 0; i < sumElemOnPage; i++) {
-        strInsert = '<a href="' + array[i].auto[0].linkAuto + '" title="'+ array[i].name +'" class="b-content__lider-gaining-item item"><figure><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].autoName +'"></figure></a>';
+        strInsert = '<a href="' + array[i].auto[0].linkAuto + '" title="'+ array[i].name +'" class="b-content__lider-gaining-item item"><figure><img src="'+ array[i].auto[0].linkAutoPhoto +'" alt="'+ array[i].auto[0].autoName +'"><p class="b-content__lider-vote text bold"><span>' + array[i].auto[0].voteAuto + '</span></p></figure></a>';
         $container.append(strInsert);
       }
     }
