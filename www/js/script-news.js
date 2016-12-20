@@ -30,16 +30,13 @@ function news() {
 
   // При загрузке, выбирать первый пункт
     $('.b-news__submenu span').eq(0).trigger('click');
-
-    cutSideBar($('#float-bar'));
+    $('.b-tags-item.tag:not(.active-tag)').on('click', function(){
+      $('.active-tag').removeClass('active-tag');
+      $(this).addClass('active-tag');
+    });
 
   // Подобрать кол-во новостей от высоты окна
-  function cutSideBar($container) {
-    var index = $container.find('.item').length - 1;
-    while($container[0].scrollHeight > $container[0].offsetHeight) {
-      $container.find('.item').eq(index--).hide();
-    }
-  }
+    cutSideBar($('#float-bar'));
 
   // Плавающая боковая панель
     floatSideBar($('#float-bar'));

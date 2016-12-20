@@ -113,7 +113,7 @@
       .b-property h6,
       .b-property h6 + p.text {
         position: relative;
-        bottom: -1px;
+        bottom: -5px;
         line-height: 1.42em;
         background-color: #FFFFFF;
       }
@@ -122,6 +122,8 @@
         padding-right: 10px;
       }
       .b-property h6 + p.text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8rem;
         padding-left: 10px;
       }
 
@@ -189,7 +191,7 @@
           -ms-flex-pack: justify;
           -webkit-box-pack: justify;
           justify-content: space-between;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
         }
         .b-logbook__container-item-text h4 {
           color: #1C5BC9;

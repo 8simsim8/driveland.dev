@@ -456,14 +456,14 @@ label {
     .b-menu__wrapp-list li a {
       color: #66615B;
     }
-      .b-menu__wrapp-list li a.active {
+      .b-menu__wrapp-list li a.active-page {
         padding-bottom: 12px;
         border-bottom: 7px solid #0038A8;
         -webkit-transition: padding-bottom 0.2s ease;
         -webkit-transition: padding-bottom 0.3s ease;
         transition: padding-bottom 0.3s ease;
       }
-        .m-menu_small .b-menu__wrapp-list li a.active {
+        .m-menu_small .b-menu__wrapp-list li a.active-page {
           padding-bottom: 4px;
         }
       .b-menu__wrapp-list li a:hover {
@@ -938,20 +938,38 @@ label {
     border-radius: 5px;
   }
     .b-rating-dislike-bar .rating-click {
+      position: relative;
       display: inline-block;
       height: 20px;
       width: 20px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+      background-color: #637696;
+      border-radius: 3px;
       cursor: pointer;
-      transition: transform 0.2s ease;
+      -webkit-transition: background-color 0.2s ease;
+      transition: background-color 0.2s ease;
     }
-      .b-rating-dislike-bar .rating-click:hover {
-        transform: scale(1.1);
+      .b-rating-dislike-bar .rating-click:after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        font-family: Open Sans;
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 16px;
+        color: #ffffff;
       }
-      .b-rating-dislike-bar .minus-rating {
-        background-image: url('../img/icon-minus-rating.svg');
+      .b-rating-dislike-bar .minus-rating:after {
+        content: '\2013';
+        line-height: 15px;
+      }
+      .b-rating-dislike-bar .minus-rating:hover {
+        background-color: #d80000;
+      }
+      .b-rating-dislike-bar .plus-rating:after {
+        content: '+';
+      }
+      .b-rating-dislike-bar .plus-rating:hover {
+        background-color: #556b2f;
       }
     .b-rating-dislike-bar .display-rating {
       display: inline-block;
@@ -962,9 +980,6 @@ label {
       vertical-align: text-bottom;
       color: #606B80;
     }
-    .b-rating-dislike-bar .plus-rating {
-        background-image: url('../img/icon-plus-rating.svg');
-      }
     .b-rating-dislike-bar .date {
       margin-left: 20px;
       font-size: 0.6rem;
@@ -995,6 +1010,50 @@ label {
       line-height: 22px;
       margin-left: 40px;
     }
+  /* Комментариев и просмотров  */
+    .b-comments-view {
+      width: 100%;
+      padding: 10px;
+      overflow: auto;
+    }
+      .b-comments-view:after {
+        content: '';
+        clear: both;
+      }
+      .b-comments-view .like {
+        float: right;
+        font-size: 0.6rem;
+        line-height: 22px;
+        margin-right: 40px;
+      }
+        .b-comments-view .like:before {
+          content: '\f087';
+          font-family: 'FontAwesome';
+          margin-right: 10px;
+        }
+      .b-comments-view .view {
+        float: right;
+        font-size: 0.6rem;
+        line-height: 22px;
+        margin-left: 40px;
+      }
+        .b-comments-view .view:before {
+          content: '\f06e';
+          font-family: 'FontAwesome';
+          margin-right: 10px;
+        }
+      .b-comments-view .comments {
+        float: right;
+        font-size: 0.6rem;
+        line-height: 22px;
+        color: #1C5BC9;
+      }
+      .b-comments-view .comments:before {
+          content: '\f0e5';
+          font-family: 'FontAwesome';
+          margin-right: 10px;
+      }
+       
   /* Сообщение о подтверждени отправки/опубликования */
       .b-message-confirm {
         position: absolute;
@@ -1122,6 +1181,7 @@ main {
     }
     .m-filter__switch-item_active.b-filter__switch-item {
       background-color: #F1F1F1;
+      color: #333333;
   }
   .title-search.b-main-title .b-filter__find {
     position: relative;
@@ -1371,17 +1431,18 @@ main {
       flex: 1 0 150px;
       min-width: 150px;
     }
-      .wrap-rating p {
+      .rating-stars,
+      .rating-stars + p {
         float: left;
       }
-        .wrap-rating span:after {
+        .rating-stars span:after {
           margin-right: 3px;
           font-family: 'FontAwesome';
           font-size: 0.9rem;
           content: '\f005';
           color: #D2D2D2;
         }
-          .wrap-rating span[data-active]:after {
+          .rating-stars span[data-active]:after {
             color: #EDB867;
           }
         .print-rating {

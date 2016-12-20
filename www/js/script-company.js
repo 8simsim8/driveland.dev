@@ -29,7 +29,7 @@ function company() {
   // Отображение в заголовке выбранной категории
   $('#wrapperCategory').on('click',function(){
     $(this).find('.SelectItem').on('click',function(){
-      var $strTitle = $('.b-main-title h3');
+      var $strTitle = $('.b-company h3');
       $strTitle.html($(this).html());
     });
   });

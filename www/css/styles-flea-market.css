@@ -250,6 +250,7 @@
     .b-filter-other-view {
       text-align: center;
       margin-top: 20px;
+      margin-bottom: 20px;
     }
 
 @media (max-width: 1000px) {

@@ -10,9 +10,11 @@ h4 {
   .b-one-news__title {
     display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -webkit-align-items: center;
     -ms-flex-align: center;
+    -webkit-box-align: center;
     align-items: center;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -36,6 +38,29 @@ h4 {
       .b-one-news__content p {
         margin: 5px 0;
       }
+
+.b-post__item-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+  .b-rating-dislike-bar {
+    display: inline-block;
+  }
+  .b-one-news__social {
+    margin-top: 0;
+    margin-left: 20px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 
 .b-coment-wrapp h3 {
   display: inline-block;

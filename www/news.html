@@ -52,7 +52,7 @@
         <ul class="b-menu__wrapp-list col xs-7">
           <!-- На активный пункт меню навесить класс .active -->
             <li><a href="/main.html" title="Главная" class="text bold">Главная</a></li>
-            <li><a href="/news.html" title="Новости" class="text bold active">Новости</a></li>
+            <li><a href="/news.html" title="Новости" class="text bold active-page">Новости</a></li>
             <li><a href="/community.html" title="Сообщества" class="text bold">Сообщества</a></li>
             <li><a href="/company.html" title="Компании" class="text bold">Компании</a></li>
             <li><a href="/flea-market.html" title="Барахолка" class="text bold">Барахолка</a></li>
@@ -477,6 +477,7 @@
 
             <div class="b-tags">
               <h4>Теги</h4>
+              <!-- На выбраном теге навесить класс active -->
               <!-- Новости -->
               <div class="filter-wrapp">
                 <div class="show-filter" data-name-filter="Новости">
@@ -489,7 +490,7 @@
               <!-- Тест-драйв -->
               <div class="filter-wrapp">
                 <div class="show-filter" data-name-filter="Тест-драйв">
-                  <span class="b-tags-item tag text" data-filter-category="VW" data-new="6">VW</span>
+                  <span class="b-tags-item tag text active" data-filter-category="VW" data-new="6">VW</span>
                   <span class="b-tags-item tag text" data-filter-category="BMW" data-new="1">BMW</span>
                 </div>
               </div>
@@ -503,7 +504,7 @@
               <!-- Посты -->
               <div class="filter-wrapp">
                 <div class="show-filter" data-name-filter="Посты">
-                  <span class="b-tags-item tag text" data-filter-category="crash" data-new="6">ДТП</span>
+                  <span class="b-tags-item tag text active" data-filter-category="crash" data-new="6">ДТП</span>
                   <span class="b-tags-item tag text" data-filter-category="parking" data-new="8">Парковка</span>
                   <span class="b-tags-item tag text" data-filter-category="showdown" data-new="2">Разборки</span>
                   <span class="b-tags-item tag text" data-filter-category="police" data-new="3">Полиция</span>
@@ -512,7 +513,7 @@
               <!-- Блоги -->
               <div class="filter-wrapp">
                 <div class="show-filter" data-name-filter="Блоги">
-                  <span class="b-tags-item tag text" data-filter-category="privat" data-new="4">Личное</span>
+                  <span class="b-tags-item tag text active" data-filter-category="privat" data-new="4">Личное</span>
                   <span class="b-tags-item tag text" data-filter-category="travel" data-new="4">Путешествия</span>
                   <span class="b-tags-item tag text" data-filter-category="fishing" data-new="5">Рыбалка</span>
                   <span class="b-tags-item tag text" data-filter-category="animals" data-new="1">Животные</span>

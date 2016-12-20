@@ -4,11 +4,21 @@ function onePageAd() {
 
   var redact = new MakeRedact();
 
-  floatSideBar($('.b-contact'));
+  // Подобрать кол-во новостей от высоты окна
+    cutSideBar($('.float-bar'));
 
-  // Сокращение текста с блоке с новостями
-    $(".b-similar__item a").each(function(index, el){
-      $clamp(el, {clamp: 3});
+    floatSideBar($('.float-bar'));
+
+  if(!IS_FIREFOX) {
+  // Обрезка текста до 2 строчек
+    $(".b-ad__item.item h5[data-clamp]").each(function(index, el){
+      $clamp(el, {clamp: 4});
     });
+
+    $(".b-contact__other-ad-item a[data-clamp]").each(function(index, el){
+      $clamp(el, {clamp: 2});
+    });
+
+  }
 
 }

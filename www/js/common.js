@@ -40,6 +40,15 @@
 
   }
 
+  // Подобрать кол-во новостей от высоты окна
+  function cutSideBar($container) {
+    var index = $container.find('.item').length - 1;
+    while($container[0].scrollHeight > $container[0].offsetHeight) {
+      $container.find('.item').eq(index--).hide();
+    }
+    console.log($container[0].scrollHeight, $container[0].offsetHeight);
+  }
+
   // Кнопка "ВВЕРХ"
   function makeButtonToTop() {
 

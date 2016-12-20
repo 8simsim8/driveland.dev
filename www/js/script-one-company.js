@@ -5,15 +5,41 @@ function oneCompany() {
   var positiveVote        = [50];   // Массив положительных голосов по компании
   var allVote             = [75];   // Всего голосов по компании
 
-  // Рейтинг
+  // Рейтинг в верху страницы
   var blocksRating        = $('.b-one-company__title-note');
   var rating              = new MakeRating(blocksRating, positiveVote, allVote);  // Обьект вывода рейтинга
 
+  // Рейтинг голосования
+    $('#rating-select').rating(function(vote, event){
+      var strMessage;
+      switch(+vote) {
+        case 1:
+          strMessage = 'Плохо';
+          break;
+        case 2:
+          strMessage = 'Посредственно';
+          break;
+        case 3:
+          strMessage = 'Удовлетворительно';
+          break;
+        case 4:
+          strMessage = 'Хорошо';
+          break;
+        case 5:
+          strMessage = 'Отлично';
+          break;
+      }
+      $('#message-rating').html(strMessage);
+      
+      // $.ajax({
+      //   url: "/get_votes.php",
+      //   type: "GET",
+      //   data: {rate: vote},
+      // });
+    }); 
+
   var strReduceHeader = $(".b-one-company__news-wrapp-item-text h5")[2];
   var strReduce = $(".b-one-company__news-wrapp-item-text")[2];
-
-  var $asideFloatBar = $('.b-similar');
-  floatSideBar($asideFloatBar);  // Плавающий блок
 
   if(!IS_FIREFOX) {
     $(".b-similar__item [data-clamp]").each(function(index, el){

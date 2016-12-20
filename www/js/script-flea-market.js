@@ -6,6 +6,9 @@ function market() {
   var $tags = $('.wrap-tags');
   cropTag($tags);					// Обрезание лишних тегов
 
+  // Подобрать кол-во новостей от высоты окна
+    cutSideBar($('.aside-panel-wrapp'));
+
   var $asideFloatBar = $('.aside-panel-wrapp');
   floatSideBar($asideFloatBar);  // Плавающий блок
   

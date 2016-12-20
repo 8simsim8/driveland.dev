@@ -152,7 +152,12 @@
     transition: background-color 0.15s ease,
                 color 0.15s ease;
   }
-    .b-tags-item.tag:hover {
+  .active-tag.b-tags-item {
+    background-color: #e9eaeb;
+    color: #333333;
+    cursor: auto;
+  }
+    .b-tags-item.tag:not(.active-tag):hover {
       background-color: rgba(28, 91, 201, 0.2);
       color : #297DE2;
     }
@@ -163,6 +168,7 @@
     }
 
 #float-bar {
+  height: -webkit-calc(100vh - 158px);
   height: calc(100vh - 158px);
   overflow: hidden;
 }

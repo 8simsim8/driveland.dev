@@ -54,7 +54,7 @@
             <li><a href="/news.html" title="Новости" class="text bold">Новости</a></li>
             <li><a href="/community.html" title="Сообщества" class="text bold">Сообщества</a></li>
             <li><a href="/company.html" title="Компании" class="text bold">Компании</a></li>
-            <li><a href="/flea-market.html" title="Барахолка" class="text bold active">Барахолка</a></li>
+            <li><a href="/flea-market.html" title="Барахолка" class="text bold active-page">Барахолка</a></li>
         </ul>
 
         <button class="b-menu__wrapp-login button small text bold col xs-offset-2 xs-1 button-enter" style="display: none;">Войти</button>
@@ -119,7 +119,7 @@
               <!-- Колличество передать в атрибут data-sum -->
                   <h3 data-sum="10">Все предложения</h3>
                 <div class="b-filter__find">
-                  <input type="text" name="search">
+                  <input type="text" name="search" placeholder="Найти обьявление">
                 </div>
               </div>
               <div class="b-ad__container pagin-container pagin-wrap">
@@ -391,64 +391,86 @@
 
           <section class="l-filter col xs-3">
 
-            <div class="aside-panel-wrapp">
-              <div class="block b-add-ad">
-                <h5>Хотите продать свой товар? Это просто!</h5>
-                <a href="add-new-ad.html" title="" class="button middle add-button">Добавить обьявление</a>
+            <div class="block b-add-ad">
+              <h5>Хотите продать свой товар? Это просто!</h5>
+              <a href="add-new-ad.html" title="" class="button middle add-button">Добавить обьявление</a>
+            </div>
+
+            <div class="block b-filter">
+              <div class="b-filter-wrapp">
+                <h4><span class="all-ad">Поиск обьявления</h4>
+                <form class="b-filter__form" name="filter">
+                  <div id="wrapperCategory" class="b-filter__form-item droplist">
+                    <select id="category">
+                      <option data-title value="all">Категории</option>
+                      <option>Колесо</option>
+                      <option>Авто</option>
+                      <option>Диски</option>
+                    </select>
+                  </div>
+
+                  <div id="wrapperMark" class="b-filter__form-item droplist">
+                    <select id="mark">
+                      <option data-title value="all">Все марки</option>
+                      <option>Марка</option>
+                      <option>Марка</option>
+                      <option>Марка</option>
+                      <option>Марка</option>
+                      <option>Марка</option>
+                      <option>Марка</option>
+                      <option>Марка</option>
+                      <option>Марка</option>
+                      <option>Марка</option>
+                      <option>Марка</option>
+                    </select>
+                  </div>
+
+                  <div id="wrapperModel" class="b-filter__form-item droplist">
+                    <select id="model">
+                      <option data-title value="all">Все модели</option>
+                      <option>Модель</option>
+                      <option>Модель</option>
+                      <option>Модель</option>
+                      <option>Модель</option>
+                      <option>Модель</option>
+                      <option>Модель</option>
+                      <option>Модель</option>
+                      <option>Модель</option>
+                      <option>Модель</option>
+                      <option>Модель</option>
+                      <option>Модель</option>
+                      <option>Модель</option>
+                      <option>Модель</option>
+                    </select>
+                  </div>
+
+                  <p class="icon-search"><input type="submit" value="Найти" class="button middle tab-input"></p>
+                </form>
               </div>
+            </div>
 
-              <div class="block b-filter">
-                <div class="b-filter-wrapp">
-                  <!-- <h4><span class="all-ad">256</span> обьявлений</h4> -->
-                  <form class="b-filter__form" name="filter">
-                    <div id="wrapperCategory" class="b-filter__form-item droplist">
-                      <select id="category">
-                        <option data-title value="all">Категории</option>
-                        <option>Колесо</option>
-                        <option>Авто</option>
-                        <option>Диски</option>
-                      </select>
-                    </div>
-
-                    <div id="wrapperMark" class="b-filter__form-item droplist">
-                      <select id="mark">
-                        <option data-title value="all">Все марки</option>
-                        <option>Марка</option>
-                        <option>Марка</option>
-                        <option>Марка</option>
-                        <option>Марка</option>
-                        <option>Марка</option>
-                        <option>Марка</option>
-                        <option>Марка</option>
-                        <option>Марка</option>
-                        <option>Марка</option>
-                        <option>Марка</option>
-                      </select>
-                    </div>
-
-                    <div id="wrapperModel" class="b-filter__form-item droplist">
-                      <select id="model">
-                        <option data-title value="all">Все модели</option>
-                        <option>Модель</option>
-                        <option>Модель</option>
-                        <option>Модель</option>
-                        <option>Модель</option>
-                        <option>Модель</option>
-                        <option>Модель</option>
-                        <option>Модель</option>
-                        <option>Модель</option>
-                        <option>Модель</option>
-                        <option>Модель</option>
-                        <option>Модель</option>
-                        <option>Модель</option>
-                        <option>Модель</option>
-                      </select>
-                    </div>
-
-                    <p class="icon-search"><input type="submit" value="Найти" class="button middle tab-input"></p>
-
-                    <p class="b-filter-other-view text link"><a href='#' title="Последние просмотренные объявления">Последние просмотренные</a></p>
-                  </form>
+            <div class="float-bar">
+              <div class="aside-panel-wrapp">
+                <div>
+                  <p class="b-filter-other-view text link"><a href='#' title="Последние просмотренные объявления">Последние просмотренные</a></p>
+                  <div class="b-contact__other-ad-item item">
+                    <figure>
+                      <img src="img/temp/auto/2.jpg" alt="">
+                    </figure>
+                    <a href="#" class="text" data-clamp="">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
+                  </div>
+                  <div class="b-contact__other-ad-item item">
+                    <figure>
+                      <img src="img/temp/auto/2.jpg" alt="">
+                    </figure>
+                    <a href="#" class="text" data-clamp="">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
+                  </div>
+                  <div class="b-contact__other-ad-item item">
+                    <figure>
+                      <img src="img/temp/auto/2.jpg" alt="">
+                    </figure>
+                    <a href="#" class="text" data-clamp="">Как научить Рено Дастер плавать или не повторяйте моих ошибок</a>
+                  </div>
                 </div>
               </div>
             </div>

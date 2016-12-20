@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="css/paginator.css">
     <link rel="stylesheet" type="text/css" href="css/styles-one-company.css">
     <link rel="stylesheet" type="text/css" href="css/styles-aside-block-author.css">
+    <link rel="stylesheet" type="text/css" href="css/rating.css">
     <link rel="stylesheet" type="text/css" href="css/comments.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -33,6 +34,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/rating.js"></script>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Detect.js/2.2.2/detect.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Clamp.js/0.5.1/clamp.min.js"></script>
@@ -185,6 +187,10 @@
                     <h5 data-clamp><a href="one-item-news.html" data-clamp>Новость 1</a></h5>
                     <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.</p>
+                    <div class="b-comments-view">
+                      <span class="view text">234 просмотров</span>
+                      <span class="comments text">23 комментария</span>
+                    </div>
                   </div>
                 </div>
 
@@ -194,6 +200,10 @@
                     <p class="b-one-company__news-wrapp-item-text-date text">12.10.2016</p>
                     <h5 data-clamp><a href="one-item-news.html">Новость 2</a></h5>
                     <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.</p>
+                    <div class="b-comments-view">
+                      <span class="view text">234 просмотров</span>
+                      <span class="comments text">23 комментария</span>
+                    </div>
                   </div>
                 </div>
 
@@ -204,6 +214,10 @@
                     <h5 data-clamp><a href="one-item-news.html">Новость 3 em ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.</a></h5>
                     <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.</p>
+                    <div class="b-comments-view">
+                      <span class="view text">234 просмотров</span>
+                      <span class="comments text">23 комментария</span>
+                    </div>
                   </div>
                 </div>
 
@@ -214,6 +228,10 @@
                     <h5 data-clamp><a href="one-item-news.html">Новость 4</a></h5>
                     <p class="text" data-clamp>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam, quod in quibusdam autem sit eveniet, laudantium alias, sint nobis excepturi tempora sed atque harum officiis reiciendis unde maxime explicabo.</p>
+                    <div class="b-comments-view">
+                      <span class="view text">234 просмотров</span>
+                      <span class="comments text">23 комментария</span>
+                    </div>
                   </div>
                 </div>
 
@@ -231,30 +249,48 @@
           </section>
 
           <section class="l-similar col xs-3">
-            <div class="block b-similar">
-              <div class="b-similar__wrapp">
-                <div class="b-similar__item">
-                  <img src="img/temp/logo-company/2.jpg" alt="" class="b-similar__item-img">
-                  <a href="#" class="text" data-clamp>4точки - интернет-магазин по продаже шин и дисков - 4tochki</a>
+          
+          <div class="aside-panel-wrapp">
+            <div>
+              <div class="block b-similar">
+              <div>
+                <h4>Похожие компании</h4>
+                <div class="b-similar__wrapp">
+                  <div class="b-similar__item">
+                    <figure>
+                      <img src="img/temp/logo-company/2.jpg" alt="" class="b-similar__item-img">
+                    </figure>
+                    <a href="#" class="text" data-clamp>4точки - интернет-магазин по продаже шин и дисков - 4tochki</a>
+                  </div>
+                  <div class="b-similar__item">
+                    <figure>
+                      <img src="img/temp/logo-company/1.jpg" alt="" class="b-similar__item-img">
+                    </figure>
+                    <a href="#" class="text" data-clamp>Re-Stylin</a>
+                  </div>
+                  <div class="b-similar__item">
+                    <figure>
+                      <img src="img/temp/logo-company/logo-comp3.png" alt="" class="b-similar__item-img">
+                    </figure>
+                    <a href="#" class="text" data-clamp>AIMOL PREMIUM MOTOROILS</a>
+                  </div>
+                  <div class="b-similar__item">
+                    <figure>
+                      <img src="img/temp/logo-company/2.jpg" alt="" class="b-similar__item-img">
+                    </figure>
+                    <a href="#" class="text" data-clamp>4точки - интернет-магазин по продаже шин и дисков - 4tochki</a>
+                  </div>
+                  <div class="b-similar__item">
+                    <figure>
+                      <img src="img/temp/logo-company/1.jpg" alt="" class="b-similar__item-img">
+                    </figure>
+                    <a href="#" class="text" data-clamp>Re-Stylin</a>
+                  </div>
                 </div>
-                <div class="b-similar__item">
-                  <img src="img/temp/logo-company/1.jpg" alt="" class="b-similar__item-img">
-                  <a href="#" class="text" data-clamp>Re-Stylin</a>
-                </div>
-                <div class="b-similar__item">
-                  <img src="img/temp/logo-company/logo-comp3.png" alt="" class="b-similar__item-img">
-                  <a href="#" class="text" data-clamp>AIMOL PREMIUM MOTOROILS</a>
-                </div>
-                <div class="b-similar__item">
-                  <img src="img/temp/logo-company/2.jpg" alt="" class="b-similar__item-img">
-                  <a href="#" class="text" data-clamp>4точки - интернет-магазин по продаже шин и дисков - 4tochki</a>
-                </div>
-                <div class="b-similar__item">
-                  <img src="img/temp/logo-company/1.jpg" alt="" class="b-similar__item-img">
-                  <a href="#" class="text" data-clamp>Re-Stylin</a>
-                </div>
-              </div>
             </div>
+          </div>
+            </div>
+            
           </section>
         </div>
 
@@ -278,10 +314,20 @@
                     <div class="b-comments-item item">
                       <img src="img/temp/logo-user-1.png" alt="">
                       <div class="b-comments-block">
-                        <p class="b-comments-block-title">
+                        <div class="b-comments-block-title">
                           <a href="#" class="text">Alen</a>
+                          <p class="rating-stars">
+                          <!-- Рейтинг добавить аттрибут 
+                               "data-aсtive" - целая звезда
+                         -->
+                            <span data-active=""></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </p>
                           <span class="text subtext data">03.10.2016</span>
-                        </p>
+                        </div>
                         <p class="b-comments-text text">Бывает и по литру, если действительно 20 уе, то, конечно, лучше её втарить. Бывает и по литру, если действительно 20 уе, то, конечно, лучше её втарить.</p>
                       </div>
                     </div>
@@ -289,10 +335,20 @@
                     <div class="b-comments-item item">
                       <img src="img/temp/logo-user-24.png" alt="">
                       <div class="b-comments-block">
-                        <p class="b-comments-block-title">
-                          <a href="#" class="text">Alen</a>
+                        <div class="b-comments-block-title">
+                          <a href="#" class="text">StarAlen</a>
+                          <p class="rating-stars">
+                          <!-- Рейтинг добавить аттрибут 
+                               "data-aсtive" - целая звезда
+                         -->
+                            <span data-active=""></span>
+                            <span data-active=""></span>
+                            <span data-active=""></span>
+                            <span></span>
+                            <span></span>
+                          </p>
                           <span class="text subtext data">15.08.2016</span>
-                        </p>
+                        </div>
                         <p class="b-comments-text text">Да, спасибо за помощь.В принципе по твоему названию и нашел нужное))</p>
                       </div>
                     </div>
@@ -301,7 +357,22 @@
 
                   <div class="b-comments__add">
                     <textarea name="add-comment" class="text" rows="4" cols="60" placeholder="Введите Ваше сообщение"></textarea>
-                    <button type="button" class="button middle submit-button">Отправить</button>
+
+                    <div class="b-comments__add-bottom">
+                      <div class="b-comments__company-rating">
+                        <p class="text">Ваша оценка компании</p>
+                        <p id="rating-select" class="text">
+                          <input type="radio" name="rating-company" class="rating" value="1" />
+                          <input type="radio" name="rating-company" class="rating" value="2" />
+                          <input type="radio" name="rating-company" class="rating" value="3" />
+                          <input type="radio" name="rating-company" class="rating" value="4" />
+                          <input type="radio" name="rating-company" class="rating" value="5" />
+                        </p>
+                        <p id="message-rating" class="text"></p>
+                      </div>
+                      <button type="button" class="button middle submit-button">Отправить</button>
+                    </div>
+                    
                   </div>
 
                   <div class="b-company__pagination controll">
