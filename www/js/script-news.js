@@ -28,9 +28,21 @@ function news() {
     }
   });
 
-$('.b-news__submenu span').eq(0).trigger('click');
+  // При загрузке, выбирать первый пункт
+    $('.b-news__submenu span').eq(0).trigger('click');
 
-  floatSideBar($('#float-bar'));
+    cutSideBar($('#float-bar'));
+
+  // Подобрать кол-во новостей от высоты окна
+  function cutSideBar($container) {
+    var index = $container.find('.item').length - 1;
+    while($container[0].scrollHeight > $container[0].offsetHeight) {
+      $container.find('.item').eq(index--).hide();
+    }
+  }
+
+  // Плавающая боковая панель
+    floatSideBar($('#float-bar'));
 
   if(!IS_FIREFOX) {
   // Обрезка текста до 2 строчек

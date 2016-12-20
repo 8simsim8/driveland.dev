@@ -127,6 +127,7 @@
 .b-tags {
   margin-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 20px;
 }
   .b-tags h4,
   .b-popular__wrapp h4 {
@@ -161,10 +162,10 @@
       color: #FF5600;
     }
 
-.b-popular {
-  margin-top: 20px;
+#float-bar {
+  height: calc(100vh - 158px);
+  overflow: hidden;
 }
-
 .b-popular__wrapp {
   
 }
