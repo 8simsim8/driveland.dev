@@ -10,6 +10,9 @@ function myPage() {
 
   $('#tag').dropList({});
 
+  // Показать/скрыть кнопку отправить в комментах
+    comments();
+
   if(!IS_FIREFOX) {
     $("h4[data-clamp]").each(function(index, el){
       $clamp(el, {clamp: 1});

@@ -30,6 +30,10 @@
    {
     margin-right: 20px;
   }
+  .b-add-car__form input.button
+   {
+    width: 200px;
+  }
   .b-add-car__form input:last-child {
     margin-right: 0;
   }

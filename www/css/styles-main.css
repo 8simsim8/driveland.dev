@@ -17,6 +17,7 @@ h4 {
   }
   .l-appeal .button {
     margin:  0 auto;
+    padding: 4px 20px 4px 40px;
     width: 280px;
     background-color: #0038A8;
     background-image: url('../img/icon-appeal.svg');

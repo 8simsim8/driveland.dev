@@ -30,11 +30,14 @@
 .slim:after {
   font-size: 60px;
 }
-  .b-edit input,
+  .b-edit input:not[type="submit"],
   .b-edit__form .droplist
    {
     width: 300px;
     margin-right: 20px;
+  }
+  .b-edit input[type="submit"] {
+    width: 200px;
   }
   .b-edit__form-item:not(.m-form-item_textarea) {
     height: 40px;
@@ -42,6 +45,12 @@
   .b-edit__form-item {
     margin: 0 0 15px;
   }
+    .b-edit__form-item .droplist {
+      width: 300px;
+    }
+      .b-edit__form-item .droplist:not(:last-child) {
+        margin-right: 20px;
+      }
   .b-edit__form-item.m-edit__form-item_textarea p {
     vertical-align: top;
   }

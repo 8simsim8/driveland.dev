@@ -134,6 +134,17 @@
     });
   }
 
+  function comments() {
+  // Показать/скрыть кнопку комментариев
+    console.log($('.b-comments__add'));
+    $('.b-comments__add').find('textarea').on('focus', function(){
+      $('.block-hide-button').slideDown(200);
+    });
+    $('.b-comments__add').find('textarea').on('blur', function(){
+      $('.block-hide-button').slideUp(200);
+    });
+  }
+
   function MakeAsideBar(aside) {
 
     var buttonOpenMyCar     = document.getElementById('button-author-auto');
@@ -370,13 +381,15 @@
         if(isFixedBar && isEnableFloat) {
           $container.css("left", distanseLeftBar - $(this).scrollLeft() + "px");
         }
-        if($parentNode[0].getBoundingClientRect().top <= (positionFixedBar) && isEnableFloat) {
+        // if($parentNode[0].getBoundingClientRect().top <= (positionFixedBar) && isEnableFloat) {
+        if($parentNode[0].getBoundingClientRect().top <= (heightHeader + 20) && isEnableFloat) {
 
         // if(distanseScroll >= (distanseScrollBar - positionFixedBar) && isEnableFloat) {
           isFixedBar = true;
           $container.css({
             'position':'fixed',
-            'top': positionFixedBar + 'px',
+            // 'top': positionFixedBar + 'px',
+            'top': heightHeader + 20 + 'px',
             'width': widthBar + 'px',
             "left": distanseLeftBar - $(this).scrollLeft() + "px"
           });

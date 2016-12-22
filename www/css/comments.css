@@ -51,9 +51,10 @@
           margin-bottom: 3px;
         }
         .b-comments-block-title .rating-stars {
-          margin: 0 15px;
+          margin-left: 15px;
         }
         .b-comments-block-title .data {
+          margin-left: 15px;
           line-height: 1.9em;
         }
 /*       .b-comments-title {
@@ -98,7 +99,32 @@
       margin-top: 20px;
       margin-bottom: 20px;
     }
+  .block-hide-button {
+    display:  none;
+  }
+  .b-comments__add-buttons-wrapp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  .b-comments__add input.button {
+    margin-left: 20px;
+  }
+  .b-comments__add input.button[type="reset"] {
+    background-color: transparent;
+    color: #333333;
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+  }
+    .b-comments__add input.button[type="reset"]:hover {
+      color: #383838;
+    }
       .b-comments__add .button {
-        margin-top: 20px;
         margin-left: auto;
       }

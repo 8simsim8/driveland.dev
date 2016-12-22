@@ -7,7 +7,7 @@ function company() {
 
   // workForm('filter');
 
-  var $asideFloatBar = $('.aside-panel-wrapp');
+  var $asideFloatBar = $('.b-filter');
   floatSideBar($asideFloatBar);  // Плавающий блок
 
   // Убирать лишние теги

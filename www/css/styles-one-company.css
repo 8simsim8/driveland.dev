@@ -57,6 +57,9 @@ h4 {
 .b-one-company__info {
   margin-top: 40px;
 }
+  .b-one-company__info-text {
+    max-width: 185px;
+  }
   .b-one-company__info-text button.button {
     margin: 20px 0;
     width: auto;
@@ -189,6 +192,10 @@ h4 {
         cursor: pointer;
       }
 
+  .b-rating-dislike-bar {
+    background-color: transparent;
+  }
+
 .b-similar {
   
 }
@@ -227,7 +234,7 @@ h4 {
     }
 
 .b-comments__add-bottom {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

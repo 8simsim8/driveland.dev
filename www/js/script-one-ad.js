@@ -5,9 +5,12 @@ function onePageAd() {
   var redact = new MakeRedact();
 
   // Подобрать кол-во новостей от высоты окна
-    cutSideBar($('.float-bar'));
+    // cutSideBar($('.float-bar'));
 
-    floatSideBar($('.float-bar'));
+    floatSideBar($('.b-contact'));
+
+  var $tags = $('.wrap-tags');
+    cropTag($tags);         // Обрезание лишних тегов
 
   if(!IS_FIREFOX) {
   // Обрезка текста до 2 строчек

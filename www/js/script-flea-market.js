@@ -7,9 +7,9 @@ function market() {
   cropTag($tags);					// Обрезание лишних тегов
 
   // Подобрать кол-во новостей от высоты окна
-    cutSideBar($('.aside-panel-wrapp'));
+    // cutSideBar($('.aside-panel-wrapp'));
 
-  var $asideFloatBar = $('.aside-panel-wrapp');
+  var $asideFloatBar = $('.b-filter');
   floatSideBar($asideFloatBar);  // Плавающий блок
   
   // Анимация кнопки "Избранное"
@@ -49,7 +49,7 @@ function market() {
   // Отображение в заголовке выбранной категории
   $('#wrapperCategory').on('click',function(){
     $(this).find('.SelectItem').on('click',function(){
-      var $strTitle = $('.b-main-title h3');
+      var $strTitle = $('.b-ad-block h3');
       $strTitle.html($(this).html());
     });
   });

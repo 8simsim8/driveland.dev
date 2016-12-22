@@ -21,45 +21,49 @@
 .b-main-title .droplist {
   float: left;
 }
+.title-search.b-main-title {
+  margin-bottom: 30px;
+}
   .b-news__submenu {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding: 10px 20px;
-    background-color: rgba(138, 138, 138, 0.1);
+    padding: 20px 0 18px;
+    border-top: 1px solid rgba(163, 163, 163, 0.1);
+    border-bottom: 1px solid rgba(163, 163, 163, 0.1);
   }
     .b-news__submenu ul {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
     }
       .b-news__submenu li {
+        margin-right: 85px;
         font-size: 0.8rem;
         font-weight: bold;
         cursor: pointer;
-        color: #1C5BC9;
-      }
-      .b-news__submenu li.active {
         color: #333333;
+      }
+        .b-news__submenu li:last-child {
+          margin-right: 0;
+        }
+      .b-news__submenu li.active {
+        color: #A3A3A3;
       }
 .filter-wrapp {
   display: none;
 }
-.b-filter__switch[data-name-filter="Тест-драйв"] {
+  .filter-inner {
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(163, 163, 163, 0.1);
+  }
+.show-filter[data-name-filter="Тест-драйвы"] .b-filter__switch {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: -20px;
-  margin-left: -20px;
   padding: 10px 20px 30px 20px;
-  border-bottom: 1px solid #F0F0F0;
 }
-  .b-filter__switch[data-name-filter="Тест-драйв"] .droplist:not(:last-child) {
+  .show-filter[data-name-filter="Тест-драйвы"] .b-filter__switch .droplist:not(:last-child) {
     margin-right: 20px;
   }
 

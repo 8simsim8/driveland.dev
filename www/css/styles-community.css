@@ -16,7 +16,13 @@
     flex-basis: calc(33.33337% - 20px);
     max-width: -webkit-calc(33.33337% - 20px);
     max-width: calc(33.33337% - 20px);
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
   }
+    .b-community__item:hover {
+    }
     .b-community__item img {
       width: 100%;
     }
@@ -35,6 +41,7 @@
       right: 0;
       padding: 0.3em 1em;
       padding-left: 60px;
+      border-radius: 0 0 4px 4px;
       background-color: rgba(0,0,0,0.5);
     }
       .b-community__item-name a {
@@ -110,7 +117,6 @@
 
   .b-filter__form {
     clear: both;
-    padding-top: 20px;
   }
       .b-filter-wrapp .droplist-item,
       .b-filter-wrapp .droplist-current {

@@ -19,7 +19,7 @@ function community() {
     text:                 'Модель'
   });
 
-  var $asideFloatBar = $('.b-filter');
+  var $asideFloatBar = $('.b-filter-wrapp');
   floatSideBar($asideFloatBar);  // Плавающий блок
 
   $('#category a').on('click', function(){

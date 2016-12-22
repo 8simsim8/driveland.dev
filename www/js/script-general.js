@@ -147,7 +147,6 @@ if( $('.b-menu__wrapp-list').children().length < 1) {
   // Счетчик рейтинга
   $('.rating-click').on('click', function(){
     var rating = +$(this).siblings('.display-rating').html();
-    console.log(rating);
     if($(this).hasClass('minus-rating')) {
       rating--;
     }
