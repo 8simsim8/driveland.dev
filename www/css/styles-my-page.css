@@ -95,6 +95,12 @@
       margin-top: 20px;
       font-size: 1.1rem;
     }
+      .b-property-wrapp .row .col:first-child {
+        padding-left: 0;
+      }
+      .b-property-wrapp .row .col:last-child {
+        padding-right: 0;
+      }
     .b-property-string {
       display: -webkit-flex;
       display: -ms-flexbox;

@@ -48,6 +48,9 @@ function oneCompany() {
     $("h5[data-clamp]").each(function(index, el){
       $clamp(el, {clamp: 3});
     });
+    $(".b-one-company__news-wrapp-item h5[data-clamp]").each(function(index, el){
+      $clamp(el, {clamp: 1});
+    });
     $("p.text[data-clamp]").each(function(index, el){
       $clamp(el, {clamp: 4});
     });

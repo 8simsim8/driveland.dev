@@ -5,7 +5,7 @@ h4 {
 }
   .b-one-news figure {
     width: 100%;
-    margin: 15px 0;
+    margin: 45px 0;
   }
   .b-one-news__title {
     display: -webkit-flex;
@@ -19,22 +19,28 @@ h4 {
     margin-bottom: 20px;
     margin-top: 10px;
   }
-    .b-one-news__title-back {
+    a.b-one-news__title-back {
       max-width: 100px;
       margin-right: 20px;
       cursor: pointer;
-
+      color: #afb6c3;
     }
     .b-one-news__title-back + h1 {
       padding-left: 20px;
-      border-left: 1px solid #CECECE;
     }
     .b-post__item-info {
-      margin-left: 78px;
+      margin-left: 55px;
     }
     .b-one-news__content {
       padding-top: 10px;
     }
+    .text-content p.text,
+    .text-content p.lead {
+      line-height: 1.7em;
+    }
+      .text-content p.lead {
+        margin-bottom: 20px;
+      }
       .b-one-news__content p {
         margin: 5px 0;
       }

@@ -153,6 +153,12 @@ h4 {
         .b-one-company__news-wrapp-item-text h5 {
           margin-bottom: 10px;
         }
+          .b-one-company__news-wrapp-item-text a {
+            color: #1C5BC9;
+          }
+            .b-one-company__news-wrapp-item-text a:hover {
+              color: #1C86C9;
+            }
         .firefox.b-one-company__news-wrapp-item-text h5[data-clamp] {
           max-height: 3em;
         }

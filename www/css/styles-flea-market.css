@@ -12,6 +12,31 @@
       content: '\00A0('attr(data-sum)')';
     }
 
+   .b-add-block__last {
+    margin-top: 20px;
+   }
+     .b-add-block__last h4 {
+        margin-bottom: 20px;
+        color: #1C5BC9;
+      }
+      .b-add-block__last .b-ad__item {
+        padding: 0 20px 10px;
+      }
+      .b-add-block__last .b-ad__item:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      .b-add-block__last .b-ad__item .b-ad__item-img {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 20%;
+        -ms-flex: 1 0 20%;
+        flex: 1 0 20%;
+        max-width: 20%;
+      }
+      .b-add-block__last .b-ad__item-info {
+        border-right: none;
+      }
+      
+
 .b-add-ad {
   margin-bottom: 20px;
   border: 2px solid #1C5BC9;
@@ -39,16 +64,6 @@
     .b-filter-wrapp .dListText {
       text-align: center;
     }
-
-    .b-filter-other-view {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  .b-filter__form + p {
-    margin-top: 20px;
-    text-align: center;
-  }
 
 @media (max-width: 1000px) {
   .add-button.button.middle {
