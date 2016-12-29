@@ -883,7 +883,7 @@ label {
     min-width: calc(100% - 20px);
     font-size: 0.7rem;
   }
-  .b-ad__item:not(:last-child) {
+  .b-ad__item/* :not(:last-child) */ {
     border-bottom: 1px dotted rgba(163, 163, 163, 0.4);
   }
     .b-ad__item[data-top-item] {

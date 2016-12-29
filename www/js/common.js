@@ -136,7 +136,6 @@
 
   function comments() {
   // Показать/скрыть кнопку комментариев
-    console.log($('.b-comments__add'));
     $('.b-comments__add').find('textarea').on('focus', function(){
       $('.block-hide-button').slideDown(200);
     });

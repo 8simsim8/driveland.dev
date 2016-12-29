@@ -41,6 +41,11 @@ function market() {
     $(".b-ad__item-info-top h5[data-clamp]").each(function(index, el){
       $clamp(el, {clamp: 2});
     });
+
+  // Обрезка текста до 3 строчек в просмотреных ранее
+    $(".b-add-block__last h5[data-clamp]").each(function(index, el){
+      $clamp(el, {clamp: 3});
+    });
   }
 
   // Дроплисты
